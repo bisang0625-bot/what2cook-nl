@@ -4,36 +4,41 @@ const nextConfig = {
   
   // 이미지 최적화 설정
   images: {
-    // 외부 이미지 도메인 허용 (필요시 추가)
+    // 모든 외부 이미지 도메인 허용 (보안보다 편의성 우선 설정)
     remotePatterns: [
       {
         protocol: 'https',
         hostname: '**',
       },
+      {
+        protocol: 'http',
+        hostname: '**',
+      },
     ],
-    // 이미지 포맷 최적화
+    // 이미지 포맷 최적화 (압축률 향상)
     formats: ['image/avif', 'image/webp'],
-    // 이미지 크기 제한
+    // 이미지 크기 최적화 (다양한 디바이스 대응)
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
-    // 최소화된 이미지 최적화
+    // 캐시 유지 시간 (초 단위)
     minimumCacheTTL: 60,
-    // 이미지 로더 (기본값 사용)
-    // dangerouslyAllowSVG: true,
-    // contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
 
-  // 성능 최적화
+  // 성능 및 보안 최적화
   compress: true,
   poweredByHeader: false,
   
-  // 빌드 최적화
+  // 빌드 속도 및 결과물 최적화
   swcMinify: true,
-  
-  // 실험적 기능 (필요시)
-  // experimental: {
-  //   optimizeCss: true,
-  // },
+
+  // Webpack 설정: JSON 파일 경로 해석
+  webpack: (config) => {
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      '@': __dirname,
+    }
+    return config
+  },
 }
 
 module.exports = nextConfig

@@ -35,6 +35,9 @@ interface AffiliateProduct {
   tags?: string[]
 }
 
+// 애드센스 승인 상태 (애드센스 승인 후 true로 변경)
+const isAdApproved = false
+
 export default function Home() {
   const [allRecipes, setAllRecipes] = useState<Recipe[]>([])
   const [loading, setLoading] = useState(true)
@@ -269,16 +272,18 @@ export default function Home() {
         </div>
       </div>
 
-      {/* 상단 광고 슬롯 */}
-      <div className="bg-white border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <AdSlot 
-            slotId="header-banner"
-            adType="adsense"
-            size="banner"
-          />
+      {/* 상단 광고 슬롯 (애드센스 승인 후 표시) */}
+      {isAdApproved && (
+        <div className="bg-white border-b border-gray-200">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <AdSlot 
+              slotId="header-banner"
+              adType="adsense"
+              size="banner"
+            />
+          </div>
         </div>
-      </div>
+      )}
 
       {/* 추천식단 섹션 */}
       <section id="recipes-section" className="w-full bg-white py-8">
