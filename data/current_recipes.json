@@ -1,0 +1,631 @@
+[
+  {
+    "store": "Albert Heijn",
+    "menu_name": "포도 닭갈비",
+    "main_ingredients": [
+      "Kippendijen (닭다리살)",
+      "Witte druiven pitloos (씨 없는 청포도)",
+      "AH Verse pasta's (AH 신선 파스타)",
+      "Uien (양파)"
+    ],
+    "description": "닭다리살을 청포도와 함께 볶아 달콤함을 더하고, AH 신선 파스타를 넣어 든든하게 즐길 수 있는 퓨전 닭갈비입니다.",
+    "tags": {
+      "is_spicy": true,
+      "is_vegetarian": false,
+      "is_kid_friendly": true,
+      "is_party_food": true,
+      "is_alcohol_snack": true,
+      "cooking_time": "35min"
+    },
+    "shopping_list": [
+      "닭갈비 양념 (고추장, 간장, 설탕, 다진 마늘, 생강)",
+      "양배추",
+      "고구마",
+      "깻잎",
+      "모짜렐라 치즈 (선택 사항)"
+    ],
+    "cost_saving_tip": "AH Verse pasta's 1+1 행사를 활용하여 파스타 면을 넉넉히 준비하고, 남은 파스타는 다른 요리에 활용하세요. 청포도는 닭갈비에 단맛을 더해주어 설탕 사용량을 줄일 수 있습니다.",
+    "id": "58cbc3f1-d282-4608-ad56-6b17380cccf9",
+    "valid_from": "2026-01-12T18:34:53.405598",
+    "valid_until": "2026-01-18T18:34:53.405598"
+  },
+  {
+    "store": "Albert Heijn",
+    "menu_name": "청포도 쌈무",
+    "main_ingredients": [
+      "Witte druiven pitloos (씨 없는 청포도)",
+      "AH Stamppotgroenten en -aardappelen (AH 스탐폿 채소와 감자)",
+      "Varkensvlees (돼지고기)"
+    ],
+    "description": "돼지고기 수육과 AH 스탐폿 채소와 감자를 함께 쌈무에 싸먹고, 씨 없는 청포도를 곁들여 상큼함을 더한 건강 쌈밥입니다.",
+    "tags": {
+      "is_spicy": false,
+      "is_vegetarian": false,
+      "is_kid_friendly": true,
+      "is_party_food": true,
+      "is_alcohol_snack": true,
+      "cooking_time": "45min"
+    },
+    "shopping_list": [
+      "쌈무",
+      "수육용 돼지고기",
+      "된장",
+      "다진 마늘",
+      "참기름",
+      "깨소금",
+      "새우젓",
+      "쌈장 (선택 사항)"
+    ],
+    "cost_saving_tip": "AH Stamppotgroenten en -aardappelen 1+1 행사를 활용하여 쌈밥 재료를 푸짐하게 준비하고, 남은 채소는 다른 찌개나 국에 활용하세요. 씨 없는 청포도는 쌈밥에 상큼함을 더해줍니다.",
+    "id": "19071ef9-4a6a-4552-b0c9-62b667a4ea51",
+    "valid_from": "2026-01-12T18:34:53.405598",
+    "valid_until": "2026-01-18T18:34:53.405598"
+  },
+  {
+    "store": "Albert Heijn",
+    "menu_name": "포도 비빔국수",
+    "main_ingredients": [
+      "AH Verse noedels (AH 신선 국수)",
+      "Witte druiven (청포도)",
+      "Rode druiven (적포도)",
+      "Komkommer (오이)"
+    ],
+    "description": "AH 신선 국수에 청포도와 적포도의 달콤함, 오이의 상큼함을 더해 매콤달콤하게 즐기는 비빔국수입니다.",
+    "tags": {
+      "is_spicy": true,
+      "is_vegetarian": true,
+      "is_kid_friendly": false,
+      "is_party_food": true,
+      "is_alcohol_snack": true,
+      "cooking_time": "20min"
+    },
+    "shopping_list": [
+      "비빔국수 양념 (고추장, 간장, 식초, 설탕, 다진 마늘, 참기름, 깨소금)",
+      "상추",
+      "김가루",
+      "계란 (선택 사항)"
+    ],
+    "cost_saving_tip": "AH Verse noedels 1+1 행사를 활용하여 국수를 넉넉히 준비하고, 남은 국수는 잔치국수나 볶음면으로 활용하세요. 청포도와 적포도는 비빔국수에 색감과 달콤함을 더해줍니다.",
+    "id": "62fb444c-d2ee-4f89-9f1b-c1dc3d37098f",
+    "valid_from": "2026-01-12T18:34:53.405598",
+    "valid_until": "2026-01-18T18:34:53.405598"
+  },
+  {
+    "store": "Jumbo",
+    "menu_name": "감자 브로콜리 된장국",
+    "main_ingredients": [
+      "Aardappelen (감자)",
+      "Broccoli (브로콜리)",
+      "Jumbo stamppotgroente (스탐폿 채소)"
+    ],
+    "description": "감자와 브로콜리, 그리고 스탐폿 채소를 활용하여 만든 따뜻하고 구수한 된장국입니다. 아이들도 먹기 좋고, 한국인의 입맛에 맞는 든든한 한 끼 식사가 됩니다.",
+    "tags": {
+      "is_spicy": false,
+      "is_vegetarian": true,
+      "is_kid_friendly": true,
+      "is_party_food": false,
+      "is_alcohol_snack": false,
+      "cooking_time": "30min"
+    },
+    "shopping_list": [
+      "된장",
+      "두부",
+      "파",
+      "마늘",
+      "멸치 or 다시마 (육수용)"
+    ],
+    "cost_saving_tip": "Aardappelen(감자) 1+1, Broccoli는 온라인으로 저렴하게 구매하여 비용을 절감할 수 있습니다. Jumbo stamppotgroente(스탐폿 채소)도 1+1 행사 중이므로 넉넉히 구매하여 다른 요리에도 활용하세요.",
+    "id": "51c64519-6dcc-4210-b40f-be47788f96b2",
+    "valid_from": "2026-01-14T18:35:02.417912",
+    "valid_until": "2026-01-20T18:35:02.417912"
+  },
+  {
+    "store": "Jumbo",
+    "menu_name": "삼겹살 김치볶음",
+    "main_ingredients": [
+      "Speklappen (삼겹살)",
+      "Jumbo stamppotgroente (스탐폿 채소)",
+      "Uien (양파)"
+    ],
+    "description": "Speklappen(삼겹살)과 Jumbo stamppotgroente(스탐폿 채소)를 김치와 함께 볶아 만든 매콤한 김치볶음입니다. 밥반찬으로 좋고, 술안주로도 잘 어울립니다.",
+    "tags": {
+      "is_spicy": true,
+      "is_vegetarian": false,
+      "is_kid_friendly": false,
+      "is_party_food": false,
+      "is_alcohol_snack": true,
+      "cooking_time": "20min"
+    },
+    "shopping_list": [
+      "김치",
+      "고춧가루",
+      "간장",
+      "설탕",
+      "참기름",
+      "통깨"
+    ],
+    "cost_saving_tip": "Speklappen(삼겹살)과 Jumbo stamppotgroente(스탐폿 채소)는 1+1 행사를 활용하여 구매하고, 남은 채소는 다른 볶음 요리에 활용하여 식비를 절약하세요.",
+    "id": "7262c55b-0ec2-4b80-b6eb-49d697ce780f",
+    "valid_from": "2026-01-14T18:35:02.417912",
+    "valid_until": "2026-01-20T18:35:02.417912"
+  },
+  {
+    "store": "Jumbo",
+    "menu_name": "블루베리 만다린 샐러드",
+    "main_ingredients": [
+      "Blauwe Bessen (블루베리)",
+      "Mandarijnen (만다린)",
+      "Jumbo gemengde ijsbergsla (믹스 아이스버그 상추)"
+    ],
+    "description": "블루베리와 만다린, 믹스 아이스버그 상추를 사용하여 만든 상큼하고 달콤한 샐러드입니다. 식사 전 가볍게 즐기거나, 고기 요리와 함께 곁들여 먹으면 좋습니다.",
+    "tags": {
+      "is_spicy": false,
+      "is_vegetarian": true,
+      "is_kid_friendly": true,
+      "is_party_food": false,
+      "is_alcohol_snack": false,
+      "cooking_time": "10min"
+    },
+    "shopping_list": [
+      "샐러드 드레싱 (유자, 발사믹 등 취향에 따라)"
+    ],
+    "cost_saving_tip": "Blauwe Bessen(블루베리)은 1+1 행사, Mandarijnen(만다린)은 할인 중, Jumbo gemengde ijsbergsla(믹스 아이스버그 상추)는 저렴하게 구매하여 부담 없이 즐길 수 있습니다.",
+    "id": "cc34f397-30e5-4911-a0b9-6aa345ed3db9",
+    "valid_from": "2026-01-14T18:35:02.417912",
+    "valid_until": "2026-01-20T18:35:02.417912"
+  },
+  {
+    "store": "Dirk",
+    "menu_name": "어깨살 김치찌개",
+    "main_ingredients": [
+      "Verse schouderkarbonade (어깨살)",
+      "Italiaanse tomatenblokjes (이탈리아 토마토 블록)",
+      "1 de Beste Verse salade (최고의 신선 샐러드)"
+    ],
+    "description": "어깨살과 토마토, 그리고 샐러드를 넣어 시원하고 얼큰한 김치찌개를 끓여보세요. 샐러드는 찌개에 신선함을 더해줍니다.",
+    "tags": {
+      "is_spicy": true,
+      "is_vegetarian": false,
+      "is_kid_friendly": false,
+      "is_party_food": false,
+      "is_alcohol_snack": true,
+      "cooking_time": "30min"
+    },
+    "shopping_list": [
+      "김치 (집에 있는 것)",
+      "두부",
+      "고춧가루",
+      "다진 마늘",
+      "국간장"
+    ],
+    "cost_saving_tip": "어깨살을 저렴하게 구매하여 푸짐한 김치찌개를 즐길 수 있습니다. 샐러드도 함께 넣어 영양을 더하세요.",
+    "id": "19e216fa-dd7c-4ba5-b6dc-70f8e089c1bb",
+    "valid_from": "2026-01-14T18:35:13.487872",
+    "valid_until": "2026-01-20T18:35:13.487872"
+  },
+  {
+    "store": "Dirk",
+    "menu_name": "미니 아스파라거스 베이컨 볶음밥",
+    "main_ingredients": [
+      "Mini groene asperges (미니 그린 아스파라거스)",
+      "Verse schouderkarbonade (어깨살)",
+      "Knoflooksaus (마늘 소스)"
+    ],
+    "description": "미니 아스파라거스와 어깨살을 잘게 썰어 볶음밥을 만들어보세요. 마늘 소스를 살짝 넣어 풍미를 더합니다.",
+    "tags": {
+      "is_spicy": false,
+      "is_vegetarian": false,
+      "is_kid_friendly": true,
+      "is_party_food": false,
+      "is_alcohol_snack": false,
+      "cooking_time": "20min"
+    },
+    "shopping_list": [
+      "밥",
+      "계란",
+      "간장",
+      "참기름",
+      "후추",
+      "양파"
+    ],
+    "cost_saving_tip": "저렴한 미니 아스파라거스와 어깨살을 활용하여 아이들이 좋아하는 볶음밥을 만들어보세요. 마늘 소스가 감칠맛을 더합니다.",
+    "id": "f6674262-f568-40cd-98de-6fc8265d657d",
+    "valid_from": "2026-01-14T18:35:13.487872",
+    "valid_until": "2026-01-20T18:35:13.487872"
+  },
+  {
+    "store": "Dirk",
+    "menu_name": "닭가슴살 또띠아 랩",
+    "main_ingredients": [
+      "1 de Beste Kipfilet plakjes (최고의 닭가슴살 슬라이스)",
+      "1 de Beste Verse salade (최고의 신선 샐러드)",
+      "Santa Maria wraps (산타 마리아 또띠아)"
+    ],
+    "description": "닭가슴살 슬라이스를 살짝 구워 신선 샐러드와 함께 또띠아에 싸서 간편하게 즐길 수 있는 랩입니다. 아이들과 함께 만들기에도 좋습니다.",
+    "tags": {
+      "is_spicy": false,
+      "is_vegetarian": false,
+      "is_kid_friendly": true,
+      "is_party_food": true,
+      "is_alcohol_snack": false,
+      "cooking_time": "15min"
+    },
+    "shopping_list": [
+      "마요네즈",
+      "머스타드 (선택 사항)",
+      "파프리카 (선택 사항)",
+      "양파 (선택 사항)"
+    ],
+    "cost_saving_tip": "닭가슴살 슬라이스와 샐러드, 또띠아를 저렴하게 구매하여 간편하고 맛있는 랩을 만들어 보세요. 남은 재료는 샐러드로 활용 가능합니다.",
+    "id": "d80c4eef-db29-45be-87bc-0812533ce0cb",
+    "valid_from": "2026-01-14T18:35:13.487872",
+    "valid_until": "2026-01-20T18:35:13.487872"
+  },
+  {
+    "store": "Aldi",
+    "menu_name": "포도 닭꼬치 구이 & 요거트 소스",
+    "main_ingredients": [
+      "Druiven (포도)",
+      "Kipfilet (닭가슴살)",
+      "Yoghurt drink (요거트 음료)",
+      "Snoepgroente mix (스낵 채소 믹스)"
+    ],
+    "description": "닭가슴살과 포도를 꼬치에 꽂아 구운 후 요거트 소스를 곁들여 먹는 아이들이 좋아하는 메뉴입니다. 스낵 채소 믹스를 곁들여 균형 잡힌 식사를 즐길 수 있습니다.",
+    "tags": {
+      "is_spicy": false,
+      "is_vegetarian": false,
+      "is_kid_friendly": true,
+      "is_party_food": true,
+      "is_alcohol_snack": false,
+      "cooking_time": "30min"
+    },
+    "shopping_list": [
+      "닭가슴살",
+      "포도",
+      "요거트 음료",
+      "스낵 채소 믹스",
+      "간장",
+      "설탕",
+      "마늘"
+    ],
+    "cost_saving_tip": "세일하는 포도와 스낵 채소 믹스를 활용하여 저렴하게 아이들 간식을 준비할 수 있습니다.",
+    "id": "d014a496-2390-41bf-97ff-ee74034b1cbe",
+    "valid_from": "2026-01-12T18:35:23.816726",
+    "valid_until": "2026-01-18T18:35:23.816726"
+  },
+  {
+    "store": "Aldi",
+    "menu_name": "버섯 소시지 볶음밥",
+    "main_ingredients": [
+      "Champignons (양송이버섯)",
+      "Rookworst (스모크 소시지)",
+      "Mini tomaten (미니 토마토)",
+      "Melk (우유)"
+    ],
+    "description": "양송이버섯과 스모크 소시지를 잘게 썰어 볶음밥에 넣어 만든 든든한 한 끼 식사입니다. 미니 토마토와 우유를 곁들여 영양을 더했습니다.",
+    "tags": {
+      "is_spicy": false,
+      "is_vegetarian": false,
+      "is_kid_friendly": true,
+      "is_party_food": false,
+      "is_alcohol_snack": false,
+      "cooking_time": "20min"
+    },
+    "shopping_list": [
+      "양송이버섯",
+      "스모크 소시지",
+      "미니 토마토",
+      "우유",
+      "밥",
+      "양파",
+      "당근",
+      "계란",
+      "간장",
+      "참기름"
+    ],
+    "cost_saving_tip": "세일하는 양송이버섯과 스모크 소시지를 활용하여 저렴하게 볶음밥을 만들 수 있습니다. 남은 채소를 활용하면 더욱 경제적입니다.",
+    "id": "c6623c11-a9a1-4e9a-8f90-9ba38bcaad11",
+    "valid_from": "2026-01-12T18:35:23.816726",
+    "valid_until": "2026-01-18T18:35:23.816726"
+  },
+  {
+    "store": "Aldi",
+    "menu_name": "그릴 소시지 야채 꼬치 & 커피 소스",
+    "main_ingredients": [
+      "Grillworst (그릴 소시지)",
+      "Snoep tomaten (스낵 토마토)",
+      "Snoep komkommer (스낵 오이)",
+      "Koffie (커피)"
+    ],
+    "description": "그릴 소시지, 스낵 토마토, 스낵 오이를 꼬치에 꽂아 구운 후 커피 소스를 곁들여 먹는 독특한 메뉴입니다. 커피의 쌉쌀한 맛이 소시지의 느끼함을 잡아줍니다.",
+    "tags": {
+      "is_spicy": false,
+      "is_vegetarian": false,
+      "is_kid_friendly": false,
+      "is_party_food": true,
+      "is_alcohol_snack": true,
+      "cooking_time": "25min"
+    },
+    "shopping_list": [
+      "그릴 소시지",
+      "스낵 토마토",
+      "스낵 오이",
+      "커피",
+      "간장",
+      "설탕",
+      "마늘",
+      "맛술"
+    ],
+    "cost_saving_tip": "세일하는 그릴 소시지와 스낵 채소를 활용하여 저렴하고 특별한 꼬치 요리를 만들 수 있습니다. 남은 커피를 활용하여 소스를 만들면 더욱 경제적입니다.",
+    "id": "f77515cd-1082-4a1b-89e6-bf21193fa30a",
+    "valid_from": "2026-01-12T18:35:23.816726",
+    "valid_until": "2026-01-18T18:35:23.816726"
+  },
+  {
+    "store": "Plus",
+    "menu_name": "닭다리살 채소 볶음밥과 미역국",
+    "main_ingredients": [
+      "Kippendijen (닭다리살)",
+      "PLUS Groente en verse kruiden (플러스 채소 & 신선 허브)",
+      "Lassie Rijst (라씨 쌀)"
+    ],
+    "description": "닭다리살과 다양한 채소를 잘게 썰어 라씨 쌀과 함께 볶아낸 볶음밥과 미역국입니다. 아이도 먹기 좋은 맵지 않은 메뉴입니다.",
+    "tags": {
+      "is_spicy": false,
+      "is_vegetarian": false,
+      "is_kid_friendly": true,
+      "is_party_food": false,
+      "is_alcohol_snack": false,
+      "cooking_time": "30min"
+    },
+    "shopping_list": [
+      "간장",
+      "참기름",
+      "미역",
+      "다진 마늘"
+    ],
+    "cost_saving_tip": "PLUS Groente en verse kruiden 세일 상품을 활용하여 냉장고에 있는 다른 채소들과 함께 볶음밥에 넣어 영양을 더하세요. Lassie Rijst도 세일 중이니 넉넉히 구매하여 냉동 보관하면 편리합니다.",
+    "id": "9352466a-1033-41f8-ac78-9af3d17c8912",
+    "valid_from": "2026-01-12T18:35:32.644511",
+    "valid_until": "2026-01-18T18:35:32.644511"
+  },
+  {
+    "store": "Plus",
+    "menu_name": "스파클링 워터 김치",
+    "main_ingredients": [
+      "PLUS Groente en verse kruiden (플러스 채소 & 신선 허브)",
+      "Spa (스파)",
+      "Knoflook (마늘)",
+      "Gember (생강)",
+      "Chili peper (고추)",
+      "Zout (소금)",
+      "Suiker (설탕)"
+    ],
+    "description": "톡 쏘는 스파클링 워터로 시원하게 담근 김치입니다. 채소를 절일 필요 없이 바로 담글 수 있어 간편하며, 톡 쏘는 탄산이 매력적인 김치입니다.",
+    "tags": {
+      "is_spicy": true,
+      "is_vegetarian": true,
+      "is_kid_friendly": false,
+      "is_party_food": true,
+      "is_alcohol_snack": true,
+      "cooking_time": "20min"
+    },
+    "shopping_list": [
+      "액젓"
+    ],
+    "cost_saving_tip": "Spa 탄산수를 활용하여 시원하고 청량한 김치를 만들어보세요. PLUS Groente en verse kruiden 세일 상품을 적극 활용하여 다양한 채소를 넣어 풍성하게 만드세요.",
+    "id": "5e1867f6-7517-41d0-aefe-3c2a84e6a2c0",
+    "valid_from": "2026-01-12T18:35:32.644511",
+    "valid_until": "2026-01-18T18:35:32.644511"
+  },
+  {
+    "store": "Plus",
+    "menu_name": "닭가슴살 스카이르 카레",
+    "main_ingredients": [
+      "Kipfilet (닭가슴살)",
+      "PLUS Groente en verse kruiden (플러스 채소 & 신선 허브)",
+      "Danone Skyr (다논 스카이르)",
+      "Kerriepoeder (카레 가루)"
+    ],
+    "description": "닭가슴살과 다양한 채소를 넣고, 다논 스카이르를 넣어 부드러움을 더한 카레입니다. 아이들이 먹기 좋게 맵지 않게 만들 수 있습니다.",
+    "tags": {
+      "is_spicy": false,
+      "is_vegetarian": false,
+      "is_kid_friendly": true,
+      "is_party_food": false,
+      "is_alcohol_snack": false,
+      "cooking_time": "40min"
+    },
+    "shopping_list": [
+      "감자",
+      "당근",
+      "양파",
+      "다진 마늘"
+    ],
+    "cost_saving_tip": "Danone Skyr 세일 상품을 활용하여 카레에 넣어 풍미를 더하세요. PLUS Groente en verse kruiden 세일 상품을 활용하여 냉장고에 있는 다른 채소들과 함께 볶음밥에 넣어 영양을 더하세요.",
+    "id": "c57b2f27-459d-4470-9720-f9583e2770d9",
+    "valid_from": "2026-01-12T18:35:32.644511",
+    "valid_until": "2026-01-18T18:35:32.644511"
+  },
+  {
+    "store": "Hoogvliet",
+    "menu_name": "햄버거 스테이크",
+    "main_ingredients": [
+      "Hamburger classic, angus, pittig, spek, of Amerikaanse stijl (햄버거 패티)",
+      "Andijvie grof (엔다이브)",
+      "Eru smeerkaas en cheddar plakken (에루 스프레드 치즈 & 체다 슬라이스)"
+    ],
+    "description": "세일하는 햄버거 패티를 사용하여 만든 햄버거 스테이크입니다. 곁들임 채소로 엔다이브 샐러드를 준비하고, 치즈를 올려 풍미를 더했습니다.",
+    "tags": {
+      "is_spicy": false,
+      "is_vegetarian": false,
+      "is_kid_friendly": true,
+      "is_party_food": false,
+      "is_alcohol_snack": false,
+      "cooking_time": "30min"
+    },
+    "shopping_list": [
+      "햄버거빵",
+      "계란",
+      "빵가루",
+      "양파",
+      "케첩",
+      "머스타드"
+    ],
+    "cost_saving_tip": "Hamburger classic 1+1 행사를 활용하여 넉넉하게 만들어 냉동 보관하세요. Eru smeerkaas en cheddar plakken으로 느끼함 없이 맛있는 풍미를 더하세요.",
+    "id": "fb3594bd-8047-43b5-ba40-1f78188f5963",
+    "valid_from": "2026-01-12T18:35:41.962256",
+    "valid_until": "2026-01-18T18:35:41.962256"
+  },
+  {
+    "store": "Hoogvliet",
+    "menu_name": "부대찌개",
+    "main_ingredients": [
+      "Hamburger classic, angus, pittig, spek, of Amerikaanse stijl (햄버거 패티)",
+      "Hoogvliet Verse slagers rookworst (훈제 소시지)",
+      "Bonduelle (본듀엘 믹스 야채)"
+    ],
+    "description": "햄버거 패티와 훈제 소시지를 넣어 깊은 맛을 내는 부대찌개입니다. 본듀엘 믹스 야채를 넣어 간편하게 야채를 보충할 수 있습니다. 라면사리를 추가하면 더욱 푸짐하게 즐길 수 있습니다.",
+    "tags": {
+      "is_spicy": true,
+      "is_vegetarian": false,
+      "is_kid_friendly": false,
+      "is_party_food": true,
+      "is_alcohol_snack": true,
+      "cooking_time": "35min"
+    },
+    "shopping_list": [
+      "김치",
+      "두부",
+      "라면사리",
+      "고춧가루",
+      "간장",
+      "다진 마늘",
+      "양파",
+      "대파",
+      "멸치 다시 육수"
+    ],
+    "cost_saving_tip": "Hamburger classic과 Hoogvliet Verse slagers rookworst 1+1 행사를 활용하여 부대찌개 재료를 저렴하게 구매하세요. Bonduelle 믹스 야채는 냉동 보관이 가능하여 오래 두고 사용할 수 있습니다.",
+    "id": "83501229-b9ff-4eee-9ba7-ced613726d02",
+    "valid_from": "2026-01-12T18:35:41.962256",
+    "valid_until": "2026-01-18T18:35:41.962256"
+  },
+  {
+    "store": "Hoogvliet",
+    "menu_name": "훈제 소시지 야채볶음",
+    "main_ingredients": [
+      "Hoogvliet Verse slagers rookworst (훈제 소시지)",
+      "Andijvie grof (엔다이브)",
+      "Cup a Soup (컵 어 수프)"
+    ],
+    "description": "훈제 소시지와 엔다이브를 함께 볶아 만든 간단한 요리입니다. 컵 어 수프를 사용하여 간편하게 맛을 낼 수 있습니다. 밥 반찬으로도 좋고, 술안주로도 잘 어울립니다.",
+    "tags": {
+      "is_spicy": false,
+      "is_vegetarian": false,
+      "is_kid_friendly": true,
+      "is_party_food": false,
+      "is_alcohol_snack": true,
+      "cooking_time": "20min"
+    },
+    "shopping_list": [
+      "양파",
+      "간장",
+      "굴소스",
+      "설탕",
+      "다진 마늘",
+      "참기름",
+      "통깨"
+    ],
+    "cost_saving_tip": "Hoogvliet Verse slagers rookworst와 Cup a Soup 1+1 행사를 활용하여 저렴하게 재료를 구매하세요. 다양한 맛의 Cup a Soup을 활용하여 색다른 맛을 즐길 수 있습니다.",
+    "id": "8de9be2b-ce6b-435f-aff7-43b544a998f0",
+    "valid_from": "2026-01-12T18:35:41.962256",
+    "valid_until": "2026-01-18T18:35:41.962256"
+  },
+  {
+    "store": "Coop",
+    "menu_name": "닭다리살 볶음밥과 스키르 요거트",
+    "main_ingredients": [
+      "Kippendijen (닭다리살)",
+      "Lassie Rijst (Lassie 쌀)",
+      "Danone Skyr (Danone 스키르)",
+      "PLUS Groente en verse kruiden (PLUS 채소와 신선한 허브)"
+    ],
+    "description": "닭다리살과 채소를 볶아 쌀과 함께 볶음밥을 만들고, Danone 스키르 요거트를 곁들여 건강하고 든든한 한 끼 식사를 즐길 수 있습니다.",
+    "tags": {
+      "is_spicy": false,
+      "is_vegetarian": false,
+      "is_kid_friendly": true,
+      "is_party_food": false,
+      "is_alcohol_snack": false,
+      "cooking_time": "30min"
+    },
+    "shopping_list": [
+      "간장",
+      "참기름",
+      "계란",
+      "소금",
+      "후추"
+    ],
+    "cost_saving_tip": "PLUS Groente en verse kruiden을 10유로 이상 구매하면 무료 배송 혜택을 받을 수 있습니다. Lassie Rijst (쌀)을 대용량으로 구매하면 더 저렴하게 이용할 수 있습니다.",
+    "id": "e4a99767-5573-4624-a052-bffb78fb50ab",
+    "valid_from": "2026-01-12T18:35:52.798082",
+    "valid_until": "2026-01-18T18:35:52.798082"
+  },
+  {
+    "store": "Coop",
+    "menu_name": "쌀밥과 호가든 맥주를 곁들인 닭다리살 간장조림",
+    "main_ingredients": [
+      "Kippendijen (닭다리살)",
+      "Lassie Rijst (Lassie 쌀)",
+      "Hoegaarden (호가든)",
+      "PLUS Groente en verse kruiden (PLUS 채소와 신선한 허브)"
+    ],
+    "description": "닭다리살을 간장, 설탕, 마늘 등으로 맛을 내어 조린 후, Lassie 쌀밥과 함께 즐깁니다. Hoegaarden (호가든) 맥주를 곁들이면 더욱 풍성한 식사를 즐길 수 있습니다.",
+    "tags": {
+      "is_spicy": false,
+      "is_vegetarian": false,
+      "is_kid_friendly": true,
+      "is_party_food": false,
+      "is_alcohol_snack": true,
+      "cooking_time": "40min"
+    },
+    "shopping_list": [
+      "간장",
+      "설탕",
+      "마늘",
+      "생강",
+      "참기름",
+      "후추"
+    ],
+    "cost_saving_tip": "Hoegaarden (호가든) 맥주를 2개 이상 구매하면 무료 배송 혜택을 받을 수 있습니다.  PLUS Groente en verse kruiden (PLUS 채소와 신선한 허브) 중 조림에 어울리는 채소를 선택하세요.",
+    "id": "345b4224-e9cb-4e60-9e02-84abeb9f3628",
+    "valid_from": "2026-01-12T18:35:52.798082",
+    "valid_until": "2026-01-18T18:35:52.798082"
+  },
+  {
+    "store": "Coop",
+    "menu_name": "스키르 요거트를 곁들인 오트밀 로투스 쿠키",
+    "main_ingredients": [
+      "Danone Skyr (Danone 스키르)",
+      "Lotus (로투스)",
+      "Optimel Drinkyoghurt (Optimel 드링크 요거트)"
+    ],
+    "description": "Danone 스키르 요거트 위에 잘게 부순 Lotus (로투스) 쿠키를 뿌리고 Optimel 드링크 요거트를 살짝 뿌려 달콤하고 건강한 디저트를 만듭니다. 간단하게 아침 식사 대용으로도 좋습니다.",
+    "tags": {
+      "is_spicy": false,
+      "is_vegetarian": true,
+      "is_kid_friendly": true,
+      "is_party_food": false,
+      "is_alcohol_snack": false,
+      "cooking_time": "5min"
+    },
+    "shopping_list": [
+      "견과류 (선택 사항)",
+      "과일 (선택 사항)"
+    ],
+    "cost_saving_tip": "Lotus (로투스)를 12.50유로 이상 구매하면 무료 배송 혜택을 받을 수 있습니다. Optimel Drinkyoghurt (Optimel 드링크 요거트)는 다양한 맛이 있으니 취향에 맞게 선택하세요.",
+    "id": "51aa031d-389f-4a5a-904b-23df274c15e7",
+    "valid_from": "2026-01-12T18:35:52.798082",
+    "valid_until": "2026-01-18T18:35:52.798082"
+  }
+]

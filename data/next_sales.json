@@ -1,0 +1,1849 @@
+{
+  "week_number": "2026-03",
+  "sale_period": "2026-01-12 ~ 2026-01-18",
+  "week_type": "next",
+  "scraped_at": "2026-01-12T18:34:37.761159",
+  "total_products": 203,
+  "supermarkets": {
+    "successful": [
+      "Jumbo",
+      "Dirk",
+      "Aldi",
+      "Plus",
+      "Hoogvliet",
+      "Coop"
+    ],
+    "failed": [
+      "Albert Heijn"
+    ]
+  },
+  "products": [
+    {
+      "store": "Jumbo",
+      "product_name": "Alle Wapenaer 35+",
+      "price": null,
+      "discount": "1+1 gratis",
+      "valid_from": "2026-01-21T18:34:37.759359",
+      "valid_until": "2026-01-27T18:34:37.759359",
+      "scraped_at": "2026-01-12T18:34:37.759381"
+    },
+    {
+      "store": "Jumbo",
+      "product_name": "Jumbo stamppotgroente, aardappelen, spekreepjes of...",
+      "price": null,
+      "discount": "1+1 gratis",
+      "valid_from": "2026-01-21T18:34:37.759390",
+      "valid_until": "2026-01-27T18:34:37.759390",
+      "scraped_at": "2026-01-12T18:34:37.759398"
+    },
+    {
+      "store": "Jumbo",
+      "product_name": "Aardappelen",
+      "price": null,
+      "discount": "1+1 gratis",
+      "valid_from": "2026-01-21T18:34:37.759402",
+      "valid_until": "2026-01-27T18:34:37.759402",
+      "scraped_at": "2026-01-12T18:34:37.759409"
+    },
+    {
+      "store": "Jumbo",
+      "product_name": "Blauwe Bessen",
+      "price": null,
+      "discount": "1+1 gratis",
+      "valid_from": "2026-01-21T18:34:37.759412",
+      "valid_until": "2026-01-27T18:34:37.759412",
+      "scraped_at": "2026-01-12T18:34:37.759420"
+    },
+    {
+      "store": "Jumbo",
+      "product_name": "Broccoli",
+      "price": "€1.19",
+      "discount": "Alleen online",
+      "valid_from": "2026-01-21T18:34:37.759424",
+      "valid_until": "2026-01-27T18:34:37.759424",
+      "scraped_at": "2026-01-12T18:34:37.759430"
+    },
+    {
+      "store": "Jumbo",
+      "product_name": "Mandarijnen",
+      "price": "€2.19",
+      "discount": "voor",
+      "valid_from": "2026-01-21T18:34:37.759433",
+      "valid_until": "2026-01-27T18:34:37.759433",
+      "scraped_at": "2026-01-12T18:34:37.759439"
+    },
+    {
+      "store": "Jumbo",
+      "product_name": "Combikorting groente",
+      "price": "€3.50",
+      "discount": "2 voor",
+      "valid_from": "2026-01-21T18:34:37.759449",
+      "valid_until": "2026-01-27T18:34:37.759449",
+      "scraped_at": "2026-01-12T18:34:37.759455"
+    },
+    {
+      "store": "Jumbo",
+      "product_name": "Combikorting fruit",
+      "price": "€4.50",
+      "discount": "2 voor",
+      "valid_from": "2026-01-21T18:34:37.759458",
+      "valid_until": "2026-01-27T18:34:37.759458",
+      "scraped_at": "2026-01-12T18:34:37.759464"
+    },
+    {
+      "store": "Jumbo",
+      "product_name": "Jumbo's vleesvervangers",
+      "price": "€1.99",
+      "discount": "voor",
+      "valid_from": "2026-01-21T18:34:37.759466",
+      "valid_until": "2026-01-27T18:34:37.759466",
+      "scraped_at": "2026-01-12T18:34:37.759472"
+    },
+    {
+      "store": "Jumbo",
+      "product_name": "Jumbo stamppotgroente, aardappelen, spekreepjes o...",
+      "price": null,
+      "discount": "1+1 gratis",
+      "valid_from": "2026-01-21T18:34:37.759478",
+      "valid_until": "2026-01-27T18:34:37.759478",
+      "scraped_at": "2026-01-12T18:34:37.759484"
+    },
+    {
+      "store": "Jumbo",
+      "product_name": "Jumbo gemengde ijsbergsla of snackworteltjes",
+      "price": "€1.00",
+      "discount": "voor",
+      "valid_from": "2026-01-21T18:34:37.759487",
+      "valid_until": "2026-01-27T18:34:37.759487",
+      "scraped_at": "2026-01-12T18:34:37.759493"
+    },
+    {
+      "store": "Jumbo",
+      "product_name": "Alle Wapenaer 35+",
+      "price": null,
+      "discount": "1+1 gratis",
+      "valid_from": "2026-01-21T18:34:37.759496",
+      "valid_until": "2026-01-27T18:34:37.759496",
+      "scraped_at": "2026-01-12T18:34:37.759502"
+    },
+    {
+      "store": "Jumbo",
+      "product_name": "Chio",
+      "price": null,
+      "discount": "1+1 gratis",
+      "valid_from": "2026-01-21T18:34:37.759504",
+      "valid_until": "2026-01-27T18:34:37.759504",
+      "scraped_at": "2026-01-12T18:34:37.759510"
+    },
+    {
+      "store": "Jumbo",
+      "product_name": "Alle ongekoelde maaltijdpakketten",
+      "price": null,
+      "discount": "25% korting",
+      "valid_from": "2026-01-21T18:34:37.759512",
+      "valid_until": "2026-01-27T18:34:37.759512",
+      "scraped_at": "2026-01-12T18:34:37.759518"
+    },
+    {
+      "store": "Dirk",
+      "product_name": "Italiaanse tomatenblokjes",
+      "price": "€0.99",
+      "discount": null,
+      "valid_from": "2026-01-21T18:34:37.759520",
+      "valid_until": "2026-01-27T18:34:37.759520",
+      "scraped_at": "2026-01-12T18:34:37.759526"
+    },
+    {
+      "store": "Dirk",
+      "product_name": "Mini groene asperges",
+      "price": "€0.75",
+      "discount": null,
+      "valid_from": "2026-01-21T18:34:37.759534",
+      "valid_until": "2026-01-27T18:34:37.759534",
+      "scraped_at": "2026-01-12T18:34:37.759540"
+    },
+    {
+      "store": "Dirk",
+      "product_name": "1 kilo Verse fijngesneden andijvie of spinazie",
+      "price": "€0.85",
+      "discount": null,
+      "valid_from": "2026-01-21T18:34:37.759543",
+      "valid_until": "2026-01-27T18:34:37.759543",
+      "scraped_at": "2026-01-12T18:34:37.759548"
+    },
+    {
+      "store": "Dirk",
+      "product_name": "Mandarijnen",
+      "price": "€1.29",
+      "discount": null,
+      "valid_from": "2026-01-21T18:34:37.759551",
+      "valid_until": "2026-01-27T18:34:37.759551",
+      "scraped_at": "2026-01-12T18:34:37.759556"
+    },
+    {
+      "store": "Dirk",
+      "product_name": "1 kilo Verse roerbakgroente",
+      "price": "€1.59",
+      "discount": null,
+      "valid_from": "2026-01-21T18:34:37.759558",
+      "valid_until": "2026-01-27T18:34:37.759558",
+      "scraped_at": "2026-01-12T18:34:37.759564"
+    },
+    {
+      "store": "Dirk",
+      "product_name": "Biologische druivenmix",
+      "price": "€4.99",
+      "discount": null,
+      "valid_from": "2026-01-21T18:34:37.759566",
+      "valid_until": "2026-01-27T18:34:37.759566",
+      "scraped_at": "2026-01-12T18:34:37.759572"
+    },
+    {
+      "store": "Dirk",
+      "product_name": "1 kilo Blauwe bessen",
+      "price": "€2.49",
+      "discount": null,
+      "valid_from": "2026-01-21T18:34:37.759574",
+      "valid_until": "2026-01-27T18:34:37.759574",
+      "scraped_at": "2026-01-12T18:34:37.759579"
+    },
+    {
+      "store": "Dirk",
+      "product_name": "1 kilo Verse frambozen",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-21T18:34:37.759581",
+      "valid_until": "2026-01-27T18:34:37.759581",
+      "scraped_at": "2026-01-12T18:34:37.759587"
+    },
+    {
+      "store": "Dirk",
+      "product_name": "Aardbeien",
+      "price": "€4.99",
+      "discount": null,
+      "valid_from": "2026-01-21T18:34:37.759590",
+      "valid_until": "2026-01-27T18:34:37.759590",
+      "scraped_at": "2026-01-12T18:34:37.759595"
+    },
+    {
+      "store": "Dirk",
+      "product_name": "1 kilo Rode kool klein",
+      "price": "€0.99",
+      "discount": null,
+      "valid_from": "2026-01-21T18:34:37.759598",
+      "valid_until": "2026-01-27T18:34:37.759598",
+      "scraped_at": "2026-01-12T18:34:37.759603"
+    },
+    {
+      "store": "Dirk",
+      "product_name": "Tonijnmoot in olijfolie",
+      "price": "€0.89",
+      "discount": null,
+      "valid_from": "2026-01-21T18:34:37.759605",
+      "valid_until": "2026-01-27T18:34:37.759605",
+      "scraped_at": "2026-01-12T18:34:37.759611"
+    },
+    {
+      "store": "Dirk",
+      "product_name": "1 de Beste Kipspiesjes",
+      "price": "€0.99",
+      "discount": null,
+      "valid_from": "2026-01-21T18:34:37.759614",
+      "valid_until": "2026-01-27T18:34:37.759614",
+      "scraped_at": "2026-01-12T18:34:37.759619"
+    },
+    {
+      "store": "Dirk",
+      "product_name": "Vega burgers, crispy sticks, mini frikandel, of mini loempia's",
+      "price": "€0.99",
+      "discount": null,
+      "valid_from": "2026-01-21T18:34:37.759622",
+      "valid_until": "2026-01-27T18:34:37.759622",
+      "scraped_at": "2026-01-12T18:34:37.759630"
+    },
+    {
+      "store": "Dirk",
+      "product_name": "Arde kipkarbonades",
+      "price": "€0.89",
+      "discount": null,
+      "valid_from": "2026-01-21T18:34:37.759632",
+      "valid_until": "2026-01-27T18:34:37.759632",
+      "scraped_at": "2026-01-12T18:34:37.759638"
+    },
+    {
+      "store": "Dirk",
+      "product_name": "Arde schouderkarbonade",
+      "price": "€3.99",
+      "discount": null,
+      "valid_from": "2026-01-21T18:34:37.759640",
+      "valid_until": "2026-01-27T18:34:37.759640",
+      "scraped_at": "2026-01-12T18:34:37.759646"
+    },
+    {
+      "store": "Dirk",
+      "product_name": "Vleessalade",
+      "price": "€1.99",
+      "discount": null,
+      "valid_from": "2026-01-21T18:34:37.759648",
+      "valid_until": "2026-01-27T18:34:37.759648",
+      "scraped_at": "2026-01-12T18:34:37.759654"
+    },
+    {
+      "store": "Dirk",
+      "product_name": "Filet americain",
+      "price": "€2.29",
+      "discount": null,
+      "valid_from": "2026-01-21T18:34:37.759657",
+      "valid_until": "2026-01-27T18:34:37.759657",
+      "scraped_at": "2026-01-12T18:34:37.759662"
+    },
+    {
+      "store": "Dirk",
+      "product_name": "1 de Beste Kipfilet plakjes",
+      "price": "€1.29",
+      "discount": null,
+      "valid_from": "2026-01-21T18:34:37.759664",
+      "valid_until": "2026-01-27T18:34:37.759664",
+      "scraped_at": "2026-01-12T18:34:37.759674"
+    },
+    {
+      "store": "Dirk",
+      "product_name": "Boterhamworst",
+      "price": "€0.79",
+      "discount": null,
+      "valid_from": "2026-01-21T18:34:37.759677",
+      "valid_until": "2026-01-27T18:34:37.759677",
+      "scraped_at": "2026-01-12T18:34:37.759683"
+    },
+    {
+      "store": "Dirk",
+      "product_name": "Verse goudse jonge kaas",
+      "price": "€0.99",
+      "discount": null,
+      "valid_from": "2026-01-21T18:34:37.759686",
+      "valid_until": "2026-01-27T18:34:37.759686",
+      "scraped_at": "2026-01-12T18:34:37.759691"
+    },
+    {
+      "store": "Dirk",
+      "product_name": "Chocomel of Fristi",
+      "price": "€0.49",
+      "discount": null,
+      "valid_from": "2026-01-21T18:34:37.759694",
+      "valid_until": "2026-01-27T18:34:37.759694",
+      "scraped_at": "2026-01-12T18:34:37.759699"
+    },
+    {
+      "store": "Dirk",
+      "product_name": "Arla skyr",
+      "price": "€0.59",
+      "discount": null,
+      "valid_from": "2026-01-21T18:34:37.759701",
+      "valid_until": "2026-01-27T18:34:37.759701",
+      "scraped_at": "2026-01-12T18:34:37.759707"
+    },
+    {
+      "store": "Dirk",
+      "product_name": "Dry crackersbox of cheddar",
+      "price": "€0.99",
+      "discount": null,
+      "valid_from": "2026-01-21T18:34:37.759710",
+      "valid_until": "2026-01-27T18:34:37.759710",
+      "scraped_at": "2026-01-12T18:34:37.759715"
+    },
+    {
+      "store": "Dirk",
+      "product_name": "Melkan Verse slagroom",
+      "price": "€0.89",
+      "discount": null,
+      "valid_from": "2026-01-21T18:34:37.759717",
+      "valid_until": "2026-01-27T18:34:37.759717",
+      "scraped_at": "2026-01-12T18:34:37.759722"
+    },
+    {
+      "store": "Dirk",
+      "product_name": "Chocolade melk of fristi",
+      "price": "€0.45",
+      "discount": null,
+      "valid_from": "2026-01-21T18:34:37.759725",
+      "valid_until": "2026-01-27T18:34:37.759725",
+      "scraped_at": "2026-01-12T18:34:37.759730"
+    },
+    {
+      "store": "Dirk",
+      "product_name": "Royal club of Sourcy",
+      "price": "€0.99",
+      "discount": null,
+      "valid_from": "2026-01-21T18:34:37.759732",
+      "valid_until": "2026-01-27T18:34:37.759732",
+      "scraped_at": "2026-01-12T18:34:37.759737"
+    },
+    {
+      "store": "Dirk",
+      "product_name": "Fuze tea of Fanta",
+      "price": "€0.79",
+      "discount": null,
+      "valid_from": "2026-01-21T18:34:37.759740",
+      "valid_until": "2026-01-27T18:34:37.759740",
+      "scraped_at": "2026-01-12T18:34:37.759746"
+    },
+    {
+      "store": "Dirk",
+      "product_name": "Dubbeldrank",
+      "price": "€1.19",
+      "discount": null,
+      "valid_from": "2026-01-21T18:34:37.759752",
+      "valid_until": "2026-01-27T18:34:37.759752",
+      "scraped_at": "2026-01-12T18:34:37.759757"
+    },
+    {
+      "store": "Dirk",
+      "product_name": "Lipton Ice Tea Sparkling",
+      "price": "€0.49",
+      "discount": null,
+      "valid_from": "2026-01-21T18:34:37.759760",
+      "valid_until": "2026-01-27T18:34:37.759760",
+      "scraped_at": "2026-01-12T18:34:37.759765"
+    },
+    {
+      "store": "Dirk",
+      "product_name": "Lay's chips",
+      "price": "€0.89",
+      "discount": null,
+      "valid_from": "2026-01-21T18:34:37.759767",
+      "valid_until": "2026-01-27T18:34:37.759767",
+      "scraped_at": "2026-01-12T18:34:37.759773"
+    },
+    {
+      "store": "Dirk",
+      "product_name": "Doritos",
+      "price": "€0.99",
+      "discount": null,
+      "valid_from": "2026-01-21T18:34:37.759779",
+      "valid_until": "2026-01-27T18:34:37.759779",
+      "scraped_at": "2026-01-12T18:34:37.759786"
+    },
+    {
+      "store": "Dirk",
+      "product_name": "Ola magnum",
+      "price": "€1.49",
+      "discount": null,
+      "valid_from": "2026-01-21T18:34:37.759788",
+      "valid_until": "2026-01-27T18:34:37.759788",
+      "scraped_at": "2026-01-12T18:34:37.759794"
+    },
+    {
+      "store": "Dirk",
+      "product_name": "Ben & Jerry's",
+      "price": "€5.79",
+      "discount": null,
+      "valid_from": "2026-01-21T18:34:37.759796",
+      "valid_until": "2026-01-27T18:34:37.759796",
+      "scraped_at": "2026-01-12T18:34:37.759802"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Druiven mix",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.759805",
+      "valid_until": "2026-01-25T18:34:37.759805",
+      "scraped_at": "2026-01-12T18:34:37.759814"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Frambozen",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.759821",
+      "valid_until": "2026-01-25T18:34:37.759821",
+      "scraped_at": "2026-01-12T18:34:37.759828"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Blauwe bessen",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.759831",
+      "valid_until": "2026-01-25T18:34:37.759831",
+      "scraped_at": "2026-01-12T18:34:37.759847"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Snoeptomaten",
+      "price": "€2.49",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.759850",
+      "valid_until": "2026-01-25T18:34:37.759850",
+      "scraped_at": "2026-01-12T18:34:37.759855"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Mini komkommers",
+      "price": "€2.49",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.759858",
+      "valid_until": "2026-01-25T18:34:37.759858",
+      "scraped_at": "2026-01-12T18:34:37.759863"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Romana sla",
+      "price": "€1.49",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.759865",
+      "valid_until": "2026-01-25T18:34:37.759865",
+      "scraped_at": "2026-01-12T18:34:37.759871"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Witte kool",
+      "price": "€0.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.759874",
+      "valid_until": "2026-01-25T18:34:37.759874",
+      "scraped_at": "2026-01-12T18:34:37.759879"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Wortelen",
+      "price": "€1.49",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.759891",
+      "valid_until": "2026-01-25T18:34:37.759891",
+      "scraped_at": "2026-01-12T18:34:37.759897"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Verse worst",
+      "price": "€3.49",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.759899",
+      "valid_until": "2026-01-25T18:34:37.759899",
+      "scraped_at": "2026-01-12T18:34:37.759906"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Braadworst",
+      "price": "€3.49",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.759908",
+      "valid_until": "2026-01-25T18:34:37.759908",
+      "scraped_at": "2026-01-12T18:34:37.759914"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Grillworst",
+      "price": "€3.49",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.759917",
+      "valid_until": "2026-01-25T18:34:37.759917",
+      "scraped_at": "2026-01-12T18:34:37.759922"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Rookworst",
+      "price": "€3.49",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.759925",
+      "valid_until": "2026-01-25T18:34:37.759925",
+      "scraped_at": "2026-01-12T18:34:37.759930"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Boeren grillworst",
+      "price": "€3.49",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.759932",
+      "valid_until": "2026-01-25T18:34:37.759932",
+      "scraped_at": "2026-01-12T18:34:37.759937"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Filet Americain",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.759939",
+      "valid_until": "2026-01-25T18:34:37.759939",
+      "scraped_at": "2026-01-12T18:34:37.759944"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Smeerkaas",
+      "price": "€1.49",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.759947",
+      "valid_until": "2026-01-25T18:34:37.759947",
+      "scraped_at": "2026-01-12T18:34:37.759952"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Smeerkaas light",
+      "price": "€1.49",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.759954",
+      "valid_until": "2026-01-25T18:34:37.759954",
+      "scraped_at": "2026-01-12T18:34:37.759959"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Smeerkaas kruiden",
+      "price": "€1.49",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.759961",
+      "valid_until": "2026-01-25T18:34:37.759961",
+      "scraped_at": "2026-01-12T18:34:37.759966"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Smeerkaas ham",
+      "price": "€1.49",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.759968",
+      "valid_until": "2026-01-25T18:34:37.759968",
+      "scraped_at": "2026-01-12T18:34:37.759978"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Smeerkaas sambal",
+      "price": "€1.49",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.759983",
+      "valid_until": "2026-01-25T18:34:37.759983",
+      "scraped_at": "2026-01-12T18:34:37.759989"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Smeerkaas tuinkruiden",
+      "price": "€1.49",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.759991",
+      "valid_until": "2026-01-25T18:34:37.759991",
+      "scraped_at": "2026-01-12T18:34:37.759997"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Smeerkaas light tuinkruiden",
+      "price": "€1.49",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.759998",
+      "valid_until": "2026-01-25T18:34:37.759998",
+      "scraped_at": "2026-01-12T18:34:37.760004"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Smeerkaas light ham",
+      "price": "€1.49",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760006",
+      "valid_until": "2026-01-25T18:34:37.760006",
+      "scraped_at": "2026-01-12T18:34:37.760011"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Smeerkaas light sambal",
+      "price": "€1.49",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760013",
+      "valid_until": "2026-01-25T18:34:37.760013",
+      "scraped_at": "2026-01-12T18:34:37.760018"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Smeerkaas light kruiden",
+      "price": "€1.49",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760020",
+      "valid_until": "2026-01-25T18:34:37.760020",
+      "scraped_at": "2026-01-12T18:34:37.760026"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Smeerkaas light naturel",
+      "price": "€1.49",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760028",
+      "valid_until": "2026-01-25T18:34:37.760028",
+      "scraped_at": "2026-01-12T18:34:37.760033"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Smeerkaas naturel",
+      "price": "€1.49",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760035",
+      "valid_until": "2026-01-25T18:34:37.760035",
+      "scraped_at": "2026-01-12T18:34:37.760040"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Verse worst",
+      "price": "€3.49",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760047",
+      "valid_until": "2026-01-25T18:34:37.760047",
+      "scraped_at": "2026-01-12T18:34:37.760052"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Braadworst",
+      "price": "€3.49",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760054",
+      "valid_until": "2026-01-25T18:34:37.760054",
+      "scraped_at": "2026-01-12T18:34:37.760060"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Grillworst",
+      "price": "€3.49",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760063",
+      "valid_until": "2026-01-25T18:34:37.760063",
+      "scraped_at": "2026-01-12T18:34:37.760068"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Rookworst",
+      "price": "€3.49",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760071",
+      "valid_until": "2026-01-25T18:34:37.760071",
+      "scraped_at": "2026-01-12T18:34:37.760077"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Boeren grillworst",
+      "price": "€3.49",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760082",
+      "valid_until": "2026-01-25T18:34:37.760082",
+      "scraped_at": "2026-01-12T18:34:37.760088"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Filet Americain",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760090",
+      "valid_until": "2026-01-25T18:34:37.760090",
+      "scraped_at": "2026-01-12T18:34:37.760095"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Verse worst",
+      "price": "€3.49",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760098",
+      "valid_until": "2026-01-25T18:34:37.760098",
+      "scraped_at": "2026-01-12T18:34:37.760103"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Braadworst",
+      "price": "€3.49",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760105",
+      "valid_until": "2026-01-25T18:34:37.760105",
+      "scraped_at": "2026-01-12T18:34:37.760111"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Grillworst",
+      "price": "€3.49",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760113",
+      "valid_until": "2026-01-25T18:34:37.760113",
+      "scraped_at": "2026-01-12T18:34:37.760121"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Rookworst",
+      "price": "€3.49",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760123",
+      "valid_until": "2026-01-25T18:34:37.760123",
+      "scraped_at": "2026-01-12T18:34:37.760128"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Boeren grillworst",
+      "price": "€3.49",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760130",
+      "valid_until": "2026-01-25T18:34:37.760130",
+      "scraped_at": "2026-01-12T18:34:37.760135"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Filet Americain",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760137",
+      "valid_until": "2026-01-25T18:34:37.760137",
+      "scraped_at": "2026-01-12T18:34:37.760143"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Verse worst",
+      "price": "€3.49",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760146",
+      "valid_until": "2026-01-25T18:34:37.760146",
+      "scraped_at": "2026-01-12T18:34:37.760151"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Braadworst",
+      "price": "€3.49",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760153",
+      "valid_until": "2026-01-25T18:34:37.760153",
+      "scraped_at": "2026-01-12T18:34:37.760159"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Grillworst",
+      "price": "€3.49",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760161",
+      "valid_until": "2026-01-25T18:34:37.760161",
+      "scraped_at": "2026-01-12T18:34:37.760166"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Rookworst",
+      "price": "€3.49",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760168",
+      "valid_until": "2026-01-25T18:34:37.760168",
+      "scraped_at": "2026-01-12T18:34:37.760181"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Boeren grillworst",
+      "price": "€3.49",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760183",
+      "valid_until": "2026-01-25T18:34:37.760183",
+      "scraped_at": "2026-01-12T18:34:37.760188"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Filet Americain",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760190",
+      "valid_until": "2026-01-25T18:34:37.760190",
+      "scraped_at": "2026-01-12T18:34:37.760195"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Verse worst",
+      "price": "€3.49",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760197",
+      "valid_until": "2026-01-25T18:34:37.760197",
+      "scraped_at": "2026-01-12T18:34:37.760202"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Braadworst",
+      "price": "€3.49",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760204",
+      "valid_until": "2026-01-25T18:34:37.760204",
+      "scraped_at": "2026-01-12T18:34:37.760209"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Grillworst",
+      "price": "€3.49",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760213",
+      "valid_until": "2026-01-25T18:34:37.760213",
+      "scraped_at": "2026-01-12T18:34:37.760218"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Rookworst",
+      "price": "€3.49",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760220",
+      "valid_until": "2026-01-25T18:34:37.760220",
+      "scraped_at": "2026-01-12T18:34:37.760225"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Boeren grillworst",
+      "price": "€3.49",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760228",
+      "valid_until": "2026-01-25T18:34:37.760228",
+      "scraped_at": "2026-01-12T18:34:37.760233"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Filet Americain",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760235",
+      "valid_until": "2026-01-25T18:34:37.760235",
+      "scraped_at": "2026-01-12T18:34:37.760240"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipschnitzel",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760242",
+      "valid_until": "2026-01-25T18:34:37.760242",
+      "scraped_at": "2026-01-12T18:34:37.760247"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kip cordon bleu",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760249",
+      "valid_until": "2026-01-25T18:34:37.760249",
+      "scraped_at": "2026-01-12T18:34:37.760254"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipspies",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760257",
+      "valid_until": "2026-01-25T18:34:37.760257",
+      "scraped_at": "2026-01-12T18:34:37.760262"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipfilet",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760264",
+      "valid_until": "2026-01-25T18:34:37.760264",
+      "scraped_at": "2026-01-12T18:34:37.760269"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipdijbeen",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760272",
+      "valid_until": "2026-01-25T18:34:37.760272",
+      "scraped_at": "2026-01-12T18:34:37.760277"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipkarbonade",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760279",
+      "valid_until": "2026-01-25T18:34:37.760279",
+      "scraped_at": "2026-01-12T18:34:37.760284"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipburger",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760286",
+      "valid_until": "2026-01-25T18:34:37.760286",
+      "scraped_at": "2026-01-12T18:34:37.760290"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipgehakt",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760292",
+      "valid_until": "2026-01-25T18:34:37.760292",
+      "scraped_at": "2026-01-12T18:34:37.760298"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipnuggets",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760300",
+      "valid_until": "2026-01-25T18:34:37.760300",
+      "scraped_at": "2026-01-12T18:34:37.760305"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipfrikandel",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760307",
+      "valid_until": "2026-01-25T18:34:37.760307",
+      "scraped_at": "2026-01-12T18:34:37.760312"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipcorn",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760315",
+      "valid_until": "2026-01-25T18:34:37.760315",
+      "scraped_at": "2026-01-12T18:34:37.760321"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipgrillworst",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760323",
+      "valid_until": "2026-01-25T18:34:37.760323",
+      "scraped_at": "2026-01-12T18:34:37.760329"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipshoarma",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760339",
+      "valid_until": "2026-01-25T18:34:37.760339",
+      "scraped_at": "2026-01-12T18:34:37.760344"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipgyros",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760346",
+      "valid_until": "2026-01-25T18:34:37.760346",
+      "scraped_at": "2026-01-12T18:34:37.760351"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipkebab",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760353",
+      "valid_until": "2026-01-25T18:34:37.760353",
+      "scraped_at": "2026-01-12T18:34:37.760358"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipkip",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760360",
+      "valid_until": "2026-01-25T18:34:37.760360",
+      "scraped_at": "2026-01-12T18:34:37.760365"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipkroket",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760367",
+      "valid_until": "2026-01-25T18:34:37.760367",
+      "scraped_at": "2026-01-12T18:34:37.760372"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipragout",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760374",
+      "valid_until": "2026-01-25T18:34:37.760374",
+      "scraped_at": "2026-01-12T18:34:37.760384"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipsoep",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760389",
+      "valid_until": "2026-01-25T18:34:37.760389",
+      "scraped_at": "2026-01-12T18:34:37.760394"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipnasi",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760396",
+      "valid_until": "2026-01-25T18:34:37.760396",
+      "scraped_at": "2026-01-12T18:34:37.760401"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipbami",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760403",
+      "valid_until": "2026-01-25T18:34:37.760403",
+      "scraped_at": "2026-01-12T18:34:37.760408"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kippasta",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760410",
+      "valid_until": "2026-01-25T18:34:37.760410",
+      "scraped_at": "2026-01-12T18:34:37.760415"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipwrap",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760417",
+      "valid_until": "2026-01-25T18:34:37.760417",
+      "scraped_at": "2026-01-12T18:34:37.760422"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipburger",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760424",
+      "valid_until": "2026-01-25T18:34:37.760424",
+      "scraped_at": "2026-01-12T18:34:37.760429"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipnuggets",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760432",
+      "valid_until": "2026-01-25T18:34:37.760432",
+      "scraped_at": "2026-01-12T18:34:37.760437"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipfrikandel",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760439",
+      "valid_until": "2026-01-25T18:34:37.760439",
+      "scraped_at": "2026-01-12T18:34:37.760445"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipcorn",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760448",
+      "valid_until": "2026-01-25T18:34:37.760448",
+      "scraped_at": "2026-01-12T18:34:37.760453"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipgrillworst",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760455",
+      "valid_until": "2026-01-25T18:34:37.760455",
+      "scraped_at": "2026-01-12T18:34:37.760460"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipshoarma",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760463",
+      "valid_until": "2026-01-25T18:34:37.760463",
+      "scraped_at": "2026-01-12T18:34:37.760469"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipgyros",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760471",
+      "valid_until": "2026-01-25T18:34:37.760471",
+      "scraped_at": "2026-01-12T18:34:37.760476"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipkebab",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760478",
+      "valid_until": "2026-01-25T18:34:37.760478",
+      "scraped_at": "2026-01-12T18:34:37.760483"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipkip",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760486",
+      "valid_until": "2026-01-25T18:34:37.760486",
+      "scraped_at": "2026-01-12T18:34:37.760491"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipkroket",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760496",
+      "valid_until": "2026-01-25T18:34:37.760496",
+      "scraped_at": "2026-01-12T18:34:37.760501"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipragout",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760503",
+      "valid_until": "2026-01-25T18:34:37.760503",
+      "scraped_at": "2026-01-12T18:34:37.760509"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipsoep",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760511",
+      "valid_until": "2026-01-25T18:34:37.760511",
+      "scraped_at": "2026-01-12T18:34:37.760516"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipnasi",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760519",
+      "valid_until": "2026-01-25T18:34:37.760519",
+      "scraped_at": "2026-01-12T18:34:37.760524"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipbami",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760527",
+      "valid_until": "2026-01-25T18:34:37.760527",
+      "scraped_at": "2026-01-12T18:34:37.760532"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kippasta",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760534",
+      "valid_until": "2026-01-25T18:34:37.760534",
+      "scraped_at": "2026-01-12T18:34:37.760540"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipwrap",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760542",
+      "valid_until": "2026-01-25T18:34:37.760542",
+      "scraped_at": "2026-01-12T18:34:37.760547"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipburger",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760549",
+      "valid_until": "2026-01-25T18:34:37.760549",
+      "scraped_at": "2026-01-12T18:34:37.760554"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipnuggets",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760556",
+      "valid_until": "2026-01-25T18:34:37.760556",
+      "scraped_at": "2026-01-12T18:34:37.760562"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipfrikandel",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760563",
+      "valid_until": "2026-01-25T18:34:37.760563",
+      "scraped_at": "2026-01-12T18:34:37.760582"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipcorn",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760584",
+      "valid_until": "2026-01-25T18:34:37.760584",
+      "scraped_at": "2026-01-12T18:34:37.760592"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipgrillworst",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760595",
+      "valid_until": "2026-01-25T18:34:37.760595",
+      "scraped_at": "2026-01-12T18:34:37.760600"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipshoarma",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760602",
+      "valid_until": "2026-01-25T18:34:37.760602",
+      "scraped_at": "2026-01-12T18:34:37.760607"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipgyros",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760610",
+      "valid_until": "2026-01-25T18:34:37.760610",
+      "scraped_at": "2026-01-12T18:34:37.760615"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipkebab",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760617",
+      "valid_until": "2026-01-25T18:34:37.760617",
+      "scraped_at": "2026-01-12T18:34:37.760623"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipkip",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760625",
+      "valid_until": "2026-01-25T18:34:37.760625",
+      "scraped_at": "2026-01-12T18:34:37.760631"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipkroket",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760633",
+      "valid_until": "2026-01-25T18:34:37.760633",
+      "scraped_at": "2026-01-12T18:34:37.760638"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipragout",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760641",
+      "valid_until": "2026-01-25T18:34:37.760641",
+      "scraped_at": "2026-01-12T18:34:37.760646"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipsoep",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760648",
+      "valid_until": "2026-01-25T18:34:37.760648",
+      "scraped_at": "2026-01-12T18:34:37.760653"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipnasi",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760655",
+      "valid_until": "2026-01-25T18:34:37.760655",
+      "scraped_at": "2026-01-12T18:34:37.760661"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipbami",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760670",
+      "valid_until": "2026-01-25T18:34:37.760670",
+      "scraped_at": "2026-01-12T18:34:37.760676"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kippasta",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760678",
+      "valid_until": "2026-01-25T18:34:37.760678",
+      "scraped_at": "2026-01-12T18:34:37.760683"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipwrap",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760685",
+      "valid_until": "2026-01-25T18:34:37.760685",
+      "scraped_at": "2026-01-12T18:34:37.760690"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipburger",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760692",
+      "valid_until": "2026-01-25T18:34:37.760692",
+      "scraped_at": "2026-01-12T18:34:37.760704"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipnuggets",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760712",
+      "valid_until": "2026-01-25T18:34:37.760712",
+      "scraped_at": "2026-01-12T18:34:37.760722"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipfrikandel",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760724",
+      "valid_until": "2026-01-25T18:34:37.760724",
+      "scraped_at": "2026-01-12T18:34:37.760729"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipcorn",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760731",
+      "valid_until": "2026-01-25T18:34:37.760731",
+      "scraped_at": "2026-01-12T18:34:37.760736"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipgrillworst",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760738",
+      "valid_until": "2026-01-25T18:34:37.760738",
+      "scraped_at": "2026-01-12T18:34:37.760743"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipshoarma",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760745",
+      "valid_until": "2026-01-25T18:34:37.760745",
+      "scraped_at": "2026-01-12T18:34:37.760751"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipgyros",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760753",
+      "valid_until": "2026-01-25T18:34:37.760753",
+      "scraped_at": "2026-01-12T18:34:37.760758"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipkebab",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760760",
+      "valid_until": "2026-01-25T18:34:37.760760",
+      "scraped_at": "2026-01-12T18:34:37.760764"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipkip",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760767",
+      "valid_until": "2026-01-25T18:34:37.760767",
+      "scraped_at": "2026-01-12T18:34:37.760772"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipkroket",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760774",
+      "valid_until": "2026-01-25T18:34:37.760774",
+      "scraped_at": "2026-01-12T18:34:37.760779"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipragout",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760781",
+      "valid_until": "2026-01-25T18:34:37.760781",
+      "scraped_at": "2026-01-12T18:34:37.760787"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipsoep",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760789",
+      "valid_until": "2026-01-25T18:34:37.760789",
+      "scraped_at": "2026-01-12T18:34:37.760793"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipnasi",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760795",
+      "valid_until": "2026-01-25T18:34:37.760795",
+      "scraped_at": "2026-01-12T18:34:37.760802"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipbami",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760805",
+      "valid_until": "2026-01-25T18:34:37.760805",
+      "scraped_at": "2026-01-12T18:34:37.760810"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kippasta",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760812",
+      "valid_until": "2026-01-25T18:34:37.760812",
+      "scraped_at": "2026-01-12T18:34:37.760817"
+    },
+    {
+      "store": "Aldi",
+      "product_name": "Kipwrap",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760819",
+      "valid_until": "2026-01-25T18:34:37.760819",
+      "scraped_at": "2026-01-12T18:34:37.760824"
+    },
+    {
+      "store": "Plus",
+      "product_name": "PLUS Groente en verse kruiden",
+      "price": null,
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760827",
+      "valid_until": "2026-01-25T18:34:37.760827",
+      "scraped_at": "2026-01-12T18:34:37.760838"
+    },
+    {
+      "store": "Plus",
+      "product_name": "Danone Skyr, HIPRO",
+      "price": null,
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760840",
+      "valid_until": "2026-01-25T18:34:37.760840",
+      "scraped_at": "2026-01-12T18:34:37.760845"
+    },
+    {
+      "store": "Plus",
+      "product_name": "Lotus",
+      "price": null,
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760847",
+      "valid_until": "2026-01-25T18:34:37.760847",
+      "scraped_at": "2026-01-12T18:34:37.760852"
+    },
+    {
+      "store": "Plus",
+      "product_name": "Hoegaarden, Leffe en Tripel Karmeliet",
+      "price": null,
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760855",
+      "valid_until": "2026-01-25T18:34:37.760855",
+      "scraped_at": "2026-01-12T18:34:37.760859"
+    },
+    {
+      "store": "Plus",
+      "product_name": "Spa",
+      "price": null,
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760862",
+      "valid_until": "2026-01-25T18:34:37.760862",
+      "scraped_at": "2026-01-12T18:34:37.760867"
+    },
+    {
+      "store": "Plus",
+      "product_name": "Optimel Drinkyoghurt",
+      "price": null,
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760871",
+      "valid_until": "2026-01-25T18:34:37.760871",
+      "scraped_at": "2026-01-12T18:34:37.760876"
+    },
+    {
+      "store": "Plus",
+      "product_name": "Lassie Rijst",
+      "price": null,
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760878",
+      "valid_until": "2026-01-25T18:34:37.760878",
+      "scraped_at": "2026-01-12T18:34:37.760883"
+    },
+    {
+      "store": "Plus",
+      "product_name": "Pickwick Eenkopsthee",
+      "price": null,
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760885",
+      "valid_until": "2026-01-25T18:34:37.760885",
+      "scraped_at": "2026-01-12T18:34:37.760890"
+    },
+    {
+      "store": "Hoogvliet",
+      "product_name": "Eru smeerkaas en cheddar plakken",
+      "price": "€0.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760893",
+      "valid_until": "2026-01-25T18:34:37.760893",
+      "scraped_at": "2026-01-12T18:34:37.760898"
+    },
+    {
+      "store": "Hoogvliet",
+      "product_name": "Koggelandse kaasstukken 48+, jong, jong belegen",
+      "price": "€3.49",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760900",
+      "valid_until": "2026-01-25T18:34:37.760900",
+      "scraped_at": "2026-01-12T18:34:37.760905"
+    },
+    {
+      "store": "Hoogvliet",
+      "product_name": "Bonduelle",
+      "price": "€0.69",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760908",
+      "valid_until": "2026-01-25T18:34:37.760908",
+      "scraped_at": "2026-01-12T18:34:37.760913"
+    },
+    {
+      "store": "Hoogvliet",
+      "product_name": "Cup a Soup",
+      "price": "€1.53 - €2.21",
+      "discount": "1+1 gratis",
+      "valid_from": "2026-01-19T18:34:37.760916",
+      "valid_until": "2026-01-25T18:34:37.760916",
+      "scraped_at": "2026-01-12T18:34:37.760927"
+    },
+    {
+      "store": "Hoogvliet",
+      "product_name": "Hamburger classic, angus, pittig, spek, of Amerikaanse stijl",
+      "price": "€3.99",
+      "discount": "1+1 gratis",
+      "valid_from": "2026-01-19T18:34:37.760929",
+      "valid_until": "2026-01-25T18:34:37.760929",
+      "scraped_at": "2026-01-12T18:34:37.760935"
+    },
+    {
+      "store": "Hoogvliet",
+      "product_name": "Valess",
+      "price": "€3.39 - €3.65",
+      "discount": "1+1 gratis",
+      "valid_from": "2026-01-19T18:34:37.760937",
+      "valid_until": "2026-01-25T18:34:37.760937",
+      "scraped_at": "2026-01-12T18:34:37.760945"
+    },
+    {
+      "store": "Hoogvliet",
+      "product_name": "Hoogvliet Verse slagers rookworst",
+      "price": "€3.49",
+      "discount": "1+1 gratis",
+      "valid_from": "2026-01-19T18:34:37.760948",
+      "valid_until": "2026-01-25T18:34:37.760948",
+      "scraped_at": "2026-01-12T18:34:37.760954"
+    },
+    {
+      "store": "Hoogvliet",
+      "product_name": "Lays Max",
+      "price": "€1.89 - €2.46",
+      "discount": "1+1 gratis",
+      "valid_from": "2026-01-19T18:34:37.760956",
+      "valid_until": "2026-01-25T18:34:37.760956",
+      "scraped_at": "2026-01-12T18:34:37.760961"
+    },
+    {
+      "store": "Hoogvliet",
+      "product_name": "Alcoholvrij bier",
+      "price": "€4.49 - €9.30",
+      "discount": "1+1 gratis",
+      "valid_from": "2026-01-19T18:34:37.760963",
+      "valid_until": "2026-01-25T18:34:37.760963",
+      "scraped_at": "2026-01-12T18:34:37.760968"
+    },
+    {
+      "store": "Hoogvliet",
+      "product_name": "Appelsientje Fruitdrink of Taksi",
+      "price": "€0.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.760970",
+      "valid_until": "2026-01-25T18:34:37.760970",
+      "scraped_at": "2026-01-12T18:34:37.760975"
+    },
+    {
+      "store": "Hoogvliet",
+      "product_name": "Coolbest FruitDrink, FruitOntbijt of ProteinDrink",
+      "price": "€1.95 - €2.32",
+      "discount": "1+1 gratis",
+      "valid_from": "2026-01-19T18:34:37.760977",
+      "valid_until": "2026-01-25T18:34:37.760977",
+      "scraped_at": "2026-01-12T18:34:37.760982"
+    },
+    {
+      "store": "Hoogvliet",
+      "product_name": "Sisi No bubbles mango",
+      "price": "€1.29",
+      "discount": "1+1 gratis",
+      "valid_from": "2026-01-19T18:34:37.760984",
+      "valid_until": "2026-01-25T18:34:37.760984",
+      "scraped_at": "2026-01-12T18:34:37.760989"
+    },
+    {
+      "store": "Hoogvliet",
+      "product_name": "Campina Langlekker",
+      "price": "€1.50 - €1.59",
+      "discount": "2+3 gratis",
+      "valid_from": "2026-01-19T18:34:37.760991",
+      "valid_until": "2026-01-25T18:34:37.760991",
+      "scraped_at": "2026-01-12T18:34:37.760996"
+    },
+    {
+      "store": "Hoogvliet",
+      "product_name": "Chocomel of Fristi",
+      "price": "€1.97 - €2.99",
+      "discount": "1+1 gratis",
+      "valid_from": "2026-01-19T18:34:37.760998",
+      "valid_until": "2026-01-25T18:34:37.760998",
+      "scraped_at": "2026-01-12T18:34:37.761003"
+    },
+    {
+      "store": "Hoogvliet",
+      "product_name": "Danio romige kwark",
+      "price": "€2.69 - €2.89",
+      "discount": "1+1 gratis",
+      "valid_from": "2026-01-19T18:34:37.761005",
+      "valid_until": "2026-01-25T18:34:37.761005",
+      "scraped_at": "2026-01-12T18:34:37.761011"
+    },
+    {
+      "store": "Hoogvliet",
+      "product_name": "Melkunie protein gekoeld",
+      "price": "€0.79",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.761013",
+      "valid_until": "2026-01-25T18:34:37.761013",
+      "scraped_at": "2026-01-12T18:34:37.761018"
+    },
+    {
+      "store": "Hoogvliet",
+      "product_name": "Andijvie grof, hutspot of boerenkool",
+      "price": "€0.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.761021",
+      "valid_until": "2026-01-25T18:34:37.761021",
+      "scraped_at": "2026-01-12T18:34:37.761026"
+    },
+    {
+      "store": "Hoogvliet",
+      "product_name": "Iglo cuisine en viskraam",
+      "price": "€2.99",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.761028",
+      "valid_until": "2026-01-25T18:34:37.761028",
+      "scraped_at": "2026-01-12T18:34:37.761033"
+    },
+    {
+      "store": "Hoogvliet",
+      "product_name": "Bistro meerzaden, dubbel donker of meerzaden",
+      "price": "€1.79",
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.761035",
+      "valid_until": "2026-01-25T18:34:37.761035",
+      "scraped_at": "2026-01-12T18:34:37.761040"
+    },
+    {
+      "store": "Coop",
+      "product_name": "PLUS Groente en verse kruiden",
+      "price": null,
+      "discount": "GRATIS BEZORGING BIJ 10.00 EURO",
+      "valid_from": "2026-01-19T18:34:37.761042",
+      "valid_until": "2026-01-25T18:34:37.761042",
+      "scraped_at": "2026-01-12T18:34:37.761048"
+    },
+    {
+      "store": "Coop",
+      "product_name": "Danone Skyr, HIPRO",
+      "price": null,
+      "discount": "GRATIS BEZORGING BIJ 10.00 EURO",
+      "valid_from": "2026-01-19T18:34:37.761050",
+      "valid_until": "2026-01-25T18:34:37.761050",
+      "scraped_at": "2026-01-12T18:34:37.761055"
+    },
+    {
+      "store": "Coop",
+      "product_name": "Lotus",
+      "price": null,
+      "discount": "GRATIS BEZORGING BIJ 12.50 EURO",
+      "valid_from": "2026-01-19T18:34:37.761057",
+      "valid_until": "2026-01-25T18:34:37.761057",
+      "scraped_at": "2026-01-12T18:34:37.761062"
+    },
+    {
+      "store": "Coop",
+      "product_name": "Hoegaarden, Leffe en Tripel Karmeliet",
+      "price": null,
+      "discount": "GRATIS BEZORGING BIJ 2 STUKS",
+      "valid_from": "2026-01-19T18:34:37.761065",
+      "valid_until": "2026-01-25T18:34:37.761065",
+      "scraped_at": "2026-01-12T18:34:37.761070"
+    },
+    {
+      "store": "Coop",
+      "product_name": "Spa",
+      "price": null,
+      "discount": "GRATIS BEZORGING BIJ 10.00 EURO",
+      "valid_from": "2026-01-19T18:34:37.761072",
+      "valid_until": "2026-01-25T18:34:37.761072",
+      "scraped_at": "2026-01-12T18:34:37.761077"
+    },
+    {
+      "store": "Coop",
+      "product_name": "Optimel Drinkyoghurt",
+      "price": null,
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.761080",
+      "valid_until": "2026-01-25T18:34:37.761080",
+      "scraped_at": "2026-01-12T18:34:37.761085"
+    },
+    {
+      "store": "Coop",
+      "product_name": "Lassie Rijst",
+      "price": null,
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.761088",
+      "valid_until": "2026-01-25T18:34:37.761088",
+      "scraped_at": "2026-01-12T18:34:37.761093"
+    },
+    {
+      "store": "Coop",
+      "product_name": "Pickwick Eenkopsthee",
+      "price": null,
+      "discount": null,
+      "valid_from": "2026-01-19T18:34:37.761096",
+      "valid_until": "2026-01-25T18:34:37.761096",
+      "scraped_at": "2026-01-12T18:34:37.761101"
+    }
+  ]
+}

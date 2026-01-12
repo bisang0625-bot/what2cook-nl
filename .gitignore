@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# Environment variables
+.env
+
+# Config file (API 키 포함)
+config.py
+
+# Data files (generated)
+data/next_week_bonus.json
+data/weekly_sales.json
+data/weekly_sales_backup_*.json
+# weekly_recipes.json은 샘플 데이터로 커밋 (실제 데이터는 recipe_matcher.py가 생성)
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Next.js
+.next/
+out/
+node_modules/
+
+# Logs
+*.log
+scraper.log
+
+# OS
+.DS_Store
+Thumbs.db
+pw-browsers/
+node_modules/
+.next/

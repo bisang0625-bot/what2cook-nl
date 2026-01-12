@@ -1,0 +1,80 @@
+[
+  {
+    "id": "cuckoo-6p",
+    "name": "쿠쿠 6인용 압력밥솥",
+    "description": "한국인의 밥맛, 네덜란드 전압 호환 모델",
+    "image": "/images/products/cuckoo.jpg",
+    "platforms": {
+      "bol": {
+        "url": "https://partner.bol.com/click/click?p=1&t=url&s=123456&f=TXL&url=https://www.bol.com/nl/nl/p/cuckoo-rice-cooker/12345678/",
+        "price": "€120.00",
+        "currency": "EUR",
+        "badge": "내일 도착",
+        "benefit": "AH 매장 픽업 가능",
+        "usp": "빠른 배송"
+      },
+      "amazon": {
+        "url": "https://amazon.nl/dp/B08XYZ123?tag=kbonus-21",
+        "price": "€118.00",
+        "currency": "EUR",
+        "badge": "최저가",
+        "benefit": "Prime 무료 배송",
+        "usp": "가격 경쟁력"
+      }
+    },
+    "category": "kitchen",
+    "tags": ["한식", "필수템", "전압호환"]
+  },
+  {
+    "id": "kimchi-container",
+    "name": "김치 보관용기 세트",
+    "description": "김치 발효에 최적화된 밀폐 용기",
+    "image": "/images/products/kimchi-container.jpg",
+    "platforms": {
+      "bol": {
+        "url": "https://partner.bol.com/click/click?p=1&t=url&s=123456&f=TXL&url=https://www.bol.com/nl/nl/p/kimchi-container/87654321/",
+        "price": "€25.99",
+        "currency": "EUR",
+        "badge": "내일 도착",
+        "benefit": "무료 배송",
+        "usp": "빠른 배송"
+      },
+      "amazon": {
+        "url": "https://amazon.nl/dp/B09ABC456?tag=kbonus-21",
+        "price": "€24.50",
+        "currency": "EUR",
+        "badge": "최저가",
+        "benefit": "Prime 무료 배송",
+        "usp": "가격 경쟁력"
+      }
+    },
+    "category": "kitchen",
+    "tags": ["김치", "보관", "발효"]
+  },
+  {
+    "id": "korean-sauce-set",
+    "name": "한국 양념 세트",
+    "description": "고추장, 된장, 간장 등 필수 양념 모음",
+    "image": "/images/products/korean-sauce-set.jpg",
+    "platforms": {
+      "bol": {
+        "url": "https://partner.bol.com/click/click?p=1&t=url&s=123456&f=TXL&url=https://www.bol.com/nl/nl/p/korean-sauce-set/11223344/",
+        "price": "€18.99",
+        "currency": "EUR",
+        "badge": "내일 도착",
+        "benefit": "AH 매장 픽업 가능",
+        "usp": "빠른 배송"
+      },
+      "amazon": {
+        "url": "https://amazon.nl/dp/B10DEF789?tag=kbonus-21",
+        "price": "€19.50",
+        "currency": "EUR",
+        "badge": "Prime",
+        "benefit": "무료 배송",
+        "usp": "신뢰도"
+      }
+    },
+    "category": "ingredients",
+    "tags": ["양념", "필수", "세트"]
+  }
+]

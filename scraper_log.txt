@@ -1,0 +1,128 @@
+/Users/seungholee/Library/Python/3.9/lib/python/site-packages/google/auth/__init__.py:54: FutureWarning: 
+    You are using a Python version 3.9 past its end of life. Google will update
+    google-auth with critical bug fixes on a best-effort basis, but not
+    with any other fixes or features. Please upgrade your Python version,
+    and then update google-auth.
+    
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/seungholee/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+/Users/seungholee/Library/Python/3.9/lib/python/site-packages/google/oauth2/__init__.py:40: FutureWarning: 
+    You are using a Python version 3.9 past its end of life. Google will update
+    google-auth with critical bug fixes on a best-effort basis, but not
+    with any other fixes or features. Please upgrade your Python version,
+    and then update google-auth.
+    
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+
+============================================================
+🤖 AI 크롤러 시작 - Reclamefolder.nl (개선 버전)
+============================================================
+📅 대상 주차: 2026-03주
+📆 세일 기간: 2026-01-12 (월) 시작
+
+
+============================================================
+🛒 Albert Heijn 크롤링 시작
+============================================================
+🔗 https://www.reclamefolder.nl/albert-heijn
+📄 페이지 제목: 
+📸 스크린샷 저장: albert-heijn.png (727KB)
+🔍 AI 이미지 분석 중...
+✅ 3개 상품 추출 성공!
+⏳ 다음 마트 대기 중...
+
+============================================================
+🛒 Jumbo 크롤링 시작
+============================================================
+🔗 https://www.reclamefolder.nl/jumbo
+📄 페이지 제목: 
+📸 스크린샷 저장: jumbo.png (861KB)
+🔍 AI 이미지 분석 중...
+✅ 2개 상품 추출 성공!
+⏳ 다음 마트 대기 중...
+
+============================================================
+🛒 Lidl 크롤링 시작
+============================================================
+🔗 https://www.reclamefolder.nl/lidl
+📄 페이지 제목: 
+📸 스크린샷 저장: lidl.png (896KB)
+🔍 AI 이미지 분석 중...
+  ⚠️ AI 분석 오류: Expecting value: line 1 column 1 (char 0)
+⚠️ Lidl에서 상품을 찾을 수 없습니다
+⏳ 다음 마트 대기 중...
+
+============================================================
+🛒 Dirk 크롤링 시작
+============================================================
+🔗 https://www.reclamefolder.nl/dirk
+📄 페이지 제목: 
+📸 스크린샷 저장: dirk.png (896KB)
+🔍 AI 이미지 분석 중...
+⚠️ Dirk에서 상품을 찾을 수 없습니다
+⏳ 다음 마트 대기 중...
+
+============================================================
+🛒 ALDI 크롤링 시작
+============================================================
+🔗 https://www.reclamefolder.nl/aldi
+📄 페이지 제목: 
+📸 스크린샷 저장: aldi.png (896KB)
+🔍 AI 이미지 분석 중...
+  ⚠️ AI 분석 오류: Expecting value: line 1 column 1 (char 0)
+⚠️ ALDI에서 상품을 찾을 수 없습니다
+⏳ 다음 마트 대기 중...
+
+============================================================
+🛒 Plus 크롤링 시작
+============================================================
+🔗 https://www.reclamefolder.nl/plus
+📄 페이지 제목: 
+📸 스크린샷 저장: plus.png (896KB)
+🔍 AI 이미지 분석 중...
+  ⚠️ AI 분석 오류: Expecting value: line 1 column 1 (char 0)
+⚠️ Plus에서 상품을 찾을 수 없습니다
+⏳ 다음 마트 대기 중...
+
+============================================================
+🛒 Hoogvliet 크롤링 시작
+============================================================
+🔗 https://www.reclamefolder.nl/hoogvliet
+📄 페이지 제목: 
+📸 스크린샷 저장: hoogvliet.png (896KB)
+🔍 AI 이미지 분석 중...
+  ⚠️ AI 분석 오류: Expecting value: line 1 column 1 (char 0)
+⚠️ Hoogvliet에서 상품을 찾을 수 없습니다
+⏳ 다음 마트 대기 중...
+
+============================================================
+🛒 Coop 크롤링 시작
+============================================================
+🔗 https://www.reclamefolder.nl/coop
+📄 페이지 제목: 
+⚠️ 경고: 페이지에 'Coop' 정보가 없을 수 있습니다
+📸 스크린샷 저장: coop.png (896KB)
+🔍 AI 이미지 분석 중...
+  ⚠️ AI 분석 오류: Expecting value: line 1 column 1 (char 0)
+⚠️ Coop에서 상품을 찾을 수 없습니다
+⏳ 다음 마트 대기 중...
+
+💾 weekly_sales.json 저장 완료
+
+============================================================
+📊 크롤링 완료 요약
+============================================================
+✅ 성공: 2개 마트
+   - Albert Heijn: 3개 상품
+   - Jumbo: 2개 상품
+
+⚠️ 실패: 6개 마트
+   - Lidl
+   - Dirk
+   - ALDI
+   - Plus
+   - Hoogvliet
+   - Coop
+
+📦 총 5개 상품 수집 완료
