@@ -27,34 +27,15 @@ interface Recipe {
 
 interface AffiliateProduct {
   id: string
+  platform: 'amazon' | 'bol'
   name: string
   description: string
   image: string
-  platforms?: {
-    bol?: { url: string; price: string; currency: string; badge?: string; benefit?: string; usp?: string }
-    amazon?: { url: string; price: string; currency: string; badge?: string; benefit?: string; usp?: string }
-  }
-  affiliate_links?: {
-    bol?: { url: string; price: string; currency: string }
-    amazon?: { url: string; price: string; currency: string }
-  }
-  category: string
-  tags?: string[]
-}
-
-interface AffiliateProduct {
-  id: string
-  name: string
-  description: string
-  image: string
-  platforms?: {
-    bol?: { url: string; price: string; currency: string; badge?: string; benefit?: string; usp?: string }
-    amazon?: { url: string; price: string; currency: string; badge?: string; benefit?: string; usp?: string }
-  }
-  affiliate_links?: {
-    bol?: { url: string; price: string; currency: string }
-    amazon?: { url: string; price: string; currency: string }
-  }
+  url: string
+  price: string
+  currency: string
+  badge?: string
+  benefit?: string
   category: string
   tags?: string[]
 }
