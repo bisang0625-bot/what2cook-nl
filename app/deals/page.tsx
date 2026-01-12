@@ -3,10 +3,11 @@
 import { useEffect, useState, useMemo } from 'react'
 import Link from 'next/link'
 import { ChefHat } from 'lucide-react'
-import Tabs from '@/components/Tabs'
-import DealsGrid from '@/components/DealsGrid'
-import BottomNav from '@/components/BottomNav'
-import StoreFilter from '@/components/StoreFilter'
+// 모든 컴포넌트와 데이터를 상대 경로(../../)로 변경하여 Vercel 빌드 에러 방지
+import Tabs from '../../components/Tabs'
+import DealsGrid from '../../components/DealsGrid'
+import BottomNav from '../../components/BottomNav'
+import StoreFilter from '../../components/StoreFilter'
 
 interface SaleProduct {
   store?: string
@@ -40,31 +41,33 @@ export default function DealsPage() {
     const loadData = async () => {
       try {
         setLoading(true)
-        // 이번 주 데이터 시도
+        
+        // 1. 이번 주 세일 데이터 시도 (물리적 상대 경로 사용)
         try {
-          const currentModule = await import('@/data/current_sales.json')
+          const currentModule = await import('../../data/current_sales.json')
           const products = currentModule.default.products || currentModule.default
           setCurrentSales({ products: Array.isArray(products) ? products : [], week_type: 'current' })
         } catch (err) {
           try {
-            const weeklyModule = await import('@/data/weekly_sales.json')
+            // current_sales가 없을 경우 weekly_sales 시도
+            const weeklyModule = await import('../../data/weekly_sales.json')
             const products = weeklyModule.default.products || weeklyModule.default
             setCurrentSales({ products: Array.isArray(products) ? products : [], week_type: 'current' })
           } catch (e) {
-            console.error('No current sales data found')
+            console.warn('No weekly_sales.json found');
           }
         }
 
-        // 다음 주 데이터 시도
+        // 2. 다음 주 세일 데이터 시도
         try {
-          const nextModule = await import('@/data/next_sales.json')
+          const nextModule = await import('../../data/next_sales.json')
           const products = nextModule.default.products || nextModule.default
           setNextSales({ products: Array.isArray(products) ? products : [], week_type: 'next' })
         } catch (err) {
-          console.log('No next sales data found')
+          console.log('No next_sales.json found');
         }
       } catch (err) {
-        console.error('Data loading error:', err)
+        console.error('Critical data loading error:', err)
       } finally {
         setLoading(false)
       }
