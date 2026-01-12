@@ -1,19 +1,11 @@
 'use client'
 
 import { useEffect, useState, useMemo } from 'react'
-import dynamic from 'next/dynamic'
-import Tabs from '@/components/Tabs'
+import Link from 'next/link'
+import { ShoppingBag } from 'lucide-react'
+import RecipeList from '@/components/RecipeList'
+import BottomNav from '@/components/BottomNav'
 import AdSlot from '@/components/AdSlot'
-
-// 코드 스플리팅: Dashboard 컴포넌트 lazy loading
-const Dashboard = dynamic(() => import('@/components/Dashboard'), {
-  loading: () => (
-    <div className="flex items-center justify-center py-12">
-      <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-orange-500"></div>
-    </div>
-  ),
-  ssr: true,
-})
 
 interface Recipe {
   id: string
@@ -47,7 +39,6 @@ export default function Home() {
   const [allRecipes, setAllRecipes] = useState<Recipe[]>([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string>('')
-  const [activeTab, setActiveTab] = useState<'current' | 'upcoming'>('current')
   const [affiliateProducts, setAffiliateProducts] = useState<AffiliateProduct[]>([])
 
   useEffect(() => {
@@ -61,7 +52,9 @@ export default function Home() {
           const currentModule = await import('@/data/current_recipes.json')
           const currentRecipes = currentModule.default as Recipe[]
           console.log(`[What2Cook NL] current_recipes.json 로드: ${currentRecipes.length}개`)
-          recipes.push(...currentRecipes)
+          if (Array.isArray(currentRecipes)) {
+            recipes.push(...currentRecipes)
+          }
         } catch (err) {
           console.log('[What2Cook NL] current_recipes.json 없음, weekly_recipes.json 시도')
           // fallback: weekly_recipes.json (모든 레시피 포함)
@@ -69,7 +62,9 @@ export default function Home() {
             const weeklyModule = await import('@/data/weekly_recipes.json')
             const weeklyRecipes = weeklyModule.default as Recipe[]
             console.log(`[What2Cook NL] weekly_recipes.json 로드: ${weeklyRecipes.length}개`)
-            recipes.push(...weeklyRecipes)
+            if (Array.isArray(weeklyRecipes)) {
+              recipes.push(...weeklyRecipes)
+            }
           } catch (e) {
             console.log('[What2Cook NL] current_recipes.json and weekly_recipes.json 모두 없음')
           }
@@ -80,7 +75,9 @@ export default function Home() {
           const nextModule = await import('@/data/next_recipes.json')
           const nextRecipes = nextModule.default as Recipe[]
           console.log(`[What2Cook NL] next_recipes.json 로드: ${nextRecipes.length}개`)
-          recipes.push(...nextRecipes)
+          if (Array.isArray(nextRecipes)) {
+            recipes.push(...nextRecipes)
+          }
         } catch (err) {
           console.log('[What2Cook NL] next_recipes.json 없음')
         }
@@ -90,7 +87,9 @@ export default function Home() {
           const affiliateModule = await import('@/data/affiliate_products.json')
           const products = affiliateModule.default as AffiliateProduct[]
           console.log(`[What2Cook NL] affiliate_products.json 로드: ${products.length}개`)
-          setAffiliateProducts(products)
+          if (Array.isArray(products)) {
+            setAffiliateProducts(products)
+          }
         } catch (err) {
           console.log('[What2Cook NL] affiliate_products.json 없음 (선택사항)')
         }
@@ -98,10 +97,11 @@ export default function Home() {
         console.log(`[What2Cook NL] 총 ${recipes.length}개 레시피 로드 완료`)
 
         setAllRecipes(recipes)
-        setLoading(false)
       } catch (err: any) {
-        console.error('Error loading recipes:', err)
-        setError(err.message)
+        console.error('[What2Cook NL] 데이터 로드 에러:', err)
+        setError(err?.message || '데이터 로드 중 오류가 발생했습니다')
+      } finally {
+        // 항상 로딩 상태 해제
         setLoading(false)
       }
     }
@@ -225,7 +225,7 @@ export default function Home() {
 
   if (loading) {
     return (
-      <div className="flex items-center justify-center min-h-screen">
+      <div className="flex items-center justify-center min-h-screen bg-gray-50 pb-20 md:pb-8">
         <div className="text-center">
           <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-orange-500 mx-auto mb-4"></div>
           <p className="text-gray-600">레시피 로딩 중...</p>
@@ -236,7 +236,7 @@ export default function Home() {
 
   if (error) {
     return (
-      <div className="flex items-center justify-center min-h-screen">
+      <div className="flex items-center justify-center min-h-screen bg-gray-50 pb-20 md:pb-8">
         <div className="text-center text-red-600">
           <p className="text-xl mb-2">⚠️ 에러 발생</p>
           <p>{error}</p>
@@ -247,7 +247,7 @@ export default function Home() {
 
   if (currentRecipes.length === 0 && upcomingRecipes.length === 0) {
     return (
-      <div className="flex items-center justify-center min-h-screen">
+      <div className="flex items-center justify-center min-h-screen bg-gray-50 pb-20 md:pb-8">
         <div className="text-center text-gray-600">
           <p className="text-xl mb-2">📭 레시피가 없습니다</p>
           <p>먼저 크롤러를 실행해주세요.</p>
@@ -257,85 +257,62 @@ export default function Home() {
   }
 
   return (
-    <main className="min-h-screen bg-gray-50">
-      <div className="container mx-auto px-4 py-8 max-w-7xl">
-        {/* Header */}
-        <div className="mb-8">
-          <h1 className="text-4xl font-bold text-gray-900 mb-2">
+    <main className="min-h-screen bg-gray-50 pb-20 md:pb-8">
+      {/* 헤더 */}
+      <div className="bg-white border-b border-gray-200 sticky top-0 z-40">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+          <h1 className="text-2xl font-bold text-gray-900">
             뭐해먹지 NL
-            <span className="text-2xl text-gray-500 font-normal ml-3">What2Cook NL</span>
+            <span className="text-lg text-gray-500 font-normal ml-2">What2Cook NL</span>
           </h1>
-          <p className="text-gray-600">네덜란드 마트 세일 정보로 결정하는 오늘 한식 식단</p>
+          <p className="text-sm text-gray-600 mt-1">네덜란드 마트 세일 정보로 결정하는 오늘 한식 식단</p>
         </div>
+      </div>
 
-        {/* 상단 광고 슬롯 */}
-        <div className="mb-8">
+      {/* 상단 광고 슬롯 */}
+      <div className="bg-white border-b border-gray-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <AdSlot 
             slotId="header-banner"
             adType="adsense"
             size="banner"
           />
         </div>
-
-        {/* Tabs */}
-        <Tabs
-          tabs={[
-            {
-              id: 'current',
-              label: `📅 이번 주 ${currentRecipes.length > 0 ? `(${currentRecipes.length})` : ''}`,
-              content: (
-                <div>
-                  {currentRecipes.length > 0 ? (
-                    <>
-                      <div className="mb-4 text-sm text-gray-600">
-                        이번 주(월~일) 동안 진행되는 세일 품목과 레시피입니다. 수요일 시작 마트(Jumbo, Dirk)도 포함됩니다.
-                      </div>
-                      <Dashboard 
-                        recipes={currentRecipes} 
-                        showDateBadge={true}
-                        affiliateProducts={affiliateProducts}
-                      />
-                    </>
-                  ) : (
-                    <div className="text-center py-12 text-gray-500">
-                      <p className="text-lg mb-2">이번 주 세일이 없습니다</p>
-                      <p className="text-sm">다음 주 세일을 확인해보세요!</p>
-                    </div>
-                  )}
-                </div>
-              ),
-            },
-            {
-              id: 'upcoming',
-              label: `🔜 다음 주 ${upcomingRecipes.length > 0 ? `(${upcomingRecipes.length})` : ''}`,
-              content: (
-                <div>
-                  {upcomingRecipes.length > 0 ? (
-                    <>
-                      <div className="mb-4 text-sm text-gray-600">
-                        다음 주 월요일부터 시작될 세일 품목과 레시피입니다. 미리 준비하세요!
-                      </div>
-                      <Dashboard 
-                        recipes={upcomingRecipes} 
-                        showDateBadge={true}
-                        affiliateProducts={affiliateProducts}
-                      />
-                    </>
-                  ) : (
-                    <div className="text-center py-12 text-gray-500">
-                      <p className="text-lg mb-2">아직 공개된 다음 주 세일이 없어요!</p>
-                      <p className="text-sm">주말에 다시 와주세요. 보통 토요일~일요일에 다음 주 세일 정보가 공개됩니다.</p>
-                    </div>
-                  )}
-                </div>
-              ),
-            },
-          ]}
-          activeTab={activeTab}
-          onTabChange={(tabId) => setActiveTab(tabId as 'current' | 'upcoming')}
-        />
-
       </div>
+
+      {/* 추천식단 섹션 */}
+      <section id="recipes-section" className="w-full bg-white py-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* 섹션 헤더 */}
+          <div className="mb-6">
+            <div className="flex items-center justify-between mb-2">
+              <h2 className="text-3xl font-bold text-gray-900">
+                추천식단
+              </h2>
+              <Link
+                href="/deals"
+                className="flex items-center gap-2 px-4 py-2 bg-white text-orange-600 border-2 border-orange-500 rounded-lg hover:bg-orange-50 transition-colors duration-200 font-medium text-sm"
+              >
+                <ShoppingBag size={16} />
+                <span>세일리스트 보기</span>
+              </Link>
+            </div>
+            <p className="text-sm text-gray-600">
+              네덜란드 마트 세일 품목으로 추천하는 한식 레시피
+            </p>
+          </div>
+
+          {/* 레시피 리스트 */}
+          <RecipeList
+            currentRecipes={currentRecipes}
+            upcomingRecipes={upcomingRecipes}
+            affiliateProducts={affiliateProducts}
+          />
+        </div>
+      </section>
+
+      {/* 하단 네비게이션 (모바일만) */}
+      <BottomNav />
     </main>
   )
 }
