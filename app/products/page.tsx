@@ -6,29 +6,17 @@ import AffiliateCard from '@/components/ads/AffiliateCard'
 import AffiliateBalancer from '@/components/ads/AffiliateBalancer'
 import AffiliateDisclosure from '@/components/ads/AffiliateDisclosure'
 
-interface PlatformData {
-  url: string
-  price: string
-  currency: string
-  badge: string
-  benefit: string
-  usp: string
-}
-
 interface AffiliateProduct {
   id: string
+  platform: 'amazon' | 'bol'
   name: string
   description: string
   image: string
-  platforms?: {
-    bol?: PlatformData
-    amazon?: PlatformData
-  }
-  // 하위 호환성을 위한 기존 구조
-  affiliate_links?: {
-    bol?: { url: string; price: string; currency: string }
-    amazon?: { url: string; price: string; currency: string }
-  }
+  url: string
+  price: string
+  currency: string
+  badge?: string
+  benefit?: string
   category: string
   tags?: string[]
 }
@@ -78,9 +66,8 @@ export default function ProductsPage() {
     )
   }
 
-  // 새로운 platforms 구조를 가진 상품 필터링
-  const balancerProducts = products.filter(p => p.platforms)
-  const cardProducts = products.filter(p => !p.platforms && p.affiliate_links)
+  // 모든 제품은 단일 플랫폼을 가짐 (platform: 'amazon' | 'bol')
+  // AffiliateCard 컴포넌트가 새로운 구조를 지원하므로 모든 제품 사용 가능
 
   return (
     <main className="min-h-screen bg-gray-50">
@@ -126,38 +113,37 @@ export default function ProductsPage() {
           />
         </div>
 
-        {/* 지능형 제휴 마케팅 위젯 (Balancer) */}
-        {viewMode === 'balancer' && balancerProducts.length > 0 && (
+        {/* 제휴 상품 카드 그리드 */}
+        {products.length > 0 && (
           <div className="mb-12">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
-              🎯 지능형 가격 비교
-            </h2>
-            <p className="text-sm text-gray-600 mb-6">
-              가격, 배송, 신뢰도를 종합적으로 비교해보세요. 버튼 위치는 매번 랜덤하게 배치됩니다.
-            </p>
+            {viewMode === 'balancer' && (
+              <>
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">
+                  🎯 지능형 가격 비교
+                </h2>
+                <p className="text-sm text-gray-600 mb-6">
+                  가격, 배송, 신뢰도를 종합적으로 비교해보세요. 버튼 위치는 매번 랜덤하게 배치됩니다.
+                </p>
+              </>
+            )}
+            {viewMode === 'card' && (
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">
+                📋 기본 상품 카드
+              </h2>
+            )}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {balancerProducts.map((product) => (
-                <AffiliateBalancer
-                  key={product.id}
-                  product={product as any}
-                />
-              ))}
-            </div>
-          </div>
-        )}
-
-        {/* 기본 제휴 상품 카드 */}
-        {viewMode === 'card' && cardProducts.length > 0 && (
-          <div className="mb-12">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
-              📋 기본 상품 카드
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {cardProducts.map((product) => (
-                <AffiliateCard
-                  key={product.id}
-                  product={product as any}
-                />
+              {products.map((product) => (
+                viewMode === 'balancer' ? (
+                  <AffiliateBalancer
+                    key={product.id}
+                    product={product as any}
+                  />
+                ) : (
+                  <AffiliateCard
+                    key={product.id}
+                    product={product}
+                  />
+                )
               ))}
             </div>
           </div>

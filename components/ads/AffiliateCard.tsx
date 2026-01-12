@@ -3,39 +3,17 @@
 import { ExternalLink } from 'lucide-react'
 import Image from 'next/image'
 
-interface AffiliateLink {
-  url: string
-  price: string
-  currency: string
-  badge?: string
-  benefit?: string
-  usp?: string
-}
-
-interface PlatformData {
-  url: string
-  price: string
-  currency: string
-  badge?: string
-  benefit?: string
-  usp?: string
-}
-
 interface AffiliateProduct {
   id: string
+  platform: 'amazon' | 'bol'
   name: string
   description: string
   image: string
-  // 새로운 구조 (platforms)
-  platforms?: {
-    bol?: PlatformData
-    amazon?: PlatformData
-  }
-  // 기존 구조 (하위 호환성)
-  affiliate_links?: {
-    bol?: AffiliateLink
-    amazon?: AffiliateLink
-  }
+  url: string
+  price: string
+  currency: string
+  badge?: string
+  benefit?: string
   category: string
   tags?: string[]
 }
@@ -59,29 +37,58 @@ export default function AffiliateCard({
   className = '',
   inFeedMode = true
 }: AffiliateCardProps) {
-  // 새로운 구조(platforms) 또는 기존 구조(affiliate_links) 지원
-  const bol = product.platforms?.bol || product.affiliate_links?.bol
-  const amazon = product.platforms?.amazon || product.affiliate_links?.amazon
+  const isAmazon = product.platform === 'amazon'
+  const isBol = product.platform === 'bol'
 
   // Badge 텍스트 결정 (Blind Strategy)
-  const getBolBadge = () => {
-    if (bol?.badge) {
-      // "내일 도착" → "Morgen in huis"
-      if (bol.badge.includes('내일 도착') || bol.badge.includes('Morgen')) return 'Morgen in huis'
-      return bol.badge
+  const getBadge = () => {
+    if (product.badge) {
+      if (isBol && (product.badge.includes('내일 도착') || product.badge.includes('Morgen'))) {
+        return 'Morgen in huis'
+      }
+      if (isAmazon && (product.badge.includes('최저가') || product.badge.includes('Best'))) {
+        return 'Best Deal'
+      }
+      return product.badge
     }
-    if (bol?.usp?.includes('배송') || bol?.benefit?.includes('도착')) return 'Morgen in huis'
-    return 'Morgen in huis' // 기본값
+    // 기본값
+    return isBol ? 'Morgen in huis' : 'Best Deal'
   }
 
-  const getAmazonBadge = () => {
-    if (amazon?.badge) {
-      // "최저가" → "Best Deal"
-      if (amazon.badge.includes('최저가') || amazon.badge.includes('Best')) return 'Best Deal'
-      return amazon.badge
+  // 플랫폼별 스타일 결정
+  const getButtonStyles = () => {
+    if (isAmazon) {
+      return {
+        bg: 'bg-[#FF9900]',
+        hoverBg: 'hover:bg-[#FF8800]',
+        textColor: 'text-black',
+        badgeBg: 'bg-orange-500',
+        icon: '📦',
+        label: 'Amazon 확인'
+      }
     }
-    return 'Best Deal' // 기본값
+    if (isBol) {
+      return {
+        bg: 'bg-[#0000FF]',
+        hoverBg: 'hover:bg-[#0000CC]',
+        textColor: 'text-white',
+        badgeBg: 'bg-blue-500',
+        icon: '🇳🇱',
+        label: 'Bol.com 확인'
+      }
+    }
+    // 기본값 (fallback)
+    return {
+      bg: 'bg-gray-500',
+      hoverBg: 'hover:bg-gray-600',
+      textColor: 'text-white',
+      badgeBg: 'bg-gray-600',
+      icon: '🔗',
+      label: '링크 확인'
+    }
   }
+
+  const buttonStyles = getButtonStyles()
 
   return (
     <div 
@@ -136,66 +143,37 @@ export default function AffiliateCard({
 
         {/* Blind UI 버튼 (가격 숨김) */}
         <div className="space-y-2">
-          {/* Bol.com 버튼 */}
-          {bol && (
+          {/* 플랫폼별 버튼 (단일 버튼) */}
+          {product.url && (
             <a
-              href={bol.url}
+              href={product.url}
               target="_blank"
               rel="nofollow sponsored noopener noreferrer"
-              className="
-                relative block w-full bg-[#0000FF] text-white 
+              className={`
+                relative block w-full ${buttonStyles.bg} ${buttonStyles.textColor}
                 px-4 py-2.5 rounded-lg 
                 font-medium text-sm
-                hover:bg-[#0000CC] 
+                ${buttonStyles.hoverBg}
                 transition-colors duration-200
                 flex items-center justify-between
                 group/button
-              "
+              `}
             >
               {/* 상단 뱃지 */}
-              <div className="absolute -top-2 left-3 bg-blue-500 text-white text-xs font-bold px-2 py-0.5 rounded shadow-sm z-10">
-                {getBolBadge()}
+              <div className={`absolute -top-2 left-3 ${buttonStyles.badgeBg} text-white text-xs font-bold px-2 py-0.5 rounded shadow-sm z-10`}>
+                {getBadge()}
               </div>
               
               <div className="flex items-center gap-2">
-                <span className="text-base">🇳🇱</span>
-                <span>Bol.com 확인</span>
+                <span className="text-base">{buttonStyles.icon}</span>
+                <span>{buttonStyles.label}</span>
               </div>
               <ExternalLink className="w-4 h-4 opacity-75 group-hover/button:opacity-100 group-hover/button:translate-x-0.5 transition-all" />
             </a>
           )}
 
-          {/* Amazon.nl 버튼 */}
-          {amazon && (
-            <a
-              href={amazon.url}
-              target="_blank"
-              rel="nofollow sponsored noopener noreferrer"
-              className="
-                relative block w-full bg-[#FF9900] text-black 
-                px-4 py-2.5 rounded-lg 
-                font-medium text-sm
-                hover:bg-[#FF8800] 
-                transition-colors duration-200
-                flex items-center justify-between
-                group/button
-              "
-            >
-              {/* 상단 뱃지 */}
-              <div className="absolute -top-2 left-3 bg-orange-500 text-white text-xs font-bold px-2 py-0.5 rounded shadow-sm z-10">
-                {getAmazonBadge()}
-              </div>
-              
-              <div className="flex items-center gap-2">
-                <span className="text-base">📦</span>
-                <span>Amazon 확인</span>
-              </div>
-              <ExternalLink className="w-4 h-4 opacity-75 group-hover/button:opacity-100 group-hover/button:translate-x-0.5 transition-all" />
-            </a>
-          )}
-
-          {/* 둘 다 없는 경우 */}
-          {!bol && !amazon && (
+          {/* URL이 없는 경우 */}
+          {!product.url && (
             <div className="text-center py-4 text-gray-500 text-sm">
               제휴 링크 정보가 없습니다.
             </div>
