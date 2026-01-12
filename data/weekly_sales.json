@@ -1,0 +1,202 @@
+{
+  "week_number": "2026-03",
+  "sale_period": "2026-01-12 ~ 2026-01-18",
+  "scraped_at": "2026-01-12T23:42:20.861878",
+  "total_products": 18,
+  "supermarkets": {
+    "successful": [
+      "Plus"
+    ],
+    "failed": [
+      "Albert Heijn",
+      "Jumbo",
+      "Dirk",
+      "Lidl",
+      "Aldi",
+      "Hoogvliet",
+      "Coop"
+    ]
+  },
+  "products": [
+    {
+      "supermarket": "Plus",
+      "product_name": "GA NAAR HOOFDINHOUD",
+      "price_info": "0.00",
+      "discount_info": null,
+      "start_date": "2026-01-12T23:42:20.861611",
+      "end_date": "2026-01-18T23:42:20.861611",
+      "source": "official_website",
+      "scraped_at": "2026-01-12T23:42:20.861919"
+    },
+    {
+      "supermarket": "Plus",
+      "product_name": "Producten",
+      "price_info": null,
+      "discount_info": null,
+      "start_date": "2026-01-12T23:42:20.861611",
+      "end_date": "2026-01-18T23:42:20.861611",
+      "source": "official_website",
+      "scraped_at": "2026-01-12T23:42:20.861936"
+    },
+    {
+      "supermarket": "Plus",
+      "product_name": "Extra scherp geprijsd",
+      "price_info": null,
+      "discount_info": null,
+      "start_date": "2026-01-12T23:42:20.861611",
+      "end_date": "2026-01-18T23:42:20.861611",
+      "source": "official_website",
+      "scraped_at": "2026-01-12T23:42:20.861948"
+    },
+    {
+      "supermarket": "Plus",
+      "product_name": "Extra scherp geprijsd",
+      "price_info": null,
+      "discount_info": null,
+      "start_date": "2026-01-12T23:42:20.861611",
+      "end_date": "2026-01-18T23:42:20.861611",
+      "source": "official_website",
+      "scraped_at": "2026-01-12T23:42:20.861957"
+    },
+    {
+      "supermarket": "Plus",
+      "product_name": "Extra scherp geprijsd",
+      "price_info": null,
+      "discount_info": null,
+      "start_date": "2026-01-12T23:42:20.861611",
+      "end_date": "2026-01-18T23:42:20.861611",
+      "source": "official_website",
+      "scraped_at": "2026-01-12T23:42:20.861968"
+    },
+    {
+      "supermarket": "Plus",
+      "product_name": "Optimel Drinkyoghurt",
+      "price_info": null,
+      "discount_info": null,
+      "start_date": "2026-01-12T23:42:20.861611",
+      "end_date": "2026-01-18T23:42:20.861611",
+      "source": "official_website",
+      "scraped_at": "2026-01-12T23:42:20.861981"
+    },
+    {
+      "supermarket": "Plus",
+      "product_name": "Optimel Drinkyoghurt",
+      "price_info": null,
+      "discount_info": null,
+      "start_date": "2026-01-12T23:42:20.861611",
+      "end_date": "2026-01-18T23:42:20.861611",
+      "source": "official_website",
+      "scraped_at": "2026-01-12T23:42:20.861995"
+    },
+    {
+      "supermarket": "Plus",
+      "product_name": "Optimel Drinkyoghurt",
+      "price_info": null,
+      "discount_info": null,
+      "start_date": "2026-01-12T23:42:20.861611",
+      "end_date": "2026-01-18T23:42:20.861611",
+      "source": "official_website",
+      "scraped_at": "2026-01-12T23:42:20.862005"
+    },
+    {
+      "supermarket": "Plus",
+      "product_name": "Optimel Drinkyoghurt",
+      "price_info": null,
+      "discount_info": null,
+      "start_date": "2026-01-12T23:42:20.861611",
+      "end_date": "2026-01-18T23:42:20.861611",
+      "source": "official_website",
+      "scraped_at": "2026-01-12T23:42:20.862021"
+    },
+    {
+      "supermarket": "Plus",
+      "product_name": "2.19 - 2.69",
+      "price_info": null,
+      "discount_info": null,
+      "start_date": "2026-01-12T23:42:20.861611",
+      "end_date": "2026-01-18T23:42:20.861611",
+      "source": "official_website",
+      "scraped_at": "2026-01-12T23:42:20.862033"
+    },
+    {
+      "supermarket": "Plus",
+      "product_name": "Lassie Rijst",
+      "price_info": null,
+      "discount_info": null,
+      "start_date": "2026-01-12T23:42:20.861611",
+      "end_date": "2026-01-18T23:42:20.861611",
+      "source": "official_website",
+      "scraped_at": "2026-01-12T23:42:20.862046"
+    },
+    {
+      "supermarket": "Plus",
+      "product_name": "Lassie Rijst",
+      "price_info": null,
+      "discount_info": null,
+      "start_date": "2026-01-12T23:42:20.861611",
+      "end_date": "2026-01-18T23:42:20.861611",
+      "source": "official_website",
+      "scraped_at": "2026-01-12T23:42:20.862057"
+    },
+    {
+      "supermarket": "Plus",
+      "product_name": "1.39 - 2.55",
+      "price_info": null,
+      "discount_info": null,
+      "start_date": "2026-01-12T23:42:20.861611",
+      "end_date": "2026-01-18T23:42:20.861611",
+      "source": "official_website",
+      "scraped_at": "2026-01-12T23:42:20.862066"
+    },
+    {
+      "supermarket": "Plus",
+      "product_name": "Pickwick Eenkopsthee",
+      "price_info": null,
+      "discount_info": null,
+      "start_date": "2026-01-12T23:42:20.861611",
+      "end_date": "2026-01-18T23:42:20.861611",
+      "source": "official_website",
+      "scraped_at": "2026-01-12T23:42:20.862075"
+    },
+    {
+      "supermarket": "Plus",
+      "product_name": "Pickwick Eenkopsthee",
+      "price_info": null,
+      "discount_info": null,
+      "start_date": "2026-01-12T23:42:20.861611",
+      "end_date": "2026-01-18T23:42:20.861611",
+      "source": "official_website",
+      "scraped_at": "2026-01-12T23:42:20.862083"
+    },
+    {
+      "supermarket": "Plus",
+      "product_name": "1.89 - 2.39",
+      "price_info": null,
+      "discount_info": null,
+      "start_date": "2026-01-12T23:42:20.861611",
+      "end_date": "2026-01-18T23:42:20.861611",
+      "source": "official_website",
+      "scraped_at": "2026-01-12T23:42:20.862093"
+    },
+    {
+      "supermarket": "Plus",
+      "product_name": "3.69 - 4.19",
+      "price_info": null,
+      "discount_info": null,
+      "start_date": "2026-01-12T23:42:20.861611",
+      "end_date": "2026-01-18T23:42:20.861611",
+      "source": "official_website",
+      "scraped_at": "2026-01-12T23:42:20.862103"
+    },
+    {
+      "supermarket": "Plus",
+      "product_name": "1.75",
+      "price_info": null,
+      "discount_info": null,
+      "start_date": "2026-01-12T23:42:20.861611",
+      "end_date": "2026-01-18T23:42:20.861611",
+      "source": "official_website",
+      "scraped_at": "2026-01-12T23:42:20.862113"
+    }
+  ]
+}
