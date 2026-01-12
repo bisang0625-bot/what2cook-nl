@@ -11,7 +11,7 @@ on:
 
 jobs:
   scrape-and-commit:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     
     steps:
       - name: Checkout repository
@@ -40,11 +40,11 @@ jobs:
 
       - name: Install Playwright browsers
         run: |
-          playwright install chromium
-          playwright install-deps chromium
+          playwright install chromium --with-deps
 
       - name: Configure Git
         run: |
+          # Git 설정 (커밋을 위한 사용자 정보)
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
 
