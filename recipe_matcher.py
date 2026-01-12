@@ -82,42 +82,172 @@ class RecipeMatcher:
             grouped[store].append(product)
         return grouped
     
+    def categorize_ingredients(self, products: List[Dict[str, Any]]) -> Dict[str, List[Dict[str, Any]]]:
+        """
+        제품을 주재료/부재료/과일로 분류합니다.
+        카테고리가 'fruits'인 품목은 자동으로 과일로 분류합니다.
+        """
+        # 과일 키워드 리스트 (네덜란드어)
+        fruit_keywords = [
+            'druiven', 'druif', 'grape', 'appel', 'apple', 'aardbei', 'strawberry',
+            'banaan', 'banana', 'sinaasappel', 'orange', 'mandarijn', 'mandarin',
+            'blauwe bessen', 'blueberry', 'framboos', 'raspberry', 'citroen', 'lemon',
+            'kiwi', 'peer', 'pear', 'mango', 'ananas', 'pineapple', 'perzik', 'peach',
+            'kersen', 'cherry', 'pruim', 'plum', 'abrikoos', 'apricot', 'fruit'
+        ]
+        
+        main_ingredients = []
+        sub_ingredients = []
+        fruits = []
+        
+        for product in products[:30]:  # 최대 30개까지만
+            name = (product.get('product_name') or product.get('name', 'Unknown')).lower()
+            category = product.get('category', '').lower()
+            
+            # 카테고리가 'fruits'이거나 과일 키워드가 포함된 경우
+            if category == 'fruits' or any(keyword in name for keyword in fruit_keywords):
+                fruits.append(product)
+                continue
+            
+            # 주재료 판단 (육류, 생선, 두부, 메인 채소 등)
+            main_keywords = [
+                'speklappen', 'kipfilet', 'kippendijen', 'rundvlees', 'varkensvlees',
+                'gehakt', 'zalm', 'vis', 'fish', 'tofu', 'aardappelen', 'aardappel',
+                'kool', 'cabbage', 'ui', 'uien', 'onion', 'wortel', 'wortelen',
+                'carrot', 'paprika', 'pepper', 'tomaat', 'tomaten', 'tomato', 'champignon',
+                'mushroom', 'broccoli', 'spinazie', 'spinach'
+            ]
+            
+            # 부재료/양념 판단
+            sub_keywords = [
+                'knoflook', 'garlic', 'gember', 'ginger', 'soja', 'soy', 'azijn', 'vinegar',
+                'olijfolie', 'olive oil', 'zout', 'salt', 'peper', 'pepper', 'suiker', 'sugar',
+                'melk', 'milk', 'kaas', 'cheese', 'boter', 'butter', 'ei', 'eieren', 'egg'
+            ]
+            
+            if any(keyword in name for keyword in main_keywords):
+                main_ingredients.append(product)
+            elif any(keyword in name for keyword in sub_keywords):
+                sub_ingredients.append(product)
+            else:
+                # 판단 불가능한 경우 주재료로 분류 (메인 요리 중심)
+                main_ingredients.append(product)
+        
+        return {
+            'main': main_ingredients,
+            'sub': sub_ingredients,
+            'fruits': fruits
+        }
+    
     def create_prompt(self, store_name: str, products: List[Dict[str, Any]]) -> str:
         """마트별 레시피 생성을 위한 프롬프트를 작성합니다."""
         
-        # 상품 리스트 정리
-        product_list = []
-        for idx, p in enumerate(products[:30], 1):  # 최대 30개까지만
-            # 'product_name' 또는 'name' 필드 지원 (하위 호환성)
+        # 제품을 주재료/부재료/과일로 분류
+        categorized = self.categorize_ingredients(products)
+        main_products = categorized['main']
+        sub_products = categorized['sub']
+        fruit_products = categorized['fruits']
+        
+        # 상품 리스트 정리 (주재료)
+        main_list = []
+        for idx, p in enumerate(main_products, 1):
             name = p.get('product_name') or p.get('name', 'Unknown')
-            # 'price' 또는 'price_info' 필드 지원
             price = p.get('price') or p.get('price_info', '')
-            # 'discount' 또는 'discount_info' 필드 지원
             discount = p.get('discount') or p.get('discount_info', '')
             
-            product_str = f"{idx}. {name}"
+            product_str = f"{idx}. {name} [주재료]"
             if price:
                 product_str += f" - {price}"
             if discount:
                 product_str += f" ({discount})"
             
-            product_list.append(product_str)
+            main_list.append(product_str)
         
-        products_text = "\n".join(product_list)
+        # 부재료 리스트
+        sub_list = []
+        for idx, p in enumerate(sub_products, 1):
+            name = p.get('product_name') or p.get('name', 'Unknown')
+            price = p.get('price') or p.get('price_info', '')
+            discount = p.get('discount') or p.get('discount_info', '')
+            
+            product_str = f"{idx}. {name} [부재료/양념]"
+            if price:
+                product_str += f" - {price}"
+            if discount:
+                product_str += f" ({discount})"
+            
+            sub_list.append(product_str)
         
-        prompt = f"""당신은 네덜란드 거주 한국인을 위한 요리 전문가입니다.
+        # 과일 리스트
+        fruit_list = []
+        for idx, p in enumerate(fruit_products, 1):
+            name = p.get('product_name') or p.get('name', 'Unknown')
+            price = p.get('price') or p.get('price_info', '')
+            discount = p.get('discount') or p.get('discount_info', '')
+            
+            product_str = f"{idx}. {name} [과일]"
+            if price:
+                product_str += f" - {price}"
+            if discount:
+                product_str += f" ({discount})"
+            
+            fruit_list.append(product_str)
+        
+        main_products_text = "\n".join(main_list) if main_list else "(없음)"
+        sub_products_text = "\n".join(sub_list) if sub_list else "(없음)"
+        fruit_products_text = "\n".join(fruit_list) if fruit_list else "(없음)"
+        
+        prompt = f"""당신은 네덜란드 마트 할인 정보를 기반으로 한국인을 위한 최적의 식단을 제안하는 **'한식 레시피 큐레이터'**입니다. 단순히 식재료 이름을 포함하는 것이 아니라, 실제로 먹었을 때 맛있고 조화로운 레시피를 추천하는 것이 목표입니다.
 
-**{store_name} 이번 주 세일 상품 목록:**
-{products_text}
+**{store_name} 이번 주 세일 상품 목록 (분류 완료):**
+
+**📦 주재료 (Main Ingredients) - 레시피 제목의 중심이 되는 재료:**
+{main_products_text}
+
+**🧂 부재료/양념 (Sub Ingredients/Garnish) - 레시피의 맛을 돋우는 재료:**
+{sub_products_text}
+
+**🍎 과일 (Fruits) - 메인 요리에서 제외, 디저트/사이드 메뉴 전용:**
+{fruit_products_text}
 
 **요청사항:**
 위 세일 상품 중 **한국 요리에 활용 가능한 재료를 최대한 많이 사용**하여 4인 가족(아이 포함)을 위한 한식 메뉴를 **정확히 3개** 추천해주세요.
+
+**[매칭 원칙: 식재료 궁합]**
+
+**1. 메인 식재료 중심:**
+- 할인 품목 중 **'육류(고기), 생선, 두부, 메인 채소(감자, 양배추 등)'**를 핵심 재료로 삼아 레시피를 먼저 고르세요.
+- 예: "Speklappen (삼겹살)" + "Uien (양파)" + "Knoflook (마늘)" → 제육볶음 ✅
+- 예: "Rundergehakt (다진 소고기)" + "Aardappelen (감자)" → 소고기 감자조림 ✅
+
+**2. 과일류 처리 제한 (매우 중요!):**
+- 과일(포도, 사과, 딸기 등)이 할인한다고 해서 이를 **메인 요리(닭갈비, 비빔국수 등)에 강제로 넣지 마세요**.
+- 과일은 오직 **디저트, 샐러드, 혹은 소스의 단맛을 내는 용도**로만 사용하세요.
+- **금지 조합 예시:**
+  - ❌ "포도를 넣은 닭갈비"
+  - ❌ "쌈무와 청포도 쌈"
+  - ❌ "사과를 넣은 제육볶음"
+- **허용 조합 예시:**
+  - ✅ "청포도 에이드" (음료/디저트)
+  - ✅ "과일 샐러드" (샐러드)
+  - ✅ "사과 소스" (소스 재료)
+
+**3. 대체 식재료 상식:**
+- 네덜란드 마트 식재료를 한식에 맞게 변형할 때는 한국인이 납득 가능한 범위를 지키세요.
+- 예: Stamppot 채소 → 볶음밥용 채소나 국거리용으로 추천 ✅
+- 예: 청포도 → 닭갈비에 넣기 ❌ / 청포도 에이드나 식후 과일로 추천 ✅
+
+**4. 레시피 생성 우선순위:**
+- **1순위 (정석 조합):** 할인 중인 삼겹살 + 마늘/양파 → 제육볶음
+- **2순위 (현지 식재료 활용):** 할인 중인 다진 소고기 + 네덜란드 감자 → 소고기 감자조림
+- **3순위 (메인 재료 부족 시):** 메인 재료가 부족하고 과일만 할인한다면, 억지로 메인 요리를 만들지 말고 **"이번 주 후식 추천"** 혹은 **"가벼운 브런치"** 카테고리로 분류하세요.
 
 **중요 조건 (일관성 필수!):**
 1. 각 메뉴는 **위 세일 상품 중 최소 2-3개**를 실제로 사용해야 합니다
 2. **main_ingredients**에는 **네덜란드어 상품명과 한국어 번역을 함께** 기입하세요
    - 형식: "네덜란드어명 (한국어명)"
    - 예: "Speklappen (삼겹살)", "Kipfilet (닭가슴살)", "Witte druiven (청포도)"
+   - **과일은 메인 요리가 아닌 경우에만 포함** (디저트/음료/샐러드)
 3. **menu_name (제목)은 반드시 main_ingredients에 포함된 실제 재료를 반영해야 합니다**
    - **제목은 한국어만 사용** (네덜란드어 제목 금지!)
    - 예: main_ingredients에 "Kipfilet (닭가슴살)"이 있으면 → 제목은 "닭가슴살..."로 시작
@@ -129,6 +259,7 @@ class RecipeMatcher:
    - 제목이 "어깨살 구이"면 설명에도 "어깨살"이 나와야 함
 5. 세일 혜택(1+1, 할인율)을 활용한 비용 절감 팁 포함
 6. 다양한 카테고리: 국/찌개, 볶음, 구이, 조림 등
+7. **사용자가 "이 재료로 이걸 만든다고?"라는 의문이 들지 않게 하세요**
 
 **네덜란드어-한국어 식품 참고:**
 - Speklappen = 삼겹살/돼지 뱃살
@@ -151,8 +282,9 @@ class RecipeMatcher:
 [
   {{
     "store": "{store_name}",
-    "menu_name": "메뉴명 (한글)",
+    "menu_name": "메뉴명 (한글, 주재료 중심)",
     "main_ingredients": ["Speklappen (삼겹살)", "Kimchi (김치)", "Tofu (두부)"],
+    "sale_ingredients": ["Knoflook (마늘)", "Witte druiven (청포도)"],
     "description": "요리 설명 (1-2문장)",
     "tags": {{
       "is_spicy": true/false,
@@ -168,6 +300,13 @@ class RecipeMatcher:
 ]
 ```
 
+**필드 설명:**
+- **menu_name**: 주재료 중심의 메뉴명 (한국어만)
+- **main_ingredients**: 메인 요리에 실제 사용되는 재료 (주재료 + 부재료, 네덜란드어+한국어)
+- **sale_ingredients**: 세일 중인 부재료/과일 목록 (레시피 제목에는 반영되지 않지만 세일 혜택을 받는 재료)
+  - 예: "Knoflook (마늘)", "Witte druiven (청포도)" 등
+  - 부재료나 과일이 메인 요리에 사용되지 않더라도, 세일 중인 재료이면 여기에 포함
+
 **태그 설명:**
 - is_party_food: 손님 접대용 요리 (잡채, 불고기, 갈비찜 등)
 - is_alcohol_snack: 술안주 (두부김치, 해물파전, 오징어볶음 등)
@@ -175,26 +314,52 @@ class RecipeMatcher:
 - is_spicy: 고추장/고춧가루 들어가면 true
 
 **예시 (일관성 중요!):**
-만약 "Speklappen €3.99 (1+1)"이 세일 중이라면:
-- menu_name: "삼겹살 김치찌개" (한국어만, main_ingredients의 "Speklappen (삼겹살)" 반영)
-- main_ingredients: ["Speklappen (삼겹살)", "Kimchi (김치)", "Tofu (두부)"]
+만약 "Speklappen €3.99 (1+1)"(주재료), "Knoflook €0.99"(부재료), "Witte druiven €1.49"(과일)이 세일 중이라면:
+- menu_name: "삼겹살 김치찌개" (주재료 중심, 한국어만)
+- main_ingredients: ["Speklappen (삼겹살)", "Kimchi (김치)", "Tofu (두부)", "Knoflook (마늘)"]
+  - 주재료와 부재료 모두 포함 (실제 요리에 사용)
+- sale_ingredients: ["Knoflook (마늘)"]
+  - 부재료는 여기에 별도 표시 (레시피 제목에는 반영되지 않음)
+  - 과일은 메인 요리에 사용하지 않으므로 포함하지 않음
 - description: "삼겹살과 김치를 넣어 끓인 얼큰한 찌개..." (제목과 재료 일치)
 - cost_saving_tip: "Speklappen(삼겹살) 1+1 기회를 활용해 김치찌개를 넉넉히 끓이세요"
+
+**과일만 세일 중인 경우:**
+- menu_name: "청포도 에이드" (디저트/음료)
+- main_ingredients: ["Witte druiven (청포도)", "Suiker (설탕)", "Water (물)"]
+- sale_ingredients: ["Witte druiven (청포도)"]
+- description: "신선한 청포도를 활용한 상큼한 에이드..."
+- tags: {{"is_kid_friendly": true, "cooking_time": "10min"}}
 
 **잘못된 예시 (절대 하지 마세요!):**
 - menu_name: "고등어 구이" 
 - main_ingredients: ["Verse schouderkarbonade (어깨살)", ...]  ❌ 제목과 재료 불일치!
-- description: "어깨살 구이와..."  ❌ 제목과 설명 불일치!
 
 - menu_name: "AH Verse Pasta's를 활용한..."  ❌ 제목에 네덜란드어 포함!
 
+- menu_name: "마늘 볶음"  ❌ 부재료를 제목에 사용!
+- main_ingredients: ["Knoflook (마늘)", ...]  ❌ 주재료가 아닌 부재료 중심!
+
+- menu_name: "포도를 넣은 닭갈비"  ❌ 과일을 메인 요리에 강제 포함!
+- main_ingredients: ["Kipfilet (닭가슴살)", "Witte druiven (청포도)", ...]  ❌ 괴식 조합!
+
 **올바른 예시:**
-- menu_name: "어깨살 구이" (한국어만!)
-- main_ingredients: ["Verse schouderkarbonade (어깨살)", ...]  ✅ 일치!
+- menu_name: "어깨살 구이" (주재료 중심, 한국어만!)
+- main_ingredients: ["Verse schouderkarbonade (어깨살)", "Knoflook (마늘)", "Uien (양파)"]  ✅ 일치!
+- sale_ingredients: ["Knoflook (마늘)"]  ✅ 부재료는 별도 표시
 - description: "어깨살을 구워..."  ✅ 일치!
 
-- menu_name: "파스타를 활용한 김치볶음" (한국어만!)
-- main_ingredients: ["AH Verse pasta's (AH 신선 파스타)", ...]  ✅ 재료에 네덜란드어+한국어
+- menu_name: "삼겹살 김치찌개" (주재료 중심!)
+- main_ingredients: ["Speklappen (삼겹살)", "Kimchi (김치)", "Knoflook (마늘)"]  ✅
+- sale_ingredients: ["Knoflook (마늘)"]  ✅ 부재료는 별도 표시
+- description: "삼겹살과 김치를 넣어..."  ✅ 주재료 중심 설명
+
+- menu_name: "청포도 에이드" (과일을 디저트/음료로 활용) ✅
+- main_ingredients: ["Witte druiven (청포도)", "Suiker (설탕)", ...]  ✅ 적절한 활용!
+- sale_ingredients: ["Witte druiven (청포도)"]  ✅ 과일은 세일 재료로 표시
+
+- menu_name: "제육볶음" (메인 재료 중심) ✅
+- main_ingredients: ["Speklappen (삼겹살)", "Knoflook (마늘)", "Uien (양파)"]  ✅ 정석 조합!
 """
         
         return prompt
