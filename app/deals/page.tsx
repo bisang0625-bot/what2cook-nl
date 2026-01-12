@@ -3,10 +3,10 @@
 import { useEffect, useState, useMemo } from 'react'
 import Link from 'next/link'
 import { ChefHat } from 'lucide-react'
-import Tabs from '../../components/Tabs'
-import DealsGrid from '../../components/DealsGrid'
-import BottomNav from '../../components/BottomNav'
-import StoreFilter from '../../components/StoreFilter'
+import Tabs from '@/components/Tabs'
+import DealsGrid from '@/components/DealsGrid'
+import BottomNav from '@/components/BottomNav'
+import StoreFilter from '@/components/StoreFilter'
 
 interface SaleProduct {
   store?: string
@@ -42,12 +42,12 @@ export default function DealsPage() {
         setLoading(true)
         // 이번 주 데이터 시도
         try {
-          const currentModule = await import('../../data/current_sales.json')
+          const currentModule = await import('@/data/current_sales.json')
           const products = currentModule.default.products || currentModule.default
           setCurrentSales({ products: Array.isArray(products) ? products : [], week_type: 'current' })
         } catch (err) {
           try {
-            const weeklyModule = await import('../../data/weekly_sales.json')
+            const weeklyModule = await import('@/data/weekly_sales.json')
             const products = weeklyModule.default.products || weeklyModule.default
             setCurrentSales({ products: Array.isArray(products) ? products : [], week_type: 'current' })
           } catch (e) {
@@ -57,7 +57,7 @@ export default function DealsPage() {
 
         // 다음 주 데이터 시도
         try {
-          const nextModule = await import('../../data/next_sales.json')
+          const nextModule = await import('@/data/next_sales.json')
           const products = nextModule.default.products || nextModule.default
           setNextSales({ products: Array.isArray(products) ? products : [], week_type: 'next' })
         } catch (err) {
@@ -148,9 +148,9 @@ export default function DealsPage() {
               label: `📅 이번 주 (${filteredCurrent.length})`,
               content: (
                 <div className="mt-6 space-y-8">
-                  {categorizedCurrent.main.length > 0 && <DealsGrid products={categorizedCurrent.main} categoryLabel="🥩 주재료 (고기, 채소)" />}
-                  {categorizedCurrent.sub.length > 0 && <DealsGrid products={categorizedCurrent.sub} categoryLabel="🧂 부재료 및 양념" />}
-                  {categorizedCurrent.fruits.length > 0 && <DealsGrid products={categorizedCurrent.fruits} categoryLabel="🍎 과일 및 후식" />}
+                  {categorizedCurrent.main.length > 0 && <DealsGrid products={categorizedCurrent.main} category="main" categoryLabel="🥩 주재료 (고기, 채소)" />}
+                  {categorizedCurrent.sub.length > 0 && <DealsGrid products={categorizedCurrent.sub} category="sub" categoryLabel="🧂 부재료 및 양념" />}
+                  {categorizedCurrent.fruits.length > 0 && <DealsGrid products={categorizedCurrent.fruits} category="fruits" categoryLabel="🍎 과일 및 후식" />}
                 </div>
               )
             },
@@ -161,8 +161,8 @@ export default function DealsPage() {
                 <div className="mt-6 space-y-8">
                   {filteredNext.length > 0 ? (
                     <>
-                      {categorizedNext.main.length > 0 && <DealsGrid products={categorizedNext.main} categoryLabel="🥩 주재료 (고기, 채소)" />}
-                      {categorizedNext.fruits.length > 0 && <DealsGrid products={categorizedNext.fruits} categoryLabel="🍎 과일 및 후식" />}
+                      {categorizedNext.main.length > 0 && <DealsGrid products={categorizedNext.main} category="main" categoryLabel="🥩 주재료 (고기, 채소)" />}
+                      {categorizedNext.fruits.length > 0 && <DealsGrid products={categorizedNext.fruits} category="fruits" categoryLabel="🍎 과일 및 후식" />}
                     </>
                   ) : (
                     <div className="text-center py-10 text-gray-500">다음 주 세일 정보 준비 중입니다.</div>
