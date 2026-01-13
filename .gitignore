@@ -17,7 +17,7 @@ config.py
 
 # Data files (generated)
 data/next_week_bonus.json
-data/weekly_sales.json
+#data/weekly_sales.json
 data/weekly_sales_backup_*.json
 # weekly_recipes.json은 샘플 데이터로 커밋 (실제 데이터는 recipe_matcher.py가 생성)
 
