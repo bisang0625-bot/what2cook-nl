@@ -3,19 +3,21 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { ChefHat, ShoppingBag } from 'lucide-react'
+import { useI18n } from './i18n/I18nProvider'
 
 export default function BottomNav() {
   const pathname = usePathname()
+  const { t } = useI18n()
 
   const navItems = [
     {
-      label: '홈(레시피)',
+      label: t('nav.recipes'),
       href: '/',
       icon: ChefHat,
       active: pathname === '/',
     },
     {
-      label: '세일정보',
+      label: t('nav.deals'),
       href: '/deals',
       icon: ShoppingBag,
       active: pathname === '/deals',

@@ -1,6 +1,7 @@
 'use client'
 
 import { ExternalLink, ShoppingBag, TrendingDown } from 'lucide-react'
+import { useI18n } from './i18n/I18nProvider'
 
 interface AffiliateLink {
   url: string
@@ -52,6 +53,8 @@ export default function AffiliateComparison({
   product,
   className = ''
 }: AffiliateComparisonProps) {
+  const { t } = useI18n()
+
   // 새로운 구조(platforms) 또는 기존 구조(affiliate_links) 지원
   const bol = product.platforms?.bol || product.affiliate_links?.bol
   const amazon = product.platforms?.amazon || product.affiliate_links?.amazon
@@ -103,7 +106,7 @@ export default function AffiliateComparison({
                 {cheaperStore === 'bol' && (
                   <span className="flex items-center gap-1 text-xs text-green-600 bg-green-100 px-2 py-0.5 rounded">
                     <TrendingDown className="w-3 h-3" />
-                    최저가
+                    {t('affiliateComparison.bestPrice')}
                   </span>
                 )}
               </div>
@@ -136,7 +139,7 @@ export default function AffiliateComparison({
                 {cheaperStore === 'amazon' && (
                   <span className="flex items-center gap-1 text-xs text-green-600 bg-green-100 px-2 py-0.5 rounded">
                     <TrendingDown className="w-3 h-3" />
-                    최저가
+                    {t('affiliateComparison.bestPrice')}
                   </span>
                 )}
               </div>
@@ -151,7 +154,7 @@ export default function AffiliateComparison({
         {/* 둘 다 없는 경우 */}
         {!bol && !amazon && (
           <div className="text-center py-4 text-gray-500 text-sm">
-            제휴 링크 정보가 없습니다.
+            {t('affiliateComparison.noLinks')}
           </div>
         )}
       </div>
@@ -159,9 +162,7 @@ export default function AffiliateComparison({
       {/* 법적 준수: 투명성 공지 */}
       <div className="mt-4 pt-4 border-t border-gray-200">
         <p className="text-xs text-gray-500 leading-relaxed">
-          <strong className="text-gray-700">투명성 공지:</strong> 위 링크를 통해 구매하시면 
-          저희가 소정의 수수료를 받을 수 있습니다. 이는 서비스 운영에 도움이 되며, 
-          구매 가격에는 영향을 주지 않습니다.
+          <strong className="text-gray-700">{t('affiliateComparison.noticeTitle')}</strong> {t('affiliateComparison.noticeText')}
         </p>
       </div>
     </div>

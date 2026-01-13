@@ -3,6 +3,7 @@
 import { useState, useMemo } from 'react'
 import { ChevronRight, ShoppingBag } from 'lucide-react'
 import Tabs from './Tabs'
+import { useI18n } from './i18n/I18nProvider'
 
 interface SaleProduct {
   store?: string
@@ -36,6 +37,7 @@ export default function WeeklySalesList({
   onRecipeFilter
 }: WeeklySalesListProps) {
   const [activeTab, setActiveTab] = useState<'current' | 'next'>('current')
+  const { t } = useI18n()
 
   // 제품을 주재료/부재료/과일로 분류
   const categorizeProducts = (products: SaleProduct[]) => {
@@ -258,7 +260,7 @@ export default function WeeklySalesList({
           className="w-full flex items-center justify-center gap-2 text-sm font-medium text-orange-600 hover:text-orange-700 hover:bg-orange-50 py-2 px-3 rounded-lg transition-colors duration-200 border border-orange-200"
         >
           <ShoppingBag size={16} />
-          <span>이 재료로 추천하는 레시피 보기</span>
+          <span>{t('sales.cta.recipesForIngredient')}</span>
           <ChevronRight size={16} />
         </button>
       </div>
@@ -276,10 +278,10 @@ export default function WeeklySalesList({
         {/* 헤더 */}
         <div className="mb-6">
           <h2 className="text-2xl font-bold text-gray-900 mb-2">
-            🛒 마트별 주간 세일 리스트
+            🛒 {t('sales.weekly.title')}
           </h2>
           <p className="text-sm text-gray-600">
-            이번 주 장볼 거리를 미리 확인하고 추천 레시피를 확인하세요!
+            {t('sales.weekly.subtitle')}
           </p>
         </div>
 
@@ -288,13 +290,13 @@ export default function WeeklySalesList({
           tabs={[
             {
               id: 'current',
-              label: `📅 이번 주 ${hasCurrentData ? `(${currentProducts.length})` : ''}`,
+              label: `📅 ${t('deals.tab.thisWeek')} ${hasCurrentData ? `(${currentProducts.length})` : ''}`,
               content: (
                 <div className="mt-6">
                   {!hasCurrentData ? (
                     <div className="text-center py-12 text-gray-500">
-                      <p className="text-lg mb-2">이번 주 세일 정보가 없습니다</p>
-                      <p className="text-sm">다음 주 세일을 확인해보세요!</p>
+                      <p className="text-lg mb-2">{t('recipes.thisWeek.empty.title')}</p>
+                      <p className="text-sm">{t('recipes.thisWeek.empty.subtitle')}</p>
                     </div>
                   ) : (
                     <div className="space-y-8">
@@ -303,7 +305,7 @@ export default function WeeklySalesList({
                         <div>
                           <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
                             <ShoppingBag size={20} />
-                            주재료 (고기, 생선, 주요 채소)
+                            {t('deals.category.main')}
                           </h3>
                           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                             {categorizedCurrent.main.map((product, index) => renderProductCard(product, index))}
@@ -315,7 +317,7 @@ export default function WeeklySalesList({
                       {categorizedCurrent.sub.length > 0 && (
                         <div>
                           <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-                            🧂 부재료/양념
+                            {t('deals.category.sub')}
                           </h3>
                           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                             {categorizedCurrent.sub.map((product, index) => renderProductCard(product, index))}
@@ -327,7 +329,7 @@ export default function WeeklySalesList({
                       {categorizedCurrent.fruits.length > 0 && (
                         <div>
                           <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-                            🍎 과일 / 사이드 / 디저트
+                            {t('deals.category.fruits')}
                           </h3>
                           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                             {categorizedCurrent.fruits.map((product, index) => renderProductCard(product, index))}
@@ -341,13 +343,13 @@ export default function WeeklySalesList({
             },
             {
               id: 'next',
-              label: `🔜 다음 주 ${hasNextData ? `(${nextProducts.length})` : ''}`,
+              label: `🔜 ${t('deals.tab.nextWeek')} ${hasNextData ? `(${nextProducts.length})` : ''}`,
               content: (
                 <div className="mt-6">
                   {!hasNextData ? (
                     <div className="text-center py-12 text-gray-500">
-                      <p className="text-lg mb-2">아직 공개된 다음 주 세일이 없어요!</p>
-                      <p className="text-sm">주말에 다시 와주세요. 보통 토요일~일요일에 다음 주 세일 정보가 공개됩니다.</p>
+                      <p className="text-lg mb-2">{t('recipes.nextWeek.empty.title')}</p>
+                      <p className="text-sm">{t('recipes.nextWeek.empty.subtitle')}</p>
                     </div>
                   ) : (
                     <WeeklySalesListContent
@@ -375,6 +377,7 @@ function WeeklySalesListContent({
   products: SaleProduct[]
   onRecipeFilter?: (productName: string, store: string) => void
 }) {
+  const { t } = useI18n()
   const categorizeProducts = (products: SaleProduct[]) => {
     const fruitKeywords = [
       'druiven', 'druif', 'grape', 'appel', 'apple', 'aardbei', 'strawberry',
@@ -523,7 +526,7 @@ function WeeklySalesListContent({
           className="w-full flex items-center justify-center gap-2 text-sm font-medium text-orange-600 hover:text-orange-700 hover:bg-orange-50 py-2 px-3 rounded-lg transition-colors duration-200 border border-orange-200"
         >
           <ShoppingBag size={16} />
-          <span>이 재료로 추천하는 레시피 보기</span>
+          <span>{t('sales.cta.recipesForIngredient')}</span>
           <ChevronRight size={16} />
         </button>
       </div>
@@ -536,7 +539,7 @@ function WeeklySalesListContent({
         <div>
           <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
             <ShoppingBag size={20} />
-            주재료 (고기, 생선, 주요 채소)
+            {t('deals.category.main')}
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {categorized.main.map((product, index) => renderProductCard(product, index))}
@@ -547,7 +550,7 @@ function WeeklySalesListContent({
       {categorized.sub.length > 0 && (
         <div>
           <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-            🧂 부재료/양념
+            {t('deals.category.sub')}
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {categorized.sub.map((product, index) => renderProductCard(product, index))}
@@ -558,7 +561,7 @@ function WeeklySalesListContent({
       {categorized.fruits.length > 0 && (
         <div>
           <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-            🍎 과일 / 사이드 / 디저트
+            {t('deals.category.fruits')}
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {categorized.fruits.map((product, index) => renderProductCard(product, index))}

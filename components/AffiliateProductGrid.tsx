@@ -3,6 +3,7 @@
 import AffiliateComparison from './AffiliateComparison'
 import AffiliateDisclosure from './ads/AffiliateDisclosure'
 import { ShoppingBag } from 'lucide-react'
+import { useI18n } from './i18n/I18nProvider'
 
 interface AffiliateProduct {
   id: string
@@ -36,14 +37,17 @@ interface AffiliateProductGridProps {
  */
 export default function AffiliateProductGrid({
   products,
-  title = '추천 상품',
+  title,
   className = ''
 }: AffiliateProductGridProps) {
+  const { t } = useI18n()
+  const resolvedTitle = title || t('products.title')
+
   if (!products || products.length === 0) {
     return (
       <div className={`text-center py-8 text-gray-500 ${className}`}>
         <ShoppingBag className="w-12 h-12 mx-auto mb-3 text-gray-300" />
-        <p>추천 상품이 없습니다.</p>
+        <p>{t('products.empty.title')}</p>
       </div>
     )
   }
@@ -51,9 +55,9 @@ export default function AffiliateProductGrid({
   return (
     <section className={`affiliate-products ${className}`}>
       <div className="mb-6">
-        <h2 className="text-2xl font-bold text-gray-900 mb-2">{title}</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mb-2">{resolvedTitle}</h2>
         <p className="text-sm text-gray-600">
-          한식 요리에 필요한 추천 상품을 비교해보세요
+          {t('products.subtitle')}
         </p>
       </div>
 

@@ -14,18 +14,18 @@
     "tags": ["한식", "필수", "고추장"]
   },
   {
-    "id": "bol-ramen-snack-box",
-    "platform": "bol",
-    "name": "Koreaanse Ramen & Snack Box (20-delig)",
-    "description": "불닭볶음면 까르보나라, 농심 김치라면 등 엄선된 한국 라면과 스낵 20종 세트! 선물용으로도 최고입니다.",
-    "image": "https://media.s-bol.com/BZLoxOyrO3LQ/O75A1VN/550x547.jpg",
-    "url": "https://www.bol.com/nl/nl/p/samyang-hot-chicken-noedel-ramen-12-packs-kerstcadeau-verjaardaggeschenk-hot-chicken-2x-spicy-curry-kimchi-cheese-carbonara-noodles/9300000095345247/",
-    "price": "€29.95",
+    "id": "amazon-dolsot-bowl",
+    "platform": "amazon",
+    "name": "Dolsot Bowl",
+    "description": "집에서도 제대로 즐기는 깊고 고소한 맛, 불맛까지 살려주는 정통 돌솥.",
+    "image": "https://m.media-amazon.com/images/I/714s1-kxRjL._AC_SX679_.jpg",
+    "url": "https://amzn.to/3NffP7r",
+    "price": "€21.99",
     "currency": "EUR",
-    "badge": "Bol.com Besteller",
-    "benefit": "무료 배송",
-    "category": "snacks",
-    "tags": ["라면", "스낵박스", "선물세트"]
+    "badge": "amazon.nl",
+    "benefit": "Prime 무료 배송",
+    "category": "kitchenware",
+    "tags": ["돌솥밥", "한식", "비빔밥"]
   },
   {
     "id": "amazon-yondu-spicy",

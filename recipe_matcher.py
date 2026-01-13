@@ -278,14 +278,37 @@ class RecipeMatcher:
 - Eieren = 계란
 
 **JSON 형식 (다른 텍스트 없이 JSON만 출력):**
+**⚠️ 필수: menu_name, description, cost_saving_tip을 반드시 한국어/영어/네덜란드어 3개 버전으로 제공하세요!**
+**각 레시피 객체에 다음 필드들이 모두 포함되어야 합니다:**
+
+- **menu_name**: 한국어 메뉴명 (예: "파스타 닭갈비")
+- **menu_name_en**: 영어 메뉴명 (예: "Pasta Chicken Dak-galbi") - 필수!
+- **menu_name_nl**: 네덜란드어 메뉴명 (예: "Pasta Kip Dak-galbi") - 필수!
+- **description**: 한국어 설명
+- **description_en**: 영어 설명 - 필수!
+- **description_nl**: 네덜란드어 설명 - 필수!
+- **cost_saving_tip**: 한국어 팁 (있는 경우)
+- **cost_saving_tip_en**: 영어 팁 (cost_saving_tip이 있으면 필수!)
+- **cost_saving_tip_nl**: 네덜란드어 팁 (cost_saving_tip이 있으면 필수!)
+
+**번역 규칙:**
+- 상점명("Albert Heijn", "Jumbo" 등)은 번역하지 마세요
+- 브랜드명("Amazon", "bol.com" 등)은 번역하지 마세요
+- 숫자, 이모지, 구두점은 그대로 유지하세요
+- 자연스러운 표현을 사용하세요 (직역 금지)
+
 ```json
 [
   {{
     "store": "{store_name}",
     "menu_name": "메뉴명 (한글, 주재료 중심)",
+    "menu_name_en": "Menu name in English",
+    "menu_name_nl": "Menunaam in het Nederlands",
     "main_ingredients": ["Speklappen (삼겹살)", "Kimchi (김치)", "Tofu (두부)"],
     "sale_ingredients": ["Knoflook (마늘)", "Witte druiven (청포도)"],
-    "description": "요리 설명 (1-2문장)",
+    "description": "요리 설명 (1-2문장, 한국어)",
+    "description_en": "Recipe description in English",
+    "description_nl": "Receptbeschrijving in het Nederlands",
     "tags": {{
       "is_spicy": true/false,
       "is_vegetarian": true/false,
@@ -295,7 +318,9 @@ class RecipeMatcher:
       "cooking_time": "25min"
     }},
     "shopping_list": ["재료1 (한국어)", "재료2 (한국어)", ...],
-    "cost_saving_tip": "세일 활용 팁"
+    "cost_saving_tip": "세일 활용 팁 (한국어)",
+    "cost_saving_tip_en": "Cost-saving tip in English",
+    "cost_saving_tip_nl": "Bespaartip in het Nederlands"
   }}
 ]
 ```
@@ -397,6 +422,16 @@ class RecipeMatcher:
             
             # UUID 추가
             recipe_data['id'] = str(uuid.uuid4())
+            
+            # 번역 필드 확인 및 로그
+            has_translations = all([
+                recipe_data.get('menu_name_en'),
+                recipe_data.get('menu_name_nl'),
+                recipe_data.get('description_en'),
+                recipe_data.get('description_nl')
+            ])
+            if not has_translations:
+                print(f"  ⚠️  번역 필드 누락: {recipe_data.get('menu_name', 'Unknown')}")
             
             # 태그 검증
             if 'tags' in recipe_data and isinstance(recipe_data['tags'], dict):

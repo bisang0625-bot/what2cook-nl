@@ -4,6 +4,7 @@ import { useState, useMemo } from 'react'
 import { ShoppingBag, ChefHat } from 'lucide-react'
 import Link from 'next/link'
 import Tabs from './Tabs'
+import { useI18n } from './i18n/I18nProvider'
 
 interface SaleProduct {
   store?: string
@@ -35,6 +36,7 @@ export default function DealsSection({
   nextSales
 }: DealsSectionProps) {
   const [activeTab, setActiveTab] = useState<'current' | 'next'>('current')
+  const { t } = useI18n()
 
   // 제품을 주재료/부재료/과일로 분류
   const categorizeProducts = (products: SaleProduct[]) => {
@@ -207,10 +209,10 @@ export default function DealsSection({
         {/* 섹션 헤더 */}
         <div className="mb-6">
           <h2 className="text-3xl font-bold text-gray-900 mb-2">
-            🛒 마트별 주간 세일 리스트
+            🛒 {t('sales.weekly.title')}
           </h2>
           <p className="text-sm text-gray-600">
-            이번 주 장볼 거리를 미리 확인하고 추천 레시피를 확인하세요!
+            {t('sales.weekly.subtitle')}
           </p>
         </div>
 
@@ -219,13 +221,13 @@ export default function DealsSection({
           tabs={[
             {
               id: 'current',
-              label: `📅 이번 주 ${hasCurrentData ? `(${currentProducts.length})` : ''}`,
+              label: `📅 ${t('deals.tab.thisWeek')} ${hasCurrentData ? `(${currentProducts.length})` : ''}`,
               content: (
                 <div className="mt-6">
                   {!hasCurrentData ? (
                     <div className="text-center py-12 text-gray-500">
-                      <p className="text-lg mb-2">이번 주 세일 정보가 없습니다</p>
-                      <p className="text-sm">다음 주 세일을 확인해보세요!</p>
+                      <p className="text-lg mb-2">{t('recipes.thisWeek.empty.title')}</p>
+                      <p className="text-sm">{t('recipes.thisWeek.empty.subtitle')}</p>
                     </div>
                   ) : (
                     <div className="space-y-6">
@@ -234,7 +236,7 @@ export default function DealsSection({
                         <div>
                           <h3 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
                             <ShoppingBag size={18} />
-                            주재료 (고기, 생선, 주요 채소)
+                            {t('deals.category.main')}
                           </h3>
                           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
                             {categorizedCurrent.main.map((product, index) => renderProductCard(product, index))}
@@ -246,7 +248,7 @@ export default function DealsSection({
                       {categorizedCurrent.sub.length > 0 && (
                         <div>
                           <h3 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
-                            🧂 부재료/양념
+                            {t('deals.category.sub')}
                           </h3>
                           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
                             {categorizedCurrent.sub.map((product, index) => renderProductCard(product, index))}
@@ -258,7 +260,7 @@ export default function DealsSection({
                       {categorizedCurrent.fruits.length > 0 && (
                         <div>
                           <h3 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
-                            🍎 과일 / 사이드 / 디저트
+                            {t('deals.category.fruits')}
                           </h3>
                           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
                             {categorizedCurrent.fruits.map((product, index) => renderProductCard(product, index))}
@@ -272,13 +274,13 @@ export default function DealsSection({
             },
             {
               id: 'next',
-              label: `🔜 다음 주 ${hasNextData ? `(${nextProducts.length})` : ''}`,
+              label: `🔜 ${t('deals.tab.nextWeek')} ${hasNextData ? `(${nextProducts.length})` : ''}`,
               content: (
                 <div className="mt-6">
                   {!hasNextData ? (
                     <div className="text-center py-12 text-gray-500">
-                      <p className="text-lg mb-2">아직 공개된 다음 주 세일이 없어요!</p>
-                      <p className="text-sm">주말에 다시 와주세요. 보통 토요일~일요일에 다음 주 세일 정보가 공개됩니다.</p>
+                      <p className="text-lg mb-2">{t('recipes.nextWeek.empty.title')}</p>
+                      <p className="text-sm">{t('recipes.nextWeek.empty.subtitle')}</p>
                     </div>
                   ) : (
                     <div className="space-y-6">
@@ -286,7 +288,7 @@ export default function DealsSection({
                         <div>
                           <h3 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
                             <ShoppingBag size={18} />
-                            주재료 (고기, 생선, 주요 채소)
+                            {t('deals.category.main')}
                           </h3>
                           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
                             {categorizedNext.main.map((product, index) => renderProductCard(product, index))}
@@ -297,7 +299,7 @@ export default function DealsSection({
                       {categorizedNext.sub.length > 0 && (
                         <div>
                           <h3 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
-                            🧂 부재료/양념
+                            {t('deals.category.sub')}
                           </h3>
                           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
                             {categorizedNext.sub.map((product, index) => renderProductCard(product, index))}
@@ -308,7 +310,7 @@ export default function DealsSection({
                       {categorizedNext.fruits.length > 0 && (
                         <div>
                           <h3 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
-                            🍎 과일 / 사이드 / 디저트
+                            {t('deals.category.fruits')}
                           </h3>
                           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
                             {categorizedNext.fruits.map((product, index) => renderProductCard(product, index))}

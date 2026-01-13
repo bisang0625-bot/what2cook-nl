@@ -8,6 +8,8 @@ import Tabs from '../../components/Tabs'
 import DealsGrid from '../../components/DealsGrid'
 import BottomNav from '../../components/BottomNav'
 import StoreFilter from '../../components/StoreFilter'
+import LanguageSwitcher from '../../components/i18n/LanguageSwitcher'
+import { useI18n } from '../../components/i18n/I18nProvider'
 
 interface SaleProduct {
   store?: string
@@ -36,6 +38,7 @@ export default function DealsPage() {
   const [activeTab, setActiveTab] = useState<'current' | 'next'>('current')
   const [selectedStores, setSelectedStores] = useState<Set<string>>(new Set())
   const [selectAll, setSelectAll] = useState<boolean>(true)
+  const { t } = useI18n()
 
   useEffect(() => {
     const loadData = async () => {
@@ -118,14 +121,20 @@ export default function DealsPage() {
   return (
     <main className="min-h-screen bg-gray-50 pb-20">
       <div className="bg-white border-b sticky top-0 z-40 px-4 py-4">
-        <h1 className="text-xl font-bold text-gray-900">뭐해먹지 NL <span className="text-sm text-gray-400 font-normal">What2Cook NL</span></h1>
+        <div className="flex items-center justify-between gap-4">
+          <h1 className="text-xl font-bold text-gray-900">{t('home.title')}</h1>
+          <LanguageSwitcher />
+        </div>
       </div>
 
       <section className="max-w-7xl mx-auto px-4 py-6">
         <div className="flex items-center justify-between mb-6">
-          <h2 className="text-2xl font-bold">세일리스트</h2>
+          <div>
+            <h2 className="text-2xl font-bold">{t('deals.title')}</h2>
+            <p className="text-sm text-gray-600 mt-1">{t('deals.subtitle')}</p>
+          </div>
           <Link href="/" className="flex items-center gap-2 px-3 py-1.5 border-2 border-orange-500 text-orange-600 rounded-lg text-sm font-bold">
-            <ChefHat size={16} /> 추천식단
+            <ChefHat size={16} /> {t('deals.backToRecipes')}
           </Link>
         </div>
 
@@ -148,27 +157,37 @@ export default function DealsPage() {
           tabs={[
             {
               id: 'current',
-              label: `📅 이번 주 (${filteredCurrent.length})`,
+              label: `📅 ${t('deals.tab.thisWeek')} (${filteredCurrent.length})`,
               content: (
                 <div className="mt-6 space-y-8">
-                  {categorizedCurrent.main.length > 0 && <DealsGrid products={categorizedCurrent.main} category="main" categoryLabel="🥩 주재료 (고기, 채소)" />}
-                  {categorizedCurrent.sub.length > 0 && <DealsGrid products={categorizedCurrent.sub} category="sub" categoryLabel="🧂 부재료 및 양념" />}
-                  {categorizedCurrent.fruits.length > 0 && <DealsGrid products={categorizedCurrent.fruits} category="fruits" categoryLabel="🍎 과일 및 후식" />}
+                  {categorizedCurrent.main.length > 0 && (
+                    <DealsGrid products={categorizedCurrent.main} category="main" categoryLabel={t('deals.category.main')} />
+                  )}
+                  {categorizedCurrent.sub.length > 0 && (
+                    <DealsGrid products={categorizedCurrent.sub} category="sub" categoryLabel={t('deals.category.sub')} />
+                  )}
+                  {categorizedCurrent.fruits.length > 0 && (
+                    <DealsGrid products={categorizedCurrent.fruits} category="fruits" categoryLabel={t('deals.category.fruits')} />
+                  )}
                 </div>
               )
             },
             {
               id: 'next',
-              label: `🔜 다음 주 (${filteredNext.length})`,
+              label: `🔜 ${t('deals.tab.nextWeek')} (${filteredNext.length})`,
               content: (
                 <div className="mt-6 space-y-8">
                   {filteredNext.length > 0 ? (
                     <>
-                      {categorizedNext.main.length > 0 && <DealsGrid products={categorizedNext.main} category="main" categoryLabel="🥩 주재료 (고기, 채소)" />}
-                      {categorizedNext.fruits.length > 0 && <DealsGrid products={categorizedNext.fruits} category="fruits" categoryLabel="🍎 과일 및 후식" />}
+                      {categorizedNext.main.length > 0 && (
+                        <DealsGrid products={categorizedNext.main} category="main" categoryLabel={t('deals.category.main')} />
+                      )}
+                      {categorizedNext.fruits.length > 0 && (
+                        <DealsGrid products={categorizedNext.fruits} category="fruits" categoryLabel={t('deals.category.fruits')} />
+                      )}
                     </>
                   ) : (
-                    <div className="text-center py-10 text-gray-500">다음 주 세일 정보 준비 중입니다.</div>
+                    <div className="text-center py-10 text-gray-500">{t('deals.nextWeek.empty')}</div>
                   )}
                 </div>
               )

@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useMemo } from 'react'
+import { useI18n } from './i18n/I18nProvider'
 
 interface StoreFilterProps {
   products: Array<{ store?: string; supermarket?: string }>
@@ -17,6 +18,8 @@ export default function StoreFilter({
   onSelectAll,
   selectAll
 }: StoreFilterProps) {
+  const { t } = useI18n()
+
   // 사용 가능한 마트 목록 추출
   const availableStores = useMemo(() => {
     const storesSet = new Set<string>()
@@ -60,7 +63,7 @@ export default function StoreFilter({
   return (
     <div className="mb-6 p-4 bg-gray-50 rounded-lg border border-gray-200">
       <div className="flex items-center justify-between mb-3">
-        <h3 className="text-sm font-semibold text-gray-700">마트 필터</h3>
+        <h3 className="text-sm font-semibold text-gray-700">{t('storeFilter.title')}</h3>
         <button
           onClick={onSelectAll}
           className={`text-xs px-3 py-1 rounded-full transition-colors ${
@@ -69,7 +72,7 @@ export default function StoreFilter({
               : 'bg-white text-gray-600 border border-gray-300 hover:bg-gray-100'
           }`}
         >
-          전체
+          {t('storeFilter.all')}
         </button>
       </div>
       <div className="flex flex-wrap gap-2">

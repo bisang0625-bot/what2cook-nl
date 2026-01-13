@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { ExternalLink, Truck, Shield, Star, Clock, CheckCircle } from 'lucide-react'
 import Image from 'next/image'
+import { useI18n } from '../i18n/I18nProvider'
 
 interface PlatformData {
   url: string
@@ -46,6 +47,7 @@ export default function AffiliateBalancer({
 }: AffiliateBalancerProps) {
   const [buttonOrder, setButtonOrder] = useState<'bol-first' | 'amazon-first'>('bol-first')
   const [mounted, setMounted] = useState(false)
+  const { t } = useI18n()
 
   const { bol, amazon } = product.platforms
 
@@ -106,20 +108,20 @@ export default function AffiliateBalancer({
   const getMicroCopy = (platform: 'bol' | 'amazon', data: PlatformData) => {
     if (platform === 'bol') {
       if (data.badge.includes('내일 도착')) {
-        return '내일 받고 싶다면'
+        return t('affiliateBalancer.microcopy.bol.nextDay')
       }
       if (data.benefit.includes('픽업')) {
-        return '매장에서 직접 픽업'
+        return t('affiliateBalancer.microcopy.bol.pickup')
       }
-      return '가격 및 재고 확인'
+      return t('affiliateBalancer.microcopy.bol.check')
     } else {
       if (data.badge.includes('최저가')) {
-        return '최저가로 구매하기'
+        return t('affiliateBalancer.microcopy.amazon.bestPrice')
       }
       if (data.benefit.includes('Prime')) {
-        return 'Prime 무료 배송 혜택'
+        return t('affiliateBalancer.microcopy.amazon.prime')
       }
-      return '리뷰 확인 후 구매'
+      return t('affiliateBalancer.microcopy.amazon.reviews')
     }
   }
 
@@ -174,7 +176,7 @@ export default function AffiliateBalancer({
 
         {/* 버튼 텍스트 */}
         <div className="mt-2 text-sm font-semibold border-t border-white/20 pt-3 w-full">
-          Bol.com에서 보기
+          {t('affiliateBalancer.button.viewBol')}
           <ExternalLink className="w-3 h-3 inline-block ml-1" />
         </div>
       </div>
@@ -227,7 +229,7 @@ export default function AffiliateBalancer({
 
         {/* 버튼 텍스트 */}
         <div className="mt-2 text-sm font-semibold border-t border-black/20 pt-3 w-full">
-          Amazon에서 보기
+          {t('affiliateBalancer.button.viewAmazon')}
           <ExternalLink className="w-3 h-3 inline-block ml-1" />
         </div>
       </div>
@@ -250,7 +252,7 @@ export default function AffiliateBalancer({
           <div className="w-full h-full flex items-center justify-center text-gray-400">
             <div className="text-center">
               <div className="text-4xl mb-2">📦</div>
-              <div className="text-sm">이미지 없음</div>
+              <div className="text-sm">{t('affiliateCard.noImage')}</div>
             </div>
           </div>
         )}
@@ -270,7 +272,7 @@ export default function AffiliateBalancer({
         {/* 고민 유도 문구 */}
         <div className="mb-5 p-3 bg-blue-50 border border-blue-200 rounded-lg">
           <p className="text-sm text-blue-900 text-center font-medium">
-            💭 가격은 아마존이 싼데, 배송은 볼닷컴이 빠르네? 어디서 살까?
+            💭 {t('affiliateBalancer.prompt')}
           </p>
         </div>
 
@@ -292,7 +294,7 @@ export default function AffiliateBalancer({
         {/* 비교 안내 */}
         <div className="mt-4 text-center">
           <p className="text-xs text-gray-500">
-            두 플랫폼의 가격과 배송 옵션을 비교해보세요
+            {t('affiliateBalancer.compareHint')}
           </p>
         </div>
       </div>

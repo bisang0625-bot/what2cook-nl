@@ -2,18 +2,25 @@
 
 import { ExternalLink } from 'lucide-react'
 import Image from 'next/image'
+import { useI18n } from '../i18n/I18nProvider'
 
 interface AffiliateProduct {
   id: string
   platform: 'amazon' | 'bol'
   name: string
+  name_en?: string
+  name_nl?: string
   description: string
+  description_en?: string
+  description_nl?: string
   image: string
   url: string
   price: string
   currency: string
   badge?: string
   benefit?: string
+  benefit_en?: string
+  benefit_nl?: string
   category: string
   tags?: string[]
 }
@@ -37,8 +44,29 @@ export default function AffiliateCard({
   className = '',
   inFeedMode = true
 }: AffiliateCardProps) {
+  const { t, lang } = useI18n()
   const isAmazon = product.platform === 'amazon'
   const isBol = product.platform === 'bol'
+
+  // 언어별 텍스트 가져오기
+  const getLocalizedText = (field: 'name' | 'description' | 'benefit'): string => {
+    if (lang === 'ko') {
+      return product[field] || ''
+    }
+    if (lang === 'en') {
+      const enField = `${field}_en` as keyof AffiliateProduct
+      return (product[enField] as string) || product[field] || ''
+    }
+    if (lang === 'nl') {
+      const nlField = `${field}_nl` as keyof AffiliateProduct
+      return (product[nlField] as string) || product[field] || ''
+    }
+    return product[field] || ''
+  }
+
+  const productName = getLocalizedText('name')
+  const productDescription = getLocalizedText('description')
+  const productBenefit = getLocalizedText('benefit')
 
   // Badge 텍스트 결정 (Blind Strategy)
   const getBadge = () => {
@@ -64,7 +92,7 @@ export default function AffiliateCard({
         textColor: 'text-black',
         badgeBg: 'bg-orange-500',
         icon: '📦',
-        label: 'Amazon 확인'
+        label: t('affiliateCard.button.amazon')
       }
     }
     if (isBol) {
@@ -74,7 +102,7 @@ export default function AffiliateCard({
         textColor: 'text-white',
         badgeBg: 'bg-blue-500',
         icon: '🇳🇱',
-        label: 'Bol.com 확인'
+        label: t('affiliateCard.button.bol')
       }
     }
     // 기본값 (fallback)
@@ -84,7 +112,7 @@ export default function AffiliateCard({
       textColor: 'text-white',
       badgeBg: 'bg-gray-600',
       icon: '🔗',
-      label: '링크 확인'
+      label: t('affiliateCard.button.link')
     }
   }
 
@@ -102,7 +130,7 @@ export default function AffiliateCard({
     >
       {/* 법적 준수: "Advertentie" 라벨 (우측 상단) */}
       <div className="absolute top-2 right-2 z-10 bg-white/90 text-gray-400 text-xs px-2 py-0.5 rounded shadow-sm">
-        Advertentie
+        {t('ads.label')}
       </div>
 
       <div className="p-6">
@@ -123,7 +151,7 @@ export default function AffiliateCard({
             <div className="w-full h-full flex items-center justify-center text-gray-400">
               <div className="text-center">
                 <div className="text-4xl mb-2">📦</div>
-                <div className="text-sm">이미지 없음</div>
+                <div className="text-sm">{t('affiliateCard.noImage')}</div>
               </div>
             </div>
           )}
@@ -132,11 +160,11 @@ export default function AffiliateCard({
         {/* 상품 정보 */}
         <div className="mb-4">
           <h3 className="text-lg font-semibold text-gray-900 mb-2 line-clamp-2">
-            {product.name}
+            {productName}
           </h3>
-          {product.description && (
+          {productDescription && (
             <p className="text-sm text-gray-600 line-clamp-2 mb-3">
-              {product.description}
+              {productDescription}
             </p>
           )}
         </div>
@@ -175,7 +203,7 @@ export default function AffiliateCard({
           {/* URL이 없는 경우 */}
           {!product.url && (
             <div className="text-center py-4 text-gray-500 text-sm">
-              제휴 링크 정보가 없습니다.
+              {t('affiliateCard.noLink')}
             </div>
           )}
         </div>

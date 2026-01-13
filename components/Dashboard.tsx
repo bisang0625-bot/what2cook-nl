@@ -4,13 +4,18 @@ import { useState, useMemo, useEffect, Fragment } from 'react'
 import { Clock, ShoppingBag, ChefHat, Baby, Flame, Leaf, X, ChevronRight, Timer, Percent, PartyPopper, Beer } from 'lucide-react'
 import AffiliateDisclosure from './ads/AffiliateDisclosure'
 import AffiliateCard from './ads/AffiliateCard'
+import { useI18n, type AppLanguage } from './i18n/I18nProvider'
 
 interface Recipe {
   id: string
   store: string
   menu_name: string
+  menu_name_en?: string
+  menu_name_nl?: string
   main_ingredients: string[]
   description: string
+  description_en?: string
+  description_nl?: string
   tags: {
     is_spicy: boolean
     is_vegetarian: boolean
@@ -21,6 +26,8 @@ interface Recipe {
   }
   shopping_list: string[]
   cost_saving_tip?: string
+  cost_saving_tip_en?: string
+  cost_saving_tip_nl?: string
   valid_from?: string
   valid_until?: string
 }
@@ -59,8 +66,34 @@ function hasBestDeal(recipe: Recipe): boolean {
   return keywords.some(k => targetText.toLowerCase().includes(k))
 }
 
+// 언어별 번역 텍스트 가져오기 헬퍼 함수
+function getLocalizedText(
+  recipe: Recipe,
+  field: 'menu_name' | 'description' | 'cost_saving_tip',
+  lang: AppLanguage
+): string {
+  if (lang === 'ko') {
+    return recipe[field] || ''
+  }
+  if (lang === 'en') {
+    const enField = `${field}_en` as keyof Recipe
+    return (recipe[enField] as string) || recipe[field] || ''
+  }
+  if (lang === 'nl') {
+    const nlField = `${field}_nl` as keyof Recipe
+    return (recipe[nlField] as string) || recipe[field] || ''
+  }
+  return recipe[field] || ''
+}
+
 // 날짜 뱃지 생성 함수
-function getDateBadge(recipe: Recipe): { text: string; type: 'active' | 'upcoming' | 'none' } {
+type Translator = (key: any, vars?: Record<string, string | number>) => string
+
+function getDateBadge(
+  recipe: Recipe,
+  lang: AppLanguage,
+  t: Translator
+): { text: string; type: 'active' | 'upcoming' | 'none' } {
   if (!recipe.valid_from && !recipe.valid_until) {
     return { text: '', type: 'none' }
   }
@@ -70,6 +103,9 @@ function getDateBadge(recipe: Recipe): { text: string; type: 'active' | 'upcomin
 
   const validFrom = recipe.valid_from ? new Date(recipe.valid_from) : null
   const validUntil = recipe.valid_until ? new Date(recipe.valid_until) : null
+  const locale = lang === 'nl' ? 'nl-NL' : 'en-GB'
+  const formatShortDate = (d: Date) => d.toLocaleDateString(locale, { month: 'numeric', day: 'numeric' })
+  const formatWeekday = (d: Date) => d.toLocaleDateString(locale, { weekday: 'short' })
 
   if (validFrom && validUntil) {
     validFrom.setHours(0, 0, 0, 0)
@@ -79,16 +115,14 @@ function getDateBadge(recipe: Recipe): { text: string; type: 'active' | 'upcomin
     if (validFrom <= today && today <= validUntil) {
       const daysLeft = Math.ceil((validUntil.getTime() - today.getTime()) / (1000 * 60 * 60 * 24))
       return {
-        text: `🔥 D-${daysLeft} (${validUntil.toLocaleDateString('ko-KR', { month: 'numeric', day: 'numeric' })}까지)`,
+        text: t('dashboard.dateBadge.until', { days: daysLeft, date: formatShortDate(validUntil) }),
         type: 'active'
       }
     }
     // 곧 시작될 세일
     else if (validFrom > today) {
-      const daysUntil = Math.ceil((validFrom.getTime() - today.getTime()) / (1000 * 60 * 60 * 24))
-      const weekdayKr = ['월', '화', '수', '목', '금', '토', '일'][validFrom.getDay()]
       return {
-        text: `📅 ${validFrom.toLocaleDateString('ko-KR', { month: 'numeric', day: 'numeric' })}(${weekdayKr}) 오픈`,
+        text: t('dashboard.dateBadge.starts', { date: formatShortDate(validFrom), weekday: formatWeekday(validFrom) }),
         type: 'upcoming'
       }
     }
@@ -98,7 +132,7 @@ function getDateBadge(recipe: Recipe): { text: string; type: 'active' | 'upcomin
   if (validUntil && validUntil >= today) {
     const daysLeft = Math.ceil((validUntil.getTime() - today.getTime()) / (1000 * 60 * 60 * 24))
     return {
-      text: `🔥 D-${daysLeft} (${validUntil.toLocaleDateString('ko-KR', { month: 'numeric', day: 'numeric' })}까지)`,
+      text: t('dashboard.dateBadge.until', { days: daysLeft, date: formatShortDate(validUntil) }),
       type: 'active'
     }
   }
@@ -111,6 +145,8 @@ export default function Dashboard({
   showDateBadge = false,
   affiliateProducts = []
 }: DashboardProps) {
+  const { t, lang } = useI18n()
+
   // 여러 마트 선택 가능하도록 Set 사용
   // 초기 상태: 모든 마트 선택 (필터 미적용)
   const [selectedStores, setSelectedStores] = useState<Set<string>>(new Set())
@@ -253,13 +289,13 @@ export default function Dashboard({
                 <span className="text-nl-orange-500">K</span>-Bonus
               </h1>
               <p className="text-gray-600 mt-1">
-                이번 주 마트 세일로 차리는 알뜰 밥상
+                {t('dashboard.tagline')}
               </p>
             </div>
             <div className="text-sm text-gray-500">
               {isFilterActive 
-                ? `${filteredRecipes.length}개의 레시피 (전체 ${recipes.length}개 중)`
-                : `${recipes.length}개의 레시피`
+                ? t('dashboard.count.filtered', { filtered: filteredRecipes.length, total: recipes.length })
+                : t('dashboard.count.total', { total: recipes.length })
               }
             </div>
           </div>
@@ -272,7 +308,7 @@ export default function Dashboard({
           {/* Store Filter */}
           <div className="mb-6">
             <label className="block text-sm font-semibold text-gray-700 mb-3">
-              마트 선택 (여러 개 선택 가능)
+              {t('dashboard.storeSelect.label')}
             </label>
             <div className="flex flex-wrap gap-2">
               {/* 전체 선택 버튼 */}
@@ -286,7 +322,7 @@ export default function Dashboard({
                   }
                 `}
               >
-                전체 ({availableStores.length})
+                {t('dashboard.storeSelect.all', { count: availableStores.length })}
               </button>
               
               {/* 개별 마트 버튼 */}
@@ -317,13 +353,13 @@ export default function Dashboard({
             </div>
             {availableStores.length === 0 && (
               <div className="text-center py-8 text-gray-500">
-                <p>현재 등록된 세일 정보가 없습니다.</p>
-                <p className="text-sm mt-1">매주 일요일 업데이트됩니다.</p>
+                <p>{t('dashboard.noDeals.title')}</p>
+                <p className="text-sm mt-1">{t('dashboard.noDeals.subtitle')}</p>
               </div>
             )}
             {selectedStores.size > 0 && !selectAll && availableStores.length > 0 && (
               <p className="mt-2 text-xs text-gray-500">
-                {selectedStores.size}개 마트 선택됨
+                {t('dashboard.storeSelect.selectedCount', { count: selectedStores.size })}
               </p>
             )}
           </div>
@@ -331,13 +367,13 @@ export default function Dashboard({
           {/* Tag Filter (Improved) */}
           <div>
             <label className="block text-sm font-semibold text-gray-700 mb-3">
-              필터
+              {t('dashboard.filters.label')}
             </label>
             
             <div className="space-y-3">
               {/* 그룹 1: 상황별 추천 */}
               <div className="flex flex-wrap gap-2">
-                <span className="text-xs font-medium text-gray-400 py-2 mr-1">추천:</span>
+                <span className="text-xs font-medium text-gray-400 py-2 mr-1">{t('dashboard.filters.group.recommended')}</span>
                 <button
                   onClick={() => toggleFilter('kidFriendly')}
                   className={`
@@ -349,7 +385,7 @@ export default function Dashboard({
                   `}
                 >
                   <Baby size={16} />
-                  <span>아이 식단</span>
+                  <span>{t('dashboard.filter.kidFriendly')}</span>
                 </button>
                 
                 <button
@@ -363,7 +399,7 @@ export default function Dashboard({
                   `}
                 >
                   <Leaf size={16} />
-                  <span>채식</span>
+                  <span>{t('dashboard.filter.vegetarian')}</span>
                 </button>
 
                 <button
@@ -377,7 +413,7 @@ export default function Dashboard({
                   `}
                 >
                   <PartyPopper size={16} />
-                  <span>파티/손님초대</span>
+                  <span>{t('dashboard.filter.partyFood')}</span>
                 </button>
 
                 <button
@@ -391,13 +427,13 @@ export default function Dashboard({
                   `}
                 >
                   <Beer size={16} />
-                  <span>술안주</span>
+                  <span>{t('dashboard.filter.alcoholSnack')}</span>
                 </button>
               </div>
 
               {/* 그룹 2: 맛/특징 */}
               <div className="flex flex-wrap gap-2">
-                <span className="text-xs font-medium text-gray-400 py-2 mr-1">특징:</span>
+                <span className="text-xs font-medium text-gray-400 py-2 mr-1">{t('dashboard.filters.group.features')}</span>
                 <button
                   onClick={() => toggleFilter('spicy')}
                   disabled={selectedFilters.kidFriendly} // 아이 식단 선택 시 비활성화
@@ -412,7 +448,7 @@ export default function Dashboard({
                   `}
                 >
                   <Flame size={16} />
-                  <span>매운맛</span>
+                  <span>{t('dashboard.filter.spicy')}</span>
                 </button>
 
                 <button
@@ -426,7 +462,7 @@ export default function Dashboard({
                   `}
                 >
                   <Timer size={16} />
-                  <span>30분 이내</span>
+                  <span>{t('dashboard.filter.quickMeal')}</span>
                 </button>
 
                 <button
@@ -440,7 +476,7 @@ export default function Dashboard({
                   `}
                 >
                   <Percent size={16} />
-                  <span>1+1 / 파격할인</span>
+                  <span>{t('dashboard.filter.bestDeal')}</span>
                 </button>
               </div>
             </div>
@@ -451,7 +487,7 @@ export default function Dashboard({
         {filteredRecipes.length === 0 ? (
           <div className="text-center py-12 bg-white rounded-xl shadow-sm border border-gray-200">
             <ChefHat className="mx-auto h-12 w-12 text-gray-400 mb-4" />
-            <p className="text-gray-600">필터 조건에 맞는 레시피가 없습니다.</p>
+            <p className="text-gray-600">{t('dashboard.noMatch')}</p>
             <button
               onClick={() => {
                 setSelectedFilters({
@@ -468,7 +504,7 @@ export default function Dashboard({
               }}
               className="mt-4 text-nl-orange-500 hover:text-nl-orange-600 font-medium"
             >
-              필터 초기화
+              {t('dashboard.resetFilters')}
             </button>
           </div>
         ) : (
@@ -588,8 +624,11 @@ function RecipeCard({
   onClick: () => void
   showDateBadge?: boolean
 }) {
+  const { t, lang } = useI18n()
+  const title = getLocalizedText(recipe, 'menu_name', lang)
+  const description = getLocalizedText(recipe, 'description', lang)
   const storeColors = getStoreColors(recipe.store)
-  const dateBadge = showDateBadge ? getDateBadge(recipe) : null
+  const dateBadge = showDateBadge ? getDateBadge(recipe, lang, t) : null
   
   return (
     <div
@@ -615,7 +654,7 @@ function RecipeCard({
               )}
             </div>
             <h3 className="text-xl font-bold text-gray-900 group-hover:text-nl-orange-500 transition-colors">
-              {recipe.menu_name}
+              {title}
             </h3>
           </div>
           <ChevronRight
@@ -626,7 +665,7 @@ function RecipeCard({
 
         {/* Description */}
         <p className="text-gray-600 text-sm mb-4 line-clamp-2">
-          {recipe.description}
+          {description}
         </p>
 
         {/* Main Ingredients Badges */}
@@ -652,31 +691,31 @@ function RecipeCard({
             {recipe.tags.is_kid_friendly && (
               <div className="flex items-center gap-1 text-xs text-gray-600">
                 <Baby size={14} />
-                <span>아이식단</span>
+                <span>{t('dashboard.tag.kidFriendly')}</span>
               </div>
             )}
             {recipe.tags.is_spicy && (
               <div className="flex items-center gap-1 text-xs text-gray-600">
                 <Flame size={14} />
-                <span>매운맛</span>
+                <span>{t('dashboard.tag.spicy')}</span>
               </div>
             )}
             {recipe.tags.is_vegetarian && (
               <div className="flex items-center gap-1 text-xs text-gray-600">
                 <Leaf size={14} />
-                <span>채식</span>
+                <span>{t('dashboard.tag.vegetarian')}</span>
               </div>
             )}
             {recipe.tags.is_party_food && (
               <div className="flex items-center gap-1 text-xs text-gray-600">
                 <PartyPopper size={14} />
-                <span>파티</span>
+                <span>{t('dashboard.tag.party')}</span>
               </div>
             )}
             {recipe.tags.is_alcohol_snack && (
               <div className="flex items-center gap-1 text-xs text-gray-600">
                 <Beer size={14} />
-                <span>안주</span>
+                <span>{t('dashboard.tag.alcoholSnack')}</span>
               </div>
             )}
           </div>
@@ -698,6 +737,10 @@ function RecipeModal({
   recipe: Recipe
   onClose: () => void
 }) {
+  const { t, lang } = useI18n()
+  const title = getLocalizedText(recipe, 'menu_name', lang)
+  const description = getLocalizedText(recipe, 'description', lang)
+  const savingTip = getLocalizedText(recipe, 'cost_saving_tip', lang)
   const storeColors = getStoreColors(recipe.store)
   
   return (
@@ -716,7 +759,7 @@ function RecipeModal({
         >
           {/* Header */}
           <div className="sticky top-0 bg-white border-b border-gray-200 px-6 py-4 flex items-center justify-between z-10">
-            <h2 className="text-2xl font-bold text-gray-900">{recipe.menu_name}</h2>
+            <h2 className="text-2xl font-bold text-gray-900">{title}</h2>
             <button
               onClick={onClose}
               className="p-2 hover:bg-gray-100 rounded-full transition-colors"
@@ -729,14 +772,14 @@ function RecipeModal({
           <div className="p-6 space-y-6">
             {/* Description */}
             <div>
-              <p className="text-gray-700 leading-relaxed">{recipe.description}</p>
+              <p className="text-gray-700 leading-relaxed">{description}</p>
             </div>
 
             {/* Main Ingredients */}
             <div>
               <h3 className="text-lg font-semibold text-gray-900 mb-3 flex items-center gap-2">
                 <ChefHat size={20} className="text-nl-orange-500" />
-                세일 식재료
+                {t('dashboard.modal.saleIngredients')}
               </h3>
               <div className="flex flex-wrap gap-2">
                 {recipe.main_ingredients.map((ingredient, idx) => (
@@ -754,7 +797,7 @@ function RecipeModal({
             <div>
               <h3 className="text-lg font-semibold text-gray-900 mb-3 flex items-center gap-2">
                 <ShoppingBag size={20} className="text-nl-orange-500" />
-                쇼핑 리스트
+                {t('dashboard.modal.shoppingList')}
               </h3>
               <ul className="space-y-2">
                 {recipe.shopping_list.map((item, idx) => (
@@ -773,9 +816,9 @@ function RecipeModal({
             {recipe.cost_saving_tip && (
               <div className="bg-nl-orange-50 border border-nl-orange-200 rounded-lg p-4">
                 <h3 className="text-sm font-semibold text-nl-orange-900 mb-2">
-                  💡 절약 팁
+                  💡 {t('dashboard.modal.savingTip')}
                 </h3>
-                <p className="text-sm text-nl-orange-800">{recipe.cost_saving_tip}</p>
+                <p className="text-sm text-nl-orange-800">{savingTip}</p>
               </div>
             )}
 
@@ -783,7 +826,7 @@ function RecipeModal({
             <div className="flex flex-wrap items-center gap-4 pt-4 border-t border-gray-200">
               <div className="flex items-center gap-2 text-sm text-gray-600">
                 <Clock size={16} />
-                <span>조리 시간: {recipe.tags.cooking_time}</span>
+                <span>{t('dashboard.modal.cookingTime', { time: recipe.tags.cooking_time })}</span>
               </div>
               <div className="flex items-center gap-2">
                 <span className={`inline-flex items-center px-2.5 py-1 rounded-md text-xs font-semibold ${storeColors.bg} ${storeColors.text} border ${storeColors.border}`}>
@@ -794,31 +837,31 @@ function RecipeModal({
                 {recipe.tags.is_kid_friendly && (
                   <div className="flex items-center gap-1 text-sm text-gray-600">
                     <Baby size={16} />
-                    <span>아이식단</span>
+                    <span>{t('dashboard.tag.kidFriendly')}</span>
                   </div>
                 )}
                 {recipe.tags.is_spicy && (
                   <div className="flex items-center gap-1 text-sm text-gray-600">
                     <Flame size={16} />
-                    <span>매운맛</span>
+                    <span>{t('dashboard.tag.spicy')}</span>
                   </div>
                 )}
                 {recipe.tags.is_vegetarian && (
                   <div className="flex items-center gap-1 text-sm text-gray-600">
                     <Leaf size={16} />
-                    <span>채식</span>
+                    <span>{t('dashboard.tag.vegetarian')}</span>
                   </div>
                 )}
                 {recipe.tags.is_party_food && (
                   <div className="flex items-center gap-1 text-sm text-gray-600">
                     <PartyPopper size={16} />
-                    <span>파티</span>
+                    <span>{t('dashboard.tag.party')}</span>
                   </div>
                 )}
                 {recipe.tags.is_alcohol_snack && (
                   <div className="flex items-center gap-1 text-sm text-gray-600">
                     <Beer size={16} />
-                    <span>안주</span>
+                    <span>{t('dashboard.tag.alcoholSnack')}</span>
                   </div>
                 )}
               </div>

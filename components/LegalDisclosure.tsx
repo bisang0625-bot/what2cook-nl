@@ -2,6 +2,7 @@
 
 import { Info, ExternalLink } from 'lucide-react'
 import { useState } from 'react'
+import { useI18n } from './i18n/I18nProvider'
 
 interface LegalDisclosureProps {
   /** 표시 위치: 'footer' | 'sidebar' | 'inline' */
@@ -24,6 +25,7 @@ export default function LegalDisclosure({
   defaultCollapsed = true
 }: LegalDisclosureProps) {
   const [isCollapsed, setIsCollapsed] = useState(defaultCollapsed)
+  const { t } = useI18n()
 
   const positionClasses = {
     footer: 'mt-8 pt-6 border-t border-gray-200',
@@ -37,40 +39,33 @@ export default function LegalDisclosure({
         <Info className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
         <div className="flex-1">
           <h4 className="font-semibold text-gray-900 mb-2">
-            투명성 공지 (Transparency Disclosure)
+            {t('legalDisclosure.title')}
           </h4>
           
           <div className="space-y-2 text-sm text-gray-700">
             <p>
-              <strong>제휴 링크 (Affiliate Links):</strong> 본 사이트의 일부 링크는 
-              제휴 프로그램을 통해 제공됩니다. 이러한 링크를 통해 구매하시면 
-              저희가 소정의 수수료를 받을 수 있습니다. 이는 구매 가격에 영향을 
-              주지 않으며, 서비스 운영 및 콘텐츠 제작에 도움이 됩니다.
+              <strong>{t('legalDisclosure.section.affiliate')}:</strong> {t('legalDisclosure.body.affiliate')}
             </p>
             
             <p>
-              <strong>광고 (Advertisements):</strong> 본 사이트에는 구글 애드센스 및 
-              기타 광고가 표시될 수 있습니다. 이러한 광고는 사용자의 관심사에 맞춰 
-              자동으로 선택되며, 저희는 광고 내용에 대한 책임을 지지 않습니다.
+              <strong>{t('legalDisclosure.section.ads')}:</strong> {t('legalDisclosure.body.ads')}
             </p>
             
             <p>
-              <strong>데이터 수집:</strong> 본 사이트는 쿠키를 사용하여 사용자 경험을 
-              개선하고 광고를 맞춤화합니다. 자세한 내용은{' '}
+              <strong>{t('legalDisclosure.section.data')}:</strong> {t('legalDisclosure.body.data')}{' '}
               <a 
                 href="/privacy" 
                 className="text-blue-600 hover:underline inline-flex items-center gap-1"
               >
-                개인정보처리방침
+                {t('legalDisclosure.privacyPolicy')}
                 <ExternalLink className="w-3 h-3" />
               </a>
-              을 참조하세요.
             </p>
           </div>
 
           <div className="mt-4 pt-3 border-t border-blue-200">
             <p className="text-xs text-gray-600">
-              본 공지는 네덜란드 소비자 보호법 및 GDPR을 준수합니다.
+              {t('legalDisclosure.footnote')}
             </p>
           </div>
         </div>
@@ -94,10 +89,10 @@ export default function LegalDisclosure({
       >
         <span className="text-sm font-medium text-gray-700 flex items-center gap-2">
           <Info className="w-4 h-4 text-blue-600" />
-          투명성 공지 (Transparency Disclosure)
+          {t('legalDisclosure.title')}
         </span>
         <span className="text-xs text-gray-500">
-          {isCollapsed ? '펼치기' : '접기'}
+          {isCollapsed ? t('common.expand') : t('common.collapse')}
         </span>
       </button>
       

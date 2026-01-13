@@ -2,6 +2,8 @@
   {
     "store": "Albert Heijn",
     "menu_name": "파스타 닭갈비",
+    "menu_name_en": "Pasta Chicken Dak-galbi",
+    "menu_name_nl": "Pasta Kip Dak-galbi",
     "main_ingredients": [
       "Alle AH Verse pasta's, noedels, pasta- en... (생 파스타)",
       "Kipfilet (닭가슴살)",
@@ -12,6 +14,8 @@
       "Alle AH Verse pasta's, noedels, pasta- en... (생 파스타)"
     ],
     "description": "생 파스타 면과 닭가슴살을 고추장 양념에 볶아 만든 매콤한 닭갈비입니다. 아이들을 위해 맵기 조절이 가능합니다.",
+    "description_en": "A spicy stir-fried chicken dish made with fresh pasta noodles and chicken breast in gochujang sauce. Spice level can be adjusted for children.",
+    "description_nl": "Een pittige roerbakschotel van verse pasta en kipfilet in gochujang-saus. Het pittige niveau kan aangepast worden voor kinderen.",
     "tags": {
       "is_spicy": true,
       "is_vegetarian": false,
@@ -32,6 +36,8 @@
       "참기름"
     ],
     "cost_saving_tip": "Alle AH Verse pasta's, noedels, pasta- en... 1+1 행사를 이용하여 파스타 면을 저렴하게 구매하세요.",
+    "cost_saving_tip_en": "Take advantage of the 1+1 promotion on AH fresh pasta to buy pasta noodles at a discount.",
+    "cost_saving_tip_nl": "Profiteer van de 1+1 actie op AH verse pasta om pastanoedels met korting te kopen.",
     "id": "90ed95b5-ed7d-4e96-be72-c64e50bf9559",
     "valid_from": "2026-01-12T23:27:06.459894",
     "valid_until": "2026-01-18T23:27:06.459894"
@@ -39,6 +45,8 @@
   {
     "store": "Albert Heijn",
     "menu_name": "포도 샐러드",
+    "menu_name_en": "Grape Salad",
+    "menu_name_nl": "Druivensalade",
     "main_ingredients": [
       "Witte of rode druiven (포도)",
       "Sla mix (샐러드 믹스)",
@@ -49,6 +57,8 @@
       "Witte of rode druiven (포도)"
     ],
     "description": "신선한 포도와 샐러드 믹스를 요거트 드레싱에 버무려 만든 상큼한 샐러드입니다. 식사 전 가볍게 즐기거나 디저트로 좋습니다.",
+    "description_en": "A refreshing salad made with fresh grapes and salad mix tossed in yogurt dressing. Perfect as a light starter or dessert.",
+    "description_nl": "Een verfrissende salade van verse druiven en slamix met yoghurtdressing. Perfect als lichte starter of dessert.",
     "tags": {
       "is_spicy": false,
       "is_vegetarian": true,
@@ -66,6 +76,8 @@
       "꿀"
     ],
     "cost_saving_tip": "Witte of rode druiven 할인을 이용하여 저렴하게 포도 샐러드를 즐기세요.",
+    "cost_saving_tip_en": "Take advantage of the discount on white or red grapes to enjoy an affordable grape salad.",
+    "cost_saving_tip_nl": "Profiteer van de korting op witte of rode druiven om een betaalbare druivensalade te genieten.",
     "id": "2a222545-8081-48cc-9c89-279132b66945",
     "valid_from": "2026-01-12T23:27:06.459894",
     "valid_until": "2026-01-18T23:27:06.459894"

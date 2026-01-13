@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 import Script from 'next/script'
 import Link from 'next/link'
 import Image from 'next/image'
+import { useI18n } from '../i18n/I18nProvider'
 
 interface AdBannerProps {
   /** 광고 타입: 'adsense' | 'custom' */
@@ -35,12 +36,13 @@ export default function AdBanner({
   adSlot,
   imageUrl,
   linkUrl,
-  altText = '광고 배너',
+  altText,
   size = 'responsive',
   className = ''
 }: AdBannerProps) {
   const [mounted, setMounted] = useState(false)
   const [adsenseLoaded, setAdsenseLoaded] = useState(false)
+  const { t } = useI18n()
 
   useEffect(() => {
     setMounted(true)
@@ -61,7 +63,7 @@ export default function AdBanner({
     <div className={`ad-banner relative ${sizeStyles[size]} ${className}`}>
       {/* 법적 준수: "Advertentie" 라벨 (우측 상단, 반투명 배경) */}
       <div className="absolute top-2 right-2 z-10 bg-black/70 text-white text-xs px-2 py-1 rounded backdrop-blur-sm">
-        Advertentie
+        {t('ads.label')}
       </div>
 
       {type === 'adsense' ? (
@@ -104,7 +106,7 @@ export default function AdBanner({
           {imageUrl ? (
             <Image
               src={imageUrl}
-              alt={altText}
+              alt={altText || t('ads.bannerAlt')}
               fill
               className="object-cover rounded"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 728px, 728px"
@@ -112,7 +114,7 @@ export default function AdBanner({
             />
           ) : (
             <div className="w-full h-full bg-gray-200 flex items-center justify-center text-gray-400 text-sm rounded">
-              광고 배너
+              {t('ads.bannerPlaceholder')}
             </div>
           )}
         </Link>

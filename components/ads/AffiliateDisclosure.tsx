@@ -1,6 +1,7 @@
 'use client'
 
 import { Info } from 'lucide-react'
+import { useI18n } from '../i18n/I18nProvider'
 
 interface AffiliateDisclosureProps {
   /** 추가 클래스명 */
@@ -29,6 +30,8 @@ export default function AffiliateDisclosure({
   showIcon = true,
   compact = false
 }: AffiliateDisclosureProps) {
+  const { t } = useI18n()
+
   return (
     <div className={`affiliate-disclosure ${className}`}>
       <div className={`
@@ -44,11 +47,7 @@ export default function AffiliateDisclosure({
           />
         )}
         <p className="flex-1">
-          <span className="font-medium">Op deze pagina staan affiliate links.</span>{' '}
-          Als u via deze links iets koopt, ontvangen wij een kleine commissie.{' '}
-          <span className="text-gray-400">
-            (이 페이지는 제휴 링크를 포함하고 있으며, 구매 시 소정의 수수료를 받을 수 있습니다.)
-          </span>
+          {t('affiliateDisclosure.text')}
         </p>
       </div>
     </div>

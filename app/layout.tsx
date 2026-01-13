@@ -1,28 +1,27 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import I18nProvider from '../components/i18n/I18nProvider'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://what2cook.nl'),
   title: {
-    default: '뭐해먹지 NL | What2Cook NL - 네덜란드 마트 세일 및 한식 레시피 추천',
-    template: '%s | 뭐해먹지 NL'
+    default: 'What2Cook NL — Deals & Korean recipe ideas',
+    template: '%s | What2Cook NL'
   },
-  description: 'AH, Jumbo, Dirk 등 네덜란드 마트의 이번 주 세일 품목을 분석하여 최적의 한식 메뉴와 레시피를 제안합니다. 알뜰하게 장보고 맛있게 요리하세요!',
+  description:
+    'Discover curated Dutch supermarket deals (AH, Jumbo, Dirk) and Korean-friendly recipe ideas. Ontdek samengestelde aanbiedingen en Koreaanse recepten.',
   keywords: [
-    '뭐해먹지',
     'What2Cook',
     'What2Cook NL',
-    '한식 레시피',
-    '네덜란드 마트 세일',
+    'Korean recipes',
+    'Korean cooking',
+    'Dutch supermarket deals',
     'Albert Heijn',
     'Jumbo',
     'Lidl',
-    '한인 요리',
-    '할인 레시피',
-    'Korean recipes',
     'Netherlands supermarket',
     'Nederlandse supermarkt',
     'Koreaanse recepten'
@@ -37,25 +36,27 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: 'website',
-    locale: 'ko_KR',
-    alternateLocale: ['nl_NL', 'en_US'],
+    locale: 'en_US',
+    alternateLocale: ['nl_NL'],
     url: '/',
-    siteName: '뭐해먹지 NL | What2Cook NL',
-    title: '뭐해먹지 NL | What2Cook NL - 네덜란드 마트 세일 및 한식 레시피 추천',
-    description: 'AH, Jumbo, Dirk 등 네덜란드 마트의 이번 주 세일 품목을 분석하여 최적의 한식 메뉴와 레시피를 제안합니다. 알뜰하게 장보고 맛있게 요리하세요!',
+    siteName: 'What2Cook NL',
+    title: 'What2Cook NL — Deals & Korean recipe ideas',
+    description:
+      'Discover curated Dutch supermarket deals and Korean-friendly recipe ideas. Ontdek samengestelde aanbiedingen en Koreaanse recepten.',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: '뭐해먹지 NL | What2Cook NL - 네덜란드 마트 세일 및 한식 레시피 추천',
+        alt: 'What2Cook NL — Deals & Korean recipe ideas',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: '뭐해먹지 NL | What2Cook NL - 네덜란드 마트 세일 및 한식 레시피 추천',
-    description: 'AH, Jumbo, Dirk 등 네덜란드 마트의 이번 주 세일 품목을 분석하여 최적의 한식 메뉴와 레시피를 제안합니다. 알뜰하게 장보고 맛있게 요리하세요!',
+    title: 'What2Cook NL — Deals & Korean recipe ideas',
+    description:
+      'Discover curated Dutch supermarket deals and Korean-friendly recipe ideas. Ontdek samengestelde aanbiedingen en Koreaanse recepten.',
     images: ['/og-image.jpg'],
   },
   robots: {
@@ -72,7 +73,6 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/',
     languages: {
-      'ko-KR': '/',
       'nl-NL': '/nl',
       'en-US': '/en',
     },
@@ -89,8 +89,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="ko">
-      <body className={inter.className}>{children}</body>
+    <html lang="en">
+      <body className={inter.className}>
+        <I18nProvider>{children}</I18nProvider>
+      </body>
     </html>
   )
 }

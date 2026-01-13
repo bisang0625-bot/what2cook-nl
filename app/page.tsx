@@ -6,6 +6,8 @@ import { ShoppingBag } from 'lucide-react'
 import RecipeList from '@/components/RecipeList'
 import BottomNav from '@/components/BottomNav'
 import AdSlot from '@/components/AdSlot'
+import LanguageSwitcher from '../components/i18n/LanguageSwitcher'
+import { useI18n } from '../components/i18n/I18nProvider'
 
 interface Recipe {
   id: string
@@ -43,6 +45,7 @@ export default function Home() {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string>('')
   const [affiliateProducts, setAffiliateProducts] = useState<AffiliateProduct[]>([])
+  const { t } = useI18n()
 
   useEffect(() => {
     const loadData = async () => {
@@ -102,7 +105,7 @@ export default function Home() {
         setAllRecipes(recipes)
       } catch (err: any) {
         console.error('[What2Cook NL] 데이터 로드 에러:', err)
-        setError(err?.message || '데이터 로드 중 오류가 발생했습니다')
+        setError(err?.message || t('home.error.generic'))
       } finally {
         // 항상 로딩 상태 해제
         setLoading(false)
@@ -231,7 +234,7 @@ export default function Home() {
       <div className="flex items-center justify-center min-h-screen bg-gray-50 pb-20 md:pb-8">
         <div className="text-center">
           <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-orange-500 mx-auto mb-4"></div>
-          <p className="text-gray-600">레시피 로딩 중...</p>
+          <p className="text-gray-600">{t('home.loading.recipes')}</p>
         </div>
       </div>
     )
@@ -241,7 +244,7 @@ export default function Home() {
     return (
       <div className="flex items-center justify-center min-h-screen bg-gray-50 pb-20 md:pb-8">
         <div className="text-center text-red-600">
-          <p className="text-xl mb-2">⚠️ 에러 발생</p>
+          <p className="text-xl mb-2">⚠️ {t('home.error.title')}</p>
           <p>{error}</p>
         </div>
       </div>
@@ -252,8 +255,8 @@ export default function Home() {
     return (
       <div className="flex items-center justify-center min-h-screen bg-gray-50 pb-20 md:pb-8">
         <div className="text-center text-gray-600">
-          <p className="text-xl mb-2">📭 레시피가 없습니다</p>
-          <p>먼저 크롤러를 실행해주세요.</p>
+          <p className="text-xl mb-2">📭 {t('home.empty.title')}</p>
+          <p>{t('home.empty.subtitle')}</p>
         </div>
       </div>
     )
@@ -263,12 +266,12 @@ export default function Home() {
     <main className="min-h-screen bg-gray-50 pb-20 md:pb-8">
       {/* 헤더 */}
       <div className="bg-white border-b border-gray-200 sticky top-0 z-40">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <h1 className="text-2xl font-bold text-gray-900">
-            뭐해먹지 NL
-            <span className="text-lg text-gray-500 font-normal ml-2">What2Cook NL</span>
-          </h1>
-          <p className="text-sm text-gray-600 mt-1">네덜란드 마트 세일 정보로 결정하는 오늘 한식 식단</p>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-start justify-between gap-4">
+          <div>
+            <h1 className="text-2xl font-bold text-gray-900">{t('home.title')}</h1>
+            <p className="text-sm text-gray-600 mt-1">{t('home.subtitle')}</p>
+          </div>
+          <LanguageSwitcher className="mt-0.5" />
         </div>
       </div>
 
@@ -292,18 +295,18 @@ export default function Home() {
           <div className="mb-6">
             <div className="flex items-center justify-between mb-2">
               <h2 className="text-3xl font-bold text-gray-900">
-                추천식단
+                {t('home.section.mealIdeas.title')}
               </h2>
               <Link
                 href="/deals"
                 className="flex items-center gap-2 px-4 py-2 bg-white text-orange-600 border-2 border-orange-500 rounded-lg hover:bg-orange-50 transition-colors duration-200 font-medium text-sm"
               >
                 <ShoppingBag size={16} />
-                <span>세일리스트 보기</span>
+                <span>{t('home.cta.deals')}</span>
               </Link>
             </div>
             <p className="text-sm text-gray-600">
-              네덜란드 마트 세일 품목으로 추천하는 한식 레시피
+              {t('home.section.mealIdeas.subtitle')}
             </p>
           </div>
 

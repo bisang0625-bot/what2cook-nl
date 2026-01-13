@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import dynamic from 'next/dynamic'
 import Tabs from './Tabs'
+import { useI18n } from './i18n/I18nProvider'
 
 // 코드 스플리팅: Dashboard 컴포넌트 lazy loading
 const Dashboard = dynamic(() => import('@/components/Dashboard'), {
@@ -54,6 +55,7 @@ export default function RecipeSection({
   affiliateProducts
 }: RecipeSectionProps) {
   const [activeTab, setActiveTab] = useState<'current' | 'upcoming'>('current')
+  const { t } = useI18n()
 
   return (
     <section className="w-full bg-white py-8">
@@ -61,10 +63,10 @@ export default function RecipeSection({
         {/* 섹션 헤더 */}
         <div className="mb-6">
           <h2 className="text-3xl font-bold text-gray-900 mb-2">
-            이번 주 추천 식단
+            {t('home.section.mealIdeas.title')}
           </h2>
           <p className="text-sm text-gray-600">
-            네덜란드 마트 세일 품목으로 추천하는 한식 레시피
+            {t('home.section.mealIdeas.subtitle')}
           </p>
         </div>
 
@@ -73,13 +75,13 @@ export default function RecipeSection({
           tabs={[
             {
               id: 'current',
-              label: `📅 이번 주 ${currentRecipes.length > 0 ? `(${currentRecipes.length})` : ''}`,
+              label: `📅 ${t('recipes.tab.thisWeek')} ${currentRecipes.length > 0 ? `(${currentRecipes.length})` : ''}`,
               content: (
                 <div>
                   {currentRecipes.length > 0 ? (
                     <>
                       <div className="mb-4 text-sm text-gray-600">
-                        이번 주(월~일) 동안 진행되는 세일 품목과 레시피입니다. 수요일 시작 마트(Jumbo, Dirk)도 포함됩니다.
+                        {t('recipes.thisWeek.description')}
                       </div>
                       <Dashboard 
                         recipes={currentRecipes} 
@@ -89,8 +91,8 @@ export default function RecipeSection({
                     </>
                   ) : (
                     <div className="text-center py-12 text-gray-500">
-                      <p className="text-lg mb-2">이번 주 세일이 없습니다</p>
-                      <p className="text-sm">다음 주 세일을 확인해보세요!</p>
+                      <p className="text-lg mb-2">{t('recipes.thisWeek.empty.title')}</p>
+                      <p className="text-sm">{t('recipes.thisWeek.empty.subtitle')}</p>
                     </div>
                   )}
                 </div>
@@ -98,13 +100,13 @@ export default function RecipeSection({
             },
             {
               id: 'upcoming',
-              label: `🔜 다음 주 ${upcomingRecipes.length > 0 ? `(${upcomingRecipes.length})` : ''}`,
+              label: `🔜 ${t('recipes.tab.nextWeek')} ${upcomingRecipes.length > 0 ? `(${upcomingRecipes.length})` : ''}`,
               content: (
                 <div>
                   {upcomingRecipes.length > 0 ? (
                     <>
                       <div className="mb-4 text-sm text-gray-600">
-                        다음 주 월요일부터 시작될 세일 품목과 레시피입니다. 미리 준비하세요!
+                        {t('recipes.nextWeek.description')}
                       </div>
                       <Dashboard 
                         recipes={upcomingRecipes} 
@@ -114,8 +116,8 @@ export default function RecipeSection({
                     </>
                   ) : (
                     <div className="text-center py-12 text-gray-500">
-                      <p className="text-lg mb-2">아직 공개된 다음 주 세일이 없어요!</p>
-                      <p className="text-sm">주말에 다시 와주세요. 보통 토요일~일요일에 다음 주 세일 정보가 공개됩니다.</p>
+                      <p className="text-lg mb-2">{t('recipes.nextWeek.empty.title')}</p>
+                      <p className="text-sm">{t('recipes.nextWeek.empty.subtitle')}</p>
                     </div>
                   )}
                 </div>

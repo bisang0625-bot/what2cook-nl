@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import { useI18n } from './i18n/I18nProvider'
 
 interface AdSlotProps {
   /** 광고 슬롯 ID (고유 식별자) */
@@ -32,6 +33,7 @@ export default function AdSlot({
 }: AdSlotProps) {
   const [mounted, setMounted] = useState(false)
   const [adSenseLoaded, setAdSenseLoaded] = useState(false)
+  const { t } = useI18n()
 
   useEffect(() => {
     setMounted(true)
@@ -80,8 +82,7 @@ export default function AdSlot({
     <div className={`ad-slot ${className}`}>
       {/* 법적 준수: 광고 라벨 */}
       <div className="text-xs text-gray-500 mb-1 flex items-center gap-1">
-        <span className="bg-gray-100 px-2 py-0.5 rounded">광고</span>
-        <span className="text-gray-400">Advertentie</span>
+        <span className="bg-gray-100 px-2 py-0.5 rounded">{t('ads.label')}</span>
       </div>
 
       {/* 광고 컨텐츠 */}
@@ -105,12 +106,12 @@ export default function AdSlot({
             {customImageUrl ? (
               <img
                 src={customImageUrl}
-                alt="광고 배너"
+                alt={t('ads.bannerAlt')}
                 className="w-full h-full object-cover"
               />
             ) : (
               <div className="w-full h-full flex items-center justify-center text-gray-400 text-sm">
-                광고 배너
+                {t('ads.bannerPlaceholder')}
               </div>
             )}
           </a>
