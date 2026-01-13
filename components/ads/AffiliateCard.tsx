@@ -37,7 +37,7 @@ interface AffiliateCardProps {
  * - RecipeCard와 동일한 크기 및 스타일 (1x1 그리드)
  * - Blind UI: 가격 숨기기로 호기심 유발
  * - 법적 준수: "Advertentie" 라벨 필수 표시
- * - 5:1 비율로 레시피 리스트에 자연스럽게 삽입
+ * - 3:1 비율로 레시피 리스트에 자연스럽게 삽입
  */
 export default function AffiliateCard({
   product,

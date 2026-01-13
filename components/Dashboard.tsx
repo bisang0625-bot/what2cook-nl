@@ -510,11 +510,11 @@ export default function Dashboard({
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredRecipes.map((recipe, index) => {
-              // 5:1 비율로 광고 삽입 (5번째 레시피 뒤에 광고, 즉 6, 12, 18... 번째 슬롯)
-              // index는 0부터 시작하므로, 5번째 레시피는 index=4, 그 뒤에 광고 삽입
-              const shouldShowAd = (index + 1) % 5 === 0 && affiliateProducts.length > 0
-              // 첫 번째 광고는 index=4일 때, 두 번째는 index=9일 때...
-              const adProductIndex = Math.floor(index / 5) % affiliateProducts.length
+              // 3:1 비율로 광고 삽입 (3번째 레시피 뒤에 광고, 즉 4, 7, 10... 번째 슬롯)
+              // index는 0부터 시작하므로, 3번째 레시피는 index=2, 그 뒤에 광고 삽입
+              const shouldShowAd = (index + 1) % 3 === 0 && affiliateProducts.length > 0
+              // 첫 번째 광고는 index=2일 때, 두 번째는 index=5일 때...
+              const adProductIndex = Math.floor(index / 3) % affiliateProducts.length
               const adProduct = shouldShowAd ? affiliateProducts[adProductIndex] : null
 
               return (
@@ -524,7 +524,7 @@ export default function Dashboard({
                     onClick={() => setSelectedRecipe(recipe)}
                     showDateBadge={showDateBadge}
                   />
-                  {/* In-Feed 광고 삽입 (5:1 비율, 1x1 그리드 크기) */}
+                  {/* In-Feed 광고 삽입 (3:1 비율, 1x1 그리드 크기) */}
                   {shouldShowAd && adProduct && (
                     <AffiliateCard 
                       key={`ad-${adProduct.id}-${index}`}
