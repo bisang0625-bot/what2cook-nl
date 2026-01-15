@@ -38,18 +38,45 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+          # 필요한 패키지 확인
+          python -c "import requests; import aiohttp; print('✅ 필수 패키지 확인 완료')"
 
       - name: Configure Git
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
 
+      - name: Verify API Key
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          if [ -z "$GEMINI_API_KEY" ]; then
+            echo "❌ 오류: GEMINI_API_KEY가 설정되지 않았습니다."
+            echo "   GitHub Secrets에 GEMINI_API_KEY를 설정해주세요."
+            exit 1
+          else
+            echo "✅ GEMINI_API_KEY 확인됨"
+          fi
+
       - name: Run Smart Scraper
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           # 스마트 스케줄러 실행 (세일 정보 업데이트 확인 후 스크래핑)
-          python scraper/smart_scheduler.py --wait-for-update
+          echo "🔍 스마트 스케줄러 실행 시작..."
+          echo "📅 현재 시간: $(date)"
+          echo "📂 작업 디렉토리: $(pwd)"
+          echo "📁 파일 확인:"
+          ls -la scraper/smart_scheduler.py scraper/scrape_all_stores.py || echo "⚠️ 일부 파일이 없을 수 있습니다"
+          
+          # 스마트 스케줄러 실행
+          python scraper/smart_scheduler.py --wait-for-update 2>&1 || {
+            echo ""
+            echo "❌ 스마트 스케줄러 실행 실패"
+            echo "📋 분석 모드로 재실행하여 상세 정보 확인:"
+            python scraper/smart_scheduler.py --analyze || true
+            exit 1
+          }
         continue-on-error: true
 
       - name: Check for changes
