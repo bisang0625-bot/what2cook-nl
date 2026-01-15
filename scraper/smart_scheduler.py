@@ -603,29 +603,62 @@ def main():
     # 스크래핑 실행
     print("\n🚀 스크래핑 실행...")
     
-    result = subprocess.run(
-        ["python3", "scraper/scrape_all_stores.py"],
-        cwd=PROJECT_ROOT,
-        capture_output=False
-    )
-    
-    if result.returncode == 0:
+    try:
+        # scrape_all_stores.py를 직접 import하여 실행
+        sys.path.insert(0, str(PROJECT_ROOT))
+        import asyncio
+        
+        # scrape_all_stores.py의 main 함수 실행
+        from scraper.scrape_all_stores import main as scrape_main
+        print("📡 scrape_all_stores.py 모듈 로드 완료")
+        
+        # 비동기 함수 실행
+        result = asyncio.run(scrape_main())
         print("\n✅ 스크래핑 완료")
         
         # 레시피 생성
         print("\n🍳 레시피 생성...")
-        result2 = subprocess.run(
-            ["python3", "recipe_matcher.py"],
-            cwd=PROJECT_ROOT,
-            capture_output=False
-        )
+        from recipe_matcher import main as recipe_main
+        recipes = recipe_main('both')
         
-        if result2.returncode == 0:
+        if recipes:
             print("\n✅ 레시피 생성 완료")
         else:
-            print("\n⚠️ 레시피 생성 실패")
-    else:
-        print("\n❌ 스크래핑 실패")
+            print("\n⚠️ 레시피 생성 실패 또는 레시피 없음")
+            
+    except ImportError as e:
+        print(f"\n❌ 모듈 import 실패: {e}")
+        print("📋 subprocess로 대체 실행 시도...")
+        # Fallback: subprocess 사용
+        result = subprocess.run(
+            ["python3", "scraper/scrape_all_stores.py"],
+            cwd=PROJECT_ROOT,
+            capture_output=True,
+            text=True
+        )
+        print(result.stdout)
+        if result.stderr:
+            print("에러:", result.stderr)
+        
+        if result.returncode == 0:
+            print("\n✅ 스크래핑 완료 (subprocess)")
+            result2 = subprocess.run(
+                ["python3", "recipe_matcher.py"],
+                cwd=PROJECT_ROOT,
+                capture_output=True,
+                text=True
+            )
+            print(result2.stdout)
+            if result2.stderr:
+                print("에러:", result2.stderr)
+        else:
+            print("\n❌ 스크래핑 실패")
+            raise
+    except Exception as e:
+        print(f"\n❌ 스크래핑 실행 중 오류 발생: {e}")
+        import traceback
+        traceback.print_exc()
+        raise
 
 
 if __name__ == "__main__":

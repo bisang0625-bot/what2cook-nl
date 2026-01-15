@@ -69,10 +69,19 @@ jobs:
           echo "📁 파일 확인:"
           ls -la scraper/smart_scheduler.py scraper/scrape_all_stores.py || echo "⚠️ 일부 파일이 없을 수 있습니다"
           
-          # 스마트 스케줄러 실행
-          python scraper/smart_scheduler.py --wait-for-update 2>&1 || {
+          # Python 경로 확인
+          echo "🐍 Python 버전:"
+          python --version
+          python3 --version || true
+          
+          # 스마트 스케줄러 실행 (에러 발생 시 상세 로그 출력)
+          set -e  # 에러 발생 시 즉시 중단
+          python scraper/smart_scheduler.py --wait-for-update 2>&1 | tee scraper_output.log || {
             echo ""
             echo "❌ 스마트 스케줄러 실행 실패"
+            echo "📋 에러 로그:"
+            cat scraper_output.log || true
+            echo ""
             echo "📋 분석 모드로 재실행하여 상세 정보 확인:"
             python scraper/smart_scheduler.py --analyze || true
             exit 1
