@@ -37,9 +37,16 @@ jobs:
       - name: Install Python dependencies
         run: |
           python -m pip install --upgrade pip
+          echo "📦 requirements.txt에서 패키지 설치 중..."
           pip install -r requirements.txt
-          # 필요한 패키지 확인
-          python -c "import requests; import aiohttp; print('✅ 필수 패키지 확인 완료')"
+          echo "📦 aiohttp 명시적 설치 (의존성 문제 방지)..."
+          pip install aiohttp>=3.9.0
+          # 필요한 패키지 확인 (에러 발생 시 즉시 중단)
+          echo "🔍 필수 패키지 확인 중..."
+          python -c "import requests; print('✅ requests 확인')" || (echo "❌ requests 설치 실패" && exit 1)
+          python -c "import aiohttp; print('✅ aiohttp 확인')" || (echo "❌ aiohttp 설치 실패" && exit 1)
+          python -c "import google.generativeai; print('✅ google-generativeai 확인')" || (echo "❌ google-generativeai 설치 실패" && exit 1)
+          echo "✅ 모든 필수 패키지 확인 완료"
 
       - name: Configure Git
         run: |
