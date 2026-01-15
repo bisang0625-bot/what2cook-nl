@@ -608,12 +608,12 @@ def main():
         sys.path.insert(0, str(PROJECT_ROOT))
         import asyncio
         
-        # scrape_all_stores.py의 main 함수 실행
-        from scraper.scrape_all_stores import main as scrape_main
+        # scrape_all_stores.py의 run 함수 실행 (동기 래퍼)
+        from scraper.scrape_all_stores import run as scrape_run
         print("📡 scrape_all_stores.py 모듈 로드 완료")
         
-        # 비동기 함수 실행
-        result = asyncio.run(scrape_main())
+        # 동기 함수 실행
+        result = scrape_run()
         print("\n✅ 스크래핑 완료")
         
         # 레시피 생성
