@@ -56,6 +56,10 @@ const MESSAGES = {
     'recipes.thisWeek.empty.subtitle': '다음 주를 확인해 보세요.',
     'recipes.nextWeek.empty.title': '아직 공개된 다음 주 세일이 없어요!',
     'recipes.nextWeek.empty.subtitle': '주말에 다시 와주세요. 보통 토–일에 다음 주 세일이 공개됩니다.',
+    'recipes.updateSchedule.title': '📅 업데이트 일정',
+    'recipes.updateSchedule.thisWeek': '이번 주 목록: 매주 일요일 새벽 1-2시 업데이트 (월요일 시작 마트: Albert Heijn, ALDI, Plus, Hoogvliet, Coop, Lidl)',
+    'recipes.updateSchedule.nextWeek': '다음 주 목록: 매주 일요일 새벽 1-2시 업데이트 (월요일 시작 마트) + 화요일 새벽 1-2시 업데이트 (수요일 시작 마트: Jumbo, Dirk)',
+    'recipes.updateSchedule.note': '모든 시간은 네덜란드 시간 기준입니다.',
 
     'products.loading': '상품 로딩 중…',
     'products.error.generic': '상품을 불러올 수 없습니다.',
@@ -196,6 +200,10 @@ const MESSAGES = {
     'recipes.nextWeek.empty.title': "Next week's deals aren't available yet.",
     'recipes.nextWeek.empty.subtitle':
       "Come back over the weekend — most stores publish next week's deals on Sat–Sun.",
+    'recipes.updateSchedule.title': '📅 Update Schedule',
+    'recipes.updateSchedule.thisWeek': 'This week: Updated every Sunday at 1-2 AM (Monday-start stores: Albert Heijn, ALDI, Plus, Hoogvliet, Coop, Lidl)',
+    'recipes.updateSchedule.nextWeek': 'Next week: Updated every Sunday at 1-2 AM (Monday-start stores) + Tuesday at 1-2 AM (Wednesday-start stores: Jumbo, Dirk)',
+    'recipes.updateSchedule.note': 'All times are in Netherlands time (CET/CEST).',
 
     'products.loading': 'Loading products…',
     'products.error.generic': "Couldn't load products.",
@@ -336,6 +344,10 @@ const MESSAGES = {
     'recipes.nextWeek.empty.title': 'Aanbiedingen voor volgende week zijn nog niet beschikbaar.',
     'recipes.nextWeek.empty.subtitle':
       'Kom in het weekend terug — de meeste winkels publiceren volgende week op za–zo.',
+    'recipes.updateSchedule.title': '📅 Updateschema',
+    'recipes.updateSchedule.thisWeek': 'Deze week: Elke zondag om 1-2 uur bijgewerkt (maandag-start winkels: Albert Heijn, ALDI, Plus, Hoogvliet, Coop, Lidl)',
+    'recipes.updateSchedule.nextWeek': 'Volgende week: Elke zondag om 1-2 uur bijgewerkt (maandag-start winkels) + dinsdag om 1-2 uur (woensdag-start winkels: Jumbo, Dirk)',
+    'recipes.updateSchedule.note': 'Alle tijden zijn in Nederlandse tijd (CET/CEST).',
 
     'products.loading': 'Producten laden…',
     'products.error.generic': 'Kan producten niet laden.',
