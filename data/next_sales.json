@@ -1,10 +1,10 @@
 {
-  "scraped_at": "2026-01-18T04:04:27.181684",
+  "scraped_at": "2026-01-18T12:29:17.756774",
   "week_type": "next",
   "week_number": "2026-04",
   "start_date": "2026-01-19",
   "end_date": "2026-01-25",
-  "total_products": 28,
+  "total_products": 29,
   "supermarkets": {
     "successful": [
       "Albert Heijn",
@@ -32,7 +32,7 @@
       "start_date": "2026-01-19",
       "end_date": "2026-01-25",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:27.180343"
+      "scraped_at": "2026-01-18T12:29:17.755472"
     },
     {
       "supermarket": "Albert Heijn",
@@ -47,7 +47,7 @@
       "start_date": "2026-01-19",
       "end_date": "2026-01-25",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:27.180354"
+      "scraped_at": "2026-01-18T12:29:17.755481"
     },
     {
       "supermarket": "Albert Heijn",
@@ -62,7 +62,7 @@
       "start_date": "2026-01-19",
       "end_date": "2026-01-25",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:27.180362"
+      "scraped_at": "2026-01-18T12:29:17.755488"
     },
     {
       "supermarket": "Albert Heijn",
@@ -77,7 +77,7 @@
       "start_date": "2026-01-19",
       "end_date": "2026-01-25",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:27.180365"
+      "scraped_at": "2026-01-18T12:29:17.755492"
     },
     {
       "supermarket": "Albert Heijn",
@@ -92,7 +92,7 @@
       "start_date": "2026-01-19",
       "end_date": "2026-01-25",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:27.180368"
+      "scraped_at": "2026-01-18T12:29:17.755494"
     },
     {
       "supermarket": "Albert Heijn",
@@ -107,7 +107,7 @@
       "start_date": "2026-01-19",
       "end_date": "2026-01-25",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:27.180374"
+      "scraped_at": "2026-01-18T12:29:17.755500"
     },
     {
       "supermarket": "Albert Heijn",
@@ -122,7 +122,7 @@
       "start_date": "2026-01-19",
       "end_date": "2026-01-25",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:27.180381"
+      "scraped_at": "2026-01-18T12:29:17.755507"
     },
     {
       "supermarket": "Albert Heijn",
@@ -137,7 +137,7 @@
       "start_date": "2026-01-19",
       "end_date": "2026-01-25",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:27.180388"
+      "scraped_at": "2026-01-18T12:29:17.755514"
     },
     {
       "supermarket": "Albert Heijn",
@@ -152,7 +152,7 @@
       "start_date": "2026-01-19",
       "end_date": "2026-01-25",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:27.180394"
+      "scraped_at": "2026-01-18T12:29:17.755519"
     },
     {
       "supermarket": "Albert Heijn",
@@ -167,7 +167,7 @@
       "start_date": "2026-01-19",
       "end_date": "2026-01-25",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:27.180398"
+      "scraped_at": "2026-01-18T12:29:17.755523"
     },
     {
       "supermarket": "Albert Heijn",
@@ -182,7 +182,7 @@
       "start_date": "2026-01-19",
       "end_date": "2026-01-25",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:27.180401"
+      "scraped_at": "2026-01-18T12:29:17.755526"
     },
     {
       "supermarket": "Albert Heijn",
@@ -197,7 +197,7 @@
       "start_date": "2026-01-19",
       "end_date": "2026-01-25",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:27.180404"
+      "scraped_at": "2026-01-18T12:29:17.755529"
     },
     {
       "supermarket": "Albert Heijn",
@@ -212,7 +212,7 @@
       "start_date": "2026-01-19",
       "end_date": "2026-01-25",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:27.180406"
+      "scraped_at": "2026-01-18T12:29:17.755531"
     },
     {
       "supermarket": "Albert Heijn",
@@ -227,7 +227,7 @@
       "start_date": "2026-01-19",
       "end_date": "2026-01-25",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:27.180410"
+      "scraped_at": "2026-01-18T12:29:17.755535"
     },
     {
       "supermarket": "Albert Heijn",
@@ -242,7 +242,7 @@
       "start_date": "2026-01-19",
       "end_date": "2026-01-25",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:27.180416"
+      "scraped_at": "2026-01-18T12:29:17.755542"
     },
     {
       "supermarket": "Albert Heijn",
@@ -257,7 +257,7 @@
       "start_date": "2026-01-19",
       "end_date": "2026-01-25",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:27.180420"
+      "scraped_at": "2026-01-18T12:29:17.755545"
     },
     {
       "supermarket": "Albert Heijn",
@@ -266,13 +266,13 @@
       "price_info": "€1.39",
       "original_price": "€1.85",
       "discount_info": "25%korting",
-      "unit": "kilo",
+      "unit": null,
       "valid_date": null,
       "category": "sub",
       "start_date": "2026-01-19",
       "end_date": "2026-01-25",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:27.180427"
+      "scraped_at": "2026-01-18T12:29:17.755551"
     },
     {
       "supermarket": "Albert Heijn",
@@ -287,7 +287,7 @@
       "start_date": "2026-01-19",
       "end_date": "2026-01-25",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:27.180434"
+      "scraped_at": "2026-01-18T12:29:17.755557"
     },
     {
       "supermarket": "Albert Heijn",
@@ -302,7 +302,7 @@
       "start_date": "2026-01-19",
       "end_date": "2026-01-25",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:27.180439"
+      "scraped_at": "2026-01-18T12:29:17.755563"
     },
     {
       "supermarket": "Albert Heijn",
@@ -311,13 +311,13 @@
       "price_info": null,
       "original_price": null,
       "discount_info": "€1 korting",
-      "unit": "275 gram",
+      "unit": "275-300 gram",
       "valid_date": null,
       "category": "sub",
       "start_date": "2026-01-19",
       "end_date": "2026-01-25",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:27.180446"
+      "scraped_at": "2026-01-18T12:29:17.755570"
     },
     {
       "supermarket": "Albert Heijn",
@@ -332,7 +332,7 @@
       "start_date": "2026-01-19",
       "end_date": "2026-01-25",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:27.180453"
+      "scraped_at": "2026-01-18T12:29:17.755576"
     },
     {
       "supermarket": "Albert Heijn",
@@ -347,7 +347,7 @@
       "start_date": "2026-01-19",
       "end_date": "2026-01-25",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:27.180459"
+      "scraped_at": "2026-01-18T12:29:17.755581"
     },
     {
       "supermarket": "Albert Heijn",
@@ -362,7 +362,7 @@
       "start_date": "2026-01-19",
       "end_date": "2026-01-25",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:27.180464"
+      "scraped_at": "2026-01-18T12:29:17.755587"
     },
     {
       "supermarket": "Albert Heijn",
@@ -377,7 +377,7 @@
       "start_date": "2026-01-19",
       "end_date": "2026-01-25",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:27.180470"
+      "scraped_at": "2026-01-18T12:29:17.755592"
     },
     {
       "supermarket": "Coop",
@@ -392,7 +392,7 @@
       "start_date": "2026-01-19",
       "end_date": "2026-01-25",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:27.180478"
+      "scraped_at": "2026-01-18T12:29:17.755600"
     },
     {
       "supermarket": "Coop",
@@ -407,7 +407,7 @@
       "start_date": "2026-01-19",
       "end_date": "2026-01-25",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:27.180484"
+      "scraped_at": "2026-01-18T12:29:17.755607"
     },
     {
       "supermarket": "Coop",
@@ -422,7 +422,7 @@
       "start_date": "2026-01-19",
       "end_date": "2026-01-25",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:27.180490"
+      "scraped_at": "2026-01-18T12:29:17.755613"
     },
     {
       "supermarket": "Coop",
@@ -437,7 +437,22 @@
       "start_date": "2026-01-19",
       "end_date": "2026-01-25",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:27.180496"
+      "scraped_at": "2026-01-18T12:29:17.755619"
+    },
+    {
+      "supermarket": "Coop",
+      "store": "Coop",
+      "product_name": "Coca-Cola, Fanta en Sprite",
+      "price_info": "€1.00",
+      "original_price": null,
+      "discount_info": "1.- per fles",
+      "unit": null,
+      "valid_date": null,
+      "category": "sub",
+      "start_date": "2026-01-19",
+      "end_date": "2026-01-25",
+      "source": "jina_reader",
+      "scraped_at": "2026-01-18T12:29:17.755625"
     }
   ]
 }

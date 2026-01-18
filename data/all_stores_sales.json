@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-01-18T04:04:14.665323",
+  "scraped_at": "2026-01-18T12:29:01.399955",
   "stores": {
     "Albert Heijn": {
       "success": true,
@@ -97,8 +97,10 @@
         {
           "product_name": "AH Witte druiven pitloos 500 gram of Sable pitloze blauwe druiven 400 gram",
           "discount_label": "50% 1 stuk 25%",
+          "price": null,
+          "original_price": null,
           "valid_date": null,
-          "unit": "500 gram"
+          "unit": null
         },
         {
           "product_name": "AH Mandarijnen 1 kilo en Leanri mandarijnen 750 gram",
@@ -223,6 +225,8 @@
         {
           "product_name": "Alle Unox knaks",
           "discount_label": null,
+          "price": null,
+          "original_price": null,
           "valid_date": null,
           "unit": null
         }
@@ -756,7 +760,7 @@
           "original_price": "3.99",
           "discount_label": null,
           "valid_date": null,
-          "unit": "1000 g"
+          "unit": "Per 1000 g"
         },
         {
           "product_name": "PLUS Mandarijnen",
@@ -764,7 +768,7 @@
           "original_price": "2.69",
           "discount_label": null,
           "valid_date": null,
-          "unit": "1000 g"
+          "unit": "Per 1000 g"
         },
         {
           "product_name": "PLUS Limoenen en granaatappel",
@@ -788,7 +792,7 @@
           "original_price": "5.99",
           "discount_label": null,
           "valid_date": null,
-          "unit": "1000 g"
+          "unit": "Per 1000 g"
         },
         {
           "product_name": "Biologisch PLUS winterpeen biologisch",
@@ -796,7 +800,7 @@
           "original_price": "1.55",
           "discount_label": null,
           "valid_date": null,
-          "unit": "1 kg"
+          "unit": "Per 1 kg"
         },
         {
           "product_name": "PLUS Nederlandse Vastkokende of kruimige aardappel",
@@ -868,7 +872,7 @@
           "original_price": null,
           "discount_label": "2 VOOR 2.50",
           "valid_date": "t/m 17 feb",
-          "unit": "1 st"
+          "unit": "Per 1 st"
         },
         {
           "product_name": "PLUS Rode kool met hachee en aardappelpuree",
@@ -876,7 +880,7 @@
           "original_price": "5.29",
           "discount_label": null,
           "valid_date": null,
-          "unit": "500 g"
+          "unit": "Per 500 g"
         },
         {
           "product_name": "PLUS Stamppot boerenkool rookworst",
@@ -884,7 +888,7 @@
           "original_price": "4.69",
           "discount_label": null,
           "valid_date": null,
-          "unit": "500 g"
+          "unit": "Per 500 g"
         },
         {
           "product_name": "PLUS Bloemkool broccoli gehaktbal + partjes",
@@ -892,7 +896,7 @@
           "original_price": "4.69",
           "discount_label": null,
           "valid_date": null,
-          "unit": "500 g"
+          "unit": "Per 500 g"
         },
         {
           "product_name": "PLUS Stamppot hutspot hachee",
@@ -900,7 +904,7 @@
           "original_price": "4.49",
           "discount_label": null,
           "valid_date": null,
-          "unit": "500 g"
+          "unit": "Per 500 g"
         },
         {
           "product_name": "Alle Uit de keuken van PLUS Pizza's",

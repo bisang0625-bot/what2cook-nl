@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-01-18T04:04:14.665320",
+  "scraped_at": "2026-01-18T12:29:01.399953",
   "week_type": "current",
   "week_number": "2026-03",
   "start_date": "2026-01-12",
@@ -32,7 +32,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664504"
+      "scraped_at": "2026-01-18T12:29:01.399161"
     },
     {
       "supermarket": "Albert Heijn",
@@ -47,7 +47,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664514"
+      "scraped_at": "2026-01-18T12:29:01.399171"
     },
     {
       "supermarket": "Albert Heijn",
@@ -62,7 +62,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664521"
+      "scraped_at": "2026-01-18T12:29:01.399178"
     },
     {
       "supermarket": "Albert Heijn",
@@ -77,7 +77,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664529"
+      "scraped_at": "2026-01-18T12:29:01.399186"
     },
     {
       "supermarket": "Albert Heijn",
@@ -92,7 +92,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664535"
+      "scraped_at": "2026-01-18T12:29:01.399192"
     },
     {
       "supermarket": "Albert Heijn",
@@ -107,7 +107,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664539"
+      "scraped_at": "2026-01-18T12:29:01.399196"
     },
     {
       "supermarket": "Albert Heijn",
@@ -122,7 +122,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664545"
+      "scraped_at": "2026-01-18T12:29:01.399203"
     },
     {
       "supermarket": "Albert Heijn",
@@ -137,7 +137,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664548"
+      "scraped_at": "2026-01-18T12:29:01.399206"
     },
     {
       "supermarket": "Albert Heijn",
@@ -152,7 +152,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664551"
+      "scraped_at": "2026-01-18T12:29:01.399208"
     },
     {
       "supermarket": "Albert Heijn",
@@ -167,7 +167,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664557"
+      "scraped_at": "2026-01-18T12:29:01.399214"
     },
     {
       "supermarket": "Albert Heijn",
@@ -182,7 +182,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664560"
+      "scraped_at": "2026-01-18T12:29:01.399217"
     },
     {
       "supermarket": "Albert Heijn",
@@ -191,13 +191,13 @@
       "price_info": null,
       "original_price": null,
       "discount_info": "50% 1 stuk 25%",
-      "unit": "500 gram",
+      "unit": null,
       "valid_date": null,
       "category": "fruits",
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664564"
+      "scraped_at": "2026-01-18T12:29:01.399220"
     },
     {
       "supermarket": "Albert Heijn",
@@ -212,7 +212,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664567"
+      "scraped_at": "2026-01-18T12:29:01.399224"
     },
     {
       "supermarket": "Albert Heijn",
@@ -227,7 +227,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664571"
+      "scraped_at": "2026-01-18T12:29:01.399228"
     },
     {
       "supermarket": "Albert Heijn",
@@ -242,7 +242,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664575"
+      "scraped_at": "2026-01-18T12:29:01.399231"
     },
     {
       "supermarket": "Albert Heijn",
@@ -257,7 +257,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664578"
+      "scraped_at": "2026-01-18T12:29:01.399234"
     },
     {
       "supermarket": "Albert Heijn",
@@ -272,7 +272,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664581"
+      "scraped_at": "2026-01-18T12:29:01.399237"
     },
     {
       "supermarket": "Albert Heijn",
@@ -287,7 +287,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664587"
+      "scraped_at": "2026-01-18T12:29:01.399243"
     },
     {
       "supermarket": "Albert Heijn",
@@ -302,7 +302,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664594"
+      "scraped_at": "2026-01-18T12:29:01.399250"
     },
     {
       "supermarket": "Albert Heijn",
@@ -317,7 +317,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664599"
+      "scraped_at": "2026-01-18T12:29:01.399256"
     },
     {
       "supermarket": "Albert Heijn",
@@ -332,7 +332,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664605"
+      "scraped_at": "2026-01-18T12:29:01.399262"
     },
     {
       "supermarket": "Albert Heijn",
@@ -347,7 +347,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664612"
+      "scraped_at": "2026-01-18T12:29:01.399269"
     },
     {
       "supermarket": "Albert Heijn",
@@ -362,7 +362,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664618"
+      "scraped_at": "2026-01-18T12:29:01.399275"
     },
     {
       "supermarket": "Albert Heijn",
@@ -377,7 +377,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664624"
+      "scraped_at": "2026-01-18T12:29:01.399281"
     },
     {
       "supermarket": "Albert Heijn",
@@ -392,7 +392,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664630"
+      "scraped_at": "2026-01-18T12:29:01.399287"
     },
     {
       "supermarket": "Albert Heijn",
@@ -407,7 +407,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664636"
+      "scraped_at": "2026-01-18T12:29:01.399292"
     },
     {
       "supermarket": "Albert Heijn",
@@ -422,7 +422,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664641"
+      "scraped_at": "2026-01-18T12:29:01.399298"
     },
     {
       "supermarket": "Albert Heijn",
@@ -437,7 +437,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664647"
+      "scraped_at": "2026-01-18T12:29:01.399304"
     },
     {
       "supermarket": "Dirk",
@@ -452,7 +452,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664651"
+      "scraped_at": "2026-01-18T12:29:01.399308"
     },
     {
       "supermarket": "Dirk",
@@ -467,7 +467,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664658"
+      "scraped_at": "2026-01-18T12:29:01.399315"
     },
     {
       "supermarket": "Dirk",
@@ -482,7 +482,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664664"
+      "scraped_at": "2026-01-18T12:29:01.399321"
     },
     {
       "supermarket": "Dirk",
@@ -497,7 +497,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664671"
+      "scraped_at": "2026-01-18T12:29:01.399327"
     },
     {
       "supermarket": "Dirk",
@@ -512,7 +512,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664676"
+      "scraped_at": "2026-01-18T12:29:01.399333"
     },
     {
       "supermarket": "Dirk",
@@ -527,7 +527,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664682"
+      "scraped_at": "2026-01-18T12:29:01.399339"
     },
     {
       "supermarket": "Dirk",
@@ -542,7 +542,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664689"
+      "scraped_at": "2026-01-18T12:29:01.399346"
     },
     {
       "supermarket": "Dirk",
@@ -557,7 +557,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664695"
+      "scraped_at": "2026-01-18T12:29:01.399352"
     },
     {
       "supermarket": "Dirk",
@@ -572,7 +572,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664702"
+      "scraped_at": "2026-01-18T12:29:01.399358"
     },
     {
       "supermarket": "Dirk",
@@ -587,7 +587,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664708"
+      "scraped_at": "2026-01-18T12:29:01.399364"
     },
     {
       "supermarket": "Dirk",
@@ -602,7 +602,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664714"
+      "scraped_at": "2026-01-18T12:29:01.399369"
     },
     {
       "supermarket": "Dirk",
@@ -617,7 +617,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664721"
+      "scraped_at": "2026-01-18T12:29:01.399377"
     },
     {
       "supermarket": "Dirk",
@@ -632,7 +632,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664727"
+      "scraped_at": "2026-01-18T12:29:01.399383"
     },
     {
       "supermarket": "Dirk",
@@ -647,7 +647,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664731"
+      "scraped_at": "2026-01-18T12:29:01.399386"
     },
     {
       "supermarket": "Dirk",
@@ -662,7 +662,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664736"
+      "scraped_at": "2026-01-18T12:29:01.399392"
     },
     {
       "supermarket": "Dirk",
@@ -677,7 +677,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664743"
+      "scraped_at": "2026-01-18T12:29:01.399398"
     },
     {
       "supermarket": "Dirk",
@@ -692,7 +692,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664747"
+      "scraped_at": "2026-01-18T12:29:01.399402"
     },
     {
       "supermarket": "Dirk",
@@ -707,7 +707,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664752"
+      "scraped_at": "2026-01-18T12:29:01.399408"
     },
     {
       "supermarket": "Dirk",
@@ -722,7 +722,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664759"
+      "scraped_at": "2026-01-18T12:29:01.399414"
     },
     {
       "supermarket": "Dirk",
@@ -737,7 +737,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664764"
+      "scraped_at": "2026-01-18T12:29:01.399419"
     },
     {
       "supermarket": "Dirk",
@@ -752,7 +752,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664770"
+      "scraped_at": "2026-01-18T12:29:01.399425"
     },
     {
       "supermarket": "Dirk",
@@ -767,7 +767,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664774"
+      "scraped_at": "2026-01-18T12:29:01.399429"
     },
     {
       "supermarket": "Dirk",
@@ -782,7 +782,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664779"
+      "scraped_at": "2026-01-18T12:29:01.399434"
     },
     {
       "supermarket": "Dirk",
@@ -797,7 +797,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664784"
+      "scraped_at": "2026-01-18T12:29:01.399439"
     },
     {
       "supermarket": "Dirk",
@@ -812,7 +812,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664789"
+      "scraped_at": "2026-01-18T12:29:01.399444"
     },
     {
       "supermarket": "Dirk",
@@ -827,7 +827,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664794"
+      "scraped_at": "2026-01-18T12:29:01.399449"
     },
     {
       "supermarket": "Dirk",
@@ -842,7 +842,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664801"
+      "scraped_at": "2026-01-18T12:29:01.399456"
     },
     {
       "supermarket": "Dirk",
@@ -857,7 +857,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664807"
+      "scraped_at": "2026-01-18T12:29:01.399462"
     },
     {
       "supermarket": "Dirk",
@@ -872,7 +872,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664813"
+      "scraped_at": "2026-01-18T12:29:01.399467"
     },
     {
       "supermarket": "Lidl",
@@ -887,7 +887,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664817"
+      "scraped_at": "2026-01-18T12:29:01.399471"
     },
     {
       "supermarket": "Lidl",
@@ -902,7 +902,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664820"
+      "scraped_at": "2026-01-18T12:29:01.399475"
     },
     {
       "supermarket": "Lidl",
@@ -917,7 +917,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664825"
+      "scraped_at": "2026-01-18T12:29:01.399480"
     },
     {
       "supermarket": "Lidl",
@@ -932,7 +932,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664828"
+      "scraped_at": "2026-01-18T12:29:01.399482"
     },
     {
       "supermarket": "Lidl",
@@ -947,7 +947,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664831"
+      "scraped_at": "2026-01-18T12:29:01.399485"
     },
     {
       "supermarket": "Lidl",
@@ -962,7 +962,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664837"
+      "scraped_at": "2026-01-18T12:29:01.399491"
     },
     {
       "supermarket": "Lidl",
@@ -977,7 +977,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664840"
+      "scraped_at": "2026-01-18T12:29:01.399494"
     },
     {
       "supermarket": "Lidl",
@@ -992,7 +992,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664845"
+      "scraped_at": "2026-01-18T12:29:01.399499"
     },
     {
       "supermarket": "Lidl",
@@ -1007,7 +1007,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664851"
+      "scraped_at": "2026-01-18T12:29:01.399505"
     },
     {
       "supermarket": "ALDI",
@@ -1022,7 +1022,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664856"
+      "scraped_at": "2026-01-18T12:29:01.399510"
     },
     {
       "supermarket": "ALDI",
@@ -1037,7 +1037,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664862"
+      "scraped_at": "2026-01-18T12:29:01.399516"
     },
     {
       "supermarket": "ALDI",
@@ -1052,7 +1052,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664866"
+      "scraped_at": "2026-01-18T12:29:01.399520"
     },
     {
       "supermarket": "ALDI",
@@ -1067,7 +1067,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664871"
+      "scraped_at": "2026-01-18T12:29:01.399525"
     },
     {
       "supermarket": "ALDI",
@@ -1082,7 +1082,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664876"
+      "scraped_at": "2026-01-18T12:29:01.399529"
     },
     {
       "supermarket": "ALDI",
@@ -1097,7 +1097,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664882"
+      "scraped_at": "2026-01-18T12:29:01.399536"
     },
     {
       "supermarket": "ALDI",
@@ -1112,7 +1112,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664888"
+      "scraped_at": "2026-01-18T12:29:01.399542"
     },
     {
       "supermarket": "ALDI",
@@ -1127,7 +1127,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664893"
+      "scraped_at": "2026-01-18T12:29:01.399547"
     },
     {
       "supermarket": "ALDI",
@@ -1142,7 +1142,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664899"
+      "scraped_at": "2026-01-18T12:29:01.399552"
     },
     {
       "supermarket": "ALDI",
@@ -1157,7 +1157,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664904"
+      "scraped_at": "2026-01-18T12:29:01.399558"
     },
     {
       "supermarket": "ALDI",
@@ -1172,7 +1172,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664910"
+      "scraped_at": "2026-01-18T12:29:01.399563"
     },
     {
       "supermarket": "ALDI",
@@ -1187,7 +1187,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664916"
+      "scraped_at": "2026-01-18T12:29:01.399570"
     },
     {
       "supermarket": "ALDI",
@@ -1202,7 +1202,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664921"
+      "scraped_at": "2026-01-18T12:29:01.399575"
     },
     {
       "supermarket": "ALDI",
@@ -1217,7 +1217,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664927"
+      "scraped_at": "2026-01-18T12:29:01.399580"
     },
     {
       "supermarket": "ALDI",
@@ -1232,7 +1232,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664931"
+      "scraped_at": "2026-01-18T12:29:01.399585"
     },
     {
       "supermarket": "ALDI",
@@ -1247,7 +1247,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664936"
+      "scraped_at": "2026-01-18T12:29:01.399589"
     },
     {
       "supermarket": "ALDI",
@@ -1262,7 +1262,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664942"
+      "scraped_at": "2026-01-18T12:29:01.399595"
     },
     {
       "supermarket": "Plus",
@@ -1277,7 +1277,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664949"
+      "scraped_at": "2026-01-18T12:29:01.399602"
     },
     {
       "supermarket": "Plus",
@@ -1292,7 +1292,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664955"
+      "scraped_at": "2026-01-18T12:29:01.399608"
     },
     {
       "supermarket": "Plus",
@@ -1307,7 +1307,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664961"
+      "scraped_at": "2026-01-18T12:29:01.399614"
     },
     {
       "supermarket": "Plus",
@@ -1322,7 +1322,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664967"
+      "scraped_at": "2026-01-18T12:29:01.399620"
     },
     {
       "supermarket": "Plus",
@@ -1337,7 +1337,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664973"
+      "scraped_at": "2026-01-18T12:29:01.399626"
     },
     {
       "supermarket": "Plus",
@@ -1352,7 +1352,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664976"
+      "scraped_at": "2026-01-18T12:29:01.399629"
     },
     {
       "supermarket": "Plus",
@@ -1367,7 +1367,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664979"
+      "scraped_at": "2026-01-18T12:29:01.399632"
     },
     {
       "supermarket": "Plus",
@@ -1376,13 +1376,13 @@
       "price_info": "2.49",
       "original_price": "3.99",
       "discount_info": null,
-      "unit": "1000 g",
+      "unit": "Per 1000 g",
       "valid_date": null,
       "category": "fruits",
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664982"
+      "scraped_at": "2026-01-18T12:29:01.399635"
     },
     {
       "supermarket": "Plus",
@@ -1391,13 +1391,13 @@
       "price_info": "2.19",
       "original_price": "2.69",
       "discount_info": null,
-      "unit": "1000 g",
+      "unit": "Per 1000 g",
       "valid_date": null,
       "category": "fruits",
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664985"
+      "scraped_at": "2026-01-18T12:29:01.399637"
     },
     {
       "supermarket": "Plus",
@@ -1412,7 +1412,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664987"
+      "scraped_at": "2026-01-18T12:29:01.399640"
     },
     {
       "supermarket": "Plus",
@@ -1427,7 +1427,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.664994"
+      "scraped_at": "2026-01-18T12:29:01.399647"
     },
     {
       "supermarket": "Plus",
@@ -1436,13 +1436,13 @@
       "price_info": "3.00",
       "original_price": "5.99",
       "discount_info": null,
-      "unit": "1000 g",
+      "unit": "Per 1000 g",
       "valid_date": null,
       "category": "sub",
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.665001"
+      "scraped_at": "2026-01-18T12:29:01.399653"
     },
     {
       "supermarket": "Plus",
@@ -1451,13 +1451,13 @@
       "price_info": "1.00",
       "original_price": "1.55",
       "discount_info": null,
-      "unit": "1 kg",
+      "unit": "Per 1 kg",
       "valid_date": null,
       "category": "sub",
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.665008"
+      "scraped_at": "2026-01-18T12:29:01.399660"
     },
     {
       "supermarket": "Plus",
@@ -1472,7 +1472,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.665011"
+      "scraped_at": "2026-01-18T12:29:01.399663"
     },
     {
       "supermarket": "Plus",
@@ -1487,7 +1487,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.665017"
+      "scraped_at": "2026-01-18T12:29:01.399670"
     },
     {
       "supermarket": "Plus",
@@ -1502,7 +1502,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.665021"
+      "scraped_at": "2026-01-18T12:29:01.399674"
     },
     {
       "supermarket": "Plus",
@@ -1517,7 +1517,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.665027"
+      "scraped_at": "2026-01-18T12:29:01.399679"
     },
     {
       "supermarket": "Plus",
@@ -1532,7 +1532,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.665033"
+      "scraped_at": "2026-01-18T12:29:01.399685"
     },
     {
       "supermarket": "Plus",
@@ -1547,7 +1547,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.665040"
+      "scraped_at": "2026-01-18T12:29:01.399692"
     },
     {
       "supermarket": "Plus",
@@ -1562,7 +1562,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.665044"
+      "scraped_at": "2026-01-18T12:29:01.399696"
     },
     {
       "supermarket": "Plus",
@@ -1577,7 +1577,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.665051"
+      "scraped_at": "2026-01-18T12:29:01.399703"
     },
     {
       "supermarket": "Plus",
@@ -1586,13 +1586,13 @@
       "price_info": "1.49",
       "original_price": null,
       "discount_info": "2 VOOR 2.50",
-      "unit": "1 st",
+      "unit": "Per 1 st",
       "valid_date": "t/m 17 feb",
       "category": "sub",
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.665057"
+      "scraped_at": "2026-01-18T12:29:01.399708"
     },
     {
       "supermarket": "Plus",
@@ -1601,13 +1601,13 @@
       "price_info": "4.00",
       "original_price": "5.29",
       "discount_info": null,
-      "unit": "500 g",
+      "unit": "Per 500 g",
       "valid_date": null,
       "category": "fruits",
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.665060"
+      "scraped_at": "2026-01-18T12:29:01.399711"
     },
     {
       "supermarket": "Plus",
@@ -1616,13 +1616,13 @@
       "price_info": "4.00",
       "original_price": "4.69",
       "discount_info": null,
-      "unit": "500 g",
+      "unit": "Per 500 g",
       "valid_date": null,
       "category": "main",
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.665065"
+      "scraped_at": "2026-01-18T12:29:01.399716"
     },
     {
       "supermarket": "Plus",
@@ -1631,13 +1631,13 @@
       "price_info": "4.00",
       "original_price": "4.69",
       "discount_info": null,
-      "unit": "500 g",
+      "unit": "Per 500 g",
       "valid_date": null,
       "category": "main",
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.665070"
+      "scraped_at": "2026-01-18T12:29:01.399721"
     },
     {
       "supermarket": "Plus",
@@ -1646,13 +1646,13 @@
       "price_info": "4.00",
       "original_price": "4.49",
       "discount_info": null,
-      "unit": "500 g",
+      "unit": "Per 500 g",
       "valid_date": null,
       "category": "sub",
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.665077"
+      "scraped_at": "2026-01-18T12:29:01.399728"
     },
     {
       "supermarket": "Plus",
@@ -1667,7 +1667,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.665083"
+      "scraped_at": "2026-01-18T12:29:01.399734"
     },
     {
       "supermarket": "Plus",
@@ -1682,7 +1682,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.665089"
+      "scraped_at": "2026-01-18T12:29:01.399740"
     },
     {
       "supermarket": "Plus",
@@ -1697,7 +1697,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.665095"
+      "scraped_at": "2026-01-18T12:29:01.399745"
     },
     {
       "supermarket": "Plus",
@@ -1712,7 +1712,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.665101"
+      "scraped_at": "2026-01-18T12:29:01.399751"
     },
     {
       "supermarket": "Plus",
@@ -1727,7 +1727,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.665107"
+      "scraped_at": "2026-01-18T12:29:01.399757"
     },
     {
       "supermarket": "Plus",
@@ -1742,7 +1742,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.665113"
+      "scraped_at": "2026-01-18T12:29:01.399763"
     },
     {
       "supermarket": "Plus",
@@ -1757,7 +1757,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.665118"
+      "scraped_at": "2026-01-18T12:29:01.399768"
     },
     {
       "supermarket": "Plus",
@@ -1772,7 +1772,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.665124"
+      "scraped_at": "2026-01-18T12:29:01.399774"
     },
     {
       "supermarket": "Coop",
@@ -1787,7 +1787,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.665130"
+      "scraped_at": "2026-01-18T12:29:01.399780"
     },
     {
       "supermarket": "Coop",
@@ -1802,7 +1802,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.665136"
+      "scraped_at": "2026-01-18T12:29:01.399786"
     },
     {
       "supermarket": "Coop",
@@ -1817,7 +1817,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.665142"
+      "scraped_at": "2026-01-18T12:29:01.399792"
     },
     {
       "supermarket": "Coop",
@@ -1832,7 +1832,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.665148"
+      "scraped_at": "2026-01-18T12:29:01.399797"
     },
     {
       "supermarket": "Coop",
@@ -1847,7 +1847,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.665154"
+      "scraped_at": "2026-01-18T12:29:01.399803"
     },
     {
       "supermarket": "Coop",
@@ -1862,7 +1862,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.665157"
+      "scraped_at": "2026-01-18T12:29:01.399806"
     },
     {
       "supermarket": "Coop",
@@ -1877,7 +1877,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.665160"
+      "scraped_at": "2026-01-18T12:29:01.399809"
     },
     {
       "supermarket": "Coop",
@@ -1892,7 +1892,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.665163"
+      "scraped_at": "2026-01-18T12:29:01.399812"
     },
     {
       "supermarket": "Coop",
@@ -1907,7 +1907,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.665166"
+      "scraped_at": "2026-01-18T12:29:01.399815"
     },
     {
       "supermarket": "Coop",
@@ -1922,7 +1922,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.665168"
+      "scraped_at": "2026-01-18T12:29:01.399818"
     },
     {
       "supermarket": "Coop",
@@ -1937,7 +1937,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.665191"
+      "scraped_at": "2026-01-18T12:29:01.399826"
     },
     {
       "supermarket": "Coop",
@@ -1952,7 +1952,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.665198"
+      "scraped_at": "2026-01-18T12:29:01.399832"
     },
     {
       "supermarket": "Coop",
@@ -1967,7 +1967,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.665204"
+      "scraped_at": "2026-01-18T12:29:01.399838"
     },
     {
       "supermarket": "Coop",
@@ -1982,7 +1982,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.665207"
+      "scraped_at": "2026-01-18T12:29:01.399841"
     },
     {
       "supermarket": "Coop",
@@ -1997,7 +1997,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.665213"
+      "scraped_at": "2026-01-18T12:29:01.399847"
     },
     {
       "supermarket": "Coop",
@@ -2012,7 +2012,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.665217"
+      "scraped_at": "2026-01-18T12:29:01.399851"
     },
     {
       "supermarket": "Coop",
@@ -2027,7 +2027,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.665223"
+      "scraped_at": "2026-01-18T12:29:01.399856"
     },
     {
       "supermarket": "Coop",
@@ -2042,7 +2042,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.665228"
+      "scraped_at": "2026-01-18T12:29:01.399862"
     },
     {
       "supermarket": "Coop",
@@ -2057,7 +2057,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.665235"
+      "scraped_at": "2026-01-18T12:29:01.399868"
     },
     {
       "supermarket": "Coop",
@@ -2072,7 +2072,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.665239"
+      "scraped_at": "2026-01-18T12:29:01.399872"
     },
     {
       "supermarket": "Coop",
@@ -2087,7 +2087,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.665245"
+      "scraped_at": "2026-01-18T12:29:01.399878"
     },
     {
       "supermarket": "Coop",
@@ -2102,7 +2102,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.665250"
+      "scraped_at": "2026-01-18T12:29:01.399884"
     },
     {
       "supermarket": "Coop",
@@ -2117,7 +2117,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.665253"
+      "scraped_at": "2026-01-18T12:29:01.399886"
     },
     {
       "supermarket": "Coop",
@@ -2132,7 +2132,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.665258"
+      "scraped_at": "2026-01-18T12:29:01.399891"
     },
     {
       "supermarket": "Coop",
@@ -2147,7 +2147,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.665263"
+      "scraped_at": "2026-01-18T12:29:01.399896"
     },
     {
       "supermarket": "Coop",
@@ -2162,7 +2162,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.665269"
+      "scraped_at": "2026-01-18T12:29:01.399902"
     },
     {
       "supermarket": "Coop",
@@ -2177,7 +2177,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.665274"
+      "scraped_at": "2026-01-18T12:29:01.399907"
     },
     {
       "supermarket": "Coop",
@@ -2192,7 +2192,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.665280"
+      "scraped_at": "2026-01-18T12:29:01.399913"
     },
     {
       "supermarket": "Coop",
@@ -2207,7 +2207,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.665285"
+      "scraped_at": "2026-01-18T12:29:01.399919"
     },
     {
       "supermarket": "Coop",
@@ -2222,7 +2222,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.665290"
+      "scraped_at": "2026-01-18T12:29:01.399924"
     },
     {
       "supermarket": "Coop",
@@ -2237,7 +2237,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.665296"
+      "scraped_at": "2026-01-18T12:29:01.399930"
     },
     {
       "supermarket": "Coop",
@@ -2252,7 +2252,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.665302"
+      "scraped_at": "2026-01-18T12:29:01.399935"
     },
     {
       "supermarket": "Coop",
@@ -2267,7 +2267,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.665307"
+      "scraped_at": "2026-01-18T12:29:01.399941"
     },
     {
       "supermarket": "Coop",
@@ -2282,7 +2282,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-18T04:04:14.665313"
+      "scraped_at": "2026-01-18T12:29:01.399946"
     }
   ]
 }
