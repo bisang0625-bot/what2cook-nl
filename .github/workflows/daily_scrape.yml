@@ -1,17 +1,13 @@
-name: Daily Scraper - Update Sales Data (DEPRECATED)
+name: Daily Scraper - Update Sales Data (DEPRECATED - DISABLED)
 
 # ⚠️ 이 워크플로우는 더 이상 사용되지 않습니다.
 # 새로운 smart_scraper.yml을 사용하세요.
+# 이 워크플로우는 완전히 비활성화되었습니다.
 
 on:
-  schedule:
-    # 매일 아침 05:00 (네덜란드 시간, UTC+1/+2)
-    # UTC 04:00 = CET 05:00 (일광절약시간 제외)
-    # UTC 03:00 = CEST 05:00 (일광절약시간 포함)
-    # 일광절약시간 고려하여 UTC 04:00로 설정 (대략 05:00-06:00 사이)
-    # 주석 처리: 새로운 smart_scraper.yml 사용
-    # - cron: '0 4 * * *'
-  workflow_dispatch: # 수동 실행도 가능하도록
+  # 모든 트리거 비활성화
+  # schedule:
+  # workflow_dispatch:
 
 jobs:
   scrape-and-commit:
