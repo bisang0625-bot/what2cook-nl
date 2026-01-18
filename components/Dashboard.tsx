@@ -91,22 +91,40 @@ type Translator = (key: any, vars?: Record<string, string | number>) => string
 
 // 재료명 파싱 함수 (네덜란드어명 (한국어명) 형식에서 언어에 맞는 이름 추출)
 function parseIngredientName(ingredient: string, lang: AppLanguage): string {
-  // "(한국어명)" 형식이 있는지 확인
-  const match = ingredient.match(/^(.+?)\s*\(([^)]+)\)$/)
+  if (!ingredient || typeof ingredient !== 'string') {
+    return ingredient || ''
+  }
   
-  if (match) {
+  // "(한국어명)" 형식이 있는지 확인
+  // 예: "Kipfilet (닭가슴살)", "Alle AH Verse pasta's, noedels, pasta- en... (생 파스타)"
+  // 정규식: 문자열 끝에 있는 괄호 쌍 찾기
+  const match = ingredient.match(/^(.+?)\s*\(([^)]+)\)\s*$/)
+  
+  if (match && match.length >= 3) {
     const dutchName = match[1].trim()
     const koreanName = match[2].trim()
     
-    // 한국어 선택 시 한국어명 반환
-    if (lang === 'ko') {
-      return koreanName
+    // 한국어명이 비어있지 않은 경우에만 처리
+    if (koreanName && koreanName.length > 0) {
+      // 한국어 선택 시 한국어명 반환
+      if (lang === 'ko') {
+        return koreanName
+      }
+      // 영어/네덜란드어 선택 시 네덜란드어명 반환
+      return dutchName
     }
-    // 영어/네덜란드어 선택 시 네덜란드어명 반환
-    return dutchName
   }
   
-  // 형식이 맞지 않으면 원본 반환
+  // 형식이 맞지 않거나 한국어명이 없는 경우
+  // 한국어 선택 시 이미 한국어가 포함되어 있으면 그대로 반환
+  if (lang === 'ko') {
+    const koreanPattern = /[가-힣]/
+    if (koreanPattern.test(ingredient)) {
+      return ingredient
+    }
+  }
+  
+  // 그 외의 경우 원본 반환
   return ingredient
 }
 
@@ -691,14 +709,21 @@ function RecipeCard({
 
         {/* Main Ingredients Badges */}
         <div className="flex flex-wrap gap-2 mb-4">
-          {recipe.main_ingredients.slice(0, 3).map((ingredient, idx) => (
-            <span
-              key={idx}
-              className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-nl-orange-100 text-nl-orange-700"
-            >
-              {parseIngredientName(ingredient, lang)}
-            </span>
-          ))}
+          {recipe.main_ingredients.slice(0, 3).map((ingredient, idx) => {
+            const displayName = parseIngredientName(ingredient, lang)
+            // 디버깅: 개발 환경에서만 로그 출력
+            if (process.env.NODE_ENV === 'development') {
+              console.log(`[parseIngredientName] lang=${lang}, original="${ingredient}", parsed="${displayName}"`)
+            }
+            return (
+              <span
+                key={idx}
+                className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-nl-orange-100 text-nl-orange-700"
+              >
+                {displayName}
+              </span>
+            )
+          })}
           {recipe.main_ingredients.length > 3 && (
             <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-gray-100 text-gray-600">
               +{recipe.main_ingredients.length - 3}
