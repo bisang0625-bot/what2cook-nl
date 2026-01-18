@@ -20,13 +20,31 @@ export default function StoreFilter({
 }: StoreFilterProps) {
   const { t } = useI18n()
 
-  // 사용 가능한 마트 목록 추출
+  // 마트 이름 정규화 함수
+  const normalizeStoreName = (storeName: string): string => {
+    const storeNameMap: Record<string, string> = {
+      'ALDI': 'Aldi',
+      'aldi': 'Aldi',
+      'Aldi': 'Aldi',
+      'Albert Heijn': 'Albert Heijn',
+      'Jumbo': 'Jumbo',
+      'Dirk': 'Dirk',
+      'Lidl': 'Lidl',
+      'Plus': 'Plus',
+      'Coop': 'Coop',
+      'Hoogvliet': 'Hoogvliet',
+    }
+    return storeNameMap[storeName] || storeName
+  }
+
+  // 사용 가능한 마트 목록 추출 (정규화 적용)
   const availableStores = useMemo(() => {
     const storesSet = new Set<string>()
     products.forEach(product => {
       const storeName = product.store || product.supermarket
       if (storeName) {
-        storesSet.add(storeName)
+        const normalized = normalizeStoreName(storeName)
+        storesSet.add(normalized)
       }
     })
     return Array.from(storesSet).sort()

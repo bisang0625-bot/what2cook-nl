@@ -79,6 +79,23 @@ export default function DealsPage() {
     loadData()
   }, [])
 
+  // 마트 이름 정규화 함수 (ALDI -> Aldi 등)
+  const normalizeStoreName = (storeName: string): string => {
+    const storeNameMap: Record<string, string> = {
+      'ALDI': 'Aldi',
+      'aldi': 'Aldi',
+      'Aldi': 'Aldi',
+      'Albert Heijn': 'Albert Heijn',
+      'Jumbo': 'Jumbo',
+      'Dirk': 'Dirk',
+      'Lidl': 'Lidl',
+      'Plus': 'Plus',
+      'Coop': 'Coop',
+      'Hoogvliet': 'Hoogvliet',
+    }
+    return storeNameMap[storeName] || storeName
+  }
+
   const categorizeProducts = (products: SaleProduct[]) => {
     const fruitKeywords = ['druiven', 'appel', 'banaan', 'fruit', 'aardbei', 'citroen', 'peer', 'mango', 'orange']
     const mainKeywords = ['kip', 'vlees', 'vis', 'rund', 'varken', 'gehakt', 'aardappel', 'kool', 'ui', 'wortel', 'egg']
@@ -101,9 +118,19 @@ export default function DealsPage() {
   const filteredCurrent = useMemo(() => {
     let products = currentSales?.products || []
     
+    // 마트 이름 정규화 적용
+    products = products.map(p => ({
+      ...p,
+      store: normalizeStoreName(p.store || p.supermarket || ''),
+      supermarket: normalizeStoreName(p.supermarket || p.store || ''),
+    }))
+    
     // 마트 필터
     if (!selectAll) {
-      products = products.filter(p => selectedStores.has(p.store || p.supermarket || ''))
+      products = products.filter(p => {
+        const storeName = normalizeStoreName(p.store || p.supermarket || '')
+        return selectedStores.has(storeName)
+      })
     }
     
     // 검색 필터
@@ -111,7 +138,7 @@ export default function DealsPage() {
       const query = searchQuery.toLowerCase().trim()
       products = products.filter(p => {
         const productName = (p.product_name || p.name || '').toLowerCase()
-        const storeName = (p.store || p.supermarket || '').toLowerCase()
+        const storeName = normalizeStoreName(p.store || p.supermarket || '').toLowerCase()
         return productName.includes(query) || storeName.includes(query)
       })
     }
@@ -122,9 +149,19 @@ export default function DealsPage() {
   const filteredNext = useMemo(() => {
     let products = nextSales?.products || []
     
+    // 마트 이름 정규화 적용
+    products = products.map(p => ({
+      ...p,
+      store: normalizeStoreName(p.store || p.supermarket || ''),
+      supermarket: normalizeStoreName(p.supermarket || p.store || ''),
+    }))
+    
     // 마트 필터
     if (!selectAll) {
-      products = products.filter(p => selectedStores.has(p.store || p.supermarket || ''))
+      products = products.filter(p => {
+        const storeName = normalizeStoreName(p.store || p.supermarket || '')
+        return selectedStores.has(storeName)
+      })
     }
     
     // 검색 필터
@@ -132,7 +169,7 @@ export default function DealsPage() {
       const query = searchQuery.toLowerCase().trim()
       products = products.filter(p => {
         const productName = (p.product_name || p.name || '').toLowerCase()
-        const storeName = (p.store || p.supermarket || '').toLowerCase()
+        const storeName = normalizeStoreName(p.store || p.supermarket || '').toLowerCase()
         return productName.includes(query) || storeName.includes(query)
       })
     }

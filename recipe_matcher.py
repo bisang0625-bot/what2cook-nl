@@ -71,15 +71,35 @@ class RecipeMatcher:
         print(f"[INFO] {len(data.get('products', []))}개의 세일 상품 정보를 로드했습니다.")
         return data
     
+    def normalize_store_name(self, store_name: str) -> str:
+        """마트 이름을 정규화합니다 (대소문자 통일)."""
+        # 마트 이름 정규화 매핑
+        store_name_map = {
+            'ALDI': 'Aldi',
+            'aldi': 'Aldi',
+            'Aldi': 'Aldi',
+            'Albert Heijn': 'Albert Heijn',
+            'Jumbo': 'Jumbo',
+            'Dirk': 'Dirk',
+            'Lidl': 'Lidl',
+            'Plus': 'Plus',
+            'Coop': 'Coop',
+            'Hoogvliet': 'Hoogvliet',
+        }
+        # 정규화된 이름 반환 (없으면 원본 반환)
+        return store_name_map.get(store_name, store_name)
+    
     def group_products_by_store(self, products: List[Dict[str, Any]]) -> Dict[str, List[Dict[str, Any]]]:
         """마트별로 상품을 그룹화합니다."""
         grouped = {}
         for product in products:
             # 'store' 또는 'supermarket' 필드 지원 (하위 호환성)
             store = product.get('store') or product.get('supermarket', 'Unknown')
-            if store not in grouped:
-                grouped[store] = []
-            grouped[store].append(product)
+            # 마트 이름 정규화
+            normalized_store = self.normalize_store_name(store)
+            if normalized_store not in grouped:
+                grouped[normalized_store] = []
+            grouped[normalized_store].append(product)
         return grouped
     
     def categorize_ingredients(self, products: List[Dict[str, Any]]) -> Dict[str, List[Dict[str, Any]]]:
@@ -624,6 +644,7 @@ class RecipeMatcher:
             'Plus': 0,          # 월요일
             'Hoogvliet': 0,     # 월요일
             'Coop': 0,          # 월요일
+            'Lidl': 0,          # 월요일
         }
         
         from datetime import datetime, timedelta
