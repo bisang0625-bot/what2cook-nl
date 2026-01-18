@@ -1,10 +1,10 @@
 {
-  "scraped_at": "2026-01-15T21:51:40.381881",
+  "scraped_at": "2026-01-18T04:04:14.665320",
   "week_type": "current",
   "week_number": "2026-03",
   "start_date": "2026-01-12",
   "end_date": "2026-01-18",
-  "total_products": 153,
+  "total_products": 151,
   "supermarkets": {
     "successful": [
       "Albert Heijn",
@@ -23,8 +23,8 @@
       "supermarket": "Albert Heijn",
       "store": "Albert Heijn",
       "product_name": "AH Stamppotgroente en -aardappelen",
-      "price_info": "1.99",
-      "original_price": "3.98",
+      "price_info": "€1.99",
+      "original_price": "€3.98",
       "discount_info": "1+1 gratis",
       "unit": null,
       "valid_date": null,
@@ -32,14 +32,14 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381051"
+      "scraped_at": "2026-01-18T04:04:14.664504"
     },
     {
       "supermarket": "Albert Heijn",
       "store": "Albert Heijn",
       "product_name": "AH Prei",
-      "price_info": "0.69",
-      "original_price": "1.10",
+      "price_info": "€0.69",
+      "original_price": "€1.10",
       "discount_info": "2 voor 0.69",
       "unit": null,
       "valid_date": null,
@@ -47,29 +47,29 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381060"
+      "scraped_at": "2026-01-18T04:04:14.664514"
     },
     {
       "supermarket": "Albert Heijn",
       "store": "Albert Heijn",
       "product_name": "Alle AH Verspakketten soep",
-      "price_info": "2.99",
-      "original_price": "3.99",
-      "discount_info": null,
+      "price_info": "€2.99",
+      "original_price": "€3.99",
+      "discount_info": "voor 2.99",
       "unit": null,
       "valid_date": null,
       "category": "sub",
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381067"
+      "scraped_at": "2026-01-18T04:04:14.664521"
     },
     {
       "supermarket": "Albert Heijn",
       "store": "Albert Heijn",
       "product_name": "AH Hollandse en Mexicaanse roerbakgroenten 400 gram",
-      "price_info": "2.49",
-      "original_price": "4.98",
+      "price_info": "€2.49",
+      "original_price": "€4.98",
       "discount_info": "1+1 gratis",
       "unit": "400 gram",
       "valid_date": null,
@@ -77,29 +77,29 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381075"
+      "scraped_at": "2026-01-18T04:04:14.664529"
     },
     {
       "supermarket": "Albert Heijn",
       "store": "Albert Heijn",
       "product_name": "AH Snoepgroente tomaat 1 kilo",
-      "price_info": "3.99",
-      "original_price": "5.99",
-      "discount_info": null,
+      "price_info": "€3.99",
+      "original_price": "€5.99",
+      "discount_info": "voor 3.99",
       "unit": "1 kilo",
       "valid_date": null,
       "category": "main",
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381081"
+      "scraped_at": "2026-01-18T04:04:14.664535"
     },
     {
       "supermarket": "Albert Heijn",
       "store": "Albert Heijn",
       "product_name": "AH Biologische iets kruimige en vastkokende aardappelen 1 kilo",
-      "price_info": "3.49",
-      "original_price": "4.98",
+      "price_info": "€3.49",
+      "original_price": "€4.98",
       "discount_info": "2 voor 3.49",
       "unit": "1 kilo",
       "valid_date": null,
@@ -107,44 +107,44 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381084"
+      "scraped_at": "2026-01-18T04:04:14.664539"
     },
     {
       "supermarket": "Albert Heijn",
       "store": "Albert Heijn",
       "product_name": "AH Biologisch pastinaak 400 gram",
-      "price_info": "1.49",
-      "original_price": "2.09",
-      "discount_info": null,
+      "price_info": "€1.49",
+      "original_price": "€2.09",
+      "discount_info": "voor 1.49",
       "unit": "400 gram",
       "valid_date": null,
       "category": "sub",
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381091"
+      "scraped_at": "2026-01-18T04:04:14.664545"
     },
     {
       "supermarket": "Albert Heijn",
       "store": "Albert Heijn",
       "product_name": "Iglo rode kool met appeltjes",
-      "price_info": "0.99",
-      "original_price": "2.09",
-      "discount_info": null,
+      "price_info": "€0.99",
+      "original_price": "€2.09",
+      "discount_info": "voor 0.99",
       "unit": "450 gram",
       "valid_date": null,
       "category": "fruits",
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381093"
+      "scraped_at": "2026-01-18T04:04:14.664548"
     },
     {
       "supermarket": "Albert Heijn",
       "store": "Albert Heijn",
       "product_name": "Alle AH Aardappelovenschalen",
-      "price_info": "3.99",
-      "original_price": "4.78",
+      "price_info": "€3.99",
+      "original_price": "€4.78",
       "discount_info": "2 voor 3.99",
       "unit": null,
       "valid_date": null,
@@ -152,14 +152,14 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381096"
+      "scraped_at": "2026-01-18T04:04:14.664551"
     },
     {
       "supermarket": "Albert Heijn",
       "store": "Albert Heijn",
       "product_name": "Alle AH Rauwkost",
-      "price_info": "4.00",
-      "original_price": "4.98",
+      "price_info": "€4.00",
+      "original_price": "€4.98",
       "discount_info": "2 voor 4.00",
       "unit": null,
       "valid_date": null,
@@ -167,14 +167,14 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381102"
+      "scraped_at": "2026-01-18T04:04:14.664557"
     },
     {
       "supermarket": "Albert Heijn",
       "store": "Albert Heijn",
       "product_name": "Alle appels en peren op schaal 4 stuks",
-      "price_info": "3.73",
-      "original_price": "4.98",
+      "price_info": "€3.73",
+      "original_price": "€4.98",
       "discount_info": "2e halve prijs",
       "unit": null,
       "valid_date": null,
@@ -182,7 +182,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381105"
+      "scraped_at": "2026-01-18T04:04:14.664560"
     },
     {
       "supermarket": "Albert Heijn",
@@ -190,21 +190,21 @@
       "product_name": "AH Witte druiven pitloos 500 gram of Sable pitloze blauwe druiven 400 gram",
       "price_info": null,
       "original_price": null,
-      "discount_info": "2 stuks 50% 1 stuk 25%",
-      "unit": null,
+      "discount_info": "50% 1 stuk 25%",
+      "unit": "500 gram",
       "valid_date": null,
       "category": "fruits",
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381108"
+      "scraped_at": "2026-01-18T04:04:14.664564"
     },
     {
       "supermarket": "Albert Heijn",
       "store": "Albert Heijn",
       "product_name": "AH Mandarijnen 1 kilo en Leanri mandarijnen 750 gram",
-      "price_info": "3.99",
-      "original_price": "5.38",
+      "price_info": "€3.99",
+      "original_price": "€5.38",
       "discount_info": "2 voor 3.99",
       "unit": null,
       "valid_date": null,
@@ -212,29 +212,29 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381112"
+      "scraped_at": "2026-01-18T04:04:14.664567"
     },
     {
       "supermarket": "Albert Heijn",
       "store": "Albert Heijn",
       "product_name": "Alle CoolBest FruitDrink",
-      "price_info": "0.99",
-      "original_price": "2.29",
-      "discount_info": null,
+      "price_info": "€0.99",
+      "original_price": "€2.29",
+      "discount_info": "voor 0.99",
       "unit": null,
       "valid_date": null,
       "category": "fruits",
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381116"
+      "scraped_at": "2026-01-18T04:04:14.664571"
     },
     {
       "supermarket": "Albert Heijn",
       "store": "Albert Heijn",
       "product_name": "Alle AH Blauwe bessen*",
-      "price_info": "2.92",
-      "original_price": "4.49",
+      "price_info": "€2.92",
+      "original_price": "€4.49",
       "discount_info": "35%korting",
       "unit": null,
       "valid_date": null,
@@ -242,14 +242,14 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381119"
+      "scraped_at": "2026-01-18T04:04:14.664575"
     },
     {
       "supermarket": "Albert Heijn",
       "store": "Albert Heijn",
       "product_name": "AH Mango",
-      "price_info": "1.39",
-      "original_price": "1.99",
+      "price_info": "€1.39",
+      "original_price": "€1.99",
       "discount_info": "30%korting",
       "unit": null,
       "valid_date": null,
@@ -257,44 +257,44 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381122"
+      "scraped_at": "2026-01-18T04:04:14.664578"
     },
     {
       "supermarket": "Albert Heijn",
       "store": "Albert Heijn",
       "product_name": "AH Zoete kleine appeltjes 1 kilo",
-      "price_info": "1.99",
-      "original_price": "2.99",
-      "discount_info": null,
+      "price_info": "€1.99",
+      "original_price": "€2.99",
+      "discount_info": "voor 1.99",
       "unit": "1 kilo",
       "valid_date": null,
       "category": "fruits",
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381125"
+      "scraped_at": "2026-01-18T04:04:14.664581"
     },
     {
       "supermarket": "Albert Heijn",
       "store": "Albert Heijn",
       "product_name": "AH Nectarines 500 gram",
-      "price_info": "2.49",
-      "original_price": "3.49",
-      "discount_info": null,
+      "price_info": "€2.49",
+      "original_price": "€3.49",
+      "discount_info": "voor 2.49",
       "unit": "500 gram",
       "valid_date": null,
       "category": "sub",
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381131"
+      "scraped_at": "2026-01-18T04:04:14.664587"
     },
     {
       "supermarket": "Albert Heijn",
       "store": "Albert Heijn",
       "product_name": "Alle AH Verse sappen en smoothies 250 ml",
-      "price_info": "5.00",
-      "original_price": "5.97",
+      "price_info": "€5.00",
+      "original_price": "€5.97",
       "discount_info": "3 voor 5.00",
       "unit": "250 ml",
       "valid_date": null,
@@ -302,44 +302,29 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381138"
+      "scraped_at": "2026-01-18T04:04:14.664594"
     },
     {
       "supermarket": "Albert Heijn",
       "store": "Albert Heijn",
       "product_name": "Alle AH Bapao*",
-      "price_info": "0.69",
-      "original_price": "1.29",
-      "discount_info": null,
+      "price_info": "€0.69",
+      "original_price": "€1.29",
+      "discount_info": "voor 0.69",
       "unit": null,
       "valid_date": null,
       "category": "sub",
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381144"
-    },
-    {
-      "supermarket": "Albert Heijn",
-      "store": "Albert Heijn",
-      "product_name": "AH Poffertjes 24 stuks",
-      "price_info": "0.99",
-      "original_price": "1.89",
-      "discount_info": null,
-      "unit": null,
-      "valid_date": null,
-      "category": "sub",
-      "start_date": "2026-01-12",
-      "end_date": "2026-01-18",
-      "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381150"
+      "scraped_at": "2026-01-18T04:04:14.664599"
     },
     {
       "supermarket": "Albert Heijn",
       "store": "Albert Heijn",
       "product_name": "Alle AH Stoommaaltijden en -soepen",
-      "price_info": "9.99",
-      "original_price": "14.98",
+      "price_info": "€9.99",
+      "original_price": "€14.98",
       "discount_info": "2 voor 9.99",
       "unit": null,
       "valid_date": null,
@@ -347,29 +332,44 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381156"
+      "scraped_at": "2026-01-18T04:04:14.664605"
     },
     {
       "supermarket": "Albert Heijn",
       "store": "Albert Heijn",
       "product_name": "Alle AH Hollandse Keuken 3-vaks-maaltijden",
-      "price_info": "3.99",
-      "original_price": "5.79",
-      "discount_info": null,
+      "price_info": "€3.99",
+      "original_price": "€5.79",
+      "discount_info": "voor 3.99",
       "unit": null,
       "valid_date": null,
       "category": "sub",
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381163"
+      "scraped_at": "2026-01-18T04:04:14.664612"
+    },
+    {
+      "supermarket": "Albert Heijn",
+      "store": "Albert Heijn",
+      "product_name": "AH Poffertjes 24 stuks",
+      "price_info": "€0.99",
+      "original_price": "€1.89",
+      "discount_info": "voor 0.99",
+      "unit": null,
+      "valid_date": null,
+      "category": "sub",
+      "start_date": "2026-01-12",
+      "end_date": "2026-01-18",
+      "source": "jina_reader",
+      "scraped_at": "2026-01-18T04:04:14.664618"
     },
     {
       "supermarket": "Albert Heijn",
       "store": "Albert Heijn",
       "product_name": "Alle AH Verse pizza's",
-      "price_info": "12.00",
-      "original_price": "13.98",
+      "price_info": "€12.00",
+      "original_price": "€13.98",
       "discount_info": "2 voor 12.00",
       "unit": null,
       "valid_date": null,
@@ -377,14 +377,14 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381169"
+      "scraped_at": "2026-01-18T04:04:14.664624"
     },
     {
       "supermarket": "Albert Heijn",
       "store": "Albert Heijn",
       "product_name": "Alle AH Verse soepen 500 gram",
-      "price_info": "6.00",
-      "original_price": "7.18",
+      "price_info": "€6.00",
+      "original_price": "€7.18",
       "discount_info": "2 voor 6.00",
       "unit": "500 gram",
       "valid_date": null,
@@ -392,14 +392,14 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381176"
+      "scraped_at": "2026-01-18T04:04:14.664630"
     },
     {
       "supermarket": "Albert Heijn",
       "store": "Albert Heijn",
       "product_name": "Alle AH Verse maaltijden",
-      "price_info": "12.00",
-      "original_price": "12.98",
+      "price_info": "€12.00",
+      "original_price": "€12.98",
       "discount_info": "2 voor 12.00",
       "unit": null,
       "valid_date": null,
@@ -407,254 +407,59 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381182"
+      "scraped_at": "2026-01-18T04:04:14.664636"
     },
     {
       "supermarket": "Albert Heijn",
       "store": "Albert Heijn",
       "product_name": "AH Rundergehakt, Rundergehakt minder vet of Runder-kipgehakt 300 gram",
-      "price_info": "3.99",
-      "original_price": "4.99",
-      "discount_info": null,
+      "price_info": "€3.99",
+      "original_price": "€4.99",
+      "discount_info": "voor 3.99",
       "unit": "300 gram",
       "valid_date": null,
       "category": "main",
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381187"
+      "scraped_at": "2026-01-18T04:04:14.664641"
     },
     {
       "supermarket": "Albert Heijn",
       "store": "Albert Heijn",
       "product_name": "Alle Unox knaks",
-      "price_info": "4.33",
-      "original_price": "5.78",
-      "discount_info": "2e halve prijs",
+      "price_info": null,
+      "original_price": null,
+      "discount_info": null,
       "unit": null,
       "valid_date": null,
       "category": "sub",
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381193"
+      "scraped_at": "2026-01-18T04:04:14.664647"
     },
     {
       "supermarket": "Dirk",
       "store": "Dirk",
       "product_name": "1 de Beste Blauwe bessen 300 g",
       "price_info": "2 49",
-      "original_price": "van 3.59",
-      "discount_info": "ACTIE",
-      "unit": null,
+      "original_price": "3.59",
+      "discount_info": "VR, ZA & ZO actie",
+      "unit": "300 g",
       "valid_date": null,
       "category": "fruits",
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381197"
-    },
-    {
-      "supermarket": "Dirk",
-      "store": "Dirk",
-      "product_name": "Bonduelle groente Blik 150 - 200 gram.",
-      "price_info": "79",
-      "original_price": "ACTIE van 2.29",
-      "discount_info": "ACTIE",
-      "unit": null,
-      "valid_date": null,
-      "category": "sub",
-      "start_date": "2026-01-12",
-      "end_date": "2026-01-18",
-      "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381204"
-    },
-    {
-      "supermarket": "Dirk",
-      "store": "Dirk",
-      "product_name": "Broccoli 1 kg (ca. 2 stuks)",
-      "price_info": "1 78",
-      "original_price": "ACTIE van 2.18",
-      "discount_info": "ACTIE",
-      "unit": "1 kg",
-      "valid_date": null,
-      "category": "main",
-      "start_date": "2026-01-12",
-      "end_date": "2026-01-18",
-      "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381210"
-    },
-    {
-      "supermarket": "Dirk",
-      "store": "Dirk",
-      "product_name": "1 de Beste Waspeen 500 g",
-      "price_info": "69",
-      "original_price": "ACTIE van 0.99",
-      "discount_info": "ACTIE",
-      "unit": "500 g",
-      "valid_date": null,
-      "category": "sub",
-      "start_date": "2026-01-12",
-      "end_date": "2026-01-18",
-      "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381215"
-    },
-    {
-      "supermarket": "Dirk",
-      "store": "Dirk",
-      "product_name": "1 de Beste Bami nasi- of macaroni spaghettigroente Zak 450 gram.",
-      "price_info": "1 29",
-      "original_price": "ACTIE van 1.69",
-      "discount_info": "ACTIE",
-      "unit": "450 gram",
-      "valid_date": null,
-      "category": "sub",
-      "start_date": "2026-01-12",
-      "end_date": "2026-01-18",
-      "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381223"
-    },
-    {
-      "supermarket": "Dirk",
-      "store": "Dirk",
-      "product_name": "Jonagold verpakt Per 1,5 kilo",
-      "price_info": "1 79",
-      "original_price": "ACTIE van 2.45",
-      "discount_info": "ACTIE",
-      "unit": "1,5 kilo",
-      "valid_date": null,
-      "category": "sub",
-      "start_date": "2026-01-12",
-      "end_date": "2026-01-18",
-      "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381229"
-    },
-    {
-      "supermarket": "Dirk",
-      "store": "Dirk",
-      "product_name": "1 de Beste Pitloze witte druiven 500 g",
-      "price_info": "1 79",
-      "original_price": "ACTIE van 2.39",
-      "discount_info": "ACTIE",
-      "unit": "500 g",
-      "valid_date": null,
-      "category": "fruits",
-      "start_date": "2026-01-12",
-      "end_date": "2026-01-18",
-      "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381233"
-    },
-    {
-      "supermarket": "Dirk",
-      "store": "Dirk",
-      "product_name": "Sperziebonen 1 kg",
-      "price_info": "2 98",
-      "original_price": "ACTIE van 3.78",
-      "discount_info": "ACTIE",
-      "unit": "1 kg",
-      "valid_date": null,
-      "category": "sub",
-      "start_date": "2026-01-12",
-      "end_date": "2026-01-18",
-      "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381238"
-    },
-    {
-      "supermarket": "Dirk",
-      "store": "Dirk",
-      "product_name": "Kesbeke tafelzuren Pot 330 - 675 gram.",
-      "price_info": "1 49",
-      "original_price": "ACTIE van 2.59",
-      "discount_info": "ACTIE",
-      "unit": null,
-      "valid_date": null,
-      "category": "sub",
-      "start_date": "2026-01-12",
-      "end_date": "2026-01-18",
-      "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381245"
-    },
-    {
-      "supermarket": "Dirk",
-      "store": "Dirk",
-      "product_name": "Pruimen los 1 kg",
-      "price_info": "3 78",
-      "original_price": null,
-      "discount_info": null,
-      "unit": "1 kg",
-      "valid_date": null,
-      "category": "fruits",
-      "start_date": "2026-01-12",
-      "end_date": "2026-01-18",
-      "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381249"
-    },
-    {
-      "supermarket": "Dirk",
-      "store": "Dirk",
-      "product_name": "1 de Beste Spruiten verpakt 750 g",
-      "price_info": "1 39",
-      "original_price": "ACTIE van 1.69",
-      "discount_info": "ACTIE",
-      "unit": "750 g",
-      "valid_date": null,
-      "category": "main",
-      "start_date": "2026-01-12",
-      "end_date": "2026-01-18",
-      "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381254"
-    },
-    {
-      "supermarket": "Dirk",
-      "store": "Dirk",
-      "product_name": "Eat Me Avocado ready to eat 2 stuks",
-      "price_info": "2 39",
-      "original_price": "ACTIE van 2.49",
-      "discount_info": "ACTIE",
-      "unit": null,
-      "valid_date": null,
-      "category": "sub",
-      "start_date": "2026-01-12",
-      "end_date": "2026-01-18",
-      "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381261"
-    },
-    {
-      "supermarket": "Dirk",
-      "store": "Dirk",
-      "product_name": "Knoflook 3 Stuks",
-      "price_info": "1 49",
-      "original_price": "ACTIE van 1.69",
-      "discount_info": "ACTIE",
-      "unit": null,
-      "valid_date": null,
-      "category": "sub",
-      "start_date": "2026-01-12",
-      "end_date": "2026-01-18",
-      "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381266"
-    },
-    {
-      "supermarket": "Dirk",
-      "store": "Dirk",
-      "product_name": "Pijnboompitten 100 g",
-      "price_info": "2 99",
-      "original_price": "ACTIE van 3.49",
-      "discount_info": "ACTIE",
-      "unit": "100 g",
-      "valid_date": null,
-      "category": "sub",
-      "start_date": "2026-01-12",
-      "end_date": "2026-01-18",
-      "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381272"
+      "scraped_at": "2026-01-18T04:04:14.664651"
     },
     {
       "supermarket": "Dirk",
       "store": "Dirk",
       "product_name": "De Vleeschmeesters Culinaire beenham Per stuk.",
       "price_info": "4 99",
-      "original_price": "VR, ZA & ZO actie van 6.69",
+      "original_price": "6.69",
       "discount_info": "VR, ZA & ZO actie",
       "unit": null,
       "valid_date": null,
@@ -662,14 +467,14 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381279"
+      "scraped_at": "2026-01-18T04:04:14.664658"
     },
     {
       "supermarket": "Dirk",
       "store": "Dirk",
       "product_name": "Kibbeling 250 g",
       "price_info": "2 99",
-      "original_price": "VR, ZA & ZO actie van 3.85",
+      "original_price": "3.85",
       "discount_info": "VR, ZA & ZO actie",
       "unit": "250 g",
       "valid_date": null,
@@ -677,7 +482,52 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381285"
+      "scraped_at": "2026-01-18T04:04:14.664664"
+    },
+    {
+      "supermarket": "Dirk",
+      "store": "Dirk",
+      "product_name": "Mediterraneo focaccia Pak 2 stuks.",
+      "price_info": "1 49",
+      "original_price": "2.49",
+      "discount_info": "VR, ZA & ZO actie",
+      "unit": null,
+      "valid_date": null,
+      "category": "sub",
+      "start_date": "2026-01-12",
+      "end_date": "2026-01-18",
+      "source": "jina_reader",
+      "scraped_at": "2026-01-18T04:04:14.664671"
+    },
+    {
+      "supermarket": "Dirk",
+      "store": "Dirk",
+      "product_name": "Roombroodjes 2 stuks",
+      "price_info": "2 49",
+      "original_price": "3.49",
+      "discount_info": "VR, ZA & ZO actie",
+      "unit": null,
+      "valid_date": null,
+      "category": "sub",
+      "start_date": "2026-01-12",
+      "end_date": "2026-01-18",
+      "source": "jina_reader",
+      "scraped_at": "2026-01-18T04:04:14.664676"
+    },
+    {
+      "supermarket": "Dirk",
+      "store": "Dirk",
+      "product_name": "Corte Fresca Fles 75 cl.",
+      "price_info": "3 99",
+      "original_price": "4.99",
+      "discount_info": "VR, ZA & ZO actie",
+      "unit": "75 cl",
+      "valid_date": null,
+      "category": "sub",
+      "start_date": "2026-01-12",
+      "end_date": "2026-01-18",
+      "source": "jina_reader",
+      "scraped_at": "2026-01-18T04:04:14.664682"
     },
     {
       "supermarket": "Dirk",
@@ -692,29 +542,239 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381291"
+      "scraped_at": "2026-01-18T04:04:14.664689"
+    },
+    {
+      "supermarket": "Dirk",
+      "store": "Dirk",
+      "product_name": "Tapasschotel Schaal 110 of 130 gram. OP=OP",
+      "price_info": "2 99",
+      "original_price": null,
+      "discount_info": "VR, ZA & ZO actie",
+      "unit": "110 of 130 gram",
+      "valid_date": null,
+      "category": "sub",
+      "start_date": "2026-01-12",
+      "end_date": "2026-01-18",
+      "source": "jina_reader",
+      "scraped_at": "2026-01-18T04:04:14.664695"
+    },
+    {
+      "supermarket": "Dirk",
+      "store": "Dirk",
+      "product_name": "Bonduelle groente Blik 150 - 200 gram.",
+      "price_info": "79",
+      "original_price": "2.29",
+      "discount_info": "ACTIE",
+      "unit": "150 - 200 gram",
+      "valid_date": null,
+      "category": "sub",
+      "start_date": "2026-01-12",
+      "end_date": "2026-01-18",
+      "source": "jina_reader",
+      "scraped_at": "2026-01-18T04:04:14.664702"
+    },
+    {
+      "supermarket": "Dirk",
+      "store": "Dirk",
+      "product_name": "Broccoli 1 kg (ca. 2 stuks)",
+      "price_info": "1 78",
+      "original_price": "2.18",
+      "discount_info": "ACTIE",
+      "unit": "1 kg",
+      "valid_date": null,
+      "category": "main",
+      "start_date": "2026-01-12",
+      "end_date": "2026-01-18",
+      "source": "jina_reader",
+      "scraped_at": "2026-01-18T04:04:14.664708"
+    },
+    {
+      "supermarket": "Dirk",
+      "store": "Dirk",
+      "product_name": "1 de Beste Waspeen 500 g",
+      "price_info": "69",
+      "original_price": "0.99",
+      "discount_info": "ACTIE",
+      "unit": "500 g",
+      "valid_date": null,
+      "category": "sub",
+      "start_date": "2026-01-12",
+      "end_date": "2026-01-18",
+      "source": "jina_reader",
+      "scraped_at": "2026-01-18T04:04:14.664714"
+    },
+    {
+      "supermarket": "Dirk",
+      "store": "Dirk",
+      "product_name": "1 de Beste Bami nasi- of macaroni spaghettigroente Zak 450 gram.",
+      "price_info": "1 29",
+      "original_price": "1.69",
+      "discount_info": "ACTIE",
+      "unit": "450 gram",
+      "valid_date": null,
+      "category": "sub",
+      "start_date": "2026-01-12",
+      "end_date": "2026-01-18",
+      "source": "jina_reader",
+      "scraped_at": "2026-01-18T04:04:14.664721"
+    },
+    {
+      "supermarket": "Dirk",
+      "store": "Dirk",
+      "product_name": "Jonagold verpakt Per 1,5 kilo",
+      "price_info": "1 79",
+      "original_price": "2.45",
+      "discount_info": "ACTIE",
+      "unit": "1,5 kilo",
+      "valid_date": null,
+      "category": "sub",
+      "start_date": "2026-01-12",
+      "end_date": "2026-01-18",
+      "source": "jina_reader",
+      "scraped_at": "2026-01-18T04:04:14.664727"
+    },
+    {
+      "supermarket": "Dirk",
+      "store": "Dirk",
+      "product_name": "1 de Beste Pitloze witte druiven 500 g",
+      "price_info": "1 79",
+      "original_price": "2.39",
+      "discount_info": "ACTIE",
+      "unit": "500 g",
+      "valid_date": null,
+      "category": "fruits",
+      "start_date": "2026-01-12",
+      "end_date": "2026-01-18",
+      "source": "jina_reader",
+      "scraped_at": "2026-01-18T04:04:14.664731"
+    },
+    {
+      "supermarket": "Dirk",
+      "store": "Dirk",
+      "product_name": "Sperziebonen 1 kg",
+      "price_info": "2 98",
+      "original_price": "3.78",
+      "discount_info": "ACTIE",
+      "unit": "1 kg",
+      "valid_date": null,
+      "category": "sub",
+      "start_date": "2026-01-12",
+      "end_date": "2026-01-18",
+      "source": "jina_reader",
+      "scraped_at": "2026-01-18T04:04:14.664736"
+    },
+    {
+      "supermarket": "Dirk",
+      "store": "Dirk",
+      "product_name": "Kesbeke tafelzuren Pot 330 - 675 gram.",
+      "price_info": "1 49",
+      "original_price": "2.59",
+      "discount_info": "ACTIE",
+      "unit": "330 - 675 gram",
+      "valid_date": null,
+      "category": "sub",
+      "start_date": "2026-01-12",
+      "end_date": "2026-01-18",
+      "source": "jina_reader",
+      "scraped_at": "2026-01-18T04:04:14.664743"
+    },
+    {
+      "supermarket": "Dirk",
+      "store": "Dirk",
+      "product_name": "Pruimen los 1 kg",
+      "price_info": "3 78",
+      "original_price": null,
+      "discount_info": null,
+      "unit": "1 kg",
+      "valid_date": null,
+      "category": "fruits",
+      "start_date": "2026-01-12",
+      "end_date": "2026-01-18",
+      "source": "jina_reader",
+      "scraped_at": "2026-01-18T04:04:14.664747"
+    },
+    {
+      "supermarket": "Dirk",
+      "store": "Dirk",
+      "product_name": "1 de Beste Spruiten verpakt 750 g",
+      "price_info": "1 39",
+      "original_price": "1.69",
+      "discount_info": "ACTIE",
+      "unit": "750 g",
+      "valid_date": null,
+      "category": "main",
+      "start_date": "2026-01-12",
+      "end_date": "2026-01-18",
+      "source": "jina_reader",
+      "scraped_at": "2026-01-18T04:04:14.664752"
+    },
+    {
+      "supermarket": "Dirk",
+      "store": "Dirk",
+      "product_name": "Eat Me Avocado ready to eat 2 stuks",
+      "price_info": "2 39",
+      "original_price": "2.49",
+      "discount_info": "ACTIE",
+      "unit": null,
+      "valid_date": null,
+      "category": "sub",
+      "start_date": "2026-01-12",
+      "end_date": "2026-01-18",
+      "source": "jina_reader",
+      "scraped_at": "2026-01-18T04:04:14.664759"
+    },
+    {
+      "supermarket": "Dirk",
+      "store": "Dirk",
+      "product_name": "Knoflook 3 Stuks",
+      "price_info": "1 49",
+      "original_price": "1.69",
+      "discount_info": "ACTIE",
+      "unit": null,
+      "valid_date": null,
+      "category": "sub",
+      "start_date": "2026-01-12",
+      "end_date": "2026-01-18",
+      "source": "jina_reader",
+      "scraped_at": "2026-01-18T04:04:14.664764"
+    },
+    {
+      "supermarket": "Dirk",
+      "store": "Dirk",
+      "product_name": "Pijnboompitten 100 g",
+      "price_info": "2 99",
+      "original_price": "3.49",
+      "discount_info": "ACTIE",
+      "unit": "100 g",
+      "valid_date": null,
+      "category": "sub",
+      "start_date": "2026-01-12",
+      "end_date": "2026-01-18",
+      "source": "jina_reader",
+      "scraped_at": "2026-01-18T04:04:14.664770"
     },
     {
       "supermarket": "Dirk",
       "store": "Dirk",
       "product_name": "Kips Per stuk 120 - 230 gram. OP=OP",
       "price_info": "99",
-      "original_price": "ACTIE van 2.19",
+      "original_price": "2.19",
       "discount_info": "ACTIE",
-      "unit": null,
+      "unit": "120 - 230 gram",
       "valid_date": null,
       "category": "main",
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381296"
+      "scraped_at": "2026-01-18T04:04:14.664774"
     },
     {
       "supermarket": "Dirk",
       "store": "Dirk",
       "product_name": "De Vleeschmeesters Half-om-half gehakt of kipgehakt Per pak.",
       "price_info": "2 99",
-      "original_price": "ACTIE van 3.59",
+      "original_price": "3.59",
       "discount_info": "ACTIE",
       "unit": null,
       "valid_date": null,
@@ -722,14 +782,14 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381301"
+      "scraped_at": "2026-01-18T04:04:14.664779"
     },
     {
       "supermarket": "Dirk",
       "store": "Dirk",
       "product_name": "Vleeschmeesters Kipkluifjes gekruid 800 g",
       "price_info": "3 99",
-      "original_price": "ACTIE van 6.19",
+      "original_price": "6.19",
       "discount_info": "ACTIE",
       "unit": "800 g",
       "valid_date": null,
@@ -737,14 +797,14 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381305"
+      "scraped_at": "2026-01-18T04:04:14.664784"
     },
     {
       "supermarket": "Dirk",
       "store": "Dirk",
       "product_name": "Vleeschmeesters Actie ribkarbonade 2 st. 280 g",
       "price_info": "2 29",
-      "original_price": "ACTIE van 2.69",
+      "original_price": "2.69",
       "discount_info": "ACTIE",
       "unit": "280 g",
       "valid_date": null,
@@ -752,14 +812,14 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381310"
+      "scraped_at": "2026-01-18T04:04:14.664789"
     },
     {
       "supermarket": "Dirk",
       "store": "Dirk",
       "product_name": "Vleeschmeesters Actie varkensschnitzel naturel 2 st. 250 g",
       "price_info": "2 59",
-      "original_price": "ACTIE van 3.29",
+      "original_price": "3.29",
       "discount_info": "ACTIE",
       "unit": "250 g",
       "valid_date": null,
@@ -767,29 +827,29 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381315"
+      "scraped_at": "2026-01-18T04:04:14.664794"
     },
     {
       "supermarket": "Dirk",
       "store": "Dirk",
       "product_name": "Garden Gourmet Pak 2 stuks of 160 - 190 gram.",
       "price_info": "1 99",
-      "original_price": "ACTIE van 4.09",
+      "original_price": "4.09",
       "discount_info": "ACTIE",
-      "unit": null,
+      "unit": "160 - 190 gram",
       "valid_date": null,
       "category": "sub",
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381322"
+      "scraped_at": "2026-01-18T04:04:14.664801"
     },
     {
       "supermarket": "Dirk",
       "store": "Dirk",
       "product_name": "1 de Beste Schouderham ovengebakken 100 g",
       "price_info": "1 59",
-      "original_price": "ACTIE van 1.75",
+      "original_price": "1.75",
       "discount_info": "ACTIE",
       "unit": "100 g",
       "valid_date": null,
@@ -797,14 +857,14 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381328"
+      "scraped_at": "2026-01-18T04:04:14.664807"
     },
     {
       "supermarket": "Dirk",
       "store": "Dirk",
       "product_name": "1 de Beste Runderrookvlees 100 g",
       "price_info": "2 59",
-      "original_price": "ACTIE van 3.15",
+      "original_price": "3.15",
       "discount_info": "ACTIE",
       "unit": "100 g",
       "valid_date": null,
@@ -812,367 +872,142 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381333"
-    },
-    {
-      "supermarket": "Dirk",
-      "store": "Dirk",
-      "product_name": "Roombroodjes 2 stuks",
-      "price_info": "2 49",
-      "original_price": "VR, ZA & ZO actie van 3.49",
-      "discount_info": "VR, ZA & ZO actie",
-      "unit": null,
-      "valid_date": null,
-      "category": "sub",
-      "start_date": "2026-01-12",
-      "end_date": "2026-01-18",
-      "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381339"
-    },
-    {
-      "supermarket": "Dirk",
-      "store": "Dirk",
-      "product_name": "Lotus Biscoff koek Pak 150 of 250 gram (m.u.v. chocolade).",
-      "price_info": "89",
-      "original_price": "ACTIE van 2.09",
-      "discount_info": "ACTIE",
-      "unit": null,
-      "valid_date": null,
-      "category": "sub",
-      "start_date": "2026-01-12",
-      "end_date": "2026-01-18",
-      "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381346"
-    },
-    {
-      "supermarket": "Dirk",
-      "store": "Dirk",
-      "product_name": "Theunisse Kokosbrood original 275 g",
-      "price_info": "99",
-      "original_price": "ACTIE van 1.95",
-      "discount_info": "ACTIE",
-      "unit": "275 g",
-      "valid_date": null,
-      "category": "sub",
-      "start_date": "2026-01-12",
-      "end_date": "2026-01-18",
-      "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381352"
-    },
-    {
-      "supermarket": "Dirk",
-      "store": "Dirk",
-      "product_name": "Appelflap Per stuk",
-      "price_info": "49",
-      "original_price": "ACTIE van 0.85",
-      "discount_info": "ACTIE",
-      "unit": null,
-      "valid_date": null,
-      "category": "fruits",
-      "start_date": "2026-01-12",
-      "end_date": "2026-01-18",
-      "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381355"
-    },
-    {
-      "supermarket": "Dirk",
-      "store": "Dirk",
-      "product_name": "Bakker van der Akker Volkoren bollen 10 Stuks",
-      "price_info": "99",
-      "original_price": "ACTIE van 1.32",
-      "discount_info": "ACTIE",
-      "unit": null,
-      "valid_date": null,
-      "category": "sub",
-      "start_date": "2026-01-12",
-      "end_date": "2026-01-18",
-      "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381362"
-    },
-    {
-      "supermarket": "Dirk",
-      "store": "Dirk",
-      "product_name": "Vers afbak Kipsatebroodje 108 g",
-      "price_info": "69",
-      "original_price": "ACTIE",
-      "discount_info": "ACTIE",
-      "unit": "108 g",
-      "valid_date": null,
-      "category": "main",
-      "start_date": "2026-01-12",
-      "end_date": "2026-01-18",
-      "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381367"
-    },
-    {
-      "supermarket": "Dirk",
-      "store": "Dirk",
-      "product_name": "Boeren tijgerbrood Per stuk.",
-      "price_info": "99",
-      "original_price": "ACTIE van 1.23",
-      "discount_info": "ACTIE",
-      "unit": null,
-      "valid_date": null,
-      "category": "sub",
-      "start_date": "2026-01-12",
-      "end_date": "2026-01-18",
-      "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381373"
+      "scraped_at": "2026-01-18T04:04:14.664813"
     },
     {
       "supermarket": "Lidl",
       "store": "Lidl",
-      "product_name": "Hand- of perssinaasappelen",
-      "price_info": "1.99",
-      "original_price": "2.89",
-      "discount_info": "-31%",
-      "unit": "2 kilo",
-      "valid_date": "12/01 - 18/01",
-      "category": "fruits",
-      "start_date": "2026-01-12",
-      "end_date": "2026-01-18",
-      "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381376"
-    },
-    {
-      "supermarket": "Lidl",
-      "store": "Lidl",
-      "product_name": "Paprikamix XXL",
+      "product_name": "Blauwe bessen",
       "price_info": "2.99",
       "original_price": null,
       "discount_info": null,
-      "unit": "1 kilo",
-      "valid_date": "12/01 - 18/01",
-      "category": "main",
+      "unit": "Schaal 400 g",
+      "valid_date": "19/01 - 25/01",
+      "category": "fruits",
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381382"
+      "scraped_at": "2026-01-18T04:04:14.664817"
     },
     {
       "supermarket": "Lidl",
       "store": "Lidl",
-      "product_name": "BIO bieten",
-      "price_info": "0.99",
-      "original_price": "1.29",
-      "discount_info": "-23%",
-      "unit": "500 g",
-      "valid_date": "12/01 - 18/01",
-      "category": "sub",
-      "start_date": "2026-01-12",
-      "end_date": "2026-01-18",
-      "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381387"
-    },
-    {
-      "supermarket": "Lidl",
-      "store": "Lidl",
-      "product_name": "Bio flespompoen of hokkaido pompoen",
-      "price_info": "1.29",
-      "original_price": "1.99",
-      "discount_info": "-35%",
-      "unit": "Per stuk",
-      "valid_date": "12/01 - 18/01",
-      "category": "sub",
-      "start_date": "2026-01-12",
-      "end_date": "2026-01-18",
-      "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381394"
-    },
-    {
-      "supermarket": "Lidl",
-      "store": "Lidl",
-      "product_name": "Lente-ui",
-      "price_info": "0.59",
-      "original_price": "0.89",
-      "discount_info": "-33%",
-      "unit": "Per bos",
-      "valid_date": "12/01 - 18/01",
-      "category": "main",
-      "start_date": "2026-01-12",
-      "end_date": "2026-01-18",
-      "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381399"
-    },
-    {
-      "supermarket": "Lidl",
-      "store": "Lidl",
-      "product_name": "Doyenne du comice",
+      "product_name": "Citroenen",
       "price_info": "1.49",
-      "original_price": "1.99",
-      "discount_info": "-25%",
-      "unit": "Los per kg",
-      "valid_date": "12/01 - 18/01",
-      "category": "sub",
+      "original_price": null,
+      "discount_info": null,
+      "unit": "750 gram",
+      "valid_date": "19/01 - 25/01",
+      "category": "fruits",
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381405"
+      "scraped_at": "2026-01-18T04:04:14.664820"
     },
     {
       "supermarket": "Lidl",
       "store": "Lidl",
-      "product_name": "Mini krieltjes voordeelverpakking",
-      "price_info": "0.97",
-      "original_price": "1.29",
+      "product_name": "Uien",
+      "price_info": "1.49",
+      "original_price": null,
+      "discount_info": null,
+      "unit": "5 kilo",
+      "valid_date": "19/01 - 25/01",
+      "category": "main",
+      "start_date": "2026-01-12",
+      "end_date": "2026-01-18",
+      "source": "jina_reader",
+      "scraped_at": "2026-01-18T04:04:14.664825"
+    },
+    {
+      "supermarket": "Lidl",
+      "store": "Lidl",
+      "product_name": "Evelina appels",
+      "price_info": "1.49",
+      "original_price": "2.49",
+      "discount_info": "-40%",
+      "unit": "Tas 1 kg",
+      "valid_date": "19/01 - 25/01",
+      "category": "fruits",
+      "start_date": "2026-01-12",
+      "end_date": "2026-01-18",
+      "source": "jina_reader",
+      "scraped_at": "2026-01-18T04:04:14.664828"
+    },
+    {
+      "supermarket": "Lidl",
+      "store": "Lidl",
+      "product_name": "Zoete aardappel",
+      "price_info": "1.99",
+      "original_price": "2.65",
       "discount_info": "-24%",
-      "unit": "700 g",
-      "valid_date": "12/01 - 18/01",
-      "category": "sub",
+      "unit": "Per kg",
+      "valid_date": "19/01 - 25/01",
+      "category": "fruits",
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381411"
+      "scraped_at": "2026-01-18T04:04:14.664831"
     },
     {
       "supermarket": "Lidl",
       "store": "Lidl",
-      "product_name": "Mini krieltjes",
+      "product_name": "Biologische basilicum",
+      "price_info": "1.49",
+      "original_price": null,
+      "discount_info": "XXL",
+      "unit": "Per stuk",
+      "valid_date": "19/01 - 25/01",
+      "category": "sub",
+      "start_date": "2026-01-12",
+      "end_date": "2026-01-18",
+      "source": "jina_reader",
+      "scraped_at": "2026-01-18T04:04:14.664837"
+    },
+    {
+      "supermarket": "Lidl",
+      "store": "Lidl",
+      "product_name": "Biologische witte pitloze druiven",
+      "price_info": "1.99",
+      "original_price": "2.99",
+      "discount_info": "-33%",
+      "unit": "Schaal 400 g",
+      "valid_date": "19/01 - 25/01",
+      "category": "fruits",
+      "start_date": "2026-01-12",
+      "end_date": "2026-01-18",
+      "source": "jina_reader",
+      "scraped_at": "2026-01-18T04:04:14.664840"
+    },
+    {
+      "supermarket": "Lidl",
+      "store": "Lidl",
+      "product_name": "Wortels",
+      "price_info": "0.69",
+      "original_price": "0.99",
+      "discount_info": "-30%",
+      "unit": "Zak 1 kg",
+      "valid_date": "19/01 - 25/01",
+      "category": "main",
+      "start_date": "2026-01-12",
+      "end_date": "2026-01-18",
+      "source": "jina_reader",
+      "scraped_at": "2026-01-18T04:04:14.664845"
+    },
+    {
+      "supermarket": "Lidl",
+      "store": "Lidl",
+      "product_name": "Soepgroente",
       "price_info": null,
       "original_price": null,
       "discount_info": null,
       "unit": null,
-      "valid_date": null,
+      "valid_date": "19/01 - 25/01",
       "category": "sub",
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381417"
-    },
-    {
-      "supermarket": "ALDI",
-      "store": "ALDI",
-      "product_name": "Witte of rode druiven",
-      "price_info": "1.19",
-      "original_price": "2.49",
-      "discount_info": "-52%",
-      "unit": "500 g",
-      "valid_date": null,
-      "category": "fruits",
-      "start_date": "2026-01-12",
-      "end_date": "2026-01-18",
-      "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381420"
-    },
-    {
-      "supermarket": "ALDI",
-      "store": "ALDI",
-      "product_name": "Handsinaasappels",
-      "price_info": "2.29",
-      "original_price": "2.89",
-      "discount_info": "-20%",
-      "unit": "2 kg",
-      "valid_date": null,
-      "category": "fruits",
-      "start_date": "2026-01-12",
-      "end_date": "2026-01-18",
-      "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381423"
-    },
-    {
-      "supermarket": "ALDI",
-      "store": "ALDI",
-      "product_name": "Frambozen",
-      "price_info": "1.79",
-      "original_price": "1.99",
-      "discount_info": "-10%",
-      "unit": "125 g",
-      "valid_date": null,
-      "category": "sub",
-      "start_date": "2026-01-12",
-      "end_date": "2026-01-18",
-      "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381428"
-    },
-    {
-      "supermarket": "ALDI",
-      "store": "ALDI",
-      "product_name": "Rode puntpaprika's",
-      "price_info": "1.79",
-      "original_price": null,
-      "discount_info": "OP=OP",
-      "unit": "500 g",
-      "valid_date": null,
-      "category": "main",
-      "start_date": "2026-01-12",
-      "end_date": "2026-01-18",
-      "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381434"
-    },
-    {
-      "supermarket": "ALDI",
-      "store": "ALDI",
-      "product_name": "Roma tomaten",
-      "price_info": "1.79",
-      "original_price": "2.49",
-      "discount_info": "-28%",
-      "unit": "750 g",
-      "valid_date": null,
-      "category": "sub",
-      "start_date": "2026-01-12",
-      "end_date": "2026-01-18",
-      "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381439"
-    },
-    {
-      "supermarket": "ALDI",
-      "store": "ALDI",
-      "product_name": "Witlof",
-      "price_info": "0.99",
-      "original_price": "1.19",
-      "discount_info": "-16%",
-      "unit": "500 g",
-      "valid_date": null,
-      "category": "sub",
-      "start_date": "2026-01-12",
-      "end_date": "2026-01-18",
-      "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381445"
-    },
-    {
-      "supermarket": "ALDI",
-      "store": "ALDI",
-      "product_name": "Grove champignons",
-      "price_info": "1.25",
-      "original_price": "1.55",
-      "discount_info": "-19%",
-      "unit": "400 g",
-      "valid_date": null,
-      "category": "main",
-      "start_date": "2026-01-12",
-      "end_date": "2026-01-18",
-      "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381450"
-    },
-    {
-      "supermarket": "ALDI",
-      "store": "ALDI",
-      "product_name": "Spitskool",
-      "price_info": "1.19",
-      "original_price": "1.49",
-      "discount_info": "-20%",
-      "unit": "Per stuk",
-      "valid_date": null,
-      "category": "sub",
-      "start_date": "2026-01-12",
-      "end_date": "2026-01-18",
-      "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381456"
-    },
-    {
-      "supermarket": "ALDI",
-      "store": "ALDI",
-      "product_name": "Hutspotgroenten",
-      "price_info": "1.59",
-      "original_price": "1.89",
-      "discount_info": "-15%",
-      "unit": "1 kg",
-      "valid_date": null,
-      "category": "sub",
-      "start_date": "2026-01-12",
-      "end_date": "2026-01-18",
-      "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381462"
+      "scraped_at": "2026-01-18T04:04:14.664851"
     },
     {
       "supermarket": "ALDI",
@@ -1187,37 +1022,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381467"
-    },
-    {
-      "supermarket": "ALDI",
-      "store": "ALDI",
-      "product_name": "Gehaktrollen",
-      "price_info": "2.99",
-      "original_price": null,
-      "discount_info": "OP=OP",
-      "unit": "400 g",
-      "valid_date": null,
-      "category": "main",
-      "start_date": "2026-01-12",
-      "end_date": "2026-01-18",
-      "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381471"
-    },
-    {
-      "supermarket": "ALDI",
-      "store": "ALDI",
-      "product_name": "Casselerrib",
-      "price_info": "4.79",
-      "original_price": null,
-      "discount_info": "OP=OP",
-      "unit": "400 g",
-      "valid_date": null,
-      "category": "sub",
-      "start_date": "2026-01-12",
-      "end_date": "2026-01-18",
-      "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381477"
+      "scraped_at": "2026-01-18T04:04:14.664856"
     },
     {
       "supermarket": "ALDI",
@@ -1232,22 +1037,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381483"
-    },
-    {
-      "supermarket": "ALDI",
-      "store": "ALDI",
-      "product_name": "Gemarineerde zalmfilets",
-      "price_info": "4.99",
-      "original_price": null,
-      "discount_info": "OP=OP",
-      "unit": "250 g",
-      "valid_date": null,
-      "category": "main",
-      "start_date": "2026-01-12",
-      "end_date": "2026-01-18",
-      "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381488"
+      "scraped_at": "2026-01-18T04:04:14.664862"
     },
     {
       "supermarket": "ALDI",
@@ -1262,37 +1052,217 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381492"
+      "scraped_at": "2026-01-18T04:04:14.664866"
     },
     {
       "supermarket": "ALDI",
       "store": "ALDI",
-      "product_name": "Entrecote pepermarinade",
-      "price_info": "1.99",
-      "original_price": null,
-      "discount_info": "PER 100 G",
-      "unit": "Ca. 250 g",
-      "valid_date": null,
-      "category": "sub",
-      "start_date": "2026-01-12",
-      "end_date": "2026-01-18",
-      "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381498"
-    },
-    {
-      "supermarket": "ALDI",
-      "store": "ALDI",
-      "product_name": "Kipbraadworst",
-      "price_info": "2.99",
-      "original_price": null,
-      "discount_info": "OP=OP",
-      "unit": "320 g",
+      "product_name": "Saksische leverworst",
+      "price_info": "0.79",
+      "original_price": "0.99",
+      "discount_info": "-20%",
+      "unit": "2x150 g",
       "valid_date": null,
       "category": "main",
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381502"
+      "scraped_at": "2026-01-18T04:04:14.664871"
+    },
+    {
+      "supermarket": "ALDI",
+      "store": "ALDI",
+      "product_name": "Skyr",
+      "price_info": "1.39",
+      "original_price": "1.59",
+      "discount_info": "-12%",
+      "unit": "500 g",
+      "valid_date": null,
+      "category": "sub",
+      "start_date": "2026-01-12",
+      "end_date": "2026-01-18",
+      "source": "jina_reader",
+      "scraped_at": "2026-01-18T04:04:14.664876"
+    },
+    {
+      "supermarket": "ALDI",
+      "store": "ALDI",
+      "product_name": "Extra vezelrijk volkorenbrood",
+      "price_info": "1.89",
+      "original_price": "2.29",
+      "discount_info": "-17%",
+      "unit": null,
+      "valid_date": null,
+      "category": "sub",
+      "start_date": "2026-01-12",
+      "end_date": "2026-01-18",
+      "source": "jina_reader",
+      "scraped_at": "2026-01-18T04:04:14.664882"
+    },
+    {
+      "supermarket": "ALDI",
+      "store": "ALDI",
+      "product_name": "Roomboter croissant",
+      "price_info": "1.00",
+      "original_price": "1.80",
+      "discount_info": "4 VOOR",
+      "unit": null,
+      "valid_date": null,
+      "category": "sub",
+      "start_date": "2026-01-12",
+      "end_date": "2026-01-18",
+      "source": "jina_reader",
+      "scraped_at": "2026-01-18T04:04:14.664888"
+    },
+    {
+      "supermarket": "ALDI",
+      "store": "ALDI",
+      "product_name": "Bruine bollen",
+      "price_info": "1.29",
+      "original_price": "1.58",
+      "discount_info": "-18%",
+      "unit": "12 stuks",
+      "valid_date": null,
+      "category": "main",
+      "start_date": "2026-01-12",
+      "end_date": "2026-01-18",
+      "source": "jina_reader",
+      "scraped_at": "2026-01-18T04:04:14.664893"
+    },
+    {
+      "supermarket": "ALDI",
+      "store": "ALDI",
+      "product_name": "Gold oploskoffie",
+      "price_info": "7.49",
+      "original_price": "9.99",
+      "discount_info": "-25%",
+      "unit": "200 g",
+      "valid_date": null,
+      "category": "sub",
+      "start_date": "2026-01-12",
+      "end_date": "2026-01-18",
+      "source": "jina_reader",
+      "scraped_at": "2026-01-18T04:04:14.664899"
+    },
+    {
+      "supermarket": "ALDI",
+      "store": "ALDI",
+      "product_name": "Vruchtenthee",
+      "price_info": "0.99",
+      "original_price": "1.39",
+      "discount_info": "-28%",
+      "unit": "20 zakjes",
+      "valid_date": null,
+      "category": "sub",
+      "start_date": "2026-01-12",
+      "end_date": "2026-01-18",
+      "source": "jina_reader",
+      "scraped_at": "2026-01-18T04:04:14.664904"
+    },
+    {
+      "supermarket": "ALDI",
+      "store": "ALDI",
+      "product_name": "Laviano",
+      "price_info": "1.89",
+      "original_price": "2.19",
+      "discount_info": "-13%",
+      "unit": "50 g",
+      "valid_date": null,
+      "category": "sub",
+      "start_date": "2026-01-12",
+      "end_date": "2026-01-18",
+      "source": "jina_reader",
+      "scraped_at": "2026-01-18T04:04:14.664910"
+    },
+    {
+      "supermarket": "ALDI",
+      "store": "ALDI",
+      "product_name": "Bronwater koolzuurvrij",
+      "price_info": "0.39",
+      "original_price": "0.49",
+      "discount_info": "-20%",
+      "unit": "1.5 l",
+      "valid_date": null,
+      "category": "sub",
+      "start_date": "2026-01-12",
+      "end_date": "2026-01-18",
+      "source": "jina_reader",
+      "scraped_at": "2026-01-18T04:04:14.664916"
+    },
+    {
+      "supermarket": "ALDI",
+      "store": "ALDI",
+      "product_name": "Neipa",
+      "price_info": "1.50",
+      "original_price": "1.98",
+      "discount_info": "2 VOOR",
+      "unit": "33 cl",
+      "valid_date": null,
+      "category": "sub",
+      "start_date": "2026-01-12",
+      "end_date": "2026-01-18",
+      "source": "jina_reader",
+      "scraped_at": "2026-01-18T04:04:14.664921"
+    },
+    {
+      "supermarket": "ALDI",
+      "store": "ALDI",
+      "product_name": "Naipa 0.0%",
+      "price_info": "1.50",
+      "original_price": "1.98",
+      "discount_info": "2 VOOR",
+      "unit": "33 cl",
+      "valid_date": null,
+      "category": "sub",
+      "start_date": "2026-01-12",
+      "end_date": "2026-01-18",
+      "source": "jina_reader",
+      "scraped_at": "2026-01-18T04:04:14.664927"
+    },
+    {
+      "supermarket": "ALDI",
+      "store": "ALDI",
+      "product_name": "IPA",
+      "price_info": "1.50",
+      "original_price": "1.98",
+      "discount_info": "2 VOOR",
+      "unit": "33 cl",
+      "valid_date": null,
+      "category": "sub",
+      "start_date": "2026-01-12",
+      "end_date": "2026-01-18",
+      "source": "jina_reader",
+      "scraped_at": "2026-01-18T04:04:14.664931"
+    },
+    {
+      "supermarket": "ALDI",
+      "store": "ALDI",
+      "product_name": "Juicy blond",
+      "price_info": "1.50",
+      "original_price": "1.98",
+      "discount_info": "2 VOOR",
+      "unit": "33 cl",
+      "valid_date": null,
+      "category": "main",
+      "start_date": "2026-01-12",
+      "end_date": "2026-01-18",
+      "source": "jina_reader",
+      "scraped_at": "2026-01-18T04:04:14.664936"
+    },
+    {
+      "supermarket": "ALDI",
+      "store": "ALDI",
+      "product_name": "Tropical tripel",
+      "price_info": "1.50",
+      "original_price": "1.98",
+      "discount_info": "-24%",
+      "unit": "33 cl",
+      "valid_date": null,
+      "category": "sub",
+      "start_date": "2026-01-12",
+      "end_date": "2026-01-18",
+      "source": "jina_reader",
+      "scraped_at": "2026-01-18T04:04:14.664942"
     },
     {
       "supermarket": "Plus",
@@ -1307,7 +1277,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381509"
+      "scraped_at": "2026-01-18T04:04:14.664949"
     },
     {
       "supermarket": "Plus",
@@ -1322,7 +1292,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381532"
+      "scraped_at": "2026-01-18T04:04:14.664955"
     },
     {
       "supermarket": "Plus",
@@ -1337,7 +1307,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381538"
+      "scraped_at": "2026-01-18T04:04:14.664961"
     },
     {
       "supermarket": "Plus",
@@ -1352,7 +1322,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381544"
+      "scraped_at": "2026-01-18T04:04:14.664967"
     },
     {
       "supermarket": "Plus",
@@ -1367,7 +1337,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381551"
+      "scraped_at": "2026-01-18T04:04:14.664973"
     },
     {
       "supermarket": "Plus",
@@ -1382,7 +1352,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381554"
+      "scraped_at": "2026-01-18T04:04:14.664976"
     },
     {
       "supermarket": "Plus",
@@ -1397,7 +1367,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381558"
+      "scraped_at": "2026-01-18T04:04:14.664979"
     },
     {
       "supermarket": "Plus",
@@ -1412,7 +1382,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381560"
+      "scraped_at": "2026-01-18T04:04:14.664982"
     },
     {
       "supermarket": "Plus",
@@ -1427,7 +1397,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381564"
+      "scraped_at": "2026-01-18T04:04:14.664985"
     },
     {
       "supermarket": "Plus",
@@ -1442,7 +1412,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381567"
+      "scraped_at": "2026-01-18T04:04:14.664987"
     },
     {
       "supermarket": "Plus",
@@ -1457,7 +1427,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381573"
+      "scraped_at": "2026-01-18T04:04:14.664994"
     },
     {
       "supermarket": "Plus",
@@ -1472,7 +1442,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381580"
+      "scraped_at": "2026-01-18T04:04:14.665001"
     },
     {
       "supermarket": "Plus",
@@ -1487,7 +1457,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381586"
+      "scraped_at": "2026-01-18T04:04:14.665008"
     },
     {
       "supermarket": "Plus",
@@ -1502,7 +1472,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381589"
+      "scraped_at": "2026-01-18T04:04:14.665011"
     },
     {
       "supermarket": "Plus",
@@ -1517,7 +1487,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381596"
+      "scraped_at": "2026-01-18T04:04:14.665017"
     },
     {
       "supermarket": "Plus",
@@ -1532,7 +1502,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381600"
+      "scraped_at": "2026-01-18T04:04:14.665021"
     },
     {
       "supermarket": "Plus",
@@ -1547,7 +1517,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381606"
+      "scraped_at": "2026-01-18T04:04:14.665027"
     },
     {
       "supermarket": "Plus",
@@ -1562,7 +1532,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381612"
+      "scraped_at": "2026-01-18T04:04:14.665033"
     },
     {
       "supermarket": "Plus",
@@ -1577,7 +1547,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381619"
+      "scraped_at": "2026-01-18T04:04:14.665040"
     },
     {
       "supermarket": "Plus",
@@ -1592,7 +1562,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381623"
+      "scraped_at": "2026-01-18T04:04:14.665044"
     },
     {
       "supermarket": "Plus",
@@ -1607,7 +1577,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381629"
+      "scraped_at": "2026-01-18T04:04:14.665051"
     },
     {
       "supermarket": "Plus",
@@ -1622,7 +1592,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381635"
+      "scraped_at": "2026-01-18T04:04:14.665057"
     },
     {
       "supermarket": "Plus",
@@ -1637,7 +1607,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381637"
+      "scraped_at": "2026-01-18T04:04:14.665060"
     },
     {
       "supermarket": "Plus",
@@ -1652,7 +1622,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381643"
+      "scraped_at": "2026-01-18T04:04:14.665065"
     },
     {
       "supermarket": "Plus",
@@ -1667,7 +1637,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381651"
+      "scraped_at": "2026-01-18T04:04:14.665070"
     },
     {
       "supermarket": "Plus",
@@ -1682,7 +1652,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381658"
+      "scraped_at": "2026-01-18T04:04:14.665077"
     },
     {
       "supermarket": "Plus",
@@ -1697,7 +1667,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381664"
+      "scraped_at": "2026-01-18T04:04:14.665083"
     },
     {
       "supermarket": "Plus",
@@ -1712,7 +1682,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381670"
+      "scraped_at": "2026-01-18T04:04:14.665089"
     },
     {
       "supermarket": "Plus",
@@ -1727,7 +1697,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381675"
+      "scraped_at": "2026-01-18T04:04:14.665095"
     },
     {
       "supermarket": "Plus",
@@ -1742,7 +1712,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381681"
+      "scraped_at": "2026-01-18T04:04:14.665101"
     },
     {
       "supermarket": "Plus",
@@ -1757,7 +1727,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381686"
+      "scraped_at": "2026-01-18T04:04:14.665107"
     },
     {
       "supermarket": "Plus",
@@ -1772,7 +1742,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381692"
+      "scraped_at": "2026-01-18T04:04:14.665113"
     },
     {
       "supermarket": "Plus",
@@ -1787,7 +1757,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381698"
+      "scraped_at": "2026-01-18T04:04:14.665118"
     },
     {
       "supermarket": "Plus",
@@ -1802,7 +1772,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381703"
+      "scraped_at": "2026-01-18T04:04:14.665124"
     },
     {
       "supermarket": "Coop",
@@ -1817,7 +1787,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381710"
+      "scraped_at": "2026-01-18T04:04:14.665130"
     },
     {
       "supermarket": "Coop",
@@ -1832,7 +1802,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381716"
+      "scraped_at": "2026-01-18T04:04:14.665136"
     },
     {
       "supermarket": "Coop",
@@ -1847,7 +1817,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381722"
+      "scraped_at": "2026-01-18T04:04:14.665142"
     },
     {
       "supermarket": "Coop",
@@ -1862,7 +1832,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381727"
+      "scraped_at": "2026-01-18T04:04:14.665148"
     },
     {
       "supermarket": "Coop",
@@ -1877,7 +1847,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381733"
+      "scraped_at": "2026-01-18T04:04:14.665154"
     },
     {
       "supermarket": "Coop",
@@ -1892,7 +1862,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381736"
+      "scraped_at": "2026-01-18T04:04:14.665157"
     },
     {
       "supermarket": "Coop",
@@ -1907,7 +1877,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381739"
+      "scraped_at": "2026-01-18T04:04:14.665160"
     },
     {
       "supermarket": "Coop",
@@ -1922,7 +1892,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381742"
+      "scraped_at": "2026-01-18T04:04:14.665163"
     },
     {
       "supermarket": "Coop",
@@ -1937,7 +1907,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381745"
+      "scraped_at": "2026-01-18T04:04:14.665166"
     },
     {
       "supermarket": "Coop",
@@ -1952,7 +1922,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381747"
+      "scraped_at": "2026-01-18T04:04:14.665168"
     },
     {
       "supermarket": "Coop",
@@ -1967,7 +1937,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381754"
+      "scraped_at": "2026-01-18T04:04:14.665191"
     },
     {
       "supermarket": "Coop",
@@ -1982,7 +1952,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381760"
+      "scraped_at": "2026-01-18T04:04:14.665198"
     },
     {
       "supermarket": "Coop",
@@ -1997,7 +1967,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381766"
+      "scraped_at": "2026-01-18T04:04:14.665204"
     },
     {
       "supermarket": "Coop",
@@ -2012,7 +1982,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381769"
+      "scraped_at": "2026-01-18T04:04:14.665207"
     },
     {
       "supermarket": "Coop",
@@ -2027,7 +1997,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381775"
+      "scraped_at": "2026-01-18T04:04:14.665213"
     },
     {
       "supermarket": "Coop",
@@ -2042,7 +2012,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381778"
+      "scraped_at": "2026-01-18T04:04:14.665217"
     },
     {
       "supermarket": "Coop",
@@ -2057,7 +2027,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381784"
+      "scraped_at": "2026-01-18T04:04:14.665223"
     },
     {
       "supermarket": "Coop",
@@ -2072,7 +2042,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381789"
+      "scraped_at": "2026-01-18T04:04:14.665228"
     },
     {
       "supermarket": "Coop",
@@ -2087,7 +2057,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381796"
+      "scraped_at": "2026-01-18T04:04:14.665235"
     },
     {
       "supermarket": "Coop",
@@ -2102,7 +2072,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381799"
+      "scraped_at": "2026-01-18T04:04:14.665239"
     },
     {
       "supermarket": "Coop",
@@ -2117,7 +2087,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381806"
+      "scraped_at": "2026-01-18T04:04:14.665245"
     },
     {
       "supermarket": "Coop",
@@ -2132,7 +2102,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381811"
+      "scraped_at": "2026-01-18T04:04:14.665250"
     },
     {
       "supermarket": "Coop",
@@ -2147,7 +2117,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381814"
+      "scraped_at": "2026-01-18T04:04:14.665253"
     },
     {
       "supermarket": "Coop",
@@ -2162,7 +2132,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381819"
+      "scraped_at": "2026-01-18T04:04:14.665258"
     },
     {
       "supermarket": "Coop",
@@ -2177,7 +2147,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381823"
+      "scraped_at": "2026-01-18T04:04:14.665263"
     },
     {
       "supermarket": "Coop",
@@ -2192,7 +2162,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381829"
+      "scraped_at": "2026-01-18T04:04:14.665269"
     },
     {
       "supermarket": "Coop",
@@ -2207,7 +2177,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381834"
+      "scraped_at": "2026-01-18T04:04:14.665274"
     },
     {
       "supermarket": "Coop",
@@ -2222,7 +2192,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381840"
+      "scraped_at": "2026-01-18T04:04:14.665280"
     },
     {
       "supermarket": "Coop",
@@ -2237,7 +2207,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381845"
+      "scraped_at": "2026-01-18T04:04:14.665285"
     },
     {
       "supermarket": "Coop",
@@ -2252,7 +2222,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381851"
+      "scraped_at": "2026-01-18T04:04:14.665290"
     },
     {
       "supermarket": "Coop",
@@ -2267,7 +2237,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381857"
+      "scraped_at": "2026-01-18T04:04:14.665296"
     },
     {
       "supermarket": "Coop",
@@ -2282,7 +2252,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381862"
+      "scraped_at": "2026-01-18T04:04:14.665302"
     },
     {
       "supermarket": "Coop",
@@ -2297,7 +2267,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381868"
+      "scraped_at": "2026-01-18T04:04:14.665307"
     },
     {
       "supermarket": "Coop",
@@ -2312,7 +2282,7 @@
       "start_date": "2026-01-12",
       "end_date": "2026-01-18",
       "source": "jina_reader",
-      "scraped_at": "2026-01-15T21:51:40.381873"
+      "scraped_at": "2026-01-18T04:04:14.665313"
     }
   ]
 }
