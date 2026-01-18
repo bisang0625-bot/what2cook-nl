@@ -389,6 +389,105 @@ class RecipeMatcher:
         
         return prompt
     
+    def translate_ingredients_batch(self, ingredients: List[str]) -> List[str]:
+        """재료명 리스트를 배치로 한국어로 번역합니다."""
+        if not ingredients:
+            return []
+        
+        # 이미 번역된 재료와 번역이 필요한 재료 분리
+        translated_map = {}
+        to_translate = []
+        
+        for ingredient in ingredients:
+            if not ingredient:
+                continue
+            
+            # 이미 "(한국어명)" 형식이 있으면 그대로 사용
+            if '(' in ingredient and ')' in ingredient:
+                translated_map[ingredient] = ingredient
+                continue
+            
+            # 한국어가 이미 포함되어 있으면 그대로 사용
+            if any('\uac00' <= char <= '\ud7a3' for char in ingredient):
+                translated_map[ingredient] = ingredient
+                continue
+            
+            # 번역이 필요한 재료
+            to_translate.append(ingredient)
+        
+        # 번역이 필요한 재료가 없으면 그대로 반환
+        if not to_translate:
+            return [translated_map.get(ing, ing) for ing in ingredients if ing]
+        
+        # 배치로 번역 (최대 20개씩)
+        batch_size = 20
+        for i in range(0, len(to_translate), batch_size):
+            batch = to_translate[i:i + batch_size]
+            
+            try:
+                # Gemini API로 배치 번역
+                ingredients_list = '\n'.join([f"- {ing}" for ing in batch])
+                prompt = f"""다음은 네덜란드 슈퍼마켓의 식품 상품명 목록입니다. 각 상품명을 한국어로 번역해주세요.
+
+**상품명 목록:**
+{ingredients_list}
+
+**규칙:**
+1. 상품명만 번역하세요 (브랜드명, 마트명은 번역하지 마세요)
+2. 자연스러운 한국어로 번역하세요
+3. 예: "Kipfilet" → "닭가슴살", "Uien" → "양파", "Knoflook" → "마늘"
+4. JSON 형식으로 출력하세요: {{"원본상품명": "한국어번역"}}
+
+**출력 형식 (JSON만):**"""
+                
+                response = self.client.models.generate_content(
+                    model='gemini-2.0-flash-001',
+                    contents=prompt,
+                    config=types.GenerateContentConfig(
+                        temperature=0.1,
+                        max_output_tokens=500
+                    )
+                )
+                
+                response_text = response.text.strip()
+                
+                # JSON 파싱
+                import re
+                json_match = re.search(r'\{[\s\S]*\}', response_text)
+                if json_match:
+                    try:
+                        translations = json.loads(json_match.group())
+                        for original, korean in translations.items():
+                            if korean and isinstance(korean, str):
+                                translated_map[original] = f"{original} ({korean.strip()})"
+                            else:
+                                translated_map[original] = original
+                    except json.JSONDecodeError:
+                        # JSON 파싱 실패 시 개별 번역 시도
+                        print(f"  ⚠️  배치 번역 JSON 파싱 실패, 개별 번역으로 전환")
+                        for ing in batch:
+                            translated_map[ing] = ing
+                else:
+                    # JSON 형식이 아니면 개별 번역 시도
+                    print(f"  ⚠️  배치 번역 응답 형식 오류, 개별 번역으로 전환")
+                    for ing in batch:
+                        translated_map[ing] = ing
+                        
+            except Exception as e:
+                print(f"  ⚠️  배치 번역 실패: {str(e)}")
+                # 실패한 재료는 원본 그대로 사용
+                for ing in batch:
+                    translated_map[ing] = ing
+        
+        # 원래 순서대로 번역된 재료 반환
+        result = []
+        for ingredient in ingredients:
+            if not ingredient:
+                continue
+            result.append(translated_map.get(ingredient, ingredient))
+        
+        return result
+    
     def parse_gemini_response(self, response_text: str) -> List[Dict[str, Any]]:
         """Gemini API 응답을 파싱하여 레시피 리스트로 변환합니다."""
         import re
@@ -422,6 +521,15 @@ class RecipeMatcher:
             
             # UUID 추가
             recipe_data['id'] = str(uuid.uuid4())
+            
+            # 재료명 한국어 번역 처리
+            if 'main_ingredients' in recipe_data and isinstance(recipe_data['main_ingredients'], list):
+                print(f"  🔄 main_ingredients 번역 중... ({len(recipe_data['main_ingredients'])}개)")
+                recipe_data['main_ingredients'] = self.translate_ingredients_batch(recipe_data['main_ingredients'])
+            
+            if 'sale_ingredients' in recipe_data and isinstance(recipe_data['sale_ingredients'], list):
+                print(f"  🔄 sale_ingredients 번역 중... ({len(recipe_data['sale_ingredients'])}개)")
+                recipe_data['sale_ingredients'] = self.translate_ingredients_batch(recipe_data['sale_ingredients'])
             
             # 번역 필드 확인 및 로그
             has_translations = all([
