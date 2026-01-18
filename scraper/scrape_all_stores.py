@@ -183,10 +183,12 @@ async def fetch_markdown_from_jina(
     Returns:
         (store, markdown_text, error)
     """
-    jina_url = f"{JINA_BASE_URL}/{url}"
+    # URL 인코딩 (특수문자 처리)
+    encoded_url = url
+    jina_url = f"{JINA_BASE_URL}/{encoded_url}"
     
     try:
-        print_progress(f"[{store}] Jina Reader 요청 중...", "📡")
+        print_progress(f"[{store}] Jina Reader 요청 중... URL: {url}", "📡")
         
         headers = {
             'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36',
@@ -196,20 +198,27 @@ async def fetch_markdown_from_jina(
         async with session.get(jina_url, headers=headers, timeout=aiohttp.ClientTimeout(total=90)) as response:
             if response.status == 200:
                 markdown_text = await response.text()
+                # 다음 주 페이지인지 확인 (키워드 체크)
+                if 'volgende-week' in url.lower() or 'next week' in url.lower():
+                    if 'volgende week' in markdown_text.lower() or 'next week' in markdown_text.lower():
+                        print_progress(f"[{store}] 다음 주 세일 정보 확인됨", "✅")
+                    else:
+                        print_progress(f"[{store}] 다음 주 세일 정보가 마크다운에 없을 수 있음", "⚠️")
+                
                 print_progress(f"[{store}] 마크다운 수신 ({len(markdown_text):,}자)", "📥")
                 return store, markdown_text, None
             else:
                 error = f"HTTP {response.status}"
-                print_error(store, error)
+                print_error(store, f"{error} - URL: {url}")
                 return store, None, error
                 
     except asyncio.TimeoutError:
         error = "요청 시간 초과 (90초)"
-        print_error(store, error)
+        print_error(store, f"{error} - URL: {url}")
         return store, None, error
     except Exception as e:
         error = str(e)
-        print_error(store, error)
+        print_error(store, f"{error} - URL: {url}")
         return store, None, error
 
 
@@ -576,17 +585,22 @@ async def scrape_week(week_type: str = 'current') -> Dict[str, Any]:
         # 다음 주 URL로 변환 (가능한 경우)
         next_week_urls = {}
         for store, url in STORES.items():
-            # AH는 다음 주 URL이 다름
+            # AH는 다음 주 URL이 다름 (명시적으로 설정)
             if store == "Albert Heijn":
                 next_week_urls[store] = "https://www.ah.nl/bonus/volgende-week"
+                print_progress(f"[{store}] 다음 주 URL: {next_week_urls[store]}", "🔗")
             # 다른 마트는 URL에 "volgende-week" 추가 시도
             elif "aanbiedingen" in url:
                 # URL 끝에 /volgende-week 추가
                 next_week_urls[store] = url.rstrip('/') + "/volgende-week"
+                print_progress(f"[{store}] 다음 주 URL: {next_week_urls[store]}", "🔗")
             else:
                 # 기본 URL 유지
                 next_week_urls[store] = url
         stores_to_scrape = next_week_urls
+        print(f"\n📋 다음 주 크롤링 대상 URL:")
+        for store, url in stores_to_scrape.items():
+            print(f"   - {store}: {url}")
     
     # Step 1: Jina Reader로 마크다운 가져오기 (비동기)
     markdown_results = await fetch_all_stores_markdown(stores_to_scrape)
