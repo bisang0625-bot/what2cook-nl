@@ -89,6 +89,27 @@ function getLocalizedText(
 // 날짜 뱃지 생성 함수
 type Translator = (key: any, vars?: Record<string, string | number>) => string
 
+// 재료명 파싱 함수 (네덜란드어명 (한국어명) 형식에서 언어에 맞는 이름 추출)
+function parseIngredientName(ingredient: string, lang: AppLanguage): string {
+  // "(한국어명)" 형식이 있는지 확인
+  const match = ingredient.match(/^(.+?)\s*\(([^)]+)\)$/)
+  
+  if (match) {
+    const dutchName = match[1].trim()
+    const koreanName = match[2].trim()
+    
+    // 한국어 선택 시 한국어명 반환
+    if (lang === 'ko') {
+      return koreanName
+    }
+    // 영어/네덜란드어 선택 시 네덜란드어명 반환
+    return dutchName
+  }
+  
+  // 형식이 맞지 않으면 원본 반환
+  return ingredient
+}
+
 function getDateBadge(
   recipe: Recipe,
   lang: AppLanguage,
@@ -675,7 +696,7 @@ function RecipeCard({
               key={idx}
               className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-nl-orange-100 text-nl-orange-700"
             >
-              {ingredient}
+              {parseIngredientName(ingredient, lang)}
             </span>
           ))}
           {recipe.main_ingredients.length > 3 && (
@@ -787,7 +808,7 @@ function RecipeModal({
                     key={idx}
                     className="inline-flex items-center px-3 py-1.5 rounded-full text-sm font-medium bg-nl-orange-100 text-nl-orange-700"
                   >
-                    {ingredient}
+                    {parseIngredientName(ingredient, lang)}
                   </span>
                 ))}
               </div>
