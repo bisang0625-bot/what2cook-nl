@@ -1,7 +1,9 @@
 'use client'
 
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { ShoppingBag } from 'lucide-react'
+import { useI18n } from './i18n/I18nProvider'
 
 interface SaleProduct {
   store?: string
@@ -74,7 +76,117 @@ const getStoreAbbr = (storeName: string) => {
   return abbrMap[storeName] || storeName.slice(0, 3).toUpperCase()
 }
 
+// 번역 캐시 (localStorage 사용)
+const translationCache: Map<string, string> = new Map()
+
+async function translateProductName(productName: string, targetLang: string): Promise<string> {
+  // 한국어가 아니면 번역 불필요
+  if (targetLang !== 'ko') {
+    return productName
+  }
+
+  // 캐시 확인
+  const cacheKey = `trans_${productName}`
+  const cached = translationCache.get(cacheKey)
+  if (cached) {
+    return cached
+  }
+
+  // localStorage에서도 확인
+  if (typeof window !== 'undefined') {
+    const stored = localStorage.getItem(cacheKey)
+    if (stored) {
+      translationCache.set(cacheKey, stored)
+      return stored
+    }
+  }
+
+  try {
+    const response = await fetch('/api/translate', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        targetLang: 'ko',
+        texts: [productName]
+      })
+    })
+
+    if (response.ok) {
+      const data = await response.json()
+      const translated = data.translations?.[0] || productName
+      
+      // 캐시 저장
+      translationCache.set(cacheKey, translated)
+      if (typeof window !== 'undefined') {
+        localStorage.setItem(cacheKey, translated)
+      }
+      
+      return translated
+    }
+  } catch (error) {
+    console.warn('Translation failed:', error)
+  }
+
+  return productName
+}
+
 export default function DealsGrid({ products, category, categoryLabel }: DealsGridProps) {
+  const { lang } = useI18n()
+  const [translatedNames, setTranslatedNames] = useState<Map<string, string>>(new Map())
+
+  useEffect(() => {
+    if (lang === 'ko' && products.length > 0) {
+      // 모든 상품명 번역
+      const translateAll = async () => {
+        const translations = new Map<string, string>()
+        
+        // 고유 키 생성 (상품명 + 마트명)
+        const productKeys = products.map((p, idx) => {
+          const name = p.product_name || p.name || ''
+          const store = p.store || p.supermarket || ''
+          return `${name}_${store}_${idx}`
+        })
+        
+        // 배치로 번역 (한 번에 최대 20개)
+        const batchSize = 20
+        for (let i = 0; i < products.length; i += batchSize) {
+          const batch = products.slice(i, i + batchSize)
+          const productNames = batch.map(p => p.product_name || p.name || '')
+          
+          try {
+            const response = await fetch('/api/translate', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({
+                targetLang: 'ko',
+                texts: productNames
+              })
+            })
+
+            if (response.ok) {
+              const data = await response.json()
+              const translated = data.translations || []
+              
+              batch.forEach((product, idx) => {
+                const key = productKeys[i + idx]
+                const translatedName = translated[idx] || productNames[idx]
+                translations.set(key, translatedName)
+              })
+            }
+          } catch (error) {
+            console.warn('Batch translation failed:', error)
+          }
+        }
+        
+        setTranslatedNames(translations)
+      }
+      
+      translateAll()
+    } else {
+      setTranslatedNames(new Map())
+    }
+  }, [products, lang])
+
   if (products.length === 0) return null
 
   return (
@@ -86,7 +198,11 @@ export default function DealsGrid({ products, category, categoryLabel }: DealsGr
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
         {products.map((product, index) => {
           const storeName = product.store || product.supermarket || 'Unknown'
-          const productName = product.product_name || product.name || 'Unknown'
+          const originalProductName = product.product_name || product.name || 'Unknown'
+          const productKey = `${originalProductName}_${storeName}_${index}`
+          const productName = lang === 'ko' && translatedNames.has(productKey) 
+            ? translatedNames.get(productKey) || originalProductName
+            : originalProductName
           const price = product.price || product.price_info || ''
           const discount = product.discount || product.discount_info || ''
           const salePeriod = formatSalePeriod(product)
@@ -95,7 +211,7 @@ export default function DealsGrid({ products, category, categoryLabel }: DealsGr
 
           return (
             <Link
-              key={`${storeName}-${productName}-${index}`}
+              key={`${storeName}-${originalProductName}-${index}`}
               href="/#recipes-section"
               className="bg-white rounded-lg border border-gray-200 hover:shadow-md hover:border-orange-300 transition-all duration-200 p-3 flex flex-col"
             >

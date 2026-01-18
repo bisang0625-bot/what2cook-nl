@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server'
 
 type TranslateRequestBody = {
-  targetLang: 'en' | 'nl'
+  targetLang: 'en' | 'nl' | 'ko'
   sourceLang?: 'ko' | 'en' | 'nl' | 'auto'
   texts: string[]
 }
@@ -10,13 +10,16 @@ function normalizeText(t: string) {
   return String(t || '').trim()
 }
 
-async function translateWithOpenAI(texts: string[], targetLang: 'en' | 'nl') {
+async function translateWithOpenAI(texts: string[], targetLang: 'en' | 'nl' | 'ko') {
   const apiKey = process.env.OPENAI_API_KEY
   if (!apiKey) {
     throw new Error('OPENAI_API_KEY is not set')
   }
 
-  const targetName = targetLang === 'nl' ? 'Dutch (nl-NL)' : 'English (en-US)'
+  const targetName = 
+    targetLang === 'nl' ? 'Dutch (nl-NL)' : 
+    targetLang === 'ko' ? 'Korean (ko-KR)' : 
+    'English (en-US)'
 
   const system = [
     'You are a professional localization translator for a cooking & grocery-deals app in the Netherlands.',
@@ -68,8 +71,8 @@ export async function POST(req: Request) {
     const targetLang = body?.targetLang
     const texts = Array.isArray(body?.texts) ? body.texts.map(normalizeText) : []
 
-    if (targetLang !== 'en' && targetLang !== 'nl') {
-      return NextResponse.json({ error: 'targetLang must be en|nl' }, { status: 400 })
+    if (targetLang !== 'en' && targetLang !== 'nl' && targetLang !== 'ko') {
+      return NextResponse.json({ error: 'targetLang must be en|nl|ko' }, { status: 400 })
     }
     if (texts.length === 0) {
       return NextResponse.json({ translations: [] })

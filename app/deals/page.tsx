@@ -2,7 +2,7 @@
 
 import { useEffect, useState, useMemo } from 'react'
 import Link from 'next/link'
-import { ChefHat } from 'lucide-react'
+import { ChefHat, Search, X } from 'lucide-react'
 // 모든 컴포넌트와 데이터를 상대 경로(../../)로 변경하여 Vercel 빌드 에러 방지
 import Tabs from '../../components/Tabs'
 import DealsGrid from '../../components/DealsGrid'
@@ -38,7 +38,8 @@ export default function DealsPage() {
   const [activeTab, setActiveTab] = useState<'current' | 'next'>('current')
   const [selectedStores, setSelectedStores] = useState<Set<string>>(new Set())
   const [selectAll, setSelectAll] = useState<boolean>(true)
-  const { t } = useI18n()
+  const [searchQuery, setSearchQuery] = useState<string>('')
+  const { t, lang } = useI18n()
 
   useEffect(() => {
     const loadData = async () => {
@@ -98,16 +99,46 @@ export default function DealsPage() {
   }
 
   const filteredCurrent = useMemo(() => {
-    const products = currentSales?.products || []
-    if (selectAll) return products
-    return products.filter(p => selectedStores.has(p.store || p.supermarket || ''))
-  }, [currentSales, selectAll, selectedStores])
+    let products = currentSales?.products || []
+    
+    // 마트 필터
+    if (!selectAll) {
+      products = products.filter(p => selectedStores.has(p.store || p.supermarket || ''))
+    }
+    
+    // 검색 필터
+    if (searchQuery.trim()) {
+      const query = searchQuery.toLowerCase().trim()
+      products = products.filter(p => {
+        const productName = (p.product_name || p.name || '').toLowerCase()
+        const storeName = (p.store || p.supermarket || '').toLowerCase()
+        return productName.includes(query) || storeName.includes(query)
+      })
+    }
+    
+    return products
+  }, [currentSales, selectAll, selectedStores, searchQuery])
 
   const filteredNext = useMemo(() => {
-    const products = nextSales?.products || []
-    if (selectAll) return products
-    return products.filter(p => selectedStores.has(p.store || p.supermarket || ''))
-  }, [nextSales, selectAll, selectedStores])
+    let products = nextSales?.products || []
+    
+    // 마트 필터
+    if (!selectAll) {
+      products = products.filter(p => selectedStores.has(p.store || p.supermarket || ''))
+    }
+    
+    // 검색 필터
+    if (searchQuery.trim()) {
+      const query = searchQuery.toLowerCase().trim()
+      products = products.filter(p => {
+        const productName = (p.product_name || p.name || '').toLowerCase()
+        const storeName = (p.store || p.supermarket || '').toLowerCase()
+        return productName.includes(query) || storeName.includes(query)
+      })
+    }
+    
+    return products
+  }, [nextSales, selectAll, selectedStores, searchQuery])
 
   const categorizedCurrent = useMemo(() => categorizeProducts(filteredCurrent), [filteredCurrent])
   const categorizedNext = useMemo(() => categorizeProducts(filteredNext), [filteredNext])
@@ -136,6 +167,28 @@ export default function DealsPage() {
           <Link href="/" className="flex items-center gap-2 px-3 py-1.5 border-2 border-orange-500 text-orange-600 rounded-lg text-sm font-bold">
             <ChefHat size={16} /> {t('deals.backToRecipes')}
           </Link>
+        </div>
+
+        {/* 검색 바 */}
+        <div className="mb-4">
+          <div className="relative">
+            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
+            <input
+              type="text"
+              placeholder={lang === 'ko' ? '상품명 또는 마트명 검색...' : lang === 'nl' ? 'Zoek op product of winkel...' : 'Search by product or store...'}
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="w-full pl-10 pr-10 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+            />
+            {searchQuery && (
+              <button
+                onClick={() => setSearchQuery('')}
+                className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600"
+              >
+                <X size={18} />
+              </button>
+            )}
+          </div>
         </div>
 
         <StoreFilter 
