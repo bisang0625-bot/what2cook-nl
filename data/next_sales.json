@@ -1,10 +1,10 @@
 {
-  "scraped_at": "2026-02-15T01:05:11.322492",
+  "scraped_at": "2026-02-17T02:48:50.683390",
   "week_type": "next",
-  "week_number": "2026-08",
-  "start_date": "2026-02-16",
-  "end_date": "2026-02-22",
-  "total_products": 30,
+  "week_number": "2026-09",
+  "start_date": "2026-02-23",
+  "end_date": "2026-03-01",
+  "total_products": 32,
   "supermarkets": {
     "successful": [
       "Albert Heijn",
@@ -25,14 +25,14 @@
       "product_name": "AH Broccoli",
       "price_info": null,
       "original_price": null,
-      "discount_info": "per 500 gram 0.99",
-      "unit": "500g",
+      "discount_info": null,
+      "unit": "per 500 gram",
       "valid_date": null,
       "category": "main",
-      "start_date": "2026-02-16",
-      "end_date": "2026-02-22",
+      "start_date": "2026-02-23",
+      "end_date": "2026-03-01",
       "source": "jina_reader",
-      "scraped_at": "2026-02-15T01:05:11.321091"
+      "scraped_at": "2026-02-17T02:48:50.681978"
     },
     {
       "supermarket": "Albert Heijn",
@@ -44,10 +44,10 @@
       "unit": "400 gram",
       "valid_date": null,
       "category": "sub",
-      "start_date": "2026-02-16",
-      "end_date": "2026-02-22",
+      "start_date": "2026-02-23",
+      "end_date": "2026-03-01",
       "source": "jina_reader",
-      "scraped_at": "2026-02-15T01:05:11.321100"
+      "scraped_at": "2026-02-17T02:48:50.681987"
     },
     {
       "supermarket": "Albert Heijn",
@@ -59,25 +59,25 @@
       "unit": "150-200 gram",
       "valid_date": null,
       "category": "sub",
-      "start_date": "2026-02-16",
-      "end_date": "2026-02-22",
+      "start_date": "2026-02-23",
+      "end_date": "2026-03-01",
       "source": "jina_reader",
-      "scraped_at": "2026-02-15T01:05:11.321107"
+      "scraped_at": "2026-02-17T02:48:50.681994"
     },
     {
       "supermarket": "Albert Heijn",
       "store": "Albert Heijn",
       "product_name": "Alle AH Soep verspakketten",
-      "price_info": "€6.99",
+      "price_info": null,
       "original_price": null,
       "discount_info": "2 stuks 6.99",
       "unit": null,
       "valid_date": null,
       "category": "sub",
-      "start_date": "2026-02-16",
-      "end_date": "2026-02-22",
+      "start_date": "2026-02-23",
+      "end_date": "2026-03-01",
       "source": "jina_reader",
-      "scraped_at": "2026-02-15T01:05:11.321113"
+      "scraped_at": "2026-02-17T02:48:50.682001"
     },
     {
       "supermarket": "Albert Heijn",
@@ -89,10 +89,10 @@
       "unit": null,
       "valid_date": null,
       "category": "fruits",
-      "start_date": "2026-02-16",
-      "end_date": "2026-02-22",
+      "start_date": "2026-02-23",
+      "end_date": "2026-03-01",
       "source": "jina_reader",
-      "scraped_at": "2026-02-15T01:05:11.321117"
+      "scraped_at": "2026-02-17T02:48:50.682005"
     },
     {
       "supermarket": "Albert Heijn",
@@ -104,10 +104,10 @@
       "unit": null,
       "valid_date": null,
       "category": "sub",
-      "start_date": "2026-02-16",
-      "end_date": "2026-02-22",
+      "start_date": "2026-02-23",
+      "end_date": "2026-03-01",
       "source": "jina_reader",
-      "scraped_at": "2026-02-15T01:05:11.321124"
+      "scraped_at": "2026-02-17T02:48:50.682012"
     },
     {
       "supermarket": "Albert Heijn",
@@ -119,10 +119,10 @@
       "unit": null,
       "valid_date": null,
       "category": "fruits",
-      "start_date": "2026-02-16",
-      "end_date": "2026-02-22",
+      "start_date": "2026-02-23",
+      "end_date": "2026-03-01",
       "source": "jina_reader",
-      "scraped_at": "2026-02-15T01:05:11.321128"
+      "scraped_at": "2026-02-17T02:48:50.682015"
     },
     {
       "supermarket": "Albert Heijn",
@@ -134,25 +134,25 @@
       "unit": "per kilo",
       "valid_date": null,
       "category": "fruits",
-      "start_date": "2026-02-16",
-      "end_date": "2026-02-22",
+      "start_date": "2026-02-23",
+      "end_date": "2026-03-01",
       "source": "jina_reader",
-      "scraped_at": "2026-02-15T01:05:11.321131"
+      "scraped_at": "2026-02-17T02:48:50.682018"
     },
     {
       "supermarket": "Albert Heijn",
       "store": "Albert Heijn",
       "product_name": "Alle AH Verse sappen en smoothies",
-      "price_info": "€3.75",
+      "price_info": null,
       "original_price": null,
       "discount_info": "2 voor 3.75",
       "unit": "500 ml",
       "valid_date": null,
       "category": "sub",
-      "start_date": "2026-02-16",
-      "end_date": "2026-02-22",
+      "start_date": "2026-02-23",
+      "end_date": "2026-03-01",
       "source": "jina_reader",
-      "scraped_at": "2026-02-15T01:05:11.321137"
+      "scraped_at": "2026-02-17T02:48:50.682024"
     },
     {
       "supermarket": "Albert Heijn",
@@ -164,40 +164,40 @@
       "unit": "1 kilo",
       "valid_date": null,
       "category": "fruits",
-      "start_date": "2026-02-16",
-      "end_date": "2026-02-22",
+      "start_date": "2026-02-23",
+      "end_date": "2026-03-01",
       "source": "jina_reader",
-      "scraped_at": "2026-02-15T01:05:11.321140"
+      "scraped_at": "2026-02-17T02:48:50.682027"
     },
     {
       "supermarket": "Albert Heijn",
       "store": "Albert Heijn",
       "product_name": "AH Handsinaasappelen 2 kilo en bloedsinaasappelen 1.3 kilo",
-      "price_info": "€4.99",
+      "price_info": null,
       "original_price": null,
       "discount_info": "2 voor 4.99",
       "unit": null,
       "valid_date": null,
       "category": "fruits",
-      "start_date": "2026-02-16",
-      "end_date": "2026-02-22",
+      "start_date": "2026-02-23",
+      "end_date": "2026-03-01",
       "source": "jina_reader",
-      "scraped_at": "2026-02-15T01:05:11.321143"
+      "scraped_at": "2026-02-17T02:48:50.682030"
     },
     {
       "supermarket": "Albert Heijn",
       "store": "Albert Heijn",
-      "product_name": "AH Verse ananas of meloenmix",
+      "product_name": "AH Verse ananas 250 gram of meloenmix 225 gram",
       "price_info": null,
       "original_price": null,
       "discount_info": "1+1 gratis",
-      "unit": "250 gram",
+      "unit": null,
       "valid_date": null,
       "category": "fruits",
-      "start_date": "2026-02-16",
-      "end_date": "2026-02-22",
+      "start_date": "2026-02-23",
+      "end_date": "2026-03-01",
       "source": "jina_reader",
-      "scraped_at": "2026-02-15T01:05:11.321146"
+      "scraped_at": "2026-02-17T02:48:50.682034"
     },
     {
       "supermarket": "Albert Heijn",
@@ -209,10 +209,10 @@
       "unit": "1.5 kilo",
       "valid_date": null,
       "category": "fruits",
-      "start_date": "2026-02-16",
-      "end_date": "2026-02-22",
+      "start_date": "2026-02-23",
+      "end_date": "2026-03-01",
       "source": "jina_reader",
-      "scraped_at": "2026-02-15T01:05:11.321150"
+      "scraped_at": "2026-02-17T02:48:50.682037"
     },
     {
       "supermarket": "Albert Heijn",
@@ -224,10 +224,10 @@
       "unit": "1 kilo",
       "valid_date": null,
       "category": "fruits",
-      "start_date": "2026-02-16",
-      "end_date": "2026-02-22",
+      "start_date": "2026-02-23",
+      "end_date": "2026-03-01",
       "source": "jina_reader",
-      "scraped_at": "2026-02-15T01:05:11.321153"
+      "scraped_at": "2026-02-17T02:48:50.682041"
     },
     {
       "supermarket": "Albert Heijn",
@@ -239,10 +239,10 @@
       "unit": "2 stuks",
       "valid_date": null,
       "category": "fruits",
-      "start_date": "2026-02-16",
-      "end_date": "2026-02-22",
+      "start_date": "2026-02-23",
+      "end_date": "2026-03-01",
       "source": "jina_reader",
-      "scraped_at": "2026-02-15T01:05:11.321157"
+      "scraped_at": "2026-02-17T02:48:50.682044"
     },
     {
       "supermarket": "Albert Heijn",
@@ -254,25 +254,25 @@
       "unit": "4 stuks",
       "valid_date": null,
       "category": "fruits",
-      "start_date": "2026-02-16",
-      "end_date": "2026-02-22",
+      "start_date": "2026-02-23",
+      "end_date": "2026-03-01",
       "source": "jina_reader",
-      "scraped_at": "2026-02-15T01:05:11.321159"
+      "scraped_at": "2026-02-17T02:48:50.682047"
     },
     {
       "supermarket": "Albert Heijn",
       "store": "Albert Heijn",
       "product_name": "Alle AH Verse sappen en smoothies",
-      "price_info": "€5.00",
+      "price_info": null,
       "original_price": null,
       "discount_info": "3 voor 5.00",
       "unit": "250 ml",
       "valid_date": null,
       "category": "sub",
-      "start_date": "2026-02-16",
-      "end_date": "2026-02-22",
+      "start_date": "2026-02-23",
+      "end_date": "2026-03-01",
       "source": "jina_reader",
-      "scraped_at": "2026-02-15T01:05:11.321166"
+      "scraped_at": "2026-02-17T02:48:50.682053"
     },
     {
       "supermarket": "Albert Heijn",
@@ -284,25 +284,25 @@
       "unit": null,
       "valid_date": null,
       "category": "main",
-      "start_date": "2026-02-16",
-      "end_date": "2026-02-22",
+      "start_date": "2026-02-23",
+      "end_date": "2026-03-01",
       "source": "jina_reader",
-      "scraped_at": "2026-02-15T01:05:11.321171"
+      "scraped_at": "2026-02-17T02:48:50.682058"
     },
     {
       "supermarket": "Albert Heijn",
       "store": "Albert Heijn",
       "product_name": "Alle AH Pastasalades",
-      "price_info": "€5.99",
+      "price_info": null,
       "original_price": null,
       "discount_info": "2 voor 5.99",
       "unit": "350 gram",
       "valid_date": null,
       "category": "sub",
-      "start_date": "2026-02-16",
-      "end_date": "2026-02-22",
+      "start_date": "2026-02-23",
+      "end_date": "2026-03-01",
       "source": "jina_reader",
-      "scraped_at": "2026-02-15T01:05:11.321177"
+      "scraped_at": "2026-02-17T02:48:50.682064"
     },
     {
       "supermarket": "Albert Heijn",
@@ -314,70 +314,70 @@
       "unit": null,
       "valid_date": null,
       "category": "sub",
-      "start_date": "2026-02-16",
-      "end_date": "2026-02-22",
+      "start_date": "2026-02-23",
+      "end_date": "2026-03-01",
       "source": "jina_reader",
-      "scraped_at": "2026-02-15T01:05:11.321184"
+      "scraped_at": "2026-02-17T02:48:50.682071"
     },
     {
       "supermarket": "Albert Heijn",
       "store": "Albert Heijn",
       "product_name": "Alle AH Verse soepen",
-      "price_info": "€6.00",
+      "price_info": null,
       "original_price": null,
       "discount_info": "2 voor 6.00",
       "unit": "500 gram",
       "valid_date": null,
       "category": "sub",
-      "start_date": "2026-02-16",
-      "end_date": "2026-02-22",
+      "start_date": "2026-02-23",
+      "end_date": "2026-03-01",
       "source": "jina_reader",
-      "scraped_at": "2026-02-15T01:05:11.321189"
+      "scraped_at": "2026-02-17T02:48:50.682077"
     },
     {
       "supermarket": "Albert Heijn",
       "store": "Albert Heijn",
       "product_name": "Alle AH Verse pizza's",
-      "price_info": "€12.00",
+      "price_info": null,
       "original_price": null,
       "discount_info": "2 voor 12.00",
       "unit": null,
       "valid_date": null,
       "category": "sub",
-      "start_date": "2026-02-16",
-      "end_date": "2026-02-22",
+      "start_date": "2026-02-23",
+      "end_date": "2026-03-01",
       "source": "jina_reader",
-      "scraped_at": "2026-02-15T01:05:11.321195"
+      "scraped_at": "2026-02-17T02:48:50.682083"
     },
     {
       "supermarket": "Albert Heijn",
       "store": "Albert Heijn",
       "product_name": "Alle AH Verse maaltijden",
-      "price_info": "€12.00",
+      "price_info": null,
       "original_price": null,
       "discount_info": "2 voor 12.00",
       "unit": null,
       "valid_date": null,
       "category": "sub",
-      "start_date": "2026-02-16",
-      "end_date": "2026-02-22",
+      "start_date": "2026-02-23",
+      "end_date": "2026-03-01",
       "source": "jina_reader",
-      "scraped_at": "2026-02-15T01:05:11.321201"
+      "scraped_at": "2026-02-17T02:48:50.682088"
     },
     {
       "supermarket": "Albert Heijn",
       "store": "Albert Heijn",
-      "product_name": "AH Scharrelkipfiletblokjes of kalkoenfiletblokjes",
+      "product_name": "AH Scharrelkipfiletblokjes 300 gram of kalkoenfiletblokjes 250 gram",
       "price_info": null,
       "original_price": null,
       "discount_info": "€1 korting",
       "unit": null,
       "valid_date": null,
       "category": "main",
-      "start_date": "2026-02-16",
-      "end_date": "2026-02-22",
+      "start_date": "2026-02-23",
+      "end_date": "2026-03-01",
       "source": "jina_reader",
-      "scraped_at": "2026-02-15T01:05:11.321206"
+      "scraped_at": "2026-02-17T02:48:50.682094"
     },
     {
       "supermarket": "Albert Heijn",
@@ -389,10 +389,40 @@
       "unit": null,
       "valid_date": null,
       "category": "main",
-      "start_date": "2026-02-16",
-      "end_date": "2026-02-22",
+      "start_date": "2026-02-23",
+      "end_date": "2026-03-01",
       "source": "jina_reader",
-      "scraped_at": "2026-02-15T01:05:11.321232"
+      "scraped_at": "2026-02-17T02:48:50.682099"
+    },
+    {
+      "supermarket": "Albert Heijn",
+      "store": "Albert Heijn",
+      "product_name": "AH Gemengd gehakt",
+      "price_info": null,
+      "original_price": null,
+      "discount_info": "2 voor 5.99",
+      "unit": "300 gram",
+      "valid_date": null,
+      "category": "main",
+      "start_date": "2026-02-23",
+      "end_date": "2026-03-01",
+      "source": "jina_reader",
+      "scraped_at": "2026-02-17T02:48:50.682103"
+    },
+    {
+      "supermarket": "Albert Heijn",
+      "store": "Albert Heijn",
+      "product_name": "AH Soepvlees",
+      "price_info": null,
+      "original_price": null,
+      "discount_info": "10%korting",
+      "unit": null,
+      "valid_date": null,
+      "category": "sub",
+      "start_date": "2026-02-23",
+      "end_date": "2026-03-01",
+      "source": "jina_reader",
+      "scraped_at": "2026-02-17T02:48:50.682109"
     },
     {
       "supermarket": "Coop",
@@ -404,10 +434,10 @@
       "unit": null,
       "valid_date": "t/m 17 feb",
       "category": "sub",
-      "start_date": "2026-02-16",
-      "end_date": "2026-02-22",
+      "start_date": "2026-02-23",
+      "end_date": "2026-03-01",
       "source": "jina_reader",
-      "scraped_at": "2026-02-15T01:05:11.321241"
+      "scraped_at": "2026-02-17T02:48:50.682116"
     },
     {
       "supermarket": "Coop",
@@ -419,10 +449,10 @@
       "unit": "1,5 liter",
       "valid_date": "t/m 17 feb",
       "category": "sub",
-      "start_date": "2026-02-16",
-      "end_date": "2026-02-22",
+      "start_date": "2026-02-23",
+      "end_date": "2026-03-01",
       "source": "jina_reader",
-      "scraped_at": "2026-02-15T01:05:11.321247"
+      "scraped_at": "2026-02-17T02:48:50.682122"
     },
     {
       "supermarket": "Coop",
@@ -434,10 +464,10 @@
       "unit": "500 gram",
       "valid_date": "t/m 17 feb",
       "category": "sub",
-      "start_date": "2026-02-16",
-      "end_date": "2026-02-22",
+      "start_date": "2026-02-23",
+      "end_date": "2026-03-01",
       "source": "jina_reader",
-      "scraped_at": "2026-02-15T01:05:11.321253"
+      "scraped_at": "2026-02-17T02:48:50.682128"
     },
     {
       "supermarket": "Coop",
@@ -449,10 +479,10 @@
       "unit": "435 gram",
       "valid_date": "t/m 17 feb",
       "category": "sub",
-      "start_date": "2026-02-16",
-      "end_date": "2026-02-22",
+      "start_date": "2026-02-23",
+      "end_date": "2026-03-01",
       "source": "jina_reader",
-      "scraped_at": "2026-02-15T01:05:11.321260"
+      "scraped_at": "2026-02-17T02:48:50.682135"
     },
     {
       "supermarket": "Coop",
@@ -464,10 +494,10 @@
       "unit": null,
       "valid_date": null,
       "category": "fruits",
-      "start_date": "2026-02-16",
-      "end_date": "2026-02-22",
+      "start_date": "2026-02-23",
+      "end_date": "2026-03-01",
       "source": "jina_reader",
-      "scraped_at": "2026-02-15T01:05:11.321263"
+      "scraped_at": "2026-02-17T02:48:50.682138"
     }
   ]
 }
