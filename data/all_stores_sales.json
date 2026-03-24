@@ -1,248 +1,392 @@
 {
-  "scraped_at": "2026-03-22T01:04:27.049999",
+  "scraped_at": "2026-03-24T02:46:12.796174",
   "stores": {
     "Albert Heijn": {
       "success": true,
-      "product_count": 29,
+      "product_count": 47,
       "error": null,
       "products": [
         {
-          "product_name": "AH Biologisch komkommer",
+          "product_name": "AH Excellent paasbroodjes",
           "price": null,
           "original_price": null,
-          "discount_label": "2 voor 2.49",
+          "discount_label": "Feestfavoriet",
           "valid_date": null,
           "unit": null
         },
         {
-          "product_name": "Alle AH Kleinverpakkingen groentegemak",
-          "price": null,
+          "product_name": "AH Excellent paasbroodjes",
+          "price": "2.29",
           "original_price": null,
-          "discount_label": "2 voor 2.49",
+          "discount_label": null,
           "valid_date": null,
           "unit": null
         },
         {
-          "product_name": "Alle AH Gekoelde bakaardappelen 600 gram",
+          "product_name": "Alle AH Excellent mini-stolletjes",
           "price": null,
           "original_price": null,
-          "discount_label": "voor 0.99",
+          "discount_label": "3+1 gratis",
           "valid_date": null,
-          "unit": "600 gram"
+          "unit": null
         },
         {
-          "product_name": "Alle AH Terra peulvruchten 400 gram",
+          "product_name": "AH Excellent luxe donijn van de bakkerij",
+          "price": "1.99",
+          "original_price": null,
+          "discount_label": "2 voor",
+          "valid_date": null,
+          "unit": null
+        },
+        {
+          "product_name": "AH Excellent luxe donijn van de bakkerij",
+          "price": null,
+          "original_price": null,
+          "discount_label": "Alleen in de winkel",
+          "valid_date": null,
+          "unit": null
+        },
+        {
+          "product_name": "AH Excellent verse roomkaas en romige mousse",
+          "price": "5.00",
+          "original_price": null,
+          "discount_label": "2 voor",
+          "valid_date": null,
+          "unit": null
+        },
+        {
+          "product_name": "AH Excellent luxe donijn van de bakkerij",
+          "price": "1.99",
+          "original_price": null,
+          "discount_label": "Pak 2 stuks voor",
+          "valid_date": null,
+          "unit": null
+        },
+        {
+          "product_name": "Delicata gevulde paaseitjes 150 gram",
+          "price": "7.00",
+          "original_price": null,
+          "discount_label": "2 voor",
+          "valid_date": null,
+          "unit": "150 gram"
+        },
+        {
+          "product_name": "AH Excellent likkoekjes 200 gram",
+          "price": null,
+          "original_price": null,
+          "discount_label": "Feestfavoriet",
+          "valid_date": null,
+          "unit": "200 gram"
+        },
+        {
+          "product_name": "AH Excellent likkoekjes 200 gram",
+          "price": "1.99",
+          "original_price": null,
+          "discount_label": null,
+          "valid_date": null,
+          "unit": null
+        },
+        {
+          "product_name": "AH Excellent swirl roomboter croissants van de bakkerij",
+          "price": "1.49",
+          "original_price": null,
+          "discount_label": "2 voor",
+          "valid_date": null,
+          "unit": null
+        },
+        {
+          "product_name": "AH Excellent swirl roomboter croissants van de bakkerij",
+          "price": null,
+          "original_price": null,
+          "discount_label": "Alleen in de winkel",
+          "valid_date": null,
+          "unit": null
+        },
+        {
+          "product_name": "AH Excellent popcorn",
+          "price": null,
+          "original_price": null,
+          "discount_label": "Feestfavoriet",
+          "valid_date": null,
+          "unit": null
+        },
+        {
+          "product_name": "AH Excellent popcorn",
+          "price": "0.79",
+          "original_price": null,
+          "discount_label": null,
+          "valid_date": null,
+          "unit": null
+        },
+        {
+          "product_name": "AH Excellent bagels everything cottage cheese 4 stuks",
+          "price": null,
+          "original_price": null,
+          "discount_label": "Feestfavoriet",
+          "valid_date": null,
+          "unit": "4 stuks"
+        },
+        {
+          "product_name": "AH Excellent bagels everything cottage cheese 4 stuks",
+          "price": "1.99",
+          "original_price": null,
+          "discount_label": null,
+          "valid_date": null,
+          "unit": null
+        },
+        {
+          "product_name": "AH Excellent cookie met chocolade-eitjes van de bakkerij",
+          "price": null,
+          "original_price": null,
+          "discount_label": "Feestfavoriet",
+          "valid_date": null,
+          "unit": null
+        },
+        {
+          "product_name": "AH Excellent cookie met chocolade-eitjes van de bakkerij",
+          "price": null,
+          "original_price": null,
+          "discount_label": "Alleen in de winkel",
+          "valid_date": null,
+          "unit": null
+        },
+        {
+          "product_name": "AH Excellent cookie met chocolade-eitjes van de bakkerij",
+          "price": "1.69",
+          "original_price": null,
+          "discount_label": null,
+          "valid_date": null,
+          "unit": null
+        },
+        {
+          "product_name": "AH Excellent gekleurde pastel paaseitjes 120 gram",
+          "price": null,
+          "original_price": null,
+          "discount_label": "Feestfavoriet",
+          "valid_date": null,
+          "unit": "120 gram"
+        },
+        {
+          "product_name": "AH Excellent gekleurde pastel paaseitjes 120 gram",
+          "price": "2.99",
+          "original_price": null,
+          "discount_label": null,
+          "valid_date": null,
+          "unit": null
+        },
+        {
+          "product_name": "Alle AH Excellent macarons 12 stuks",
+          "price": null,
+          "original_price": null,
+          "discount_label": "Feestfavoriet",
+          "valid_date": null,
+          "unit": "12 stuks"
+        },
+        {
+          "product_name": "Alle AH Excellent macarons 12 stuks",
+          "price": "5.49",
+          "original_price": null,
+          "discount_label": null,
+          "valid_date": null,
+          "unit": null
+        },
+        {
+          "product_name": "AH Excellent glutenvrij mini-suikerbrood",
+          "price": null,
+          "original_price": null,
+          "discount_label": "Feestfavoriet",
+          "valid_date": null,
+          "unit": null
+        },
+        {
+          "product_name": "AH Excellent glutenvrij mini-suikerbrood",
+          "price": "2.69",
+          "original_price": null,
+          "discount_label": null,
+          "valid_date": null,
+          "unit": null
+        },
+        {
+          "product_name": "AH Excellent mix voor rainbow pancakes",
+          "price": null,
+          "original_price": null,
+          "discount_label": "Feestfavoriet",
+          "valid_date": null,
+          "unit": null
+        },
+        {
+          "product_name": "AH Excellent mix voor rainbow pancakes",
+          "price": "2.99",
+          "original_price": null,
+          "discount_label": null,
+          "valid_date": null,
+          "unit": null
+        },
+        {
+          "product_name": "AH Excellent mix voor wafels",
+          "price": null,
+          "original_price": null,
+          "discount_label": "Feestfavoriet",
+          "valid_date": null,
+          "unit": null
+        },
+        {
+          "product_name": "AH Excellent mix voor wafels",
+          "price": "1.99",
+          "original_price": null,
+          "discount_label": null,
+          "valid_date": null,
+          "unit": null
+        },
+        {
+          "product_name": "Delicata wat de ei?!",
+          "price": null,
+          "original_price": null,
+          "discount_label": "Feestfavoriet",
+          "valid_date": null,
+          "unit": null
+        },
+        {
+          "product_name": "Delicata wat de ei?!",
+          "price": "4.49",
+          "original_price": null,
+          "discount_label": null,
+          "valid_date": null,
+          "unit": null
+        },
+        {
+          "product_name": "AH Excellent mini-bloembakje",
+          "price": null,
+          "original_price": null,
+          "discount_label": "Feestfavoriet",
+          "valid_date": null,
+          "unit": null
+        },
+        {
+          "product_name": "AH Excellent mini-bloembakje",
+          "price": "2.49",
+          "original_price": null,
+          "discount_label": null,
+          "valid_date": null,
+          "unit": null
+        },
+        {
+          "product_name": "AH Pasen tafelaankleding",
+          "price": null,
+          "original_price": null,
+          "discount_label": "Feestfavoriet",
+          "valid_date": null,
+          "unit": null
+        },
+        {
+          "product_name": "AH Paasartikelen",
+          "price": null,
+          "original_price": null,
+          "discount_label": "Feestfavoriet",
+          "valid_date": null,
+          "unit": null
+        },
+        {
+          "product_name": "AH Pasen tafelversiering",
+          "price": null,
+          "original_price": null,
+          "discount_label": "Feestfavoriet",
+          "valid_date": null,
+          "unit": null
+        },
+        {
+          "product_name": "Alle AH Italiaanse roerbak- en Chinese en Thaise wokgroenten 400 gram",
+          "price": null,
+          "original_price": null,
+          "discount_label": "1+1 gratis",
+          "valid_date": null,
+          "unit": "400 gram"
+        },
+        {
+          "product_name": "Alle AH Italiaanse roerbak- en Chinese en Thaise wokgroenten 400 gram",
+          "price": null,
+          "original_price": null,
+          "discount_label": "uitgelicht",
+          "valid_date": null,
+          "unit": null
+        },
+        {
+          "product_name": "Alle Hak",
           "price": null,
           "original_price": null,
           "discount_label": "2e halve prijs",
           "valid_date": null,
-          "unit": "400 gram"
+          "unit": null
         },
         {
-          "product_name": "Alle AH Thaise- of Indiase stijl verspakketten",
-          "price": null,
+          "product_name": "AH Prei",
+          "price": "0.99",
           "original_price": null,
-          "discount_label": "25%korting",
+          "discount_label": "3 voor",
           "valid_date": null,
           "unit": null
         },
         {
-          "product_name": "AH Aubergine",
+          "product_name": "AH Prei",
           "price": null,
           "original_price": null,
-          "discount_label": "2 voor 1.49",
+          "discount_label": "Los",
           "valid_date": null,
           "unit": null
         },
         {
-          "product_name": "AH Witlof 4 stuks",
-          "price": null,
+          "product_name": "AH Avocado eetrijp 2 stuks en Tasty Tom trostomaten 450 gram",
+          "price": "4.99",
           "original_price": null,
-          "discount_label": "voor 1.79",
+          "discount_label": "2 voor",
           "valid_date": null,
-          "unit": "Minimaal 600 gram"
+          "unit": null
         },
         {
-          "product_name": "AH Iets kruimige aardappel 3 kilo",
+          "product_name": "AH Geschrapte worteltjes 500 gram",
           "price": null,
           "original_price": null,
-          "discount_label": "25%korting",
+          "discount_label": "40%korting",
           "valid_date": null,
-          "unit": "3 kilo"
+          "unit": "500 gram"
         },
         {
-          "product_name": "AH Biologisch taugé 100 gram",
+          "product_name": "Alle AH Gekruide bakaardappeltjes 450 gram",
           "price": null,
           "original_price": null,
-          "discount_label": "voor 0.99",
+          "discount_label": "2e halve prijs",
           "valid_date": null,
-          "unit": "100 gram"
+          "unit": "450 gram"
+        },
+        {
+          "product_name": "AH Verspakketten",
+          "price": null,
+          "original_price": null,
+          "discount_label": "€1 korting",
+          "valid_date": null,
+          "unit": null
+        },
+        {
+          "product_name": "AH Biologisch rode bieten gekookt 500 gram",
+          "price": "0.99",
+          "original_price": null,
+          "discount_label": "voor",
+          "valid_date": null,
+          "unit": "500 gram"
         },
         {
           "product_name": "Alle AH Rauwkost",
-          "price": null,
+          "price": "4.00",
           "original_price": null,
-          "discount_label": "2 voor 4.00",
+          "discount_label": "2 voor",
           "valid_date": null,
           "unit": null
-        },
-        {
-          "product_name": "AH Rode druiven pitloos 500 gram",
-          "price": null,
-          "original_price": "2.69",
-          "discount_label": "1+1 gratis",
-          "valid_date": null,
-          "unit": "500 gram"
-        },
-        {
-          "product_name": "AH Mandarijnen 1 kilo",
-          "price": null,
-          "original_price": null,
-          "discount_label": "2 voor 4.49",
-          "valid_date": null,
-          "unit": "1 kilo"
-        },
-        {
-          "product_name": "Alle biologische appels of peren",
-          "price": null,
-          "original_price": null,
-          "discount_label": "25%korting",
-          "valid_date": null,
-          "unit": null
-        },
-        {
-          "product_name": "AH Citroenen 500 gram en limoenen 4 stuks",
-          "price": null,
-          "original_price": null,
-          "discount_label": "2 voor 1.99",
-          "valid_date": null,
-          "unit": "500 gram"
-        },
-        {
-          "product_name": "AH Aardbeien 400 gram",
-          "price": null,
-          "original_price": null,
-          "discount_label": "voor 3.49",
-          "valid_date": null,
-          "unit": "400 gram"
-        },
-        {
-          "product_name": "Alle Chocodate of Miskets",
-          "price": null,
-          "original_price": null,
-          "discount_label": "25%korting",
-          "valid_date": null,
-          "unit": null
-        },
-        {
-          "product_name": "AH Blauwe bessen 300 gram",
-          "price": null,
-          "original_price": null,
-          "discount_label": "voor 3.99",
-          "valid_date": null,
-          "unit": "300 gram"
-        },
-        {
-          "product_name": "Alle Kanzi appels",
-          "price": null,
-          "original_price": null,
-          "discount_label": "25%korting",
-          "valid_date": null,
-          "unit": null
-        },
-        {
-          "product_name": "Alle AH Verse sappen en smoothies literflessen",
-          "price": null,
-          "original_price": null,
-          "discount_label": "25%korting",
-          "valid_date": null,
-          "unit": "literflessen"
-        },
-        {
-          "product_name": "AH Cantaloupe meloen",
-          "price": null,
-          "original_price": null,
-          "discount_label": "voor 1.99",
-          "valid_date": null,
-          "unit": null
-        },
-        {
-          "product_name": "AH Ananas 250 gram en ananas, appel, mango en druif 230 gram",
-          "price": null,
-          "original_price": null,
-          "discount_label": "2 voor 4.49",
-          "valid_date": null,
-          "unit": "250 gram"
-        },
-        {
-          "product_name": "AH Jonagold",
-          "price": null,
-          "original_price": null,
-          "discount_label": "voor 0.99",
-          "valid_date": null,
-          "unit": "per kilo"
-        },
-        {
-          "product_name": "AH Kiwi groen",
-          "price": null,
-          "original_price": "3.98",
-          "discount_label": "1.99",
-          "valid_date": null,
-          "unit": "per 500 gram"
-        },
-        {
-          "product_name": "Alle AH Verse sappen en smoothies 250 ml",
-          "price": null,
-          "original_price": null,
-          "discount_label": "3 voor 5.00",
-          "valid_date": null,
-          "unit": "250 ml"
-        },
-        {
-          "product_name": "Alle AH Pancakes en poffertjes 24 stuks",
-          "price": null,
-          "original_price": null,
-          "discount_label": "1+1 gratis",
-          "valid_date": null,
-          "unit": "24 stuks"
-        },
-        {
-          "product_name": "Alle AH Bapao*",
-          "price": null,
-          "original_price": null,
-          "discount_label": "voor 0.89",
-          "valid_date": null,
-          "unit": null
-        },
-        {
-          "product_name": "Alle AH Salades 175 gram",
-          "price": null,
-          "original_price": null,
-          "discount_label": "2 voor 3.75",
-          "valid_date": null,
-          "unit": "175 gram"
-        },
-        {
-          "product_name": "AH Flammkuchendeeg 260 gram",
-          "price": null,
-          "original_price": null,
-          "discount_label": "1+1 gratis",
-          "valid_date": null,
-          "unit": "260 gram"
-        },
-        {
-          "product_name": "Alle AH Stamppotten 2-vaks 500 gram",
-          "price": null,
-          "original_price": null,
-          "discount_label": "2 voor 6.99",
-          "valid_date": null,
-          "unit": "500 gram"
         }
       ]
     },
     "Dirk": {
       "success": true,
-      "product_count": 31,
+      "product_count": 33,
       "error": null,
       "products": [
         {
@@ -345,7 +489,7 @@
           "product_name": "Aardbeien 400 gram",
           "price": "€2.99",
           "original_price": "€3.49",
-          "discount_label": null,
+          "discount_label": "ACTIE",
           "valid_date": null,
           "unit": "400 gram"
         },
@@ -353,7 +497,7 @@
           "product_name": "Deglet nour Dadels Op tak 1 kg",
           "price": "€3.99",
           "original_price": null,
-          "discount_label": null,
+          "discount_label": "ACTIE",
           "valid_date": null,
           "unit": "1 kg"
         },
@@ -363,7 +507,7 @@
           "original_price": "€0.85",
           "discount_label": "ACTIE",
           "valid_date": null,
-          "unit": "Per stuk"
+          "unit": null
         },
         {
           "product_name": "Gedroogde Vijgen 350 g",
@@ -446,12 +590,12 @@
           "unit": "700 g"
         },
         {
-          "product_name": "Zalmburger gepaneerd 2 st. 200 g",
+          "product_name": "Kabeljauw- of zalmburgers Pak 2 stuks.",
           "price": "€1.99",
-          "original_price": "€2.99",
+          "original_price": "€3.15",
           "discount_label": "ACTIE",
           "valid_date": null,
-          "unit": "200 g"
+          "unit": "2 stuks"
         },
         {
           "product_name": "1 de Beste Gebraden kipfilet of kiprollade chili Pak 100 gram.",
@@ -478,20 +622,36 @@
           "unit": "250 gram"
         },
         {
-          "product_name": "1 de Beste Gyros rollade blk1 100 g",
-          "price": "€1.99",
+          "product_name": "Bakker van der Akker Bruine- of volkoren bollen Per zak.",
+          "price": "€0.99",
           "original_price": null,
-          "discount_label": "VR, ZA & ZO actie",
+          "discount_label": "ACTIE",
           "valid_date": null,
-          "unit": "100 g"
+          "unit": null
         },
         {
-          "product_name": "De Vleeschmeesters Culinaire beenham Per stuk.",
-          "price": "€4.99",
+          "product_name": "Boerenbrood Heel brood.",
+          "price": "€1.49",
           "original_price": null,
-          "discount_label": "VR, ZA & ZO actie",
+          "discount_label": "ACTIE",
           "valid_date": null,
-          "unit": "Per stuk"
+          "unit": null
+        },
+        {
+          "product_name": "Geglazuurde suiker donuts 4 stuks",
+          "price": "€1.69",
+          "original_price": "€2.45",
+          "discount_label": "ACTIE",
+          "valid_date": null,
+          "unit": "4 stuks"
+        },
+        {
+          "product_name": "Frikandelbroodje halal Per stuk",
+          "price": "€0.89",
+          "original_price": "€1.49",
+          "discount_label": "ACTIE",
+          "valid_date": null,
+          "unit": null
         }
       ]
     },
@@ -504,7 +664,7 @@
           "product_name": "Kania Soepen",
           "price": "€1.29",
           "original_price": "~~2.19~~",
-          "discount_label": "met Lidl Plus\ntot -24%",
+          "discount_label": "met Lidl Plus tot -24%",
           "valid_date": "23/03 - 29/03",
           "unit": "800 ml"
         },
@@ -521,419 +681,419 @@
           "price": null,
           "original_price": null,
           "discount_label": null,
-          "valid_date": "23/03 - 29/03",
+          "valid_date": null,
           "unit": null
         }
       ]
     },
     "ALDI": {
       "success": true,
-      "product_count": 15,
+      "product_count": 17,
       "error": null,
       "products": [
         {
-          "product_name": "Witte druiven",
-          "price": "1.49",
-          "original_price": "2.49",
-          "discount_label": "-40%",
+          "product_name": "Gerookte Noorse zalm",
+          "price": "€1.99",
+          "original_price": "€3.79",
+          "discount_label": "-47%",
           "valid_date": null,
-          "unit": "500 g"
+          "unit": "100 g"
         },
         {
-          "product_name": "Groene kiwi's",
-          "price": "2.49",
-          "original_price": "3.99",
-          "discount_label": "-37%",
-          "valid_date": null,
-          "unit": "1 kg"
-        },
-        {
-          "product_name": "Jonagold appels",
-          "price": "1.79",
-          "original_price": "2.19",
-          "discount_label": "-37%",
-          "valid_date": null,
-          "unit": "1.5 kg"
-        },
-        {
-          "product_name": "Perssinaasappels",
-          "price": "1.99",
-          "original_price": "2.19",
-          "discount_label": "2 KG",
-          "valid_date": null,
-          "unit": "2 kg"
-        },
-        {
-          "product_name": "Salademix",
-          "price": "0.99",
-          "original_price": "1.39",
-          "discount_label": "-28%",
-          "valid_date": null,
-          "unit": "300 g"
-        },
-        {
-          "product_name": "Pastinaak",
-          "price": "1.19",
-          "original_price": "1.89",
-          "discount_label": "-37%",
-          "valid_date": null,
-          "unit": "500 g"
-        },
-        {
-          "product_name": "Wortel julienne",
-          "price": "0.79",
-          "original_price": "0.99",
+          "product_name": "Ribeye of entrecote",
+          "price": "€4.58",
+          "original_price": "€5.78",
           "discount_label": "-20%",
           "valid_date": null,
-          "unit": "150 g"
+          "unit": "Ca. 200 g"
         },
         {
-          "product_name": "Vastkokende aardappelen",
-          "price": "2.29",
-          "original_price": "3.39",
-          "discount_label": "-32%",
-          "valid_date": null,
-          "unit": "3 kg"
-        },
-        {
-          "product_name": "Falafel maaltijdsalade",
-          "price": "2.99",
-          "original_price": "3.99",
-          "discount_label": "-25%",
-          "valid_date": null,
-          "unit": "450 g"
-        },
-        {
-          "product_name": "Kipreepjes",
-          "price": "1.69",
-          "original_price": "2.19",
-          "discount_label": "-22%",
-          "valid_date": null,
-          "unit": "150 g"
-        },
-        {
-          "product_name": "Ibérico fuetplakjes",
-          "price": "1.51",
-          "original_price": "1.89",
-          "discount_label": "-20%",
-          "valid_date": null,
-          "unit": "90 g"
-        },
-        {
-          "product_name": "Gerookt ontbijtspek",
-          "price": "1.69",
-          "original_price": "2.15",
-          "discount_label": "-21%",
+          "product_name": "Burrata",
+          "price": "€1.69",
+          "original_price": "€1.99",
+          "discount_label": "-15%",
           "valid_date": null,
           "unit": "125 g"
         },
         {
-          "product_name": "Pannenkoeken",
-          "price": "1.69",
-          "original_price": "1.95",
-          "discount_label": "-13%",
+          "product_name": "Mascarpone",
+          "price": "€3.29",
+          "original_price": null,
+          "discount_label": "OP=OP",
           "valid_date": null,
-          "unit": "600 g"
+          "unit": "500 g"
         },
         {
-          "product_name": "Boeren volkoren meergranen",
-          "price": "1.29",
-          "original_price": "1.99",
-          "discount_label": "-35%",
+          "product_name": "Cheesecake",
+          "price": "€2.69",
+          "original_price": null,
+          "discount_label": "OP=OP",
           "valid_date": null,
-          "unit": null
+          "unit": "Inhoud: 2 stuks, 160-180 g"
         },
         {
-          "product_name": "Steenovenbroodjes wit of spelt",
-          "price": "2.50",
-          "original_price": "3.98",
-          "discount_label": "2 VOOR",
+          "product_name": "Ricottadessert",
+          "price": "€1.39",
+          "original_price": null,
+          "discount_label": "OP=OP",
+          "valid_date": null,
+          "unit": "100 g"
+        },
+        {
+          "product_name": "Maïsbollen",
+          "price": "€0.99",
+          "original_price": null,
+          "discount_label": "OP=OP",
+          "valid_date": null,
+          "unit": "Inhoud: 2 stuks, 200 g"
+        },
+        {
+          "product_name": "Breekbrood",
+          "price": "€1.99",
+          "original_price": null,
+          "discount_label": "OP=OP",
+          "valid_date": null,
+          "unit": "270 g"
+        },
+        {
+          "product_name": "Chinois",
+          "price": "€2.99",
+          "original_price": null,
+          "discount_label": "OP=OP",
+          "valid_date": null,
+          "unit": "500 g"
+        },
+        {
+          "product_name": "Scones",
+          "price": "€1.99",
+          "original_price": null,
+          "discount_label": "OP=OP",
+          "valid_date": null,
+          "unit": "Inhoud: 4 stuks, 240 g."
+        },
+        {
+          "product_name": "Matze-crackers naturel",
+          "price": "€1.09",
+          "original_price": null,
+          "discount_label": "OP=OP",
+          "valid_date": null,
+          "unit": "100 g"
+        },
+        {
+          "product_name": "Matzes naturel",
+          "price": "€2.49",
+          "original_price": null,
+          "discount_label": "OP=OP",
+          "valid_date": null,
+          "unit": "200 g"
+        },
+        {
+          "product_name": "Pasteitjes",
+          "price": "€1.39",
+          "original_price": null,
+          "discount_label": "OP=OP",
+          "valid_date": null,
+          "unit": "4 stuks"
+        },
+        {
+          "product_name": "Dubai-spread",
+          "price": "€4.99",
+          "original_price": null,
+          "discount_label": "OP=OP",
           "valid_date": null,
           "unit": "300 g"
+        },
+        {
+          "product_name": "Paasservetten",
+          "price": "€0.99",
+          "original_price": null,
+          "discount_label": "OP=OP",
+          "valid_date": null,
+          "unit": "40 stuks"
+        },
+        {
+          "product_name": "Tafelkleden, servetten of tafelloper",
+          "price": "€2.99",
+          "original_price": null,
+          "discount_label": "OP=OP",
+          "valid_date": null,
+          "unit": "Per stuk/set"
+        },
+        {
+          "product_name": "Mandarijnen",
+          "price": "€1.99",
+          "original_price": "€2.49",
+          "discount_label": null,
+          "valid_date": null,
+          "unit": "1 kg"
         }
       ]
     },
     "Plus": {
       "success": true,
-      "product_count": 35,
+      "product_count": 33,
       "error": null,
       "products": [
         {
           "product_name": "Alle Conimex Boemboe, woksaus en curry",
-          "price": "2.99",
-          "original_price": "3.70 - 5.78",
+          "price": "€2.99",
+          "original_price": "€3.70",
           "discount_label": "2 VOOR 2.99",
           "valid_date": "t/m 24 mrt",
           "unit": null
         },
         {
           "product_name": "Wagner Pizza Fina en Gustavo Gusto Pizza",
-          "price": "1.99",
-          "original_price": "2.99 - 4.49",
+          "price": "€1.99",
+          "original_price": "€2.99",
           "discount_label": null,
           "valid_date": "t/m 24 mrt",
           "unit": null
         },
         {
           "product_name": "Chio Chips en popcorn",
-          "price": "2.99",
-          "original_price": "3.58 - 3.98",
+          "price": "€2.99",
+          "original_price": "€3.58",
           "discount_label": "2 VOOR 2.99",
           "valid_date": "t/m 24 mrt",
           "unit": null
         },
         {
-          "product_name": "Alle Ariel Bijv. Complete vloeibaar color, 2 flessen à 20 wasbeurten van 27.98 voor 13.99.",
-          "price": "13.99",
-          "original_price": "27.98",
+          "product_name": "Alle Ariel Bijv. Complete vloeibaar color, 2 flessen à 20 wasbeurten",
+          "price": "€13.99",
+          "original_price": "€27.98",
           "discount_label": "1+1 GRATIS",
           "valid_date": "t/m 24 mrt",
           "unit": null
         },
         {
-          "product_name": "PLUS Handsinaasappelen",
-          "price": "2.49",
-          "original_price": "3.19",
+          "product_name": "PLUS Aardbeien",
+          "price": "€2.99",
+          "original_price": "€3.99",
           "discount_label": null,
           "valid_date": null,
-          "unit": "Per 2000 g"
+          "unit": "400 g"
         },
         {
-          "product_name": "PLUS Aardbeien",
-          "price": "2.99",
-          "original_price": "3.99",
+          "product_name": "PLUS Handsinaasappelen",
+          "price": "€2.49",
+          "original_price": "€3.19",
           "discount_label": null,
           "valid_date": null,
-          "unit": "Per 400 g"
+          "unit": "2000 g"
         },
         {
           "product_name": "PLUS Spruiten",
-          "price": "0.79",
-          "original_price": "1.49",
+          "price": "€0.79",
+          "original_price": "€1.49",
           "discount_label": null,
           "valid_date": null,
-          "unit": "Per 500 g"
+          "unit": "500 g"
         },
         {
           "product_name": "PLUS Kies & Mix Vers gesneden fruit",
-          "price": "5.00",
-          "original_price": "7.47",
+          "price": "€5.00",
+          "original_price": "€7.47",
           "discount_label": "3 VOOR 5.00",
           "valid_date": "t/m 14 apr",
           "unit": null
         },
         {
-          "product_name": "PLUS Bananen Fairtrade",
-          "price": "0.99",
-          "original_price": "2.25",
-          "discount_label": null,
-          "valid_date": "Elke maandag",
-          "unit": "Per 1000 gram"
-        },
-        {
           "product_name": "PLUS Blauwe bessen",
-          "price": "3.99",
-          "original_price": "4.49",
+          "price": "€3.99",
+          "original_price": "€4.49",
           "discount_label": null,
           "valid_date": null,
-          "unit": "Per 300 g"
+          "unit": "300 g"
         },
         {
           "product_name": "PLUS Mandarijnen extra groot GVP",
-          "price": "3.69",
-          "original_price": "4.49",
+          "price": "€3.69",
+          "original_price": "€4.49",
           "discount_label": null,
           "valid_date": null,
-          "unit": "Per 1500 g"
+          "unit": "1500 g"
         },
         {
           "product_name": "Neutraal Handperen Conference",
-          "price": "1.49",
-          "original_price": "1.79",
+          "price": "€1.49",
+          "original_price": "€1.79",
           "discount_label": null,
           "valid_date": null,
-          "unit": "Per 1 kg"
+          "unit": "1 kg"
         },
         {
           "product_name": "Neutraal Kleine zoete appeltjes",
-          "price": "1.99",
-          "original_price": "2.99",
+          "price": "€1.99",
+          "original_price": "€2.99",
           "discount_label": null,
           "valid_date": null,
-          "unit": "Per 1000 g"
+          "unit": "1000 g"
         },
         {
           "product_name": "PLUS Druiven rood pitloos",
-          "price": "1.99",
-          "original_price": "2.75",
+          "price": "€1.99",
+          "original_price": "€2.75",
           "discount_label": null,
           "valid_date": null,
-          "unit": "Per 500 g"
+          "unit": "500 g"
         },
         {
           "product_name": "PLUS Prei",
-          "price": "0.59",
+          "price": "€0.59",
           "original_price": null,
           "discount_label": "2 VOOR 0.89",
           "valid_date": null,
-          "unit": "Per 1 st"
+          "unit": "1 st"
         },
         {
           "product_name": "PLUS Oven en airfryer groenten Bijv. Oven en Airfryer groenten courg paprik",
-          "price": "3.99",
-          "original_price": "7.98",
+          "price": "€3.99",
+          "original_price": "€7.98",
           "discount_label": "1+1 GRATIS",
           "valid_date": null,
           "unit": null
         },
         {
           "product_name": "PLUS Witlof verpakt",
-          "price": "1.49",
-          "original_price": "2.29",
+          "price": "€1.49",
+          "original_price": "€2.29",
           "discount_label": null,
           "valid_date": null,
-          "unit": "Per 500 g"
+          "unit": "500 g"
         },
         {
           "product_name": "PLUS Snijbonen (ongesneden)",
-          "price": "1.69",
-          "original_price": "2.09",
+          "price": "€1.69",
+          "original_price": "€2.09",
           "discount_label": null,
           "valid_date": null,
-          "unit": "Per 400 g"
+          "unit": "400 g"
         },
         {
           "product_name": "PLUS Wok- en roerbakgroenten Bijv. Roerbakgroenten Italiaanse stijl",
-          "price": "2.29",
-          "original_price": "4.58",
+          "price": "€2.29",
+          "original_price": "€4.58",
           "discount_label": "1+1 GRATIS",
           "valid_date": null,
           "unit": null
         },
         {
           "product_name": "PLUS Snoeptomaten rood",
-          "price": "3.29",
+          "price": "€3.29",
           "original_price": null,
           "discount_label": "1+1 GRATIS",
           "valid_date": null,
-          "unit": "Per 500 g"
+          "unit": "500 g"
         },
         {
           "product_name": "PLUS Ijsbergsla of salademix Bijv. IJsbergsla",
-          "price": "1.09",
-          "original_price": "2.18",
+          "price": "€1.09",
+          "original_price": "€2.18",
           "discount_label": "1+1 GRATIS",
           "valid_date": null,
           "unit": null
         },
         {
           "product_name": "PLUS Verspakket",
-          "price": "4.49",
-          "original_price": "5.89 - 5.99",
+          "price": "€4.49",
+          "original_price": "€5.89",
           "discount_label": null,
           "valid_date": null,
           "unit": null
         },
         {
           "product_name": "PLUS Verse ananas blokjes, watermeloen blokjes en meloenmix",
-          "price": "3.49",
-          "original_price": "6.98",
+          "price": "€3.49",
+          "original_price": "€6.98",
           "discount_label": "1+1 GRATIS",
           "valid_date": null,
           "unit": null
         },
         {
           "product_name": "Biologisch van PLUS Rode en witte kool",
-          "price": "1.69",
-          "original_price": "1.99 - 2.29",
+          "price": "€1.69",
+          "original_price": "€1.99",
           "discount_label": null,
           "valid_date": null,
           "unit": null
         },
         {
-          "product_name": "PLUS Avocado eetrijp",
-          "price": "1.49",
+          "product_name": "PLUS Avocado",
+          "price": "€1.49",
           "original_price": null,
           "discount_label": "2 VOOR 2.50",
           "valid_date": "t/m 14 apr",
-          "unit": "Per 1 st"
+          "unit": "1 st"
         },
         {
           "product_name": "Biologisch PLUS en PLUS Kies & Mix Snoepgroente",
-          "price": "5.00",
-          "original_price": "6.57 - 7.47",
+          "price": "€5.00",
+          "original_price": "€6.57",
           "discount_label": "3 VOOR 5.00",
           "valid_date": "t/m 14 apr",
           "unit": null
         },
         {
-          "product_name": "Alle PLUS Verse pizza's",
-          "price": "6.99",
-          "original_price": "10.98 - 12.58",
-          "discount_label": "2 VOOR 6.99",
-          "valid_date": "Elke zondag",
-          "unit": null
-        },
-        {
           "product_name": "PLUS Bloemkool pizzabodem en No Fairytales Tortilla Bijv. Paprika-chili tortilla",
-          "price": "2.99",
-          "original_price": "5.98",
+          "price": "€2.99",
+          "original_price": "€5.98",
           "discount_label": "1+1 GRATIS",
           "valid_date": null,
           "unit": null
         },
         {
           "product_name": "PLUS Pannenkoeken naturel",
-          "price": "1.69",
-          "original_price": "2.79",
+          "price": "€1.69",
+          "original_price": "€2.79",
           "discount_label": null,
           "valid_date": null,
-          "unit": "Per 8 st"
+          "unit": "8 st"
         },
         {
           "product_name": "Alle Mama's Maaltijden Poké bowls Bijv. Poké bowl zalm",
-          "price": "5.99",
-          "original_price": "7.99",
+          "price": "€5.99",
+          "original_price": "€7.99",
           "discount_label": "25 % KORTING",
           "valid_date": null,
           "unit": null
         },
         {
           "product_name": "Uit de keuken van PLUS Kies & Mix Verse maaltijd",
-          "price": "11.00",
-          "original_price": "12.78",
+          "price": "€11.00",
+          "original_price": "€12.78",
           "discount_label": "2 VOOR 11.00",
           "valid_date": null,
           "unit": null
         },
         {
           "product_name": "PLUS Kies & Mix Maaltijdsalade",
-          "price": "9.00",
-          "original_price": "9.38 - 12.58",
+          "price": "€9.00",
+          "original_price": "€9.38",
           "discount_label": "2 VOOR 9.00",
           "valid_date": "t/m 14 apr",
           "unit": null
         },
         {
           "product_name": "PLUS Kies & Mix Verse soep",
-          "price": "5.50",
-          "original_price": "7.18",
+          "price": "€5.50",
+          "original_price": "€7.18",
           "discount_label": "2 VOOR 5.50",
           "valid_date": "t/m 14 apr",
           "unit": null
         },
         {
           "product_name": "PLUS Kies & Mix Oosterse maaltijd",
-          "price": "5.50",
-          "original_price": "6.18 - 7.58",
+          "price": "€5.50",
+          "original_price": "€6.18",
           "discount_label": "2 VOOR 5.50",
           "valid_date": "t/m 14 apr",
           "unit": null
         },
         {
           "product_name": "Uit de keuken van PLUS Kies & Mix Combi gerechten",
-          "price": "7.50",
-          "original_price": "7.98 - 9.98",
+          "price": "€7.50",
+          "original_price": "€7.98",
           "discount_label": "2 VOOR 7.50",
           "valid_date": "t/m 14 apr",
           "unit": null
@@ -942,285 +1102,269 @@
     },
     "Coop": {
       "success": true,
-      "product_count": 35,
+      "product_count": 33,
       "error": null,
       "products": [
         {
           "product_name": "Alle Conimex Boemboe, woksaus en curry",
-          "price": "2.99",
-          "original_price": "3.70 - 5.78",
+          "price": "€2.99",
+          "original_price": "€3.70",
           "discount_label": "2 VOOR 2.99",
           "valid_date": "t/m 24 mrt",
           "unit": null
         },
         {
           "product_name": "Wagner Pizza Fina en Gustavo Gusto Pizza",
-          "price": "1.99",
-          "original_price": "2.99 - 4.49",
+          "price": "€1.99",
+          "original_price": "€2.99",
           "discount_label": null,
           "valid_date": "t/m 24 mrt",
           "unit": null
         },
         {
           "product_name": "Chio Chips en popcorn",
-          "price": "2.99",
-          "original_price": "3.58 - 3.98",
+          "price": "€2.99",
+          "original_price": "€3.58",
           "discount_label": "2 VOOR 2.99",
           "valid_date": "t/m 24 mrt",
           "unit": null
         },
         {
           "product_name": "Alle Ariel Bijv. Complete vloeibaar color, 2 flessen à 20 wasbeurten van 27.98 voor 13.99.",
-          "price": "13.99",
-          "original_price": "27.98",
+          "price": "€13.99",
+          "original_price": "€27.98",
           "discount_label": "1+1 GRATIS",
           "valid_date": "t/m 24 mrt",
           "unit": null
         },
         {
-          "product_name": "PLUS Handsinaasappelen",
-          "price": "2.49",
-          "original_price": "3.19",
+          "product_name": "PLUS Aardbeien",
+          "price": "€2.99",
+          "original_price": "€3.99",
           "discount_label": null,
           "valid_date": null,
-          "unit": "Per 2000 g"
+          "unit": "400 g"
         },
         {
-          "product_name": "PLUS Aardbeien",
-          "price": "2.99",
-          "original_price": "3.99",
+          "product_name": "PLUS Handsinaasappelen",
+          "price": "€2.49",
+          "original_price": "€3.19",
           "discount_label": null,
           "valid_date": null,
-          "unit": "Per 400 g"
+          "unit": "2000 g"
         },
         {
           "product_name": "PLUS Spruiten",
-          "price": "0.79",
-          "original_price": "1.49",
+          "price": "€0.79",
+          "original_price": "€1.49",
           "discount_label": null,
           "valid_date": null,
-          "unit": "Per 500 g"
+          "unit": "500 g"
         },
         {
           "product_name": "PLUS Kies & Mix Vers gesneden fruit",
-          "price": "5.00",
-          "original_price": "7.47",
+          "price": "€5.00",
+          "original_price": "€7.47",
           "discount_label": "3 VOOR 5.00",
           "valid_date": "t/m 14 apr",
           "unit": null
         },
         {
-          "product_name": "PLUS Bananen Fairtrade",
-          "price": "0.99",
-          "original_price": "2.25",
-          "discount_label": null,
-          "valid_date": null,
-          "unit": "Per 1000 gram"
-        },
-        {
           "product_name": "PLUS Blauwe bessen",
-          "price": "3.99",
-          "original_price": "4.49",
+          "price": "€3.99",
+          "original_price": "€4.49",
           "discount_label": null,
           "valid_date": null,
-          "unit": "Per 300 g"
+          "unit": "300 g"
         },
         {
           "product_name": "PLUS Mandarijnen extra groot GVP",
-          "price": "3.69",
-          "original_price": "4.49",
+          "price": "€3.69",
+          "original_price": "€4.49",
           "discount_label": null,
           "valid_date": null,
-          "unit": "Per 1500 g"
+          "unit": "1500 g"
         },
         {
           "product_name": "Neutraal Handperen Conference",
-          "price": "1.49",
-          "original_price": "1.79",
+          "price": "€1.49",
+          "original_price": "€1.79",
           "discount_label": null,
           "valid_date": null,
-          "unit": "Per 1 kg"
+          "unit": "1 kg"
         },
         {
           "product_name": "Neutraal Kleine zoete appeltjes",
-          "price": "1.99",
-          "original_price": "2.99",
+          "price": "€1.99",
+          "original_price": "€2.99",
           "discount_label": null,
           "valid_date": null,
-          "unit": "Per 1000 g"
+          "unit": "1000 g"
         },
         {
           "product_name": "PLUS Druiven rood pitloos",
-          "price": "1.99",
-          "original_price": "2.75",
+          "price": "€1.99",
+          "original_price": "€2.75",
           "discount_label": null,
           "valid_date": null,
-          "unit": "Per 500 g"
+          "unit": "500 g"
         },
         {
           "product_name": "PLUS Prei",
-          "price": "0.59",
+          "price": "€0.59",
           "original_price": null,
           "discount_label": "2 VOOR 0.89",
           "valid_date": null,
-          "unit": "Per 1 st"
+          "unit": "1 st"
         },
         {
           "product_name": "PLUS Oven en airfryer groenten Bijv. Oven en Airfryer groenten courg paprik",
-          "price": "3.99",
-          "original_price": "7.98",
+          "price": "€3.99",
+          "original_price": "€7.98",
           "discount_label": "1+1 GRATIS",
           "valid_date": null,
           "unit": null
         },
         {
           "product_name": "PLUS Witlof verpakt",
-          "price": "1.49",
-          "original_price": "2.29",
+          "price": "€1.49",
+          "original_price": "€2.29",
           "discount_label": null,
           "valid_date": null,
-          "unit": "Per 500 g"
+          "unit": "500 g"
         },
         {
           "product_name": "PLUS Snijbonen (ongesneden)",
-          "price": "1.69",
-          "original_price": "2.09",
+          "price": "€1.69",
+          "original_price": "€2.09",
           "discount_label": null,
           "valid_date": null,
-          "unit": "Per 400 g"
+          "unit": "400 g"
         },
         {
           "product_name": "PLUS Wok- en roerbakgroenten Bijv. Roerbakgroenten Italiaanse stijl",
-          "price": "2.29",
-          "original_price": "4.58",
+          "price": "€2.29",
+          "original_price": "€4.58",
           "discount_label": "1+1 GRATIS",
           "valid_date": null,
           "unit": null
         },
         {
           "product_name": "PLUS Snoeptomaten rood",
-          "price": "3.29",
+          "price": "€3.29",
           "original_price": null,
           "discount_label": "1+1 GRATIS",
           "valid_date": null,
-          "unit": "Per 500 g"
+          "unit": "500 g"
         },
         {
           "product_name": "PLUS Ijsbergsla of salademix Bijv. IJsbergsla",
-          "price": "1.09",
-          "original_price": "2.18",
+          "price": "€1.09",
+          "original_price": "€2.18",
           "discount_label": "1+1 GRATIS",
           "valid_date": null,
           "unit": null
         },
         {
           "product_name": "PLUS Verspakket",
-          "price": "4.49",
-          "original_price": "5.89 - 5.99",
+          "price": "€4.49",
+          "original_price": "€5.89",
           "discount_label": null,
           "valid_date": null,
           "unit": null
         },
         {
           "product_name": "PLUS Verse ananas blokjes, watermeloen blokjes en meloenmix",
-          "price": "3.49",
-          "original_price": "6.98",
+          "price": "€3.49",
+          "original_price": "€6.98",
           "discount_label": "1+1 GRATIS",
           "valid_date": null,
           "unit": null
         },
         {
           "product_name": "Biologisch van PLUS Rode en witte kool",
-          "price": "1.69",
-          "original_price": "1.99 - 2.29",
+          "price": "€1.69",
+          "original_price": "€1.99",
           "discount_label": null,
           "valid_date": null,
           "unit": null
         },
         {
-          "product_name": "PLUS Avocado eetrijp",
-          "price": "1.49",
+          "product_name": "PLUS Avocado",
+          "price": "€1.49",
           "original_price": null,
           "discount_label": "2 VOOR 2.50",
           "valid_date": "t/m 14 apr",
-          "unit": "Per 1 st"
+          "unit": "1 st"
         },
         {
           "product_name": "Biologisch PLUS en PLUS Kies & Mix Snoepgroente",
-          "price": "5.00",
-          "original_price": "6.57 - 7.47",
+          "price": "€5.00",
+          "original_price": "€6.57",
           "discount_label": "3 VOOR 5.00",
           "valid_date": "t/m 14 apr",
           "unit": null
         },
         {
-          "product_name": "Alle PLUS Verse pizza's",
-          "price": "6.99",
-          "original_price": "10.98 - 12.58",
-          "discount_label": "2 VOOR 6.99",
-          "valid_date": "Elke zondag",
-          "unit": null
-        },
-        {
           "product_name": "PLUS Bloemkool pizzabodem en No Fairytales Tortilla Bijv. Paprika-chili tortilla",
-          "price": "2.99",
-          "original_price": "5.98",
+          "price": "€2.99",
+          "original_price": "€5.98",
           "discount_label": "1+1 GRATIS",
           "valid_date": null,
           "unit": null
         },
         {
           "product_name": "PLUS Pannenkoeken naturel",
-          "price": "1.69",
-          "original_price": "2.79",
+          "price": "€1.69",
+          "original_price": "€2.79",
           "discount_label": null,
           "valid_date": null,
-          "unit": "Per 8 st"
+          "unit": "8 st"
         },
         {
           "product_name": "Alle Mama's Maaltijden Poké bowls Bijv. Poké bowl zalm",
-          "price": "5.99",
-          "original_price": "7.99",
+          "price": "€5.99",
+          "original_price": "€7.99",
           "discount_label": "25 % KORTING",
           "valid_date": null,
           "unit": null
         },
         {
           "product_name": "Uit de keuken van PLUS Kies & Mix Verse maaltijd",
-          "price": "11.00",
-          "original_price": "12.78",
+          "price": "€11.00",
+          "original_price": "€12.78",
           "discount_label": "2 VOOR 11.00",
           "valid_date": null,
           "unit": null
         },
         {
           "product_name": "PLUS Kies & Mix Maaltijdsalade",
-          "price": "9.00",
-          "original_price": "9.38 - 12.58",
+          "price": "€9.00",
+          "original_price": "€9.38",
           "discount_label": "2 VOOR 9.00",
           "valid_date": "t/m 14 apr",
           "unit": null
         },
         {
           "product_name": "PLUS Kies & Mix Verse soep",
-          "price": "5.50",
-          "original_price": "7.18",
+          "price": "€5.50",
+          "original_price": "€7.18",
           "discount_label": "2 VOOR 5.50",
           "valid_date": "t/m 14 apr",
           "unit": null
         },
         {
           "product_name": "PLUS Kies & Mix Oosterse maaltijd",
-          "price": "5.50",
-          "original_price": "6.18 - 7.58",
+          "price": "€5.50",
+          "original_price": "€6.18",
           "discount_label": "2 VOOR 5.50",
           "valid_date": "t/m 14 apr",
           "unit": null
         },
         {
           "product_name": "Uit de keuken van PLUS Kies & Mix Combi gerechten",
-          "price": "7.50",
-          "original_price": "7.98 - 9.98",
+          "price": "€7.50",
+          "original_price": "€7.98",
           "discount_label": "2 VOOR 7.50",
           "valid_date": "t/m 14 apr",
           "unit": null
