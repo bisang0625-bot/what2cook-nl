@@ -1,10 +1,10 @@
 {
-  "scraped_at": "2026-04-12T01:16:41.476936",
+  "scraped_at": "2026-04-14T03:29:39.492827",
   "week_type": "next",
-  "week_number": "2026-16",
-  "start_date": "2026-04-13",
-  "end_date": "2026-04-19",
-  "total_products": 33,
+  "week_number": "2026-17",
+  "start_date": "2026-04-20",
+  "end_date": "2026-04-26",
+  "total_products": 34,
   "supermarkets": {
     "successful": [
       "Albert Heijn",
@@ -29,10 +29,10 @@
       "unit": null,
       "valid_date": null,
       "category": "sub",
-      "start_date": "2026-04-13",
-      "end_date": "2026-04-19",
+      "start_date": "2026-04-20",
+      "end_date": "2026-04-26",
       "source": "jina_reader",
-      "scraped_at": "2026-04-12T01:16:41.475547"
+      "scraped_at": "2026-04-14T03:29:39.491466"
     },
     {
       "supermarket": "Albert Heijn",
@@ -44,25 +44,25 @@
       "unit": "600 gram",
       "valid_date": null,
       "category": "fruits",
-      "start_date": "2026-04-13",
-      "end_date": "2026-04-19",
+      "start_date": "2026-04-20",
+      "end_date": "2026-04-26",
       "source": "jina_reader",
-      "scraped_at": "2026-04-12T01:16:41.475553"
+      "scraped_at": "2026-04-14T03:29:39.491472"
     },
     {
       "supermarket": "Albert Heijn",
       "store": "Albert Heijn",
-      "product_name": "AH Biologisch komkommer",
+      "product_name": "AH Biologisch komkommer Los",
       "price_info": "2.49",
       "original_price": "3.58",
       "discount_info": "2 voor 2.49",
       "unit": null,
       "valid_date": null,
       "category": "main",
-      "start_date": "2026-04-13",
-      "end_date": "2026-04-19",
+      "start_date": "2026-04-20",
+      "end_date": "2026-04-26",
       "source": "jina_reader",
-      "scraped_at": "2026-04-12T01:16:41.475560"
+      "scraped_at": "2026-04-14T03:29:39.491479"
     },
     {
       "supermarket": "Albert Heijn",
@@ -70,14 +70,14 @@
       "product_name": "Alle AH Mediterraanse verspakketten",
       "price_info": "5.99",
       "original_price": "6.99",
-      "discount_info": "€1 korting",
+      "discount_info": "Per stuk €1 korting",
       "unit": null,
       "valid_date": null,
       "category": "sub",
-      "start_date": "2026-04-13",
-      "end_date": "2026-04-19",
+      "start_date": "2026-04-20",
+      "end_date": "2026-04-26",
       "source": "jina_reader",
-      "scraped_at": "2026-04-12T01:16:41.475568"
+      "scraped_at": "2026-04-14T03:29:39.491486"
     },
     {
       "supermarket": "Albert Heijn",
@@ -89,25 +89,10 @@
       "unit": "400 gram",
       "valid_date": null,
       "category": "sub",
-      "start_date": "2026-04-13",
-      "end_date": "2026-04-19",
+      "start_date": "2026-04-20",
+      "end_date": "2026-04-26",
       "source": "jina_reader",
-      "scraped_at": "2026-04-12T01:16:41.475574"
-    },
-    {
-      "supermarket": "Albert Heijn",
-      "store": "Albert Heijn",
-      "product_name": "AH Rucola 85 gram",
-      "price_info": "0.99",
-      "original_price": "1.09",
-      "discount_info": "voor 0.99",
-      "unit": "85 gram",
-      "valid_date": null,
-      "category": "sub",
-      "start_date": "2026-04-13",
-      "end_date": "2026-04-19",
-      "source": "jina_reader",
-      "scraped_at": "2026-04-12T01:16:41.475581"
+      "scraped_at": "2026-04-14T03:29:39.491492"
     },
     {
       "supermarket": "Albert Heijn",
@@ -119,10 +104,25 @@
       "unit": "500 gram",
       "valid_date": null,
       "category": "sub",
-      "start_date": "2026-04-13",
-      "end_date": "2026-04-19",
+      "start_date": "2026-04-20",
+      "end_date": "2026-04-26",
       "source": "jina_reader",
-      "scraped_at": "2026-04-12T01:16:41.475587"
+      "scraped_at": "2026-04-14T03:29:39.491499"
+    },
+    {
+      "supermarket": "Albert Heijn",
+      "store": "Albert Heijn",
+      "product_name": "AH Rucola 85 gram",
+      "price_info": "0.99",
+      "original_price": "1.09",
+      "discount_info": "voor 0.99",
+      "unit": "85 gram",
+      "valid_date": null,
+      "category": "sub",
+      "start_date": "2026-04-20",
+      "end_date": "2026-04-26",
+      "source": "jina_reader",
+      "scraped_at": "2026-04-14T03:29:39.491504"
     },
     {
       "supermarket": "Albert Heijn",
@@ -134,25 +134,25 @@
       "unit": "500 gram",
       "valid_date": null,
       "category": "sub",
-      "start_date": "2026-04-13",
-      "end_date": "2026-04-19",
+      "start_date": "2026-04-20",
+      "end_date": "2026-04-26",
       "source": "jina_reader",
-      "scraped_at": "2026-04-12T01:16:41.475595"
+      "scraped_at": "2026-04-14T03:29:39.491511"
     },
     {
       "supermarket": "Albert Heijn",
       "store": "Albert Heijn",
-      "product_name": "Alle Amaizin",
+      "product_name": "Alle Amaizin Bijv. chickpeas",
       "price_info": "0.99",
       "original_price": "1.99",
       "discount_info": "50%korting",
-      "unit": "400 gram",
+      "unit": "Blik 400 gram",
       "valid_date": null,
       "category": "sub",
-      "start_date": "2026-04-13",
-      "end_date": "2026-04-19",
+      "start_date": "2026-04-20",
+      "end_date": "2026-04-26",
       "source": "jina_reader",
-      "scraped_at": "2026-04-12T01:16:41.475601"
+      "scraped_at": "2026-04-14T03:29:39.491517"
     },
     {
       "supermarket": "Albert Heijn",
@@ -164,10 +164,10 @@
       "unit": null,
       "valid_date": null,
       "category": "sub",
-      "start_date": "2026-04-13",
-      "end_date": "2026-04-19",
+      "start_date": "2026-04-20",
+      "end_date": "2026-04-26",
       "source": "jina_reader",
-      "scraped_at": "2026-04-12T01:16:41.475607"
+      "scraped_at": "2026-04-14T03:29:39.491523"
     },
     {
       "supermarket": "Albert Heijn",
@@ -179,10 +179,10 @@
       "unit": null,
       "valid_date": null,
       "category": "fruits",
-      "start_date": "2026-04-13",
-      "end_date": "2026-04-19",
+      "start_date": "2026-04-20",
+      "end_date": "2026-04-26",
       "source": "jina_reader",
-      "scraped_at": "2026-04-12T01:16:41.475610"
+      "scraped_at": "2026-04-14T03:29:39.491526"
     },
     {
       "supermarket": "Albert Heijn",
@@ -194,10 +194,10 @@
       "unit": "400 gram",
       "valid_date": null,
       "category": "fruits",
-      "start_date": "2026-04-13",
-      "end_date": "2026-04-19",
+      "start_date": "2026-04-20",
+      "end_date": "2026-04-26",
       "source": "jina_reader",
-      "scraped_at": "2026-04-12T01:16:41.475614"
+      "scraped_at": "2026-04-14T03:29:39.491529"
     },
     {
       "supermarket": "Albert Heijn",
@@ -209,10 +209,10 @@
       "unit": null,
       "valid_date": null,
       "category": "fruits",
-      "start_date": "2026-04-13",
-      "end_date": "2026-04-19",
+      "start_date": "2026-04-20",
+      "end_date": "2026-04-26",
       "source": "jina_reader",
-      "scraped_at": "2026-04-12T01:16:41.475618"
+      "scraped_at": "2026-04-14T03:29:39.491532"
     },
     {
       "supermarket": "Albert Heijn",
@@ -224,10 +224,10 @@
       "unit": "300 gram",
       "valid_date": null,
       "category": "fruits",
-      "start_date": "2026-04-13",
-      "end_date": "2026-04-19",
+      "start_date": "2026-04-20",
+      "end_date": "2026-04-26",
       "source": "jina_reader",
-      "scraped_at": "2026-04-12T01:16:41.475621"
+      "scraped_at": "2026-04-14T03:29:39.491536"
     },
     {
       "supermarket": "Albert Heijn",
@@ -236,13 +236,13 @@
       "price_info": "1.99",
       "original_price": null,
       "discount_info": "voor 1.99",
-      "unit": null,
+      "unit": "4 stuks",
       "valid_date": null,
       "category": "sub",
-      "start_date": "2026-04-13",
-      "end_date": "2026-04-19",
+      "start_date": "2026-04-20",
+      "end_date": "2026-04-26",
       "source": "jina_reader",
-      "scraped_at": "2026-04-12T01:16:41.475628"
+      "scraped_at": "2026-04-14T03:29:39.491542"
     },
     {
       "supermarket": "Albert Heijn",
@@ -254,10 +254,10 @@
       "unit": null,
       "valid_date": null,
       "category": "fruits",
-      "start_date": "2026-04-13",
-      "end_date": "2026-04-19",
+      "start_date": "2026-04-20",
+      "end_date": "2026-04-26",
       "source": "jina_reader",
-      "scraped_at": "2026-04-12T01:16:41.475631"
+      "scraped_at": "2026-04-14T03:29:39.491545"
     },
     {
       "supermarket": "Albert Heijn",
@@ -269,10 +269,10 @@
       "unit": "250 ml",
       "valid_date": null,
       "category": "sub",
-      "start_date": "2026-04-13",
-      "end_date": "2026-04-19",
+      "start_date": "2026-04-20",
+      "end_date": "2026-04-26",
       "source": "jina_reader",
-      "scraped_at": "2026-04-12T01:16:41.475638"
+      "scraped_at": "2026-04-14T03:29:39.491551"
     },
     {
       "supermarket": "Albert Heijn",
@@ -284,10 +284,10 @@
       "unit": null,
       "valid_date": null,
       "category": "sub",
-      "start_date": "2026-04-13",
-      "end_date": "2026-04-19",
+      "start_date": "2026-04-20",
+      "end_date": "2026-04-26",
       "source": "jina_reader",
-      "scraped_at": "2026-04-12T01:16:41.475645"
+      "scraped_at": "2026-04-14T03:29:39.491558"
     },
     {
       "supermarket": "Albert Heijn",
@@ -299,10 +299,10 @@
       "unit": null,
       "valid_date": null,
       "category": "sub",
-      "start_date": "2026-04-13",
-      "end_date": "2026-04-19",
+      "start_date": "2026-04-20",
+      "end_date": "2026-04-26",
       "source": "jina_reader",
-      "scraped_at": "2026-04-12T01:16:41.475650"
+      "scraped_at": "2026-04-14T03:29:39.491563"
     },
     {
       "supermarket": "Albert Heijn",
@@ -314,10 +314,10 @@
       "unit": null,
       "valid_date": null,
       "category": "sub",
-      "start_date": "2026-04-13",
-      "end_date": "2026-04-19",
+      "start_date": "2026-04-20",
+      "end_date": "2026-04-26",
       "source": "jina_reader",
-      "scraped_at": "2026-04-12T01:16:41.475657"
+      "scraped_at": "2026-04-14T03:29:39.491569"
     },
     {
       "supermarket": "Albert Heijn",
@@ -329,10 +329,10 @@
       "unit": "500 gram",
       "valid_date": null,
       "category": "sub",
-      "start_date": "2026-04-13",
-      "end_date": "2026-04-19",
+      "start_date": "2026-04-20",
+      "end_date": "2026-04-26",
       "source": "jina_reader",
-      "scraped_at": "2026-04-12T01:16:41.475664"
+      "scraped_at": "2026-04-14T03:29:39.491575"
     },
     {
       "supermarket": "Albert Heijn",
@@ -344,10 +344,10 @@
       "unit": null,
       "valid_date": null,
       "category": "sub",
-      "start_date": "2026-04-13",
-      "end_date": "2026-04-19",
+      "start_date": "2026-04-20",
+      "end_date": "2026-04-26",
       "source": "jina_reader",
-      "scraped_at": "2026-04-12T01:16:41.475670"
+      "scraped_at": "2026-04-14T03:29:39.491581"
     },
     {
       "supermarket": "Albert Heijn",
@@ -359,10 +359,10 @@
       "unit": "500 gram",
       "valid_date": null,
       "category": "sub",
-      "start_date": "2026-04-13",
-      "end_date": "2026-04-19",
+      "start_date": "2026-04-20",
+      "end_date": "2026-04-26",
       "source": "jina_reader",
-      "scraped_at": "2026-04-12T01:16:41.475676"
+      "scraped_at": "2026-04-14T03:29:39.491614"
     },
     {
       "supermarket": "Albert Heijn",
@@ -374,10 +374,10 @@
       "unit": null,
       "valid_date": null,
       "category": "sub",
-      "start_date": "2026-04-13",
-      "end_date": "2026-04-19",
+      "start_date": "2026-04-20",
+      "end_date": "2026-04-26",
       "source": "jina_reader",
-      "scraped_at": "2026-04-12T01:16:41.475682"
+      "scraped_at": "2026-04-14T03:29:39.491628"
     },
     {
       "supermarket": "Albert Heijn",
@@ -389,10 +389,10 @@
       "unit": null,
       "valid_date": null,
       "category": "sub",
-      "start_date": "2026-04-13",
-      "end_date": "2026-04-19",
+      "start_date": "2026-04-20",
+      "end_date": "2026-04-26",
       "source": "jina_reader",
-      "scraped_at": "2026-04-12T01:16:41.475688"
+      "scraped_at": "2026-04-14T03:29:39.491638"
     },
     {
       "supermarket": "Albert Heijn",
@@ -404,10 +404,10 @@
       "unit": null,
       "valid_date": null,
       "category": "sub",
-      "start_date": "2026-04-13",
-      "end_date": "2026-04-19",
+      "start_date": "2026-04-20",
+      "end_date": "2026-04-26",
       "source": "jina_reader",
-      "scraped_at": "2026-04-12T01:16:41.475694"
+      "scraped_at": "2026-04-14T03:29:39.491644"
     },
     {
       "supermarket": "Albert Heijn",
@@ -415,14 +415,14 @@
       "product_name": "AH Scharrelkipfiletblokjes 300 gram of kalkoenfiletblokjes 250 gram",
       "price_info": "4.49",
       "original_price": "5.49",
-      "discount_info": "€1 korting",
+      "discount_info": "Per stuk €1 korting",
       "unit": null,
       "valid_date": null,
       "category": "main",
-      "start_date": "2026-04-13",
-      "end_date": "2026-04-19",
+      "start_date": "2026-04-20",
+      "end_date": "2026-04-26",
       "source": "jina_reader",
-      "scraped_at": "2026-04-12T01:16:41.475699"
+      "scraped_at": "2026-04-14T03:29:39.491650"
     },
     {
       "supermarket": "Albert Heijn",
@@ -431,13 +431,28 @@
       "price_info": "5.49",
       "original_price": "7.98",
       "discount_info": "2 voor 5.49",
-      "unit": null,
+      "unit": "2 stuks",
       "valid_date": null,
       "category": "main",
-      "start_date": "2026-04-13",
-      "end_date": "2026-04-19",
+      "start_date": "2026-04-20",
+      "end_date": "2026-04-26",
       "source": "jina_reader",
-      "scraped_at": "2026-04-12T01:16:41.475704"
+      "scraped_at": "2026-04-14T03:29:39.491655"
+    },
+    {
+      "supermarket": "Albert Heijn",
+      "store": "Albert Heijn",
+      "product_name": "AH Speklapjes à la minute",
+      "price_info": "3.74",
+      "original_price": "4.99",
+      "discount_info": "25%korting",
+      "unit": "Per 350 gram",
+      "valid_date": null,
+      "category": "main",
+      "start_date": "2026-04-20",
+      "end_date": "2026-04-26",
+      "source": "jina_reader",
+      "scraped_at": "2026-04-14T03:29:39.491660"
     },
     {
       "supermarket": "Coop",
@@ -449,10 +464,10 @@
       "unit": null,
       "valid_date": null,
       "category": "sub",
-      "start_date": "2026-04-13",
-      "end_date": "2026-04-19",
+      "start_date": "2026-04-20",
+      "end_date": "2026-04-26",
       "source": "jina_reader",
-      "scraped_at": "2026-04-12T01:16:41.475712"
+      "scraped_at": "2026-04-14T03:29:39.491668"
     },
     {
       "supermarket": "Coop",
@@ -464,10 +479,10 @@
       "unit": null,
       "valid_date": "t/m 14 apr",
       "category": "sub",
-      "start_date": "2026-04-13",
-      "end_date": "2026-04-19",
+      "start_date": "2026-04-20",
+      "end_date": "2026-04-26",
       "source": "jina_reader",
-      "scraped_at": "2026-04-12T01:16:41.475718"
+      "scraped_at": "2026-04-14T03:29:39.491673"
     },
     {
       "supermarket": "Coop",
@@ -479,10 +494,10 @@
       "unit": null,
       "valid_date": "t/m 14 apr",
       "category": "sub",
-      "start_date": "2026-04-13",
-      "end_date": "2026-04-19",
+      "start_date": "2026-04-20",
+      "end_date": "2026-04-26",
       "source": "jina_reader",
-      "scraped_at": "2026-04-12T01:16:41.475725"
+      "scraped_at": "2026-04-14T03:29:39.491679"
     },
     {
       "supermarket": "Coop",
@@ -494,10 +509,10 @@
       "unit": null,
       "valid_date": "t/m 14 apr",
       "category": "sub",
-      "start_date": "2026-04-13",
-      "end_date": "2026-04-19",
+      "start_date": "2026-04-20",
+      "end_date": "2026-04-26",
       "source": "jina_reader",
-      "scraped_at": "2026-04-12T01:16:41.475734"
+      "scraped_at": "2026-04-14T03:29:39.491687"
     },
     {
       "supermarket": "Coop",
@@ -509,10 +524,10 @@
       "unit": null,
       "valid_date": "t/m 14 apr",
       "category": "sub",
-      "start_date": "2026-04-13",
-      "end_date": "2026-04-19",
+      "start_date": "2026-04-20",
+      "end_date": "2026-04-26",
       "source": "jina_reader",
-      "scraped_at": "2026-04-12T01:16:41.475740"
+      "scraped_at": "2026-04-14T03:29:39.491692"
     }
   ]
 }
