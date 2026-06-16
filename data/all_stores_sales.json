@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-14T02:08:37.283647",
+  "scraped_at": "2026-06-16T05:12:35.810533",
   "stores": {
     "Albert Heijn": {
       "success": false,
@@ -8,6 +8,12 @@
       "products": []
     },
     "Dirk": {
+      "success": false,
+      "product_count": 0,
+      "error": "Gemini API HTTP 404",
+      "products": []
+    },
+    "Lidl": {
       "success": false,
       "product_count": 0,
       "error": "Gemini API HTTP 404",
@@ -23,12 +29,6 @@
       "success": false,
       "product_count": 0,
       "error": "Gemini API HTTP 404",
-      "products": []
-    },
-    "Lidl": {
-      "success": false,
-      "product_count": 0,
-      "error": "HTTP 429",
       "products": []
     },
     "Coop": {
