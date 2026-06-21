@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-16T05:12:36.167013",
+  "scraped_at": "2026-06-21T02:11:08.281071",
   "week_type": "next",
   "week_number": "2026-26",
   "start_date": "2026-06-22",
@@ -7,7 +7,15 @@
   "total_products": 0,
   "supermarkets": {
     "successful": [],
-    "failed": []
+    "failed": [
+      "Albert Heijn",
+      "Dirk",
+      "Lidl",
+      "ALDI",
+      "Plus",
+      "Coop",
+      "Hoogvliet"
+    ]
   },
   "products": []
 }

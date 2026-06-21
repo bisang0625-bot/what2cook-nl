@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-16T05:12:35.810533",
+  "scraped_at": "2026-06-21T02:11:06.752946",
   "stores": {
     "Albert Heijn": {
       "success": false,
@@ -34,13 +34,13 @@
     "Coop": {
       "success": false,
       "product_count": 0,
-      "error": "HTTP 429",
+      "error": "Gemini API HTTP 404",
       "products": []
     },
     "Hoogvliet": {
       "success": false,
       "product_count": 0,
-      "error": "HTTP 429",
+      "error": "Gemini API HTTP 404",
       "products": []
     }
   }
