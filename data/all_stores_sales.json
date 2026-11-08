@@ -1,46 +1,46 @@
 {
-  "scraped_at": "2026-11-03T06:15:26.017843",
+  "scraped_at": "2026-11-08T02:50:10.193114",
   "stores": {
     "Albert Heijn": {
       "success": false,
       "product_count": 0,
-      "error": "Gemini API HTTP 404",
+      "error": "Gemini API HTTP 402",
       "products": []
     },
     "Dirk": {
       "success": false,
       "product_count": 0,
-      "error": "Gemini API HTTP 404",
+      "error": "Gemini API HTTP 402",
       "products": []
     },
     "Lidl": {
       "success": false,
       "product_count": 0,
-      "error": "Gemini API HTTP 404",
+      "error": "Gemini API HTTP 402",
       "products": []
     },
     "ALDI": {
       "success": false,
       "product_count": 0,
-      "error": "Gemini API HTTP 404",
+      "error": "Gemini API HTTP 402",
       "products": []
     },
     "Plus": {
       "success": false,
       "product_count": 0,
-      "error": "Gemini API HTTP 404",
+      "error": "Gemini API HTTP 402",
       "products": []
     },
     "Coop": {
       "success": false,
       "product_count": 0,
-      "error": "Gemini API HTTP 404",
+      "error": "Gemini API HTTP 402",
       "products": []
     },
     "Hoogvliet": {
       "success": false,
       "product_count": 0,
-      "error": "Gemini API HTTP 404",
+      "error": "Gemini API HTTP 402",
       "products": []
     }
   }
