@@ -1,18 +1,18 @@
 {
-  "scraped_at": "2026-11-22T03:37:55.655933",
+  "scraped_at": "2026-11-24T09:30:51.933121",
   "week_type": "next",
-  "week_number": "2026-48",
-  "start_date": "2026-11-23",
-  "end_date": "2026-11-29",
+  "week_number": "2026-49",
+  "start_date": "2026-11-30",
+  "end_date": "2026-12-06",
   "total_products": 0,
   "supermarkets": {
     "successful": [],
     "failed": [
       "Albert Heijn",
       "Dirk",
+      "Lidl",
       "ALDI",
       "Plus",
-      "Lidl",
       "Coop",
       "Hoogvliet"
     ]
